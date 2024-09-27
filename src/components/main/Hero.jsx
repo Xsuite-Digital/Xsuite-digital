@@ -25,8 +25,8 @@ const Hero = () => {
           className="flex text-[#7E7E7E]"
         >
           <img
-            src="/Xsuite-Final.png"
-            className="h-16 w-72 lg:w-full lg:h-36 "
+            src="/Xsuitefinal.svg"
+            className="h-full w-full lg:w-full lg:h-36 "
           />
         </motion.div>
 
