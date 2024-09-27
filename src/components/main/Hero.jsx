@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="relative">
       <video
-        src="/blackvideo.mp4"
+        src="/blackvideoo.mp4"
         className="absolute inset-0 w-full h-full object-cover"
         loop
         autoPlay
@@ -14,7 +14,7 @@ const Hero = () => {
       </video>
 
       {/* Overlay with background opacity */}
-      <div className="absolute inset-0 bg-black opacity-90"></div>
+      <div className="absolute inset-0 bg-black opacity-60"></div>
 
       {/* Content Section */}
       <div className="flex flex-col justify-center items-center relative z-10 h-screen text-center">
@@ -24,7 +24,10 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="flex text-[#7E7E7E]"
         >
-          <img src="/Xsuite-Final.png" className="h-16 w-72 lg:w-full lg:h-36 " />
+          <img
+            src="/Xsuite-Final.png"
+            className="h-16 w-72 lg:w-full lg:h-36 "
+          />
         </motion.div>
 
         <motion.p
@@ -33,7 +36,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="text-[#CECECE] w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 font-bold tracking-wider text-xl md:text-xl lg:text-2xl  mt-4"
         >
-         A Digital Marketing Agency
+          A Digital Marketing Agency
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: -40 }}
