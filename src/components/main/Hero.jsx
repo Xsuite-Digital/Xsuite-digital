@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
+import { useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
+
+  const [typeEffect] =useTypewriter({
+    words: [' Digital Marketer  ' , 'Web Developer  ' , 'UX/UI Designer ', 'Graphic Designer'],
+    loop: {},
+    typeSpeed:100,
+    deleteSpeed:40,
+    
+
+  })
   return (
     <div className="relative">
       <video
@@ -27,26 +37,16 @@ const Hero = () => {
           <img src="/Xsuite-Final.png" className="h-16 w-72 lg:w-full lg:h-36 " />
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-[#CECECE] w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 font-bold tracking-wider text-xl md:text-xl lg:text-2xl  mt-4"
-        >
-         A Digital Marketing Agency
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-[#CECECE] w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 font-bold tracking-wider text-lg md:text-xl lg:text-lg  mt-4"
-        >
-          Welcome to Xsuite, your all-in-one digital marketing partner. We
-          specialize in driving growth through cutting-edge strategies in SEO,
-          social media marketing, PPC campaigns, and more. Let us help you
-          elevate your brand, increase visibility, and achieve measurable
-          success in today’s digital landscape.
-        </motion.p>
+       
+<motion.div 
+initial={{ opacity: 0, y: -40 }}
+animate={{ y: 0, opacity: 1 }}
+transition={{ duration: 1 }}
+className=" flex items-center justify-center mt-4 space-x-4">
+  <motion.h1  className='font-bold text-xl lg:text-4xl  text-white  ' >We are</motion.h1>
+  <p className=" font-bold text-xl lg:text-4xl text-white">{typeEffect}</p>
+</motion.div>
+
       </div>
     </div>
   );

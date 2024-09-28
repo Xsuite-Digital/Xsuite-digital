@@ -3,14 +3,7 @@ import { useEffect } from "react";
 const About = () => {
 
 
-  const [typeEffect] =useTypewriter({
-    words: [' Digital Marketer  ' , 'Web Developer  ' , 'UX/UI Designer ', 'Graphic Designer'],
-    loop: {},
-    typeSpeed:100,
-    deleteSpeed:40,
-    
-
-  })
+ 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,11 +22,14 @@ const About = () => {
     About Us
   </div>
 
-  <div className="absolute  text-white w-full font-bold z-20 text-center
+  <div className="absolute  text-white  font-semibold z-20 text-center
                   lg:text-3xl md:text-xl sm:text-xl text-lg
                   top-[60%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
-    <h1 className="inline-block mr-2">We are</h1>
-    <span className="inline-block">{typeEffect}</span>
+    Welcome to Xsuite, your all-in-one digital marketing partner. We
+          specialize in driving growth through cutting-edge strategies in SEO,
+          social media marketing, PPC campaigns, and more. Let us help you
+          elevate your brand, increase visibility, and achieve measurable
+          success in today’s digital landscape.
   </div>
 </div>
 
