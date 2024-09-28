@@ -47,11 +47,8 @@ const Header = () => {
               className="h-5 w-5 text-[#c9c9c9] "
             />
 
-            <Link
-              to="mailto: info@microthinks.com "
-              className="text-[#c9c9c9] "
-            >
-              info@microthinks.com
+            <Link to="mailto: info@xsuite.digital " className="text-[#c9c9c9] ">
+              info@xsuite.digital
             </Link>
           </div>
         </div>

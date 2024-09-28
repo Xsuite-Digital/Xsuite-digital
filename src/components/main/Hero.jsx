@@ -24,10 +24,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="flex text-[#7E7E7E]"
         >
-          <img
-            src="/Xsuitefinal.svg"
-            className="h-full w-full lg:w-full lg:h-36 "
-          />
+          <img src="/logo.png" className="h-full w-full lg:w-full lg:h-36 " />
         </motion.div>
 
         <motion.p
