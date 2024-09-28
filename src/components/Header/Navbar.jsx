@@ -12,15 +12,13 @@ const Navbar = () => {
   const handleScroll = () => {
     const pagePath = window.location.pathname;
 
-    
-      if (pagePath === "/Contact" || pagePath === "/Services") {
-        setBgColor("bg-black");
-      } else if (window.scrollY > 50) {
-        setBgColor("bg-black");
-      } else {
-        setBgColor("bg-transparent");
-      }
-      
+    if (pagePath === "/Contact" || pagePath === "/Services") {
+      setBgColor("bg-black");
+    } else if (window.scrollY > 50) {
+      setBgColor("bg-black");
+    } else {
+      setBgColor("bg-transparent");
+    }
   };
 
   useEffect(() => {
@@ -44,16 +42,10 @@ const Navbar = () => {
           className="hidden md:flex justify-between items-center p-4 bg-transparent"
         >
           {/* Logo */}
-          
-            <Link to="/">
-            <img
-    src="/logo.png" 
-  
-  alt="Logo"
-  className="h-6 w-6 lg:h-12 lg:w-24"
-/>
-            </Link>
-          
+
+          <Link to="/">
+            <img src="/logo.png" className="h-12" />
+          </Link>
 
           {/* Tabs */}
           <div>
@@ -128,14 +120,9 @@ const Navbar = () => {
         <div className="md:hidden flex items-center justify-between p-4 bg-transparent">
           {/* Logo */}
           <div>
-            <Link to={'/'}>
-            <img
-              src={"/logo.png"}
-              width={100}
-              height={100}
-              alt="Logo"
-              />
-              </Link>
+            <Link to={"/"}>
+              <img src={"/logo.png"} width={100} height={100} alt="Logo" />
+            </Link>
           </div>
 
           {/* Sidebar Toggle Button */}
@@ -167,7 +154,7 @@ const Navbar = () => {
                 {/* Home link */}
                 <li>
                   <Link
-                  onClick={()=> setSidebarOpen(false)}
+                    onClick={() => setSidebarOpen(false)}
                     to="/"
                     className="block text-xl text-white hover:text-[#7E7E7E]"
                   >
@@ -178,8 +165,7 @@ const Navbar = () => {
                 {/* Services link */}
                 <li>
                   <Link
-                  onClick={()=> setSidebarOpen(false)}
-
+                    onClick={() => setSidebarOpen(false)}
                     to="/Services"
                     className="block text-xl  text-white hover:text-[#7E7E7E]"
                   >
@@ -190,9 +176,8 @@ const Navbar = () => {
                 {/* About Us link */}
                 <li>
                   <Link
-
-to="/About"
-onClick={()=> setSidebarOpen(false)}
+                    to="/About"
+                    onClick={() => setSidebarOpen(false)}
                     className="block text-xl text-white hover:text-[#7E7E7E]"
                   >
                     About Us
@@ -203,8 +188,7 @@ onClick={()=> setSidebarOpen(false)}
                 <li>
                   <Link
                     to="/Contact"
-                  onClick={()=> setSidebarOpen(false)}
-
+                    onClick={() => setSidebarOpen(false)}
                     className="block text-xl text-white hover:text-[#7E7E7E]"
                   >
                     Contact

@@ -7,11 +7,11 @@ const HireUs = () => {
 
       <div className="max-w-6xl mx-auto font-[sans-serif] mt-6">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6          border-2 border-solid rounded-full ">
+          <div className="text-center  hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6          border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="#007bff"
-              className="w-8 mb-6 inline-block"
+              fill="#000"
+              className="w-8 mb-6 inline-block "
               viewBox="0 0 32 32"
             >
               <path
@@ -34,7 +34,7 @@ const HireUs = () => {
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6       border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="#007bff"
+              fill="#000"
               className="w-8 mb-6 inline-block"
               viewBox="0 0 682.667 682.667"
             >
@@ -45,7 +45,7 @@ const HireUs = () => {
               </defs>
               <g
                 fill="none"
-                stroke="#007bff"
+                stroke="#000"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeMiterlimit="10"
@@ -74,7 +74,7 @@ const HireUs = () => {
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6        border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="#007bff"
+              fill="#000"
               className="w-8 mb-6 inline-block"
               viewBox="0 0 512.001 512.001"
             >
@@ -94,7 +94,7 @@ const HireUs = () => {
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6        border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="#007bff"
+              fill="#000"
               className="w-8 mb-6 inline-block"
               viewBox="0 0 24 24"
             >
@@ -123,7 +123,7 @@ const HireUs = () => {
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6         border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="#007bff"
+              fill="#000"
               className="w-8 mb-6 inline-block"
               viewBox="0 0 504.69 504.69"
             >
@@ -167,7 +167,7 @@ const HireUs = () => {
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6     border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="#007bff"
+              fill="#000"
               className="w-8 mb-6 inline-block"
               viewBox="0 0 682.667 682.667"
             >
@@ -178,7 +178,7 @@ const HireUs = () => {
               </defs>
               <g
                 fill="none"
-                stroke="#007bff"
+                stroke="#000"
                 strokeWidth="30"
                 clipPath="url(#a)"
                 transform="matrix(1.33 0 0 -1.33 0 682.667)"
