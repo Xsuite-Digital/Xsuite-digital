@@ -1,28 +1,28 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const Contact = () => {
-  useEffect(()=> {
-    window.scrollTo(0,0)
-  })
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
-    <div className="  mt-0     ">
-      <div class="max-w-5xl  mt-32 rounded-xl md:mt:20  bg-[#7E7E7E]       max-lg:max-w-3xl mx-auto  my-6 font-[sans-serif]">
-        <div class="text-center px-6">
-          <h2 class="text-white text-3xl font-extrabold">Contact Us</h2>
-          <p class="text-sm text-white mt-4">
+    <div className="mt-0">
+      <div className="max-w-5xl  mt-32 rounded-xl md:mt:20  bg-[#7E7E7E]       max-lg:max-w-3xl mx-auto  my-6 font-[sans-serif]">
+        <div className="text-center px-6">
+          <h2 className="text-white text-3xl font-extrabold">Contact Us</h2>
+          <p className="text-sm text-white mt-4">
             Have some big idea or brand to develop and need help?
           </p>
         </div>
 
-        <div class="grid lg:grid-cols-3 items-start gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-lg mt-12">
-          <div class="bg-[#000] rounded-lg p-6 h-full max-lg:order-1">
-            <h2 class="text-xl text-white">Contact Information</h2>
-            <p class="text-sm text-gray-300 mt-4">
+        <div className="grid lg:grid-cols-3 items-start gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-lg mt-12">
+          <div className="bg-[#000] rounded-lg p-6 h-full max-lg:order-1">
+            <h2 className="text-xl text-white">Contact Information</h2>
+            <p className="text-sm text-gray-300 mt-4">
               Have some big idea or brand to develop and need help?
             </p>
 
-            <ul class="mt-16 space-y-8">
-              <li class="flex items-center">
+            <ul className="mt-16 space-y-8">
+              <li className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16px"
@@ -37,12 +37,12 @@ const Contact = () => {
                 </svg>
                 <a
                   href="javascript:void(0)"
-                  class="text-white text-sm text-gray-500 ml-4"
+                  className="text-white text-sm text-gray-500 ml-4"
                 >
                   info@example.com
                 </a>
               </li>
-              <li class="flex items-center">
+              <li className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16px"
@@ -57,12 +57,12 @@ const Contact = () => {
                 </svg>
                 <a
                   href="javascript:void(0)"
-                  class="text-white text-sm text-gray-500 ml-4"
+                  className="text-white text-sm text-gray-500 ml-4"
                 >
                   +158 996 888
                 </a>
               </li>
-              <li class="flex items-center">
+              <li className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16px"
@@ -81,15 +81,15 @@ const Contact = () => {
                 </svg>
                 <a
                   href="javascript:void(0)"
-                  class="text-white text-sm text-gray-500 ml-4"
+                  className="text-white text-sm text-gray-500 ml-4"
                 >
                   123 Street 256 House
                 </a>
               </li>
             </ul>
 
-            <ul class="flex flex-wrap gap-4 mt-16">
-              <li class="bg-gray-800 hover:bg-gray-900 duration-300 ease-in-out    h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+            <ul className="flex flex-wrap gap-4 mt-16">
+              <li className="bg-gray-800 hover:bg-gray-900 duration-300 ease-in-out    h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a href="javascript:void(0)">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const Contact = () => {
                   </svg>
                 </a>
               </li>
-              <li class="bg-gray-800 hover:bg-gray-900 duration-300 ease-in-out    h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="bg-gray-800 hover:bg-gray-900 duration-300 ease-in-out    h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a href="javascript:void(0)">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ const Contact = () => {
                   </svg>
                 </a>
               </li>
-              <li class="bg-gray-800 hover:bg-gray-900 duration-300 ease-in-out h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="bg-gray-800 hover:bg-gray-900 duration-300 ease-in-out h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a href="javascript:void(0)">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -137,20 +137,20 @@ const Contact = () => {
             </ul>
           </div>
 
-          <div class="p-4 lg:col-span-2">
+          <div className="p-4 lg:col-span-2">
             <form>
-              <div class="grid sm:grid-cols-2 gap-8">
-                <div class="relative flex items-center">
+              <div className="grid sm:grid-cols-2 gap-8">
+                <div className="relative flex items-center">
                   <input
                     type="text"
                     placeholder="First Name"
-                    class="px-2 py-3 bg-white w-full rounded-xl text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
+                    className="px-2 py-3 bg-white w-full rounded-xl text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 24 24"
                   >
                     <circle
@@ -166,17 +166,17 @@ const Contact = () => {
                   </svg>
                 </div>
 
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     type="text"
                     placeholder="Last Name"
-                    class="px-2 py-3 rounded-xl bg-white w-full text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
+                    className="px-2 py-3 rounded-xl bg-white w-full text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 24 24"
                   >
                     <circle
@@ -192,15 +192,15 @@ const Contact = () => {
                   </svg>
                 </div>
 
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     type="number"
                     placeholder="Phone No."
-                    class="px-2 py-3 bg-white text-black w-full text-sm text-gray-800 border-b rounded-xl border-gray-300 focus:border-none outline-none"
+                    className="px-2 py-3 bg-white text-black w-full text-sm text-gray-800 border-b rounded-xl border-gray-300 focus:border-none outline-none"
                   />
                   <svg
                     fill="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 64 64"
                   >
                     <path
@@ -210,17 +210,17 @@ const Contact = () => {
                   </svg>
                 </div>
 
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     type="email"
                     placeholder="Email"
-                    class="px-2 py-3 bg-white text-black rounded-xl w-full text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
+                    className="px-2 py-3 bg-white text-black rounded-xl w-full text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 682.667 682.667"
                   >
                     <defs>
@@ -250,16 +250,16 @@ const Contact = () => {
                   </svg>
                 </div>
 
-                <div class="relative flex items-center sm:col-span-2">
+                <div className="relative flex items-center sm:col-span-2">
                   <textarea
                     placeholder="Write Message"
-                    class="px-2 pt-3 bg-white rounded-xl text-black w-full text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
+                    className="px-2 pt-3 bg-white rounded-xl text-black w-full text-sm text-gray-800 border-b border-gray-300 focus:border-none outline-none"
                   ></textarea>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 682.667 682.667"
                   >
                     <defs>
@@ -292,14 +292,14 @@ const Contact = () => {
 
               <button
                 type="button"
-                class="mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded-lg px-4 py-3 tracking-wide text-white bg-black "
+                className="mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded-lg px-4 py-3 tracking-wide text-white bg-black "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16px"
                   height="16px"
                   fill="#fff"
-                  class="mr-2"
+                  className="mr-2"
                   viewBox="0 0 548.244 548.244"
                 >
                   <path

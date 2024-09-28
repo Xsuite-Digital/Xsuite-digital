@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Logo */}
 
           <Link to="/">
-            <img src="/Xsuitefinal.svg" alt="Logo" className="h-24 w-full " />
+            <img src="/logo.png" className="h-12" />
           </Link>
 
           {/* Tabs */}
