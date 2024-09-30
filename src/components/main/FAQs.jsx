@@ -13,54 +13,55 @@ const FAQs = () => {
       question:
         "How do you determine the effective marketing plan for my business?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui. Maecenas vestibulum a turpis in lacinia.",
+        "We conduct a thorough analysis of your business goals, target audience and market trends to design a customized marketing plan that effectively aligns with your business.",
     },
     {
       question: "What is your strategy for starting a new project?",
       answer:
-        "The product launch events will take place on various dates in different locations. Please check our website for updates.",
+        "We begin with an initial discovery phase to understand your requirements. Then, we develop ",
     },
     {
       question: "How do you measure the success of your campaigns?",
       answer:
-        "Yes, you are allowed to bring one guest. Please ensure they are registered as well.",
+        "We measure the success of our campaigns by monitoring various key performance indicators (KPIs) such as website traffic, conversion rates, engagement metrics and return on investment (ROI).",
     },
     {
       question: "What is the pricing structure of your services?",
       answer:
-        "You can register for the event on our website by filling out the registration form.",
+        "Our pricing structure is determined based on the services selected and the overall complexity of the project. We will be happy to offer a customized estimate after discussing your requirements.",
     },
     {
       question: "What makes XSuite different from other agencies?",
-      answer: "Yes, there will be ample parking available at the venue.",
+      answer:
+        "XSuite distinguishes itself from other agencies by prioritizing customization, ensuring data security, delivering top-tier performance and maintaining transparent communication, which leads to collaborative and effective partnership.",
     },
     {
       question:
         "How long does it take to see invaluable results from your marketing efforts?",
       answer:
-        "You can contact the event organizers via the contact form on our website or by emailing us directly.",
+        "The duration for achieving results can vary depending on the strategy and goals, but many clients start seeing initial improvements within a few months.",
     },
     {
       question: "What happens if I don’t like the direction of a project?",
       answer:
-        "You can contact the event organizers via the contact form on our website or by emailing us directly.",
+        "Your feedback is essential to us! We prioritize open communication and are ready to adjust the campaign promptly to align with your vision and expectations.",
     },
     {
       question: "How do you stay updated with the latest marketing trends?",
       answer:
-        "You can contact the event organizers via the contact form on our website or by emailing us directly.",
+        "We are deeply passionate about marketing trends. Our team invests time in research and participates in industry trends to stay updated about the latest advancements",
     },
     {
       question:
         "What should I expect in the first few months of collaborating with you?",
       answer:
-        "You can contact the event organizers via the contact form on our website or by emailing us directly.",
+        "We will focus on establishing strategies, launching initial campaigns and monitoring performance to adjust in the first few months, as needed for optimal results.",
     },
     {
       question:
         "How do you make sure my brand stands out in the competitive market?",
       answer:
-        "You can contact the event organizers via the contact form on our website or by emailing us directly.",
+        "We explore your brand’s identity and values in depth, creating campaigns that highlight your uniqueness and engage your target audience.",
     },
   ];
 

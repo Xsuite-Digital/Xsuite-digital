@@ -1,5 +1,5 @@
-import {useTypewriter} from 'react-simple-typewriter'
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -7,29 +7,36 @@ const About = () => {
 
   return (
     <div>
-      <div className="relative">
-        <img
-          src="/microthinks.png"
-          className="w-full h-auto"
-          alt="Background"
-        />
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <Helmet>
+        <title></title>
+        <meta name="" content="" />
+      </Helmet>
+      <div className="relative ">
+        <img src="/aboutbg.jpg" className="w-full h-auto" alt="Background" />
+        <div className="absolute inset-0 bg-black opacity-90"></div>
 
-  <div className="absolute top-[30%] left-[50%] transform -translate-x-[50%] tracking-wider font-bold text-white
-                  lg:text-4xl md:text-3xl sm:text-2xl text-xl">
-    About Us
-  </div>
+        <div
+          className="absolute top-[30%] left-[50%] transform -translate-x-[50%] tracking-wider font-bold text-white
+                  lg:text-4xl md:text-3xl sm:text-2xl text-xl "
+        >
+          About Us
+        </div>
 
-  <div className="absolute  text-white  font-semibold z-20 text-center
-                  lg:text-2xl md:text-xl sm:text-xl text-lg
-                  top-[60%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
-    Welcome to Xsuite, your all-in-one digital marketing partner. We
-          specialize in driving growth through cutting-edge strategies in SEO,
-          social media marketing, PPC campaigns, and more. Let us help you
-          elevate your brand, increase visibility, and achieve measurable
-          success in today’s digital landscape.
-  </div>
-</div>
+        <div
+          className="absolute  text-white  font-semibold z-20 text-center
+                   text-lg max-w-full hidden lg:block
+                  top-[55%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]"
+        >
+          We are a top-level digital marketing service provider specializing in
+          web development, search engine optimization, pay-per-click campaigns,
+          and social media management. Xsuite is enthusiastic about optimizing
+          your online presence with Google My Business, Google Analytics, and
+          Google Search Console. Whether you require SEO or graphic designing
+          for social media platforms, we can help you in the marketplace for
+          your business advancements. Xsuite is a trustworthy company by which
+          you can work to fulfill your digital requirements
+        </div>
+      </div>
 
       <div className="font-sans bg-white p-4">
         <div className="md:max-w-5xl max-w-xl  mx-auto ">
