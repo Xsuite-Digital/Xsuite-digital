@@ -6,17 +6,19 @@ import Location from "../components/main/Location";
 import Offerings from "../components/main/Offerings";
 import FAQs from "../components/main/FAQs";
 import Technologies from "../components/main/Technologies";
+import MouseTrail from "../components/MouseTrail"; // Import MouseTrail
 
 const Home = () => {
   return (
-    <div className=" bg-white space-y-10 ">
+    <div className="bg-white space-y-10">
+      <MouseTrail /> 
       <Hero />
       <AboutUs />
       <Offerings />
       <HireUs />
-      <Technologies/>
+      <Technologies />
       <Tesimonial />
-      <FAQs/>
+      <FAQs />
       <Location />
     </div>
   );
