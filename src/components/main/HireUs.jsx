@@ -1,13 +1,13 @@
 const HireUs = () => {
   return (
     <div className="">
-      <h1 className=" text-black  tracking-wider font-semibold flex items-center justify-center text-xl lg:text-3xl  ">
+      <h1 className=" text-black p-4 tracking-wider !font-sans font-semibold flex items-center justify-center text-xl lg:text-3xl  ">
         Why Hire Us
       </h1>
 
-      <div className="max-w-6xl mx-auto font-[sans-serif] mt-6">
+      <div className="max-w-7xl mx-auto font-[sans-serif] mt-6">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
-          <div className="text-center  hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6          border-2 border-solid rounded-full ">
+          <div className="text-center  hover:scale-125 duration-500 ease-in-out px-8 py-4 lg:px-12 lg:py-6          border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
@@ -31,7 +31,7 @@ const HireUs = () => {
               your needs.
             </p>
           </div>
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6       border-2 border-solid rounded-full ">
+          <div className="text-center hover:scale-125 duration-500 ease-in-out px-8 py-4 lg:px-12  lg:py-6       border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
@@ -71,7 +71,7 @@ const HireUs = () => {
             </p>
           </div>
 
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6        border-2 border-solid rounded-full ">
+          <div className="text-center hover:scale-125 duration-500 ease-in-out px-10 py-4 lg:px-12 lg:py-6        border-2 border-solid rounded-full ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"

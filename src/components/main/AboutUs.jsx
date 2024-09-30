@@ -1,33 +1,29 @@
-import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import "./AboutUs.css"
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
-    >
+    <div>
       <h1 className="font-semibold tracking-widest text-xl lg:text-3xl font-sans flex items-center justify-center">
-        AboutUs
+        About Us
       </h1>
 
-      <div className=" px-6 py-12 font-sans">
-        <div className="lg:max-w-7xl max-w-lg mx-auto px-6 py- rounded-lg shadow-md">
+      <div className="px-6 py-12 font-sans">
+        <div className="lg:max-w-7xl max-w-lg mx-auto px-6 py- rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="max-h-80">
               <img
                 src="/aboutblackpic.jpg"
                 alt="Image"
-                className="rounded-md object-cover w-full h-full"
+                className="picimg rounded-md shadow-dark-xl object-cover w-full h-full"
               />
             </div>
             <div>
-              <h2 className="text-3xl font-extrabold text-[#373737] mb-4">
+              <h2 className="text-3xl font-bold !font-sans text-[#373737] mb-4">
                 Immerse Yourself in Creativity
               </h2>
               <p className="text-black text-sm leading-6">
@@ -45,7 +41,7 @@ const AboutUs = () => {
               <div className="mt-6">
                 <Link
                   to="/About"
-                  className=" text-white text-sm bg-black py-3 px-2 rounded-xl font-semibold hover:text-white hover:scale-125 duration-500 ease-in-out"
+                  className="text-white text-sm bg-black py-3 px-2 rounded-xl font-semibold hover:bg-orange-500 hover:text-black  duration-500 ease-in-out"
                 >
                   Get Started
                 </Link>
@@ -54,7 +50,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

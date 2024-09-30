@@ -11,10 +11,9 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const pagePath = window.location.pathname;
-
     if (pagePath === "/Contact" || pagePath === "/Services") {
       setBgColor("bg-black");
-    } else if (window.scrollY > 50) {
+    } else if (window.scrollY > 200) {
       setBgColor("bg-black");
     } else {
       setBgColor("bg-transparent");
@@ -57,7 +56,7 @@ const Navbar = () => {
                 onMouseLeave={() => setHomeHover(false)}
               >
                 <button
-                  className={`text-white hover:text-[#373737] hover:font-bold transition duration-300 ease-in-out`}
+                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
                 >
                   <Link to="/">Home</Link>
                 </button>
@@ -70,16 +69,16 @@ const Navbar = () => {
                 onMouseLeave={() => setServicesHover(false)}
               >
                 <button
-                  className={`text-white hover:text-[#373737] hover:font-bold transition duration-300 ease-in-out`}
+                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
                 >
                   <Link to="/Services">Services</Link>
                 </button>
               </li>
 
               {/* About Us link */}
-              <li className="text-white hover:text-[#373737] hover:font-bold transition duration-300 ease-in-out">
+              <li className="text-white hover:text-orange-500  transition duration-300 ease-in-out">
                 <button
-                  className={`text-white hover:text-[#373737] hover:font-bold transition duration-300 ease-in-out`}
+                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
                 >
                   <Link to="/About ">About Us</Link>
                 </button>
@@ -88,9 +87,9 @@ const Navbar = () => {
               {/* Shop link */}
 
               {/* Contact link */}
-              <li className="text-white hover:text-[#373737] hover:font-bold transition duration-300 ease-in-out">
+              <li className="text-white hover:text-orange-500  transition duration-300 ease-in-out">
                 <button
-                  className={`text-white hover:text-[#373737] hover:font-bold transition duration-300 ease-in-out`}
+                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
                 >
                   <Link to="/Contact">Contact</Link>
                 </button>
@@ -103,14 +102,14 @@ const Navbar = () => {
             <Link
               to="https://wa.me/923064312116"
               target="_blank"
-              className="text-white flex space-x-2"
+              className="text-white flex space-x-2 hover:text-orange-500"
             >
               <p>
                 Need Help? Talk to an expert <br />
               </p>
               <Icon
                 icon="solar:phone-calling-linear"
-                className="font-semibold border rounded-full p-1 h-7 w-7 hover:text-yellow-300 duration-300 ease-in-out hover:border-yellow-300"
+                className="font-semibold border hover:border-orange-500 rounded-full p-1 h-7 w-7 hover:text-orange-500 duration-300 ease-in-out "
               />
             </Link>
           </div>

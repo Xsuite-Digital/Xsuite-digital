@@ -1,29 +1,27 @@
 import {useTypewriter} from 'react-simple-typewriter'
 import { useEffect } from "react";
 const About = () => {
-
-
- 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
-    <div className="relative">
-  <img
-    src="/microthinks.png"
-    className="w-full h-auto"
-    alt="Background"
-  />
-  <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative">
+        <img
+          src="/microthinks.png"
+          className="w-full h-auto"
+          alt="Background"
+        />
+      <div className="absolute inset-0 bg-black opacity-50"></div>
 
-  <div className="absolute top-[40%] left-[50%] transform -translate-x-[50%] tracking-wider font-bold text-white
+  <div className="absolute top-[30%] left-[50%] transform -translate-x-[50%] tracking-wider font-bold text-white
                   lg:text-4xl md:text-3xl sm:text-2xl text-xl">
     About Us
   </div>
 
   <div className="absolute  text-white  font-semibold z-20 text-center
-                  lg:text-3xl md:text-xl sm:text-xl text-lg
+                  lg:text-2xl md:text-xl sm:text-xl text-lg
                   top-[60%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
     Welcome to Xsuite, your all-in-one digital marketing partner. We
           specialize in driving growth through cutting-edge strategies in SEO,

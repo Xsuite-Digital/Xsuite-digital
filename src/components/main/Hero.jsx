@@ -51,7 +51,7 @@ const Hero = () => {
           <motion.h1 className="font-bold text-xl lg:text-4xl  text-white  ">
             We are
           </motion.h1>
-          <p className=" font-bold text-xl lg:text-4xl text-white">
+          <p className=" font-bold text-xl lg:text-4xl text-orange-500">
             {typeEffect}
           </p>
         </motion.div>
@@ -61,3 +61,8 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
+

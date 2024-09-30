@@ -1,0 +1,19 @@
+.picimg {
+    animation: moveLeftRight 3.7s ease-in-out infinite;
+  }
+  
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateX(); 
+    }
+    40% {
+      transform: translateX(20px);
+    }
+    75% {
+      transform: translateX(-10px); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

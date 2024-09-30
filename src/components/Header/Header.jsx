@@ -12,19 +12,16 @@ const Header = () => {
         <div className="flex items-center space-x-2 ml-[1%]">
           <Icon
             icon="bi:facebook"
-            className="   h-7 w-7 rounded-full p-1  text-white duration-300 ease-in-out hover:bg-transparent  "
+            className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white duration-300 ease-in-out hover:bg-transparent  "
           />
           <Icon
-            icon="ri:instagram-fill"
-            className="  h-7 w-7 rounded-full p-1  text-white hover:border-none duration-300 hover:bg-transparent ease-in-out  "
+            icon="ri:linkedin-fill"
+            className="  h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:border-none duration-300 hover:bg-transparent ease-in-out  "
           />
-          <Icon
-            icon="bi:youtube"
-            className=" h-7 w-7 rounded-full p-1  text-white hover:border-none hover:bg-transparent duration-300 ease-in-out  "
-          />
+          
           <Icon
             icon="bi:twitter"
-            className="   h-7 w-7 rounded-full p-1  text-white hover:bg-transparent duration-300 ease-in-out   "
+            className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
           />
         </div>
 
