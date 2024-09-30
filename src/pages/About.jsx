@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import FAQs from "../components/main/FAQs";
+import Location from "../components/main/Location";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -106,6 +108,8 @@ const About = () => {
           </div>
         </div>
       </div>
+      <FAQs />
+        <Location />
     </div>
   );
 };

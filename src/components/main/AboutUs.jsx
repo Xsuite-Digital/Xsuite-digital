@@ -37,7 +37,7 @@ const AboutUs = () => {
               <div className="mt-6">
                 <Link
                   to="/About"
-                  className="text-white text-sm bg-black py-3 px-2 rounded-xl font-semibold hover:bg-orange-500 hover:text-black  duration-500 ease-in-out"
+                  className="text-white text-sm bg-black py-3 px-2 flex items-center justify-center rounded-xl font-semibold hover:bg-orange-500 hover:text-black  duration-500 ease-in-out"
                 >
                   About Us
                 </Link>

@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import FAQs from "../components/main/FAQs";
+import Location from "../components/main/Location";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   useEffect(() => {
@@ -12,7 +15,7 @@ const Contact = () => {
         <meta name="" content="" />
       </Helmet>
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:relative items-center  sm:p-8   font-[sans-serif]">
-        <div className="bg-black p-8 xl w-96 h-[70vh] rounded-xl lg:rounded-r-xl">
+        <div className="bg-black p-8  w-96 h-[70vh]  rounded-l-xl ">
           <h1 className="text-4xl font-bold text-white">Get in Touch</h1>
           <p className="text-sm text-gray-300 mt-4 leading-relaxed">
             Have some big idea or brand to develop and need help? Then reach out
@@ -33,9 +36,9 @@ const Contact = () => {
                   data-original="#000000"
                 />
               </svg>
-              <a href="javascript:void(0)" className="text-white text-md ml-4">
-                info@xsuite.digial
-              </a>
+              <Link to="mailto:info@xsuite.digital " className="text-white text-md ml-4">
+                info@xsuite.digital
+              </Link>
             </li>
             <li className="flex items-center">
               <svg
@@ -126,7 +129,7 @@ const Contact = () => {
           </ul>
         </div>
 
-        <div className="bg-[#7E7E7E] p-7 rounded-xl lg:rounded-r-xl h-[70vh]  lg:absolute left-[36%]">
+        <div className="bg-[#7E7E7E] p-7  rounded-r-xl h-[70vh]  lg:absolute left-[36%]">
           <form className="mt-8 h-96 space-y-4 ">
             <input
               type="text"
@@ -172,6 +175,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <FAQs />
+        <Location />
     </div>
   );
 };

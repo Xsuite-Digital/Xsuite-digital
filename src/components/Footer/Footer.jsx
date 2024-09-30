@@ -136,28 +136,28 @@ function Footer() {
         <div className="flex flex-wrap items-center justify-center max-md:flex-col gap-4">
           <ul className="md:flex md:space-x-6 max-md:space-y-2">
             <li>
-              <a
-                href="javascript:void(0)"
+              <Link
+                to="/TermsOfServices"
                 className="hover:text-white text-gray-300 text-sm"
               >
                 Terms of Service
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="javascript:void(0)"
+            <Link
+                to="/PrivacyPolicy"
                 className="hover:text-white text-gray-300 text-sm"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="javascript:void(0)"
+            <Link
+                to="/Security"
                 className="hover:text-white text-gray-300 text-sm"
               >
                 Security
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
