@@ -28,7 +28,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title></title>
+        <title>Services | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
       <section className="text-gray-600 body-font lg:mt-12">

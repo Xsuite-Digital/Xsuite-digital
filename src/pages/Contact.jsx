@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="mt-28 max-w-6xl   max-lg:max-w-2xl mx-auto   ">
       <Helmet>
-        <title></title>
+        <title>Contact | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:relative items-center  sm:p-8   font-[sans-serif]">
