@@ -11,9 +11,8 @@ const About = () => {
         <title>About | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
-      <div className="relative ">
-        <img src="/aboutbg.jpg" className="w-full h-auto" alt="Background" />
-        <div className="absolute inset-0 bg-black opacity-90"></div>
+      <div className="relative h-screen">
+        <div className="absolute inset-0 bg-black opacity-100"></div>
 
         <div
           className="absolute top-[30%] left-[50%] transform -translate-x-[50%] tracking-wider font-bold text-white
