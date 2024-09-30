@@ -34,10 +34,10 @@ const Services = () => {
         <meta name="" content="" />
       </Helmet>
       <section className="text-gray-600 body-font lg:mt-12">
-        {/* <div className="flex justify-center text-center">
-        
-      </div> */}
-        <h1 className="pt-32 text-center items-center text-4xl font-bold text-black">
+        {/* <div className="flex justify-center text-center w-full h-16 bg-black">
+          
+        </div> */}
+        <h1 className="pt-32 text-center items-center text-4xl font-bold text-white bg-zinc-900	">
           Our Services
         </h1>
         <div className="container px-5 py-24 mx-auto">

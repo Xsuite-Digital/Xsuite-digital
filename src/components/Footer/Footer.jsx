@@ -13,21 +13,21 @@ function Footer() {
 
             <ul className="mt-10 flex space-x-5">
               <li>
-              <div className="flex items-center space-x-2 ml-[1%]">
-          <Icon
-            icon="bi:facebook"
-            className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white duration-300 ease-in-out hover:bg-transparent  "
-          />
-          <Icon
-            icon="ri:linkedin-fill"
-            className="  h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:border-none duration-300 hover:bg-transparent ease-in-out  "
-          />
-          
-          <Icon
-            icon="bi:twitter"
-            className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
-          />
-        </div>
+                <div className="flex items-center space-x-2 ml-[1%]">
+                  <Icon
+                    icon="bi:facebook"
+                    className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white duration-300 ease-in-out hover:bg-transparent  "
+                  />
+                  <Icon
+                    icon="ri:linkedin-fill"
+                    className="  h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:border-none duration-300 hover:bg-transparent ease-in-out  "
+                  />
+
+                  <Icon
+                    icon="bi:twitter"
+                    className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
+                  />
+                </div>
               </li>
             </ul>
           </div>
@@ -51,16 +51,19 @@ function Footer() {
             </h4>
 
             <ul className="mt-6 space-y-2 flex flex-col items-start   ">
-              <li className="text-white">Website Development</li>
-              <li className="text-white">Digital Marketing</li>
-              <li className="text-white">Search Engine Optimization</li>
-              <li className="text-white">
-                Social Media (Marketing & Graphics Designing)
-              </li>
-              <li className="text-white">PPC Campaigns</li>
-              <li className="text-white">Google Analytics</li>
-              <li className="text-white">Google My Business Optimization</li>
-              <li className="text-white">Google Search Console</li>
+              <Link to="/Services">
+                {" "}
+                <li className="text-white">Website Development</li>
+                <li className="text-white">Digital Marketing</li>
+                <li className="text-white">Search Engine Optimization</li>
+                <li className="text-white">
+                  Social Media (Marketing & Graphics Designing)
+                </li>
+                <li className="text-white">PPC Campaigns</li>
+                <li className="text-white">Google Analytics</li>
+                <li className="text-white">Google My Business Optimization</li>
+                <li className="text-white">Google Search Console</li>
+              </Link>
             </ul>
           </div>
 

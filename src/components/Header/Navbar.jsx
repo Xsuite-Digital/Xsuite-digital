@@ -13,7 +13,7 @@ const Navbar = () => {
     const pagePath = window.location.pathname;
     if (pagePath === "/Contact" || pagePath === "/Services") {
       setBgColor("bg-black");
-    } else if (window.scrollY > 200) {
+    } else if (window.scrollY > 50) {
       setBgColor("bg-black");
     } else {
       setBgColor("bg-transparent");

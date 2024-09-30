@@ -19,8 +19,8 @@ const AboutUs = () => {
               />
             </div>
             <div>
-              <h1 className="font-semibold tracking-widest text-xl lg:text-3xl font-sans flex items-center justify-center">
-                About Us
+              <h1 className="font-bold tracking-widest text-xl lg:text-2xl font-sans flex items-center  pb-4">
+                XSuite: The Digital Solutions Provider
               </h1>
               <p className="text-black text-md  leading-6">
                 We are a top-level digital marketing service provider
