@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { servicesData } from "../components/main/ServicesData";
 import ServicesModal from "./ServicesModal";
 import { Helmet } from "react-helmet-async";
+import FAQs from "../components/main/FAQs";
+import Location from "../components/main/Location";
 
 const Services = () => {
   const [showAll, setShowAll] = useState(false);
@@ -85,6 +87,8 @@ const Services = () => {
           />
         )}
       </section>
+      <FAQs />
+        <Location />
     </>
   );
 };

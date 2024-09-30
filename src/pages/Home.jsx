@@ -6,8 +6,8 @@ import Location from "../components/main/Location";
 import Offerings from "../components/main/Offerings";
 import FAQs from "../components/main/FAQs";
 import Technologies from "../components/main/Technologies";
-import MouseTrail from "../components/MouseTrail"; // Import MouseTrail
 import { Helmet } from "react-helmet-async";
+import Newsletter from "../components/main/Newsletter";
 
 const Home = () => {
   return (
@@ -22,15 +22,15 @@ const Home = () => {
 "
         />
       </Helmet>
-      <MouseTrail />
       <Hero />
       <AboutUs />
       <Offerings />
       <HireUs />
       <Technologies />
       <Tesimonial />
-      <FAQs />
-      <Location />
+      <FAQs/>
+      <Location/>
+      <Newsletter/>
     </div>
   );
 };
