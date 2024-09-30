@@ -1,31 +1,45 @@
 export const servicesData = [
   {
     id: 1,
+    view: "Tap to view details",
     imgSrc: "/webdev.png",
     category: "CATEGORY",
     title: "Web Development",
-    description:
-      "Build responsive, modern websites tailored to enhance user experience and drive business success.",
+    description: `"Web Development is a technique to transform your business online by designing an official website to get maximum audience. We have passionate web developers who know the programming languages like HTML, CSS, and JavaScript, to develop and design websites and web applications.
+Blog and Personal Website
+Educational Website
+E-commerce Website
+Corporate Website
+Business Website
+Informational Website
+
+"`,
   },
   {
     id: 2,
     imgSrc: "/digitalMark.png",
+    view: "Tap to view details",
+
     category: "CATEGORY",
     title: "Digital Marketing",
     description:
-      "Boost online presence with strategic campaigns that connect, engage, and convert your target audience.",
+      "Digital marketing is the art of promoting your websites or products by using online methods like sharing on various social media apps. It will manage your website visibility in search engines through optimizing content.",
   },
   {
     id: 3,
     imgSrc: "/digital (1).png",
+    view: "Tap to view details",
+
     category: "CATEGORY",
     title: "Graphic Designing",
     description:
-      "Create impactful social strategies and stunning visuals that amplify brand awareness and user engagement.",
+      "Our graphic designers create a valuable craft that helps inspire, inform, and captivate consumers which will attract traffic to your official website. We will assist you in creating marketing materials, whether it is unique brand identity, web and digital designs, or printing designs.",
   },
   {
     id: 4,
     imgSrc: "/click.png",
+    view: "Tap to view details",
+
     category: "CATEGORY",
     title: "PPC Campaigns",
     description:
@@ -34,6 +48,8 @@ export const servicesData = [
   {
     id: 5,
     imgSrc: "/analytics.png",
+    view: "Tap to view details",
+
     category: "CATEGORY",
     title: "Google Analytics",
     description:
@@ -42,14 +58,18 @@ export const servicesData = [
   {
     id: 6,
     imgSrc: "/growth.png",
+    view: "Tap to view details",
+
     category: "CATEGORY",
-    title: "Google My Business Optimization",
+    title: "Online visibility optimization",
     description:
-      "Enhance local visibility and attract customers with optimized Google My Business profiles and listings.",
+      "Xsuite has the capability and authentic tools to manage all of your digital demands. By Google Analytics, Google My Business Optimization, and Google Search Console, we will improve your website performance and make it user-friendly and extremely searchable. We will create a comprehensive strategy to attract more visitors and drive conversions by analyzing user metrics, improving local search, and monitoring search performance",
   },
   {
     id: 7,
     imgSrc: "/search.png",
+    view: "Tap to view details",
+
     category: "CATEGORY",
     title: "Google Search Console",
     description:
@@ -58,9 +78,23 @@ export const servicesData = [
   {
     id: 8,
     imgSrc: "/seo.png",
+    view: "Tap to view details",
+
     category: "CATEGORY",
     title: "Search Engine Optimization",
-    description:
-      "Improve search engine rankings through optimized content and strategies that drive organic traffic growth.",
+    description: `"The foremost objective of SEO services for businesses is to attain higher search engine rankings which helps you in getting a larger target audience. Our team of energetic professionals provides you with the best SEO services to help your website show up on the search engine result page and enhance your conversion rate
+ON-Page SEO
+OFF-Page SEO
+Local SEO
+"`,
+  },
+  {
+    id: 9,
+    imgSrc: "/seo.png",
+    view: "Tap to view details",
+
+    category: "CATEGORY",
+    title: "Social Media Marketing",
+    description: `XSuite has social media experts who are energetic in creating short, interesting content for digital platforms which helps you in getting organic traffic to your site. We will run effective advertisements such as Facebook and Google ads and pay-per-click campaigns to elevate your online presence and better search results.`,
   },
 ];

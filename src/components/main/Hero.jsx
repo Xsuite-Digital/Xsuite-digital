@@ -6,8 +6,8 @@ const Hero = () => {
     words: [
       " Digital Marketer  ",
       "Web Developer  ",
-      "UX/UI Designer ",
-      "Graphic Designer",
+      "UI/UX Designer ",
+      "Graphics Designer",
     ],
     loop: {},
     typeSpeed: 100,
@@ -61,8 +61,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
-

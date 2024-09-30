@@ -27,8 +27,9 @@ const HireUs = () => {
               Customization
             </h3>
             <p className="text-gray-600 text-sm">
-              Tailor our product to suit your needs Tailor our product to suit
-              your needs.
+              We create exceptional marketing plans that align with your unique
+              brands, ensuring every campaign resonates with your target
+              audience.
             </p>
           </div>
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-8 py-4 lg:px-12  lg:py-6       border-2 border-solid rounded-full ">
@@ -67,7 +68,8 @@ const HireUs = () => {
               Security
             </h3>
             <p className="text-gray-600  p-4 text-sm">
-              Your data is protected by the latest security measures.
+              We prioritize your safety by using top-notch tools and methods
+              throughout our projects.
             </p>
           </div>
 
@@ -87,8 +89,8 @@ const HireUs = () => {
               Support
             </h3>
             <p className="text-gray-600 p-4 text-sm">
-              Tailor our product to suit your needs 24/7 customer support for
-              all your inquiries.
+              Our friendly team is always available to help you by providing
+              guidance and answers to your queries.
             </p>
           </div>
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6        border-2 border-solid rounded-full ">
@@ -117,7 +119,8 @@ const HireUs = () => {
               Performance
             </h3>
             <p className="text-gray-600 p-4 text-sm">
-              Experience blazing-fast performance with our product.
+              We focus on utilizing advanced analytics to optimize projects in
+              real time
             </p>
           </div>
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6         border-2 border-solid rounded-full ">
@@ -160,8 +163,8 @@ const HireUs = () => {
               Global Reach
             </h3>
             <p className="text-gray-600 text-sm p-4">
-              Tailor our product to suit your needs Expand your reach with our
-              global network.
+              XSuite helps your brand’s connectivity all over the world,
+              allowing your brand to thrive on a global scale.
             </p>
           </div>
           <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6     border-2 border-solid rounded-full ">
@@ -193,8 +196,9 @@ const HireUs = () => {
               Communication
             </h3>
             <p className="text-gray-600 p-4 text-sm">
-              Tailor our product to suit your needs Seamless communication for
-              your team.
+              Direct and transparent communication is the heart of our
+              agency-client relationships. We provide updates and feedback
+              frequently to keep you informed and engaged.
             </p>
           </div>
         </div>

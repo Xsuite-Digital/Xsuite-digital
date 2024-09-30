@@ -34,13 +34,13 @@ const Services = () => {
       </h1>
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap justify-center items-center -m-4">
-          <div className="grid grid-cols-1 gap-y-12 text-center lg:grid-cols-3 gap-4 items-center justify-center ">
+          <div className="grid grid-cols-1 gap-y-12 text-center lg:grid-cols-3 gap-4 items-center justify-center">
             <AnimatePresence>
               {displayedServices.map((data, index) => (
                 <motion.div
                   onClick={() => openModal(data)}
                   key={index}
-                  className="  ease-in-out cursor-pointer duration-500 flex flex-col items-center justify-center space-y-2  border rounded-xl h-80"
+                  className="  ease-in-out cursor-pointer duration-500 flex flex-col items-center justify-center space-y-2  border rounded-xl h-80 "
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
@@ -54,7 +54,7 @@ const Services = () => {
                   <p className="text-xl font-bold text-black tracking-wide">
                     {data.title}
                   </p>
-                  <p className="w-80 ">{data.description}</p>
+                  <p className="w-80 ">{data.view}</p>
                 </motion.div>
               ))}
             </AnimatePresence>
