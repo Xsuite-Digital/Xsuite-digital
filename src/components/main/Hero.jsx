@@ -4,14 +4,14 @@ import { useTypewriter } from "react-simple-typewriter";
 const Hero = () => {
   const [typeEffect] = useTypewriter({
     words: [
-      " Digital Marketer  ",
-      "Web Developer  ",
-      "UX/UI Designer ",
+      " Digital Marketer",
+      "Web Developer",
+      "UX/UI Designer",
       "Graphic Designer",
     ],
     loop: {},
     typeSpeed: 100,
-    deleteSpeed: 40,
+    deleteSpeed: 60,
   });
   return (
     <div className="relative">
@@ -25,10 +25,8 @@ const Hero = () => {
         <source src="/video.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlay with background opacity */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      {/* Content Section */}
       <div className="flex flex-col justify-center items-center relative z-10 h-screen text-center">
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -61,6 +59,18 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

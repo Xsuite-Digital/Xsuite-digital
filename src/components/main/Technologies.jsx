@@ -1,34 +1,93 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 const Technologies = () => {
-  return (
-    <div className='flex flex-col items-center  '>
-      <h1 className='font-bold lg:text-2xl text-2xl font-sans text-center'>Our Expertise</h1>
+  const technology = [
+    { imgSrc: "/DG.png", title: "Digital Marketing" },
+    { imgSrc: "/ads.png", title: "Google Ads" },
+    { imgSrc: "/ppc3.png", title: "PPC Campaigns" },
+    { imgSrc: "/11.png", title: "Social Media Marketing" },
+    { imgSrc: "/web3.png", title: "Web Development" },
+    { imgSrc: "/GMBO.png", title: "Google My Business Optimization" },
+  ];
 
-      <div className='grid grid-cols-1 space-y-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 p-12 gap-y-8 items-center'>
-        <div className='flex flex-col space-y-3 items-center'>
-          <img src="/DG.png" alt="" height={100} width={100} />
-          <h1 className='font-semibold font-sans'>Digital Marketing</h1>
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextOffering = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % technology.length);
+  };
+
+  const prevOffering = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? technology.length - 1 : prevIndex - 1
+    );
+  };
+
+  return (
+    <div className='flex flex-col items-center'>
+      <motion.h1
+        initial={{ opacity: 0, y: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className='font-bold lg:text-2xl text-2xl font-sans text-center mb-4'
+      >
+        Our Expertise
+      </motion.h1>
+
+      <div className='max-w-5xl max-lg:max-w-xl mx-auto'>
+        <div className='lg:grid hidden lg:grid-cols-3 gap-8 mt-12'>
+          {technology.map((tech, index) => (
+            <div
+              key={index}
+              className='border flex space-y-4 p-4 flex-col items-center justify-center rounded-md overflow-hidden'
+            >
+              <img
+                src={tech.imgSrc}
+                className='w-32 h-28 text-orange-500 object-contain'
+                alt={tech.title}
+              />
+              <div className='p-4'>
+                <h4 className='text-gray-800 text-lg flex items-center justify-center !font-sans font-bold'>
+                  {tech.title}
+                </h4>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className='flex flex-col space-y-3 items-center'>
-          <img src="/ads.png" alt="" height={100} width={100} />
-          <h1 className='font-semibold font-sans'>Google Ads</h1>
-        </div>
-        <div className='flex flex-col space-y-3 items-center'>
-          <img src="/ppc3.png" alt="" height={100} width={100} />
-          <h1 className='font-semibold font-sans'>PPC Campaigns</h1>
-        </div>
-        <div className='flex flex-col space-y-3 items-center'>
-          <img src="/11.png" alt="" height={100} width={100} />
-          <h1 className='font-semibold font-sans'>Social Media Marketing</h1>
-        </div>
-        <div className='flex flex-col space-y-3 items-center'>
-          <img src="/web3.png" alt="" height={100} width={100} />
-          <h1 className='font-semibold font-sans'>Web Development</h1>
-        </div>
-        <div className='flex flex-col space-y-3 items-center'>
-          <img src="/GMBO.png" alt="" height={100} width={100} />
-          <h1 className='font-semibold font-sans text-center'>Google My Business Optimization</h1>
+
+        {/* Mobile View */}
+        <div className="md:hidden block">
+          <div className="flex items-center justify-between mb-4">
+            <button
+              onClick={prevOffering}
+              className="p-2 rounded-lg flex items-center justify-center absolute left-0"
+            >
+              <Icon icon="ooui:next-rtl" className="w-12 h-12" />
+            </button>
+            <h4 className="text-gray-800 text-xl flex items-center justify-center !font-sans font-bold mx-16">
+              {technology[currentIndex].title}
+            </h4>
+            <button
+              onClick={nextOffering}
+              className="p-2 rounded-lg flex items-center justify-center absolute right-0"
+            >
+              <Icon icon="ooui:next-ltr" className="w-12 h-12" />
+            </button>
+          </div>
+
+          <div className="flex justify-center mb-4">
+            <motion.img
+              key={currentIndex}
+              src={technology[currentIndex].imgSrc}
+              className="w-32 h-28 object-contain"
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            />
+          </div>
+          
         </div>
       </div>
     </div>
