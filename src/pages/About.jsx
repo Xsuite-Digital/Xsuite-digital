@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title></title>
+        <title>About | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
       <div className="relative ">
