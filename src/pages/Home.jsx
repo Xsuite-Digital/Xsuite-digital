@@ -7,7 +7,7 @@ import Offerings from "../components/main/Offerings";
 import FAQs from "../components/main/FAQs";
 import Technologies from "../components/main/Technologies";
 import { Helmet } from "react-helmet-async";
-import Newsletter from "../components/main/Newsletter";
+// import Newsletter from "../components/main/Newsletter";
 
 const Home = () => {
   return (
@@ -28,9 +28,9 @@ const Home = () => {
       <HireUs />
       <Technologies />
       <Tesimonial />
-      <FAQs/>
-      <Location/>
-      <Newsletter/>
+      <FAQs />
+      <Location />
+      {/* <Newsletter/> */}
     </div>
   );
 };

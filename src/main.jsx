@@ -7,14 +7,12 @@ import Footer from "./components/Footer/Footer.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
-
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <HelmetProvider>
         <Header />
         <App />
-        
         <Footer />
       </HelmetProvider>
     </BrowserRouter>

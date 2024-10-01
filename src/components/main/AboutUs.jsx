@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./AboutUs.css";
 const AboutUs = () => {
   useEffect(() => {
@@ -19,10 +18,10 @@ const AboutUs = () => {
               />
             </div>
             <div>
-              <h1 className="font-bold tracking-widest text-xl lg:text-2xl font-sans flex items-center  pb-4">
+              <h1 className="font-bold tracking-widest text-xl lg:text-[27px] font-sans flex items-center  pb-4">
                 XSuite: The Digital Solutions Provider
               </h1>
-              <p className="text-black text-md  leading-6">
+              <p className="text-black text-md  leading-loose">
                 We are a top-level digital marketing service provider
                 specializing in web development, search engine optimization,
                 pay-per-click campaigns, and social media management. Xsuite is
@@ -33,15 +32,6 @@ const AboutUs = () => {
                 your business advancements. Xsuite is a trustworthy company by
                 which you can work to fulfill your digital requirements.
               </p>
-
-              <div className="mt-6">
-                <Link
-                  to="/About"
-                  className="text-white text-sm bg-black py-3 px-2 flex items-center justify-center rounded-xl font-semibold hover:bg-orange-500 hover:text-black  duration-500 ease-in-out"
-                >
-                  About Us
-                </Link>
-              </div>
             </div>
           </div>
         </div>
