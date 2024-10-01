@@ -7,27 +7,10 @@ const Header = () => {
     <div className="fixed top-0 left-0 right-0 z-50">
       {/* Header Section */}
 
-      <div className="bg-[#373737] h-8 max-w-screen lg:flex justify-between hidden   ">
+      <div className="bg-[#373737] h-8 max-w-screen lg:flex justify-between  p-4 hidden   ">
         {/* child-1 */}
-        <div className="flex items-center space-x-2 ml-[1%]">
-          <Icon
-            icon="bi:facebook"
-            className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white duration-300 ease-in-out hover:bg-transparent  "
-          />
-          <Icon
-            icon="ri:linkedin-fill"
-            className="  h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:border-none duration-300 hover:bg-transparent ease-in-out  "
-          />
-          
-          <Icon
-            icon="bi:twitter"
-            className="   h-7 w-7 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
-          />
-        </div>
-
-        {/* child-2 */}
-
-        <div className="flex space-x-4 mr-[1%]">
+       
+        <div className="flex space-x-4 mr-[1%] ">
           <div className="flex items-center space-x-1">
             <Icon
               icon="fluent:location-16-regular"
@@ -49,6 +32,27 @@ const Header = () => {
             </Link>
           </div>
         </div>
+
+        {/* child-2 */}
+
+        <div className="flex items-center space-x-2 ml-[1%]">
+          <Icon
+            icon="uit:facebook-f"
+            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+          />
+          <Icon
+            icon="basil:linkedin-outline"
+            className="  h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white  hover:border-none duration-300 hover:bg-transparent ease-in-out  "
+          />
+          
+          <Icon
+            icon="proicons:instagram"
+            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
+          />
+        </div>
+
+
+        
       </div>
 
       <div className=" ">
