@@ -1,17 +1,17 @@
 const HireUs = () => {
   return (
     <div className="">
-      <h1 className=" text-black p-4 tracking-wider !font-sans font-semibold flex items-center justify-center text-xl lg:text-3xl  ">
+      <h1 className=" text-black p-4 tracking-wider !font-sans font-semibold flex items-center justify-center text-3xl lg:text-3xl  ">
         Why Hire Us
       </h1>
 
       <div className="max-w-7xl mx-auto font-[sans-serif] mt-6">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
-          <div className="text-center  hover:scale-125 duration-500 ease-in-out px-8 py-4 lg:px-12 lg:py-6          border-2 border-solid rounded-full ">
+          <div className="text-start  px-8 py-4 lg:px-12 lg:py-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
-              className="w-8 mb-6 inline-block "
+              className="w-16 h-16 mb-6 inline-block p-4 border rounded-lg "
               viewBox="0 0 32 32"
             >
               <path
@@ -23,20 +23,20 @@ const HireUs = () => {
                 data-original="#000000"
               />
             </svg>
-            <h3 className="text-gray-800 text-xl font-semibold mb-3">
+            <h3 className="text-gray-800 text-3xl font-semibold mb-3">
               Customization
             </h3>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600  leading-6 text-base">
               We create exceptional marketing plans that align with your unique
               brands, ensuring every campaign resonates with your target
               audience.
             </p>
           </div>
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-8 py-4 lg:px-12  lg:py-6       border-2 border-solid rounded-full ">
+          <div className="text-start px-8 py-4 lg:px-12 lg:py-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
-              className="w-8 mb-6 inline-block"
+              className="w-16 h-16 mb-6 inline-block p-4 border rounded-lg "
               viewBox="0 0 682.667 682.667"
             >
               <defs>
@@ -64,20 +64,20 @@ const HireUs = () => {
                 />
               </g>
             </svg>
-            <h3 className="text-gray-800 text-xl font-semibold mb-3">
+            <h3 className="text-gray-800 text-3xl font-semibold mb-3">
               Security
             </h3>
-            <p className="text-gray-600  p-4 text-sm">
+            <p className="text-gray-600  leading-6 text-base">
               We prioritize your safety by using top-notch tools and methods
               throughout our projects.
             </p>
           </div>
 
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-10 py-4 lg:px-12 lg:py-6        border-2 border-solid rounded-full ">
+          <div className="text-start  px-8 py-4 lg:px-12 lg:py-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
-              className="w-8 mb-6 inline-block"
+              className="w-16 h-16 mb-6 inline-block p-4 border rounded-lg "
               viewBox="0 0 512.001 512.001"
             >
               <path
@@ -85,19 +85,19 @@ const HireUs = () => {
                 data-original="#000000"
               />
             </svg>
-            <h3 className="text-gray-800 text-xl font-semibold mb-3">
+            <h3 className="text-gray-800 text-3xl font-semibold mb-3">
               Support
             </h3>
-            <p className="text-gray-600 p-4 text-sm">
+            <p className="text-gray-600  leading-6 text-base">
               Our friendly team is always available to help you by providing
               guidance and answers to your queries.
             </p>
           </div>
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6        border-2 border-solid rounded-full ">
+          <div className="text-start px-8 py-4 lg:px-12 lg:py-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
-              className="w-8 mb-6 inline-block"
+              className="w-16 h-16 mb-6 inline-block p-4 border rounded-lg "
               viewBox="0 0 24 24"
             >
               <g fillRule="evenodd" clipRule="evenodd">
@@ -115,19 +115,19 @@ const HireUs = () => {
                 />
               </g>
             </svg>
-            <h3 className="text-gray-800 text-xl font-semibold mb-3">
+            <h3 className="text-gray-800 text-3xl font-semibold mb-3">
               Performance
             </h3>
-            <p className="text-gray-600 p-4 text-sm">
+            <p className="text-gray-600  leading-6 text-base">
               We focus on utilizing advanced analytics to optimize projects in
               real time
             </p>
           </div>
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6         border-2 border-solid rounded-full ">
+          <div className="text-start  px-8 py-4 lg:px-12 lg:py-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
-              className="w-8 mb-6 inline-block"
+              className="w-16 h-16 mb-6 inline-block p-4 border rounded-lg "
               viewBox="0 0 504.69 504.69"
             >
               <path
@@ -159,19 +159,19 @@ const HireUs = () => {
                 data-original="#000000"
               />
             </svg>
-            <h3 className="text-gray-800 text-xl font-semibold mb-3">
+            <h3 className="text-gray-800 text-3xl font-semibold mb-3">
               Global Reach
             </h3>
-            <p className="text-gray-600 text-sm p-4">
+            <p className="text-gray-600 leading-6 text-base">
               XSuite helps your brand’s connectivity all over the world,
               allowing your brand to thrive on a global scale.
             </p>
           </div>
-          <div className="text-center hover:scale-125 duration-500 ease-in-out px-3 py-4 lg:px-6 lg:py-6     border-2 border-solid rounded-full ">
+          <div className="text-start px-8 py-4 lg:px-12 lg:py-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#000"
-              className="w-8 mb-6 inline-block"
+              className="w-16 h-16 mb-6 inline-block p-4 border rounded-lg "
               viewBox="0 0 682.667 682.667"
             >
               <defs>
@@ -192,10 +192,10 @@ const HireUs = () => {
                 />
               </g>
             </svg>
-            <h3 className="text-gray-800 text-xl font-semibold mb-3">
+            <h3 className="text-gray-800 text-3xl font-semibold mb-3">
               Communication
             </h3>
-            <p className="text-gray-600 p-4 text-sm">
+            <p className="text-gray-600  leading-6 text-base">
               Direct and transparent communication is the heart of our
               agency-client relationships. We provide updates and feedback
               frequently to keep you informed and engaged.
