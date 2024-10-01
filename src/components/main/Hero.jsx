@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
     deleteSpeed: 60,
   });
   return (
-    <div className="relative">
+    <div className="relative ">
       <video
         src="/blackvideoo.mp4"
         className="absolute inset-0 w-full h-full object-cover"
@@ -53,6 +54,7 @@ const Hero = () => {
             {typeEffect}
           </p>
         </motion.div>
+     
       </div>
     </div>
   );

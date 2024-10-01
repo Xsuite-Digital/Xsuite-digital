@@ -34,7 +34,7 @@ const Services = () => {
       {/* <div className="flex justify-center text-center">
         
       </div> */}
-      <h1 className="pt-32 text-center items-center text-4xl font-bold text-black">
+      <h1 className=" p-32   mt-32 text-center  bg-black items-center text-4xl font-bold text-white">
         Our Services
       </h1>
       <div className="container px-5 py-24 mx-auto">
