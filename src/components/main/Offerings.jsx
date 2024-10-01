@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const offeringsData = [
   {
-    imgSrc: "/DG.     png",
+    imgSrc: "/DG.png",
     title: "Digital Marketing",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti placeat sed consequuntur ea incidunt cumque. Minima quae ullam delectus non.",
