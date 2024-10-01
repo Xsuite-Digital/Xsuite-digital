@@ -30,7 +30,6 @@ const Home = () => {
       <Tesimonial />
       <FAQs />
       <Location />
-      {/* <Newsletter/> */}
     </div>
   );
 };

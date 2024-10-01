@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const FAQs = () => {
@@ -97,9 +98,9 @@ const FAQs = () => {
               />
             )}
           </button>
-          <div className={`py-4 ${openIndex === index ? "block" : "hidden"}`}>
+          <motion.div className={`py-4 ${openIndex === index ? "block" : "hidden"}`}>
             <p className="text-sm text-gray-800">{faq.answer}</p>
-          </div>
+          </motion.div>
         </div>
       ))}
     </div>
