@@ -1,25 +1,73 @@
+import { ArrowRight } from "lucide-react";
+
 const Location = () => {
   return (
-    <>
-      <h1 className="tracking-widest flex items-center justify-center font-bold text-xl lg:text-4xl mt-3">
-        Location
-      </h1>
-      <div className="flex justify-center mt-5">
-        <div className="w-full max-w-4xl p-1 shadow-lg rounded-lg mb-4 bg-black">
-          <div className="w-full h-96 rounded-lg overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.10178401976!2d74.32597427442657!3d31.54882114573784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905c4aac1473b%3A0x6e7c45965a04311e!2sMicro%20thinks%20Hotels%20Marketing%20Agency!5e0!3m2!1sen!2s!4v1727327057942!5m2!1sen!2s"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+    <div className="flex items-center justify-between bg-emerald-800 text-white p-12">
+      <div className="w-1/2 pr-8">
+        <h2 className="text-sm uppercase mb-2">GET STARTED WITH US</h2>
+        <h1 className="text-4xl font-bold mb-4">
+          Start Conversation To <br />
+          <span className="text-yellow-400">Skyrocket</span> Your Business
+        </h1>
+        <p className="text-emerald-200 mb-6">
+          Schedule a free consultation with our experts. Uncover opportunities
+          and take the first step towards digital success.
+        </p>
+        <div className="flex space-x-4">
+          <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-full flex items-center">
+            Let's Talk <ArrowRight className="ml-2 h-4 w-4" />
+          </button>
+          <button className="border border-white hover:bg-white hover:text-emerald-800 text-white px-6 py-2 rounded-full">
+            Book A Demo
+          </button>
         </div>
       </div>
-    </>
+
+      <div className="w-1/2 bg-white rounded-lg p-6 text-black">
+        <h3 className="text-xl font-semibold mb-4 text-center">
+          Get A Free Consultation With <br />
+          Marketing Our Expert
+        </h3>
+        <form className="space-y-4">
+          <input
+            type="text"
+            placeholder="Company name"
+            className="w-full p-2 border border-gray-300 rounded"
+          />
+          <div className="flex space-x-4">
+            <input
+              type="text"
+              placeholder="First name"
+              className="w-1/2 p-2 border border-gray-300 rounded"
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              className="w-1/2 p-2 border border-gray-300 rounded"
+            />
+          </div>
+          <div className="flex space-x-4">
+            <input
+              type="email"
+              placeholder="E-mail"
+              className="w-1/2 p-2 border border-gray-300 rounded"
+            />
+            <input
+              type="tel"
+              placeholder="Phone"
+              className="w-1/2 p-2 border border-gray-300 rounded"
+            />
+          </div>
+          <textarea
+            placeholder="Your Message"
+            className="w-full p-2 border border-gray-300 rounded h-24"
+          ></textarea>
+          <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
   );
 };
 
