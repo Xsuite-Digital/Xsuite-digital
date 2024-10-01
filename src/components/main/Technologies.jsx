@@ -14,11 +14,11 @@ const Technologies = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextOffering = () => {
+  const nextService = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % technology.length);
   };
 
-  const prevOffering = () => {
+  const prevService = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? technology.length - 1 : prevIndex - 1
     );
@@ -57,38 +57,37 @@ const Technologies = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="md:hidden block">
-          <div className="flex items-center justify-between mb-4">
-            <button
-              onClick={prevOffering}
-              className="p-2 rounded-lg flex items-center justify-center absolute left-0"
-            >
-              <Icon icon="ooui:next-rtl" className="w-12 h-12" />
-            </button>
-            <h4 className="text-gray-800 text-xl flex items-center justify-center !font-sans font-bold mx-16">
-              {technology[currentIndex].title}
-            </h4>
-            <button
-              onClick={nextOffering}
-              className="p-2 rounded-lg flex items-center justify-center absolute right-0"
-            >
-              <Icon icon="ooui:next-ltr" className="w-12 h-12" />
-            </button>
-          </div>
-
-          <div className="flex justify-center mb-4">
-            <motion.img
-              key={currentIndex}
-              src={technology[currentIndex].imgSrc}
-              className="w-32 h-28 object-contain"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -100, opacity: 0 }}
-              transition={{ duration: 0.5 }}
-            />
-          </div>
-          
+        <div className="lg:hidden block">
+        <div className="flex items-center justify-between mb-4 relative">
+          <button
+            onClick={prevService}
+            className="p-2 rounded-lg flex items-center justify-center absolute left-0"
+          >
+            <Icon icon="ooui:next-rtl" className="w-12 h-12" />
+          </button>
+          <h4 className="text-gray-800 text-xl flex items-center justify-center !font-sans font-bold mx-16">
+            {technology[currentIndex].title}
+          </h4>
+          <button
+            onClick={nextService}
+            className="p-2 rounded-lg flex items-center justify-center absolute right-0"
+          >
+            <Icon icon="ooui:next-ltr" className="w-12 h-12" />
+          </button>
         </div>
+
+        <div className="flex justify-center mb-4">
+          <motion.img
+            key={currentIndex}
+            src={technology[currentIndex].imgSrc}
+            className="w-32 h-28 object-contain"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -100, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          />
+        </div>
+      </div>
       </div>
     </div>
   );

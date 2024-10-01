@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import FAQs from "../components/main/FAQs";
 import Location from "../components/main/Location";
+import CompanyAbout from "../components/main/CompanyAbout";
+import Stats from "../components/main/Stats";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,8 +15,9 @@ const About = () => {
         <title>About | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
-      <div className="relative h-screen">
-        <div className="absolute inset-0 bg-black opacity-100"></div>
+      <div className="relative ">
+        <img src="/aboutbg.jpg" className="w-full h-auto" alt="Background" />
+        <div className="absolute inset-0 bg-black opacity-90"></div>
 
         <div
           className="absolute top-[30%] left-[50%] transform -translate-x-[50%] tracking-wider font-bold text-white
@@ -39,6 +42,8 @@ const About = () => {
         </div>
       </div>
 
+
+      <CompanyAbout  />
       <div className="font-sans bg-white p-4">
         <div className="md:max-w-5xl max-w-xl  mx-auto ">
           <div className="grid  md:grid-cols-2 gap-12 ">
@@ -108,6 +113,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Stats />
       <FAQs />
         <Location />
     </div>
