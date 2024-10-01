@@ -177,10 +177,11 @@ const Testimonial = () => {
                 />
               </div>
               <p className="leading-relaxed mb-6">
-                "I've worked with many marketing agencies, but this stands out
-                for its personalized approach.They took the time to understand
-                our business and created a strategy tailored specifically to our
-                needs. Overall, a great experience working with them."
+                &quot;I&apos;ve worked with many marketing agencies, but this
+                stands out for its personalized approach.They took the time to
+                understand our business and created a strategy tailored
+                specifically to our needs. Overall, a great experience working
+                with them.&quot;
               </p>
               <div className="inline-flex items-center mb-4">
                 <img
