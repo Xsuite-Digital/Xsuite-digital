@@ -63,7 +63,7 @@ const Testimonial = () => {
               <div className="flex items-center text-sm sm:text-base">
                 <img
                   alt="testimonial"
-                  src="./public/p1.jpg"
+                  src="/p1.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">
@@ -126,7 +126,7 @@ const Testimonial = () => {
               <div className="inline-flex items-center">
                 <img
                   alt="testimonial"
-                  src="./public/p2.jpg"
+                  src="/p2.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">
@@ -187,7 +187,7 @@ const Testimonial = () => {
               <div className="inline-flex items-center mb-4">
                 <img
                   alt="testimonial"
-                  src="./public/p3.jpg"
+                  src="/p3.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">
