@@ -15,35 +15,50 @@ const About = () => {
         <title>About | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
-      <div className="relative ">
-        <img src="/aboutbg.jpg" className="w-full h-auto" alt="Background" />
-        <div className="absolute inset-0 bg-black opacity-90"></div>
-
-        <div
-          className="absolute top-[30%] left-[50%] transform -translate-x-[50%] tracking-wider font-bold text-white
-                  lg:text-4xl md:text-3xl sm:text-2xl text-xl "
-        >
-          About Us
+      <div className="bg-black text-white py-52 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="relative z-10">
+            <h1 className="text-5xl text-center font-bold">About Us</h1>
+          </div>
         </div>
-
-        <div
-          className="absolute  text-white  font-semibold z-20 text-center
-                   text-lg max-w-full hidden lg:block
-                  top-[55%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]"
-        >
-          We are a top-level digital marketing service provider specializing in
-          web development, search engine optimization, pay-per-click campaigns,
-          and social media management. Xsuite is enthusiastic about optimizing
-          your online presence with Google My Business, Google Analytics, and
-          Google Search Console. Whether you require SEO or graphic designing
-          for social media platforms, we can help you in the marketplace for
-          your business advancements. Xsuite is a trustworthy company by which
-          you can work to fulfill your digital requirements
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute right-0 top-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div className="absolute left-0 bottom-0 w-96 h-96 bg-white rounded-full translate-y-1/2 -translate-x-1/2"></div>
+        </div>
+      </div>
+      <div className="about-description h-screen w-screen bg-[#F5F4F7] py-8">
+        <div className="px-4 sm:px-8 md:px-12 py-12 font-sf-pro">
+          <h1 className="text-3xl sm:text-4xl font-semibold text-center md:text-left">
+            Digital Services of XSuite Digital
+          </h1>
+          <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
+            XSuite Digital is a multi-service marketing agency that transforms
+            your brand’s vision through creativity and innovation. We create
+            engaging marketing activities that connect with your audience and
+            drive measurable results. Our dedicated team blends creativity with
+            cutting-edge technology to design unique solutions tailored to your
+            target audience's needs. With a passion for excellence, we aim to
+            connect your brand with audiences worldwide.
+          </p>
+          <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
+            We specialize in developing and maintaining accessible and
+            user-friendly websites. Leveraging Google business tools, we enhance
+            your brand’s visibility in local searches, helping you engage
+            effectively with potential customers. Our comprehensive strategy is
+            designed to attract more visitors and enhance your online presence.
+          </p>
+          <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
+            Additionally, we assist in driving conversions by analyzing user
+            metrics, optimizing local search, and monitoring performance. From
+            web development and SEO to social media marketing and PPC campaigns,
+            we believe in the power of collaboration to fuel your growth.
+            Together, we will navigate your digital projects and achieve your
+            business objectives with originality and innovation.
+          </p>
         </div>
       </div>
 
-
-      <CompanyAbout  />
+      <CompanyAbout />
       <div className="font-sans bg-white p-4">
         <div className="md:max-w-5xl max-w-xl  mx-auto ">
           <div className="grid  md:grid-cols-2 gap-12 ">
@@ -52,16 +67,18 @@ const About = () => {
                 Elevate Your Online Presence
               </h2>
               <p className="mb-4 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                aliquam, ipsum vel iaculis bibendum, justo turpis ullamcorper
-                mauris, non aliquam nisi purus vel nisl. Integer efficitur
-                turpis in bibendum tincidunt.
+                XSuite Digital is a top-level marketing service provider,
+                specializing in web development, search engine optimization,
+                pay-per-click campaigns, and social media management. With a
+                team of enthusiastic experts, we optimize your online presence
+                with Google My Business, Google Analytics, and Google Search
+                Console.
               </p>
               <p className="text-sm text-gray-500">
-                Nulla facilisi. Vestibulum fringilla leo et purus consectetur,
-                vel tincidunt dolor rhoncus. In hac habitasse platea dictumst.
-                Fusce vel sodales elit. Suspendisse potenti. Sed eget consequat
-                nisi.
+                Whether you require SEO or graphic designing for social media
+                platforms, we can help you in the marketplace for your business
+                advancements. XSuite Digital is a trustworthy company by which
+                you can work to fulfill your digital requirements.
               </p>
               <button
                 type="button"
@@ -92,16 +109,17 @@ const About = () => {
                 Your Success, Our Commitment
               </h2>
               <p className="mb-4 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                aliquam, ipsum vel iaculis bibendum, justo turpis ullamcorper
-                mauris, non aliquam nisi purus vel nisl. Integer efficitur
-                turpis in bibendum tincidunt.
+                We will fulfill all of your marketing needs to catch your
+                audience with our creative and productive ideas. We serve our
+                customers with the best artistic designs and unique content
+                creation.
               </p>
               <p className="text-sm text-gray-500">
-                Nulla facilisi. Vestibulum fringilla leo et purus consectetur,
-                vel tincidunt dolor rhoncus. In hac habitasse platea dictumst.
-                Fusce vel sodales elit. Suspendisse potenti. Sed eget consequat
-                nisi.
+                XSuite Digital ensures that your ideas are always integrated
+                into our strategies, fostering an effective partnership. Rely on
+                XSuite Digital to be your dedicated partner in achieving
+                marketing excellence. It is the platform where your aspirations
+                align with our expertise for remarkable outcomes.
               </p>
               <button
                 type="button"
@@ -115,7 +133,7 @@ const About = () => {
       </div>
       <Stats />
       <FAQs />
-        <Location />
+      <Location />
     </div>
   );
 };

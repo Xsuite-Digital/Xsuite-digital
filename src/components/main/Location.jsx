@@ -1,68 +1,116 @@
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 const Location = () => {
+  const [formData, setFormData] = useState({
+    companyName: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add form submission logic here
+    console.log(formData);
+  };
+
   return (
-    <div className="flex items-center justify-between bg-emerald-800 text-white p-12">
-      <div className="w-1/2 pr-8">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-[#373737] text-white p-6 md:p-12">
+      <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
         <h2 className="text-sm uppercase mb-2">GET STARTED WITH US</h2>
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4">
           Start Conversation To <br />
-          <span className="text-yellow-400">Skyrocket</span> Your Business
+          <span className="text-[#ffa500]">Skyrocket</span> Your Business
         </h1>
-        <p className="text-emerald-200 mb-6">
+        <p className="text-white mb-6 text-sm md:text-base">
           Schedule a free consultation with our experts. Uncover opportunities
           and take the first step towards digital success.
         </p>
-        <div className="flex space-x-4">
-          <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-full flex items-center">
-            Let's Talk <ArrowRight className="ml-2 h-4 w-4" />
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+          <button className="border border-black bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
+            Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
           </button>
-          <button className="border border-white hover:bg-white hover:text-emerald-800 text-white px-6 py-2 rounded-full">
+          <button className="border border-white hover:bg-white hover:text-[#000] text-white px-6 py-2 rounded-full">
             Book A Demo
           </button>
         </div>
       </div>
 
-      <div className="w-1/2 bg-white rounded-lg p-6 text-black">
+      <div className="w-full md:w-1/2 bg-white rounded-lg p-6 text-black">
         <h3 className="text-xl font-semibold mb-4 text-center">
           Get A Free Consultation With <br />
           Marketing Our Expert
         </h3>
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <input
             type="text"
+            name="companyName"
             placeholder="Company name"
+            value={formData.companyName}
+            onChange={handleChange}
             className="w-full p-2 border border-gray-300 rounded"
+            required
           />
-          <div className="flex space-x-4">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <input
               type="text"
+              name="firstName"
               placeholder="First name"
-              className="w-1/2 p-2 border border-gray-300 rounded"
+              value={formData.firstName}
+              onChange={handleChange}
+              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
+              required
             />
             <input
               type="text"
+              name="lastName"
               placeholder="Last name"
-              className="w-1/2 p-2 border border-gray-300 rounded"
+              value={formData.lastName}
+              onChange={handleChange}
+              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
+              required
             />
           </div>
-          <div className="flex space-x-4">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <input
               type="email"
+              name="email"
               placeholder="E-mail"
-              className="w-1/2 p-2 border border-gray-300 rounded"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
+              required
             />
             <input
               type="tel"
+              name="phone"
               placeholder="Phone"
-              className="w-1/2 p-2 border border-gray-300 rounded"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
+              required
             />
           </div>
           <textarea
+            name="message"
             placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
             className="w-full p-2 border border-gray-300 rounded h-24"
+            required
           ></textarea>
-          <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 rounded">
+          <button
+            className="w-full bg-black hover:bg-[#373737] text-white py-2 rounded"
+            type="submit"
+          >
             Send Message
           </button>
         </form>
