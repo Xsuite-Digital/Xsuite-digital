@@ -67,7 +67,7 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="font-[sans-serif] divide-y rounded-lg max-w-7xl mx-auto px-4">
+    <div className="font-[sans-serif]  divide-y rounded-lg max-w-7xl mx-auto px-4">
       <div className="mb-8">
         <h2 className="text-2xl font-bold !font-sans flex items-center justify-center  text-gray-800">
           Frequently Asked Questions
@@ -98,7 +98,9 @@ const FAQs = () => {
               />
             )}
           </button>
-          <motion.div className={`py-4 ${openIndex === index ? "block" : "hidden"}`}>
+          <motion.div
+            className={`py-4 ${openIndex === index ? "block" : "hidden"}`}
+          >
             <p className="text-sm text-gray-800">{faq.answer}</p>
           </motion.div>
         </div>
