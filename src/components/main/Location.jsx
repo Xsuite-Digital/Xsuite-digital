@@ -11,19 +11,41 @@ const Location = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log(formData);
+    setLoading(true);
+    setError(""); // Reset error state
+
+    try {
+      // Add your form submission logic here (e.g., API call)
+      console.log(formData);
+      // If successful, reset form fields
+      setFormData({
+        companyName: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+      // You can display a success message or redirect here
+    } catch (error) {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-[#373737] text-white p-6 md:p-12">
+    <div className="w-screen flex flex-col md:flex-row items-center justify-between bg-[#373737] text-white p-6 md:p-12">
       <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
         <h2 className="text-sm uppercase mb-2">GET STARTED WITH US</h2>
         <h1 className="text-2xl md:text-4xl font-bold mb-4">
@@ -49,6 +71,7 @@ const Location = () => {
           Get A Free Consultation With <br />
           Marketing Our Expert
         </h3>
+        {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form className="space-y-4" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -108,10 +131,13 @@ const Location = () => {
             required
           ></textarea>
           <button
-            className="w-full bg-black hover:bg-[#373737] text-white py-2 rounded"
+            className={`w-full ${
+              loading ? "bg-gray-400" : "bg-black hover:bg-[#373737]"
+            } text-white py-2 rounded`}
             type="submit"
+            disabled={loading}
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>

@@ -1,131 +1,207 @@
-import { useState } from "react";
-import { Icon } from "@iconify/react/dist/iconify.js";
-import { motion, AnimatePresence } from "framer-motion";
-
-const testimonials = [
- 
-  {
-    imageSrc: "/p1.jpg",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil distinctio, unde perferendis pariatur quasi consequatur?",
-    name: "Simon Konecki",
-    position: "Founder of Labar",
-    rating: 3,
-  },
-  {
-    imageSrc: "/p2.jpg",
-    quote: "Veniam proident aute magna anim excepteur et ex consectetur velit ullamco veniam minim aute sit. Elit occaecat officia et laboris Lorem minim. Officia do aliqua adipisicing ullamco in.",
-    name: "Simon Konecki",
-    position: "Founder of Labar",
-    rating: 3,
-  },
-  {
-    imageSrc: "p3.jpg",
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus iure error hic ea eius expedita praesentium nisi nam tempore debitis quo, molestiae repudiandae ex. Quod.",
-    name: "Simon Konecki",
-    position: "Founder of Labar",
-    rating: 3,
-  },
-];
+// import { Link } from 'react-router-dom'
 
 const Testimonial = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
   return (
-    <div className="max-w-4xl mx-auto p-6 font-[sans-serif]">
-      <div className="mb-12">
-        <h2 className="text-gray-800 font-sans flex items-center justify-center text-3xl font-bold">
-          What our happy clients say
-        </h2>
-      </div>
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <h1 className=" flex justify-center font-bold tracking-wider text-lg lg:text-3xl mb-4 text-black">
+          What client says?
+        </h1>
+        <div className="flex mt-6 justify-center">
+          <div className="w-16 h-1 rounded-full bg-black2 inline-flex" />
+        </div>
+        <div className="flex flex-wrap -m-4  rounded-md  mb-5">
+          {/* review */}
+          <div className="w-[350px] h-[27rem] p-4 mx-auto shadow-md rounded-xl relative group hover:scale-105 duration-300">
+            <div className="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                className="block w-5 h-5 text--black2 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z" />
+              </svg>
+              {/* rating */}
+              <div className="rating mb-4">
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                  defaultChecked
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+              </div>
 
-      <div className="relative">
-        <AnimatePresence mode="wait">
-          {/* Only the current testimonial is visible */}
-          <motion.div
-            key={currentIndex}
-            className="min-w-full flex flex-col items-center"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
-          >
-            <motion.img
-              src={testimonials[currentIndex].imageSrc}
-              className="w-[280px] rounded-lg shadow-[-20px_20px_0px_rgba(23,219,220,1)] mb-4"
-              alt={`Testimonial from ${testimonials[currentIndex].name}`}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            />
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Icon
-                icon="ci:double-quotes-l"
-                className="text-[#17dbdc] h-10 w-10 mb-2"
-              />
-            </motion.div>
-            <motion.p
-              className="text-gray-800 text-lg leading-relaxed text-center"
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            >
-              {testimonials[currentIndex].quote}
-            </motion.p>
-            <motion.p
-              className="text-gray-500 mt-2"
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            >
-              {testimonials[currentIndex].name}
-            </motion.p>
-            <motion.p
-              className="text-gray-500"
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            >
-              {testimonials[currentIndex].position}
-            </motion.p>
-          </motion.div>
-        </AnimatePresence>
+              <p className="leading-relaxed mb-6 text-sm sm:text-base">
+                Our brand needed a fresh take on digital marketing, and this
+                agency delivered. Their creative team consistently came up with
+                unique ideas that resonated with our audience. From social media
+                campaigns to email marketing, their work has elevated our brand
+                presence.
+              </p>
 
-        {/* Navigation buttons */}
-        <div className="flex justify-evenly mt-4">
-          <div
-            onClick={prevTestimonial}
-            className="cursor-pointer rounded-full border border-black p-2"
-          >
-            <Icon icon="fluent:arrow-left-48-filled" width="21" height="21" />
+              <div className="flex items-center text-sm sm:text-base">
+                <img
+                  alt="testimonial"
+                  src="./public/p1.jpg"
+                  className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span className="flex-grow flex flex-col pl-4">
+                  <span className="title-font font-medium text-gray-900">
+                    Holden Caulfield
+                  </span>
+                  <span className="text--gray text-sm">UI DEVELOPER</span>
+                </span>
+              </div>
+            </div>
           </div>
-          <div
-            onClick={nextTestimonial}
-            className="cursor-pointer rounded-full border border-black p-2"
-          >
-            <Icon icon="fluent:arrow-right-48-filled" width="21" height="21" />
+          {/* review2 */}
+          <div className="w-[350px] h-[27rem] p-4 mx-auto shadow-md rounded-xl relative group hover:scale-105 duration-300">
+            <div className="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                className="block w-5 h-5 text--black2 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z" />
+              </svg>
+              {/* rating */}
+              <div className="rating mb-4">
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                  defaultChecked
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+              </div>
+              <p className="leading-relaxed mb-6 text-sm sm:text-base">
+                I appreciate how transparent this marketing agency has been
+                throughout our project.From day one,they provided clear
+                timelines,and kept us informed at every stage. Monthly reports
+                were detailed and easy to understandhelping us track our return
+                on investment.
+              </p>
+
+              <div className="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="./public/p2.jpg"
+                  className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span className="flex-grow flex flex-col pl-4">
+                  <span className="title-font font-medium text-gray-900">
+                    Alper Kamu
+                  </span>
+                  <span className="text--gray text-sm">DESIGNER</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          {/* review3 */}
+          <div className="w-[350px] h-[27rem] p-4 mx-auto shadow-md rounded-xl relative group hover:scale-105 duration-300">
+            <div className="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                className="block w-5 h-5 text--black2 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z" />
+              </svg>
+              {/* rating */}
+              <div className="rating mb-4">
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                  defaultChecked
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  className="mask mask-star"
+                />
+              </div>
+              <p className="leading-relaxed mb-6">
+                "I've worked with many marketing agencies, but this stands out
+                for its personalized approach.They took the time to understand
+                our business and created a strategy tailored specifically to our
+                needs. Overall, a great experience working with them."
+              </p>
+              <div className="inline-flex items-center mb-4">
+                <img
+                  alt="testimonial"
+                  src="./public/p3.jpg"
+                  className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span className="flex-grow flex flex-col pl-4">
+                  <span className="title-font font-medium text-gray-900">
+                    Alper Kamu
+                  </span>
+                  <span className="text--gray text-sm">DESIGNER</span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
