@@ -11,7 +11,7 @@ const Services = () => {
   const [showAll, setShowAll] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   const displayedServices = showAll ? servicesData : servicesData.slice(0, 3);
 
