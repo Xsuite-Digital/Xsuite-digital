@@ -46,7 +46,7 @@ const WorkProcess = () => {
     <div className="max-w-6xl  mx-auto px-4 py-16 bg-white ">
       <div className="mb-12">
         <div className="flex lg:mt-32 justify-between items-start">
-          <h1 className="text-4xl font-sans font-bold">Our Work Process</h1>
+          <h1 className="text-4xl font-sans  font-bold border-b-4 border-orange-500">Our Work Process</h1>
           <p className="text-gray-600 max-w-md text-right">
             Discover a spectrum of cutting-edge digital marketing services
             tailored to elevate your online presence, drive engagement.

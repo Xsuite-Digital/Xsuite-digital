@@ -36,7 +36,7 @@ const Services = () => {
     <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.pexels.com/photos/3194518/pexels-photo-3194518.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundAttachment: 'fixed' }}>
   
   <div className="absolute inset-0 bg-black opacity-70"></div>
-    <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-sans text-center text-white text-4xl font-bold">
+    <h1 className="absolute top-1/2 left-1/2 transform  hover:text-orange-500 duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 font-sans text-center text-white text-4xl font-bold">
     Our Services
   </h1>
 </div>

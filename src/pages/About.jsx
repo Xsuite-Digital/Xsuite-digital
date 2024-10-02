@@ -1,14 +1,15 @@
-import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import FAQs from "../components/main/FAQs";
 import Location from "../components/main/Location";
 import CompanyAbout from "../components/main/CompanyAbout";
 import Stats from "../components/main/Stats";
 import Team from "../components/main/Team";
+import { useEffect } from "react";
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(()=> {
+    window.scrollTo(0,0)
+
+  })
 
   return (
     <div>
