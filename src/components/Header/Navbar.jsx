@@ -100,14 +100,11 @@ const Navbar = () => {
           {/* Button */}
           <div className=" flex space-x-2">
             <Link
-              to="https://wa.me/923064312116"
+              to="https://wa.me/+923316361916"
               target="_blank"
-              className=" font-semibold font-sans text-white  space-x-2 tracking-widest border rounded-2xl px-3 py-2  hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out ">
-            
-              <buton>
-               Get Started -> 
-              </buton>
-
+              className=" font-semibold font-sans text-white  space-x-2 tracking-widest border rounded-2xl px-3 py-2  hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out "
+            >
+              <buton>Get Started -></buton>
             </Link>
           </div>
         </motion.div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight,  } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Location = () => {
@@ -12,14 +12,16 @@ const Location = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  
   };
 
   return (
@@ -35,12 +37,11 @@ const Location = () => {
           and take the first step towards digital success.
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <Link to='https://wa.me/03316361916' target="_blank">
-          <button className=" duration-300 ease-in-out bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
-            Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
-          </button>
+          <Link to="https://wa.me/+923316361916" target="_blank">
+            <button className=" duration-300 ease-in-out bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
+              Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
+            </button>
           </Link>
-          
         </div>
       </div>
 
@@ -49,6 +50,7 @@ const Location = () => {
           Get A Free Consultation With <br />
           Marketing Our Expert
         </h3>
+        {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form className="space-y-4" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -108,10 +110,13 @@ const Location = () => {
             required
           ></textarea>
           <button
-            className="w-full bg-black hover:bg-[#373737] text-white py-2 rounded"
+            className={`w-full ${
+              loading ? "bg-gray-400" : "bg-black hover:bg-[#373737]"
+            } text-white py-2 rounded`}
             type="submit"
+            disabled={loading}
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
