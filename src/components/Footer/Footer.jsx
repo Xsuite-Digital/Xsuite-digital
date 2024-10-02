@@ -114,11 +114,11 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/fb11.png"
-                      className="   h-8 w-6 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      src="/facebook icons (1).png"
+                      className="   h-auto w-6 rounded-full p-1 space-x-2 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
                       alt=""
                     />
-                    <span>Facebook</span>
+                    <span className=" mt-2">Facebook</span>
                   </Link>
                 </li>
                 <li className="flex items-center  justify-center space-x-3 hover:text-white">
