@@ -12,11 +12,10 @@ const WorkProcessStep = ({ icon: Icon, title, description }) => (
   </div>
 );
 
-// Define prop types for WorkProcessStep
 WorkProcessStep.propTypes = {
-  icon: PropTypes.elementType.isRequired, // Icon should be a React component
-  title: PropTypes.string.isRequired, // Title should be a string
-  description: PropTypes.string.isRequired, // Description should be a string
+  icon: PropTypes.elementType.isRequired, 
+  title: PropTypes.string.isRequired, 
+  description: PropTypes.string.isRequired, 
 };
 
 const WorkProcess = () => {
@@ -44,11 +43,10 @@ const WorkProcess = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16 bg-white shadow-md">
+    <div className="max-w-6xl  mx-auto px-4 py-16 bg-white ">
       <div className="mb-12">
-        <h2 className="text-sm uppercase text-gray-600 mb-2">OUR SERVICES</h2>
-        <div className="flex justify-between items-start">
-          <h1 className="text-4xl font-bold">Our Work Process</h1>
+        <div className="flex lg:mt-32 justify-between items-start">
+          <h1 className="text-4xl font-sans font-bold">Our Work Process</h1>
           <p className="text-gray-600 max-w-md text-right">
             Discover a spectrum of cutting-edge digital marketing services
             tailored to elevate your online presence, drive engagement.

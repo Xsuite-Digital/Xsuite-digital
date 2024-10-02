@@ -4,6 +4,7 @@ import FAQs from "../components/main/FAQs";
 import Location from "../components/main/Location";
 import CompanyAbout from "../components/main/CompanyAbout";
 import Stats from "../components/main/Stats";
+import Team from "../components/main/Team";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -113,6 +114,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Team />
       <Stats />
       <FAQs />
         <Location />

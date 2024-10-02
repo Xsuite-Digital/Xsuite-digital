@@ -79,13 +79,13 @@ const Technologies = () => {
 
         <div className="flex justify-center mb-4">
           <motion.img
-            key={currentIndex}
-            src={technology[currentIndex].imgSrc}
             className="w-32 h-28 object-contain"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100, opacity: 0 }}
             transition={{ duration: 0.5 }}
+            key={currentIndex}
+            src={technology[currentIndex].imgSrc}
           />
         </div>
       </div>

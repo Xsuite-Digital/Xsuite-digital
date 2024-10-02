@@ -110,44 +110,31 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Follow Us</h4>
               <ul className="mt-6 space-y-4 text-gray-300">
                 <li className="flex space-x-3 hover:text-white">
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    className="flex items-center space-x-3"
-                  >
-                    <Icon
+                <Link to=''>
+          <Icon
             icon="uit:facebook-f"
             className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
-          />
+            />
+            </Link>
                     <span>Facebook</span>
-                  </a>
                 </li>
                 <li className="flex space-x-3 hover:text-white">
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    className="flex items-center space-x-3"
-                  >
-                     
-          <Icon
+                <Link to='https://www.instagram.com/xsuite.digital/' target="_blank" >
+           <Icon
             icon="proicons:instagram"
             className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
-          />
+            />
+            </Link>
                     <span>Instagram</span>
-                  </a>
                 </li>
                 <li className="flex space-x-3 hover:text-white">
-                  <a
-                    href="https://www.linkedin.com/company/xsuite-digital/"
-                    target="_blank"
-                    className="flex items-center space-x-3"
-                  >
-                   <Icon
+                <Link to='https://www.linkedin.com/company/xsuite-digital/about/' target="_blank">
+          <Icon
             icon="basil:linkedin-outline"
             className="  h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white  hover:border-none duration-300 hover:bg-transparent ease-in-out  "
-          />
+            />
+            </Link>
                     <span>LinkedIn</span>
-                  </a>
                 </li>
               </ul>
             </div>
