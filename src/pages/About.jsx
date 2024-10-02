@@ -28,9 +28,9 @@ const About = () => {
           <div className="absolute left-0 bottom-0 w-96 h-96 bg-white rounded-full translate-y-1/2 -translate-x-1/2"></div>
         </div>
       </div>
-      <div className="about-description h-screen w-screen bg-[#F5F4F7] py-8">
-        <div className="px-4 sm:px-8 md:px-12 py-12 font-sf-pro">
-          <h1 className="text-3xl sm:text-4xl font-semibold text-center md:text-left">
+      <div className="about-description h-full w-screen bg-[#F5F4F7] ">
+        <div className="px-4 sm:px-8 md:px-12 py-12 flex flex-col items-center justify-center font-sf-pro">
+          <h1 className="text-3xl sm:text-4xl font-semibold font-sans text-center md:text-left">
             Digital Services of XSuite Digital
           </h1>
           <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
@@ -65,7 +65,7 @@ const About = () => {
         <div className="md:max-w-5xl max-w-xl  mx-auto ">
           <div className="grid  md:grid-cols-2 gap-12 ">
             <div className="text-left">
-              <h2 className="text-gray-800 text-2xl font-bold mb-4">
+              <h2 className="text-gray-800  text-2xl font-bold mb-4">
                 Elevate Your Online Presence
               </h2>
               <p className="mb-4 text-sm text-gray-500">
@@ -93,7 +93,7 @@ const About = () => {
               <img
                 src="/digital-marketing 2 B&W.png"
                 alt="Placeholder Image"
-                className="rounded-lg object-contain w-full h-full"
+                className=" object-contain rounded-xl w-full h-full"
               />
             </div>
           </div>
@@ -103,7 +103,7 @@ const About = () => {
               <img
                 src="/digital-marketing 3 B&W.png"
                 alt="Placeholder Image"
-                className="rounded-lg object-contain w-full h-full"
+                className="rounded-xl object-contain w-full h-full"
               />
             </div>
             <div className="text-left">
@@ -134,7 +134,7 @@ const About = () => {
         </div>
       </div>
       <Team />
-      <Stats />
+      {/* <Stats /> */}
       <FAQs />
       <Location />
     </div>

@@ -32,7 +32,6 @@ const Services = () => {
     
     <>
     <section className="  bg-white  body-font lg:mt-12">
-    <WorkProcess/>
     <div className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.pexels.com/photos/3194518/pexels-photo-3194518.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundAttachment: 'fixed' }}>
   
   <div className="absolute inset-0 bg-black opacity-70"></div>
@@ -40,6 +39,7 @@ const Services = () => {
     Our Services
   </h1>
 </div>
+    <WorkProcess/>
 
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap justify-center items-center -m-4">
@@ -57,7 +57,7 @@ const Services = () => {
                 >
                   <img
                     src={data.imgSrc}
-                    className="icon-container text-black  h-10 w-10"
+                    className="icon-container  text-black  h-10 w-10"
                   />
 
                     <p className="text-xl font-bold text-black tracking-wide">

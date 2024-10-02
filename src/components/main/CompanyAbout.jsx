@@ -13,17 +13,17 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "01. Our History",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      answer: "XSuite was founded to help businesses grow through innovative digital marketing. With expertise in SEO, PPC, and social media marketing, we've built a strong reputation for delivering results that drive online success.",
     },
     {
       question: "02. Our Mission",
       answer:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "XSuite aims to be a leader in digital marketing, empowering businesses to thrive online. Our vision is to deliver cutting-edge solutions that increase brand visibility, engagement, and long-term growth.",
     },
     {
       question: "03. Our Vision",
       answer:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "Our mission at XSuite is to provide data-driven digital marketing strategies that boost online visibility and drive conversions. We specialize in SEO, PPC, and social media to help businesses grow in the digital space.",
     },
   ];
 
@@ -100,7 +100,7 @@ const CompanyAbout = () => {
               digital demands.
             </p>
             <Link to="/About">
-              <button className="bg-blue-500 text-white px-6 py-3 rounded-full mt-4">
+              <button className="bg-black  text-white px-6 py-3 rounded-full mt-4">
                 Learn More →
               </button>
             </Link>
