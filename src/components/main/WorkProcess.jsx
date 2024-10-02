@@ -48,7 +48,7 @@ const WorkProcess = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16 bg-white ">
       <div className="mb-12">
-        <div className="flex flex-col md:flex-row justify-between mt-24 items-start">
+        <div className="flex flex-col md:flex-row justify-between mt-12 items-start">
           <h1 className="text-4xl font-bold mb-4 md:mb-0">Our Work Process</h1>
           <p className="text-gray-600 max-w-md text-right">
             Discover a spectrum of cutting-edge digital marketing services

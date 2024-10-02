@@ -29,8 +29,8 @@ const Home = () => {
       <Technologies />
       <WorkProcess />
       <Tesimonial />
-      <FAQs />
       <Location />
+      <FAQs />
     </div>
   );
 };

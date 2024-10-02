@@ -44,7 +44,7 @@ const Header = () => {
             </Link>
             <Link to='https://www.linkedin.com/company/xsuite-digital/about/' target="_blank">
             <img src="/inn.png"
-            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+            className="   h-10 w-10 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
             alt="" />
             </Link>
           <Link to='https://www.instagram.com/xsuite.digital/' target="_blank" >

@@ -96,7 +96,7 @@
               View More Services
             </button>
           </Link>
-        </div>s
+        </div>
       </div>
     );
   };
