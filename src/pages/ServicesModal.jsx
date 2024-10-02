@@ -38,9 +38,6 @@ const ServicesModal = ({ service, onClose }) => {
             <p className="text-gray-600 text-sm leading-relaxed">
               {service.description}
             </p>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              {service.description}
-            </p>
           </div>
         </div>
       </div>

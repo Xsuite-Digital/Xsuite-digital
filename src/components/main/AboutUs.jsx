@@ -9,18 +9,16 @@ const AboutUs = () => {
       <div className="px-6 py-12 font-sans">
         <div className="lg:max-w-7xl max-w-lg mx-auto px-6 py- rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="max-h-80 relative">
-  <img
-  src="/aboutus.jpg"
-  alt="Image"
-  className="rounded-md shadow-[20px_-20px_0px_rgba(0,0,0,1),-20px_20px_0px_rgba(249,115,27)] object-cover  w-full h-full"
-/>
+            <div className="max-h-80 relative">
+              <img
+                src="/aboutus.jpg"
+                alt="Image"
+                className="rounded-md shadow-[20px_-20px_0px_rgba(0,0,0,1),-20px_20px_0px_rgba(249,115,27)] object-cover  w-full h-full"
+              />
+            </div>
 
-</div>
-
-                
             <div>
-              <h1 className="font-bold tracking-widest text-xl lg:text-[27px] font-sans flex items-center  pb-4">
+              <h1 className="font-bold tracking-widest text-2xl lg:text-[27px] lg:text-xl justify-center font-sans flex items-center mb-4">
                 XSuite: The Digital Solutions Provider
               </h1>
               <p className="text-black text-md  leading-loose">

@@ -13,7 +13,8 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "01. Our History",
-      answer: "XSuite was founded to help businesses grow through innovative digital marketing. With expertise in SEO, PPC, and social media marketing, we've built a strong reputation for delivering results that drive online success.",
+      answer:
+        "XSuite was founded to help businesses grow through innovative digital marketing. With expertise in SEO, PPC, and social media marketing, we've built a strong reputation for delivering results that drive online success.",
     },
     {
       question: "02. Our Mission",

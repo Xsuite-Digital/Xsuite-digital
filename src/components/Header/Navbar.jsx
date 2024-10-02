@@ -120,7 +120,7 @@ const Navbar = () => {
 
           {/* Sidebar Toggle Button */}
           <button
-            className=" p-2 rounded-md duration-300 ease-in-out text-[#7E7E7E] hover:bg-gray-700"
+            className=" p-2 rounded-md duration-300 ease-in-out text-white hover:bg-gray-700"
             onClick={() => setSidebarOpen(!sidebarOpen)}
           >
             <Icon icon="mdi:menu" className="h-6 w-6" />

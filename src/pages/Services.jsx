@@ -55,7 +55,7 @@ const Services = () => {
                   <motion.div
                     onClick={() => openModal(data)}
                     key={index}
-                    className="  ease-in-out cursor-pointer duration-500 flex flex-col items-center justify-center space-y-2  border rounded-xl h-80"
+                    className="  ease-in-out cursor-pointer duration-500 flex flex-col items-center justify-center space-y-2  border border-orange-500 rounded-xl h-80"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}

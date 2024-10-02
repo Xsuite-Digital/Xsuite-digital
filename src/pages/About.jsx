@@ -6,10 +6,9 @@ import Stats from "../components/main/Stats";
 import Team from "../components/main/Team";
 import { useEffect } from "react";
 const About = () => {
-  useEffect(()=> {
-    window.scrollTo(0,0)
-
-  })
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div>
@@ -82,12 +81,12 @@ const About = () => {
                 advancements. XSuite Digital is a trustworthy company by which
                 you can work to fulfill your digital requirements.
               </p>
-              <button
+              {/* <button
                 type="button"
                 className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-[#7E7E7E] hover:bg-[#373737] duration-300 ease-in-out "
               >
                 Get started
-              </button>
+              </button> */}
             </div>
             <div className="max-h-72">
               <img
@@ -123,12 +122,12 @@ const About = () => {
                 marketing excellence. It is the platform where your aspirations
                 align with our expertise for remarkable outcomes.
               </p>
-              <button
+              {/* <button
                 type="button"
                 className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-[#7E7E7E] hover:bg-[#373737] duration-300 ease-in-out "
               >
                 Get started
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
