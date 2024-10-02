@@ -35,7 +35,6 @@ const Technologies = () => {
       >
         Our Expertise
       </motion.h1>
-
       <div className="max-w-5xl max-lg:max-w-xl mx-auto">
         <div className="lg:grid hidden lg:grid-cols-3 gap-8 mt-12">
           {technology.map((tech, index) => (
@@ -77,18 +76,17 @@ const Technologies = () => {
             </button>
           </div>
 
-
-        <div className="flex justify-center mb-4">
-          <motion.img
-            className="w-32 h-28 object-contain"
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            key={currentIndex}
-            src={technology[currentIndex].imgSrc}
-          />
-
+          <div className="flex justify-center mb-4">
+            <motion.img
+              className="w-32 h-28 object-contain"
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              key={currentIndex}
+              src={technology[currentIndex].imgSrc}
+            />
+          </div>
         </div>
       </div>
       <div className="flex justify-center mt-4">
@@ -98,6 +96,7 @@ const Technologies = () => {
           </button>
         </Link>
       </div>
+      s
     </div>
   );
 };
