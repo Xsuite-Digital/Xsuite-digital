@@ -39,7 +39,7 @@ const Header = () => {
           <Link to="https://www.facebook.com/profile.php?id=61566739650180">
             <img
               src="/fb11.png"
-              className="   h-6 w-6  p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+              className="   h-10 w-auto  p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
               alt=""
             />
           </Link>
