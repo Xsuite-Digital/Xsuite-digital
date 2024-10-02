@@ -37,22 +37,20 @@ const Header = () => {
 
         <div className="flex items-center space-x-2 ml-[1%]">
           <Link to=''>
-          <Icon
-            icon="uit:facebook-f"
+          
+            <img src="/fb11.png"
             className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
-            />
+            alt="" />
             </Link>
             <Link to='https://www.linkedin.com/company/xsuite-digital/about/' target="_blank">
-          <Icon
-            icon="basil:linkedin-outline"
-            className="  h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white  hover:border-none duration-300 hover:bg-transparent ease-in-out  "
-            />
+            <img src="/inn.png"
+            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+            alt="" />
             </Link>
           <Link to='https://www.instagram.com/xsuite.digital/' target="_blank" >
-           <Icon
-            icon="proicons:instagram"
-            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
-            />
+          <img src="/instagramm.png"
+            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+            alt="" />
             </Link>
         </div>
 
