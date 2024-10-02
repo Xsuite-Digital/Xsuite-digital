@@ -108,40 +108,46 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Follow Us</h4>
               <ul className="mt-6 space-y-4 text-gray-300">
                 <li className="flex space-x-3 hover:text-white">
-                  <Link to="">
+                  <Link
+                    to="https://www.facebook.com/profile.php?id=61566739650180"
+                    target="_blank"
+                    className="flex"
+                  >
                     <img
                       src="/fb11.png"
-                      className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      className="   h-8 w-6 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
                       alt=""
                     />
+                    <span>Facebook</span>
                   </Link>
-                  <span>Facebook</span>
                 </li>
-                <li className="flex space-x-3 hover:text-white">
+                <li className="flex items-center  justify-center space-x-3 hover:text-white">
                   <Link
                     to="https://www.instagram.com/xsuite.digital/"
                     target="_blank"
+                    className="flex"
                   >
                     <img
-                      src="/instagramm.png"
-                      className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      src="/instaram-icon.png"
+                      className="   h-8 w-8 p-1   hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
                       alt=""
                     />{" "}
+                    <span className="mx-1">Instagram</span>
                   </Link>
-                  <span>Instagram</span>
                 </li>
                 <li className="flex space-x-3 hover:text-white">
                   <Link
                     to="https://www.linkedin.com/company/xsuite-digital/about/"
                     target="_blank"
+                    className="flex"
                   >
                     <img
                       src="/inn.png"
-                      className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      className="   h-10 w-10   p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
                       alt=""
                     />
+                    <span className="mt-2">LinkedIn</span>
                   </Link>
-                  <span>LinkedIn</span>
                 </li>
               </ul>
             </div>
