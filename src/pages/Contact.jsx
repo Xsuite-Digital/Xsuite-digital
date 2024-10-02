@@ -14,7 +14,7 @@ const Contact = () => {
         <title>Contact | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
-      <div className="grid lg:grid-cols-2 grid-cols-1 lg:relative items-center  sm:p-8   font-[sans-serif]">
+      {/* <div className="grid lg:grid-cols-2 grid-cols-1 lg:relative items-center  sm:p-8   font-[sans-serif]">
         <div className="bg-black p-8  w-96 h-[70vh]  rounded-l-xl ">
           <h1 className="text-4xl font-bold text-white">Get in Touch</h1>
           <p className="text-sm text-gray-300 mt-4 leading-relaxed">
@@ -174,9 +174,9 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>
-      <FAQs />
+      </div> */}
         <Location />
+      <FAQs />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Location = () => {
   const [formData, setFormData] = useState({
@@ -21,32 +22,11 @@ const Location = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError(""); // Reset error state
-
-    try {
-      // Add your form submission logic here (e.g., API call)
-      console.log(formData);
-      // If successful, reset form fields
-      setFormData({
-        companyName: "",
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-      // You can display a success message or redirect here
-    } catch (error) {
-      setError("Something went wrong. Please try again.");
-    } finally {
-      setLoading(false);
-    }
   };
 
   return (
-    <div className="w-screen flex flex-col md:flex-row items-center justify-between bg-[#373737] text-white p-6 md:p-12">
-      <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
+    <div className="flex flex-col  md:flex-row items-center justify-between  bg-[#373737] text-white p-6 md:p-12">
+      <div className="w-screen md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 w">
         <h2 className="text-sm uppercase mb-2">GET STARTED WITH US</h2>
         <h1 className="text-2xl md:text-4xl font-bold mb-4">
           Start Conversation To <br />
@@ -57,12 +37,11 @@ const Location = () => {
           and take the first step towards digital success.
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <button className="border border-black bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
-            Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
-          </button>
-          <button className="border border-white hover:bg-white hover:text-[#000] text-white px-6 py-2 rounded-full">
-            Book A Demo
-          </button>
+          <Link to="https://wa.me/03316361916" target="_blank">
+            <button className=" duration-300 ease-in-out bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
+              Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
+            </button>
+          </Link>
         </div>
       </div>
 

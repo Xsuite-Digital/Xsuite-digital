@@ -50,7 +50,7 @@ const Hero = () => {
           <motion.h1 className="font-bold text-xl lg:text-4xl  text-white  ">
             We are
           </motion.h1>
-          <p className=" font-bold text-xl lg:text-4xl text-[rgba(255,165,0,1)]">
+          <p className=" font-bold text-xl lg:text-4xl z-20 text-orange-500">
             {typeEffect}
           </p>
         </motion.div>

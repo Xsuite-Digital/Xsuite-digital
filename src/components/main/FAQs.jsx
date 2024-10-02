@@ -47,23 +47,23 @@ const FAQs = () => {
       answer:
         "Your feedback is essential to us! We prioritize open communication and are ready to adjust the campaign promptly to align with your vision and expectations.",
     },
-    {
-      question: "How do you stay updated with the latest marketing trends?",
-      answer:
-        "We are deeply passionate about marketing trends. Our team invests time in research and participates in industry trends to stay updated about the latest advancements",
-    },
-    {
-      question:
-        "What should I expect in the first few months of collaborating with you?",
-      answer:
-        "We will focus on establishing strategies, launching initial campaigns and monitoring performance to adjust in the first few months, as needed for optimal results.",
-    },
-    {
-      question:
-        "How do you make sure my brand stands out in the competitive market?",
-      answer:
-        "We explore your brand’s identity and values in depth, creating campaigns that highlight your uniqueness and engage your target audience.",
-    },
+    // {
+    //   question: "How do you stay updated with the latest marketing trends?",
+    //   answer:
+    //     "We are deeply passionate about marketing trends. Our team invests time in research and participates in industry trends to stay updated about the latest advancements",
+    // },
+    // {
+    //   question:
+    //     "What should I expect in the first few months of collaborating with you?",
+    //   answer:
+    //     "We will focus on establishing strategies, launching initial campaigns and monitoring performance to adjust in the first few months, as needed for optimal results.",
+    // },
+    // {
+    //   question:
+    //     "How do you make sure my brand stands out in the competitive market?",
+    //   answer:
+    //     "We explore your brand’s identity and values in depth, creating campaigns that highlight your uniqueness and engage your target audience.",
+    // },
   ];
 
   return (
