@@ -111,28 +111,24 @@ function Footer() {
               <ul className="mt-6 space-y-4 text-gray-300">
                 <li className="flex space-x-3 hover:text-white">
                 <Link to=''>
-          <Icon
-            icon="uit:facebook-f"
+                <img src="/fb11.png"
             className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
-            />
+            alt="" />
             </Link>
                     <span>Facebook</span>
                 </li>
                 <li className="flex space-x-3 hover:text-white">
                 <Link to='https://www.instagram.com/xsuite.digital/' target="_blank" >
-           <Icon
-            icon="proicons:instagram"
-            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white hover:bg-transparent duration-300 ease-in-out   "
-            />
-            </Link>
+                <img src="/instagramm.png"
+            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+            alt="" />            </Link>
                     <span>Instagram</span>
                 </li>
                 <li className="flex space-x-3 hover:text-white">
                 <Link to='https://www.linkedin.com/company/xsuite-digital/about/' target="_blank">
-          <Icon
-            icon="basil:linkedin-outline"
-            className="  h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white  hover:border-none duration-300 hover:bg-transparent ease-in-out  "
-            />
+                <img src="/inn.png"
+            className="   h-8 w-8 rounded-full p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+            alt="" />
             </Link>
                     <span>LinkedIn</span>
                 </li>
