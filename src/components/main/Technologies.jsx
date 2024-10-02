@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Icon } from '@iconify/react/dist/iconify.js';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { Link } from "react-router-dom";
 
 const Technologies = () => {
   const technology = [
@@ -26,30 +26,30 @@ const Technologies = () => {
   };
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className="flex flex-col items-center">
       <motion.h1
         initial={{ opacity: 0, y: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className='font-bold lg:text-2xl text-2xl font-sans text-center mb-4'
+        className="font-bold lg:text-2xl text-2xl font-sans text-center mb-4"
       >
         Our Expertise
       </motion.h1>
 
-      <div className='max-w-5xl max-lg:max-w-xl mx-auto'>
-        <div className='lg:grid hidden lg:grid-cols-3 gap-8 mt-12'>
+      <div className="max-w-5xl max-lg:max-w-xl mx-auto">
+        <div className="lg:grid hidden lg:grid-cols-3 gap-8 mt-12">
           {technology.map((tech, index) => (
             <div
               key={index}
-              className=' flex space-y-4 p-4 flex-col items-center justify-center rounded-md overflow-hidden'
+              className=" flex space-y-4 p-4 flex-col items-center justify-center rounded-md overflow-hidden"
             >
               <img
                 src={tech.imgSrc}
-                className='w-32 h-28 text-orange-500 object-contain'
+                className="w-32 h-28 text-orange-500 object-contain"
                 alt={tech.title}
               />
-              <div className='p-4'>
-                <h4 className='text-gray-800 text-lg flex items-center justify-center !font-sans font-bold'>
+              <div className="p-4">
+                <h4 className="text-gray-800 text-lg flex items-center justify-center !font-sans font-bold">
                   {tech.title}
                 </h4>
               </div>
@@ -59,23 +59,24 @@ const Technologies = () => {
 
         {/* Mobile View */}
         <div className="lg:hidden block">
-        <div className="flex items-center justify-between mb-4 relative">
-          <button
-            onClick={prevService}
-            className="p-2 rounded-lg flex items-center justify-center absolute left-0"
-          >
-            <Icon icon="ooui:next-rtl" className="w-12 h-12" />
-          </button>
-          <h4 className="text-gray-800 text-xl flex items-center justify-center !font-sans font-bold mx-16">
-            {technology[currentIndex].title}
-          </h4>
-          <button
-            onClick={nextService}
-            className="p-2 rounded-lg flex items-center justify-center absolute right-0"
-          >
-            <Icon icon="ooui:next-ltr" className="w-12 h-12" />
-          </button>
-        </div>
+          <div className="flex items-center justify-between mb-4 relative">
+            <button
+              onClick={prevService}
+              className="p-2 rounded-lg flex items-center justify-center absolute left-0"
+            >
+              <Icon icon="ooui:next-rtl" className="w-12 h-12" />
+            </button>
+            <h4 className="text-gray-800 text-xl flex items-center justify-center !font-sans font-bold mx-16">
+              {technology[currentIndex].title}
+            </h4>
+            <button
+              onClick={nextService}
+              className="p-2 rounded-lg flex items-center justify-center absolute right-0"
+            >
+              <Icon icon="ooui:next-ltr" className="w-12 h-12" />
+            </button>
+          </div>
+
 
         <div className="flex justify-center mb-4">
           <motion.img
@@ -87,8 +88,8 @@ const Technologies = () => {
             key={currentIndex}
             src={technology[currentIndex].imgSrc}
           />
+
         </div>
-      </div>
       </div>
       <div className="flex justify-center mt-4">
         <Link to="/Services">
@@ -96,7 +97,7 @@ const Technologies = () => {
             View More Services
           </button>
         </Link>
-      </div>s
+      </div>
     </div>
   );
 };
