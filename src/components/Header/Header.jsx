@@ -64,7 +64,7 @@ const Header = () => {
       </div>
 
       <div className=" ">
-        {/* Navbar content */}
+        
         <Navbar />
       </div>
     </div>
