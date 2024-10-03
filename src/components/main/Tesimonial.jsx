@@ -124,7 +124,7 @@ const Testimonial = () => {
               <div className="inline-flex items-center">
                 <img
                   alt="testimonial"
-                  src="/p2.jpg"
+                  src="/p2-min.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">
@@ -186,7 +186,7 @@ const Testimonial = () => {
               <div className="inline-flex items-center mb-4">
                 <img
                   alt="testimonial"
-                  src="/p3.jpg"
+                  src="/p3-min.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">

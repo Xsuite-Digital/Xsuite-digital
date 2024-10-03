@@ -11,7 +11,7 @@ function Footer() {
             {/* Company Logo and Newsletter Subscription */}
             <div className="col-span-1 md:col-span-4 flex flex-col w-full">
               <Link to="/" className="inline-block">
-                <img src="/logo.png" alt="logo" className="w-48" />
+                <img src="/logo-min.png" alt="logo" className="w-48" />
               </Link>
               <p className="text-gray-300 text-sm mt-4">
                 Discover XSuite, a global marketing agency that transforms your
@@ -113,8 +113,8 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/facebook icons (1).png"
-                      className="   h-auto w-4 rounded-full p-1 space-x-2 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      src="/facebook icons-min.png"
+                      className="   h-auto w-4 rounded-full p-1 space-x-2 hover"
                       alt=""
                     />
                     <span className=" mt-1">Facebook</span>
@@ -128,21 +128,21 @@ function Footer() {
                   >
                     <img
                       src="/instaram-icon.png"
-                      className="   h-6 w-6 p-1   hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      className="   h-6 w-6 p-1   "
                       alt=""
                     />{" "}
                     <span className="mx-1">Instagram</span>
                   </Link>
                 </li>
-                <li className="flex space-x-3 hover:text-white">
+                <li className="flex space-x-3 ">
                   <Link
                     to="https://www.linkedin.com/company/xsuite-digital/about/"
                     target="_blank"
                     className="flex"
                   >
                     <img
-                      src="/inn.png"
-                      className="   h-8 w-7   p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      src="/inn-min.png"
+                      className="   h-8 w-7   p-1 "
                       alt=""
                     />
                     <span className="mt-1">LinkedIn</span>

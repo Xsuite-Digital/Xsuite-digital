@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div className="relative w-full lg:h-full h-3/4 ">
       <video
-        src="blackvideoo.mp4"
+        src="video-min.mp4"
         className="absolute inset-0 w-full h-full object-cover"
         loop
         autoPlay
@@ -36,10 +36,13 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="flex absolute  lg:top-56 top-32 text-[#7E7E7E]"
         >
-          <img
-            src="/Xsuite-Final.png"
-            className="h-16 w-72 lg:w-full lg:h-36 "
-          />
+           <img 
+        src="/Xsuite-Final.png" 
+        className="h-16 w-72 lg:w-full lg:h-36" 
+        alt="XSuite Final Logo" 
+        width="288" 
+        height="144"
+      />
         </motion.div>
 
         <motion.div
