@@ -5,9 +5,11 @@ const Hero = () => {
   const [typeEffect] = useTypewriter({
     words: [
       " Digital Marketig",
-      "Web Development",
       "Google Ads",
       "PPC Campaigns",
+      "Social Media Marketing",
+      "Web Development",
+      "Google My Business Optimization",
     ],
     loop: {},
     typeSpeed: 100,
@@ -32,7 +34,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -40 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="flex absolute  lg:top-36 top-32 text-[#7E7E7E]"
+          className="flex absolute  lg:top-56 top-32 text-[#7E7E7E]"
         >
           <img
             src="/Xsuite-Final.png"
@@ -44,7 +46,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -40 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className=" flex items-center absolute lg:top-72 top-52  justify-center mt-4 space-x-4"
+          className=" flex items-center absolute lg:top-[60%] top-52  justify-center mt-4 space-x-4"
         >
           <motion.h1 className="font-bold text-xl lg:text-4xl  text-white  ">
             We offer

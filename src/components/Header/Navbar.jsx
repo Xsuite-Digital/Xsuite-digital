@@ -10,13 +10,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const handleScroll = () => {
-    const pagePath = window.location.pathname;
-    if (pagePath === "/Contact" || pagePath === "/Services") {
-      setBgColor("bg-black");
-    } else if (window.scrollY > 50) {
-      setBgColor("bg-black");
+    if (window.scrollY > 50) {
+      setBgColor("bg-black"); // Set background to black after scrolling
     } else {
-      setBgColor("bg-transparent");
+      setBgColor("bg-transparent"); // Keep background transparent when scroll is less than 50px
     }
   };
 

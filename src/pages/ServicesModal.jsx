@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const ServicesModal = ({ service, onClose }) => {
   return (
@@ -43,6 +44,14 @@ const ServicesModal = ({ service, onClose }) => {
       </div>
     </motion.div>
   );
+};
+ServicesModal.propTypes = {
+  service: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default ServicesModal;

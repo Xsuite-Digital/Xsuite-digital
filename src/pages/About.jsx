@@ -38,8 +38,8 @@ const About = () => {
             engaging marketing activities that connect with your audience and
             drive measurable results. Our dedicated team blends creativity with
             cutting-edge technology to design unique solutions tailored to your
-            target audience's needs. With a passion for excellence, we aim to
-            connect your brand with audiences worldwide.
+            target audience&apos;s needs. With a passion for excellence, we aim
+            to connect your brand with audiences worldwide.
           </p>
           <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
             We specialize in developing and maintaining accessible and
@@ -81,12 +81,6 @@ const About = () => {
                 advancements. XSuite Digital is a trustworthy company by which
                 you can work to fulfill your digital requirements.
               </p>
-              {/* <button
-                type="button"
-                className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-[#7E7E7E] hover:bg-[#373737] duration-300 ease-in-out "
-              >
-                Get started
-              </button> */}
             </div>
             <div className="max-h-72">
               <img
@@ -122,18 +116,12 @@ const About = () => {
                 marketing excellence. It is the platform where your aspirations
                 align with our expertise for remarkable outcomes.
               </p>
-              {/* <button
-                type="button"
-                className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-[#7E7E7E] hover:bg-[#373737] duration-300 ease-in-out "
-              >
-                Get started
-              </button> */}
             </div>
           </div>
         </div>
       </div>
       <Team />
-      {/* <Stats /> */}
+      <Stats />
       <FAQs />
       <Location />
     </div>

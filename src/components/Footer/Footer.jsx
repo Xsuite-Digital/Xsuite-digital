@@ -76,16 +76,7 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Services</h4>
               <ul className="space-y-4 mt-6 text-gray-300">
                 <Link to="/Services" className="hover:text-white">
-                  <li>Website Development</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Digital Marketing</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
                   <li>SEO</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Social Media Marketing</li>
                 </Link>
                 <Link to="/Services" className="hover:text-white">
                   <li>PPC Campaigns</li>
@@ -94,10 +85,19 @@ function Footer() {
                   <li>Google Analytics</li>
                 </Link>
                 <Link to="/Services" className="hover:text-white">
-                  <li>Google My Business Optimization</li>
+                  <li>Digital Marketing</li>
+                </Link>
+                <Link to="/Services" className="hover:text-white">
+                  <li>Website Development</li>
                 </Link>
                 <Link to="/Services" className="hover:text-white">
                   <li>Google Search Console</li>
+                </Link>
+                <Link to="/Services" className="hover:text-white">
+                  <li>Social Media Marketing</li>
+                </Link>
+                <Link to="/Services" className="hover:text-white">
+                  <li>Google My Business Optimization</li>
                 </Link>
               </ul>
             </div>
