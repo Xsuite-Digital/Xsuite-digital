@@ -1,7 +1,7 @@
 const HireUs = () => {
   return (
     <div className="hidden lg:block">
-      <h1 className=" text-black p-4 tracking-wider !font-sans font-semibold flex items-center justify-center text-3xl lg:text-3xl  ">
+      <h1 className=" text-black p-4 tracking-wider !font-sans font-bold flex items-center justify-center text-3xl lg:text-3xl  ">
         Why Hire Us
       </h1>
 
@@ -68,8 +68,9 @@ const HireUs = () => {
               Security
             </h3>
             <p className="text-gray-600  leading-6 text-base">
-              We prioritize your safety by using top-notch tools and methods
-              throughout our projects.
+              XSuite Digital prioritizes your safety by using top-notch tools
+              and methods throughout our projects. We proactively defend against
+              potential threats and safeguards your interest.
             </p>
           </div>
 
@@ -90,7 +91,8 @@ const HireUs = () => {
             </h3>
             <p className="text-gray-600  leading-6 text-base">
               Our friendly team is always available to help you by providing
-              guidance and answers to your queries.
+              guidance and answers to your queries. Your success is our utmost
+              priority and we are here to help you achieve it.
             </p>
           </div>
           <div className="text-start px-8 py-4 lg:px-12 lg:py-6">
@@ -120,7 +122,8 @@ const HireUs = () => {
             </h3>
             <p className="text-gray-600  leading-6 text-base">
               We focus on utilizing advanced analytics to optimize projects in
-              real time
+              real time, ensuring data-driven decisions that enhance efficiency
+              and produce tangible results.
             </p>
           </div>
           <div className="text-start  px-8 py-4 lg:px-12 lg:py-6">
@@ -163,8 +166,9 @@ const HireUs = () => {
               Global Reach
             </h3>
             <p className="text-gray-600 leading-6 text-base">
-              XSuite helps your brand’s connectivity all over the world,
-              allowing your brand to thrive on a global scale.
+              XSuite Digital helps your brand’s connectivity across the globe.
+              Our strategic approach ensures your message resonates with diverse
+              audiences, unlocking new growth opportunities.
             </p>
           </div>
           <div className="text-start px-8 py-4 lg:px-12 lg:py-6">

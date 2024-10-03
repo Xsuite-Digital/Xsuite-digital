@@ -4,7 +4,7 @@ import { useTypewriter } from "react-simple-typewriter";
 const Hero = () => {
   const [typeEffect] = useTypewriter({
     words: [
-      " Digital Marketig",
+      " Digital Marketing",
       "Google Ads",
       "PPC Campaigns",
       "Social Media Marketing",
@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div className="relative w-full lg:h-full h-3/4 ">
       <video
-        src="/blackvideoo.mp4"
+        src="blackvideoo.mp4"
         className="absolute inset-0 w-full h-full object-cover"
         loop
         autoPlay

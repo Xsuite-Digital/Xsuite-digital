@@ -29,11 +29,11 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full md:w-1/2 p-4 space-y-4">
+    <div className="flex flex-col w-full md:w-1/2 p-4 space-y-4 mt-24">
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="bg-black text-white p-4 rounded-lg cursor-pointer"
+          className="bg-black text-white p-4 rounded-lg cursor-pointer "
           onClick={() => toggleFAQ(index)}
         >
           <div className="flex justify-between items-center">
@@ -88,23 +88,25 @@ const CompanyAbout = () => {
             <button className="bg-gray-200 text-black px-4 py-2 rounded-full w-max">
               Who We Are
             </button>
-            <h1 className="text-4xl font-sans font-bold">About Our Company</h1>
-            <p className="leading-relaxed">
-              Raise your digital impact to new heights with our partnership,
-              where imaginations meet with expertise. From optimizing websites
-              for search engines to creating engaging content and managing your
-              social media platforms, we provide effective solutions to make
-              your brand shine brighter in the competitive market. At XSuite
-              Digital, we aim to set unique standards for outstanding work and
-              recognition and drive sustainable growth for your brand. Our
-              experts have the ability and the authentic tools to manage your
-              digital demands.
+            <h1 className="text-2xl font-bold font-sans text-gray-800">
+              Your Partner in Digital Excellence
+            </h1>
+            <p className="leading-relaxed text-lg text-gray-500">
+              At XSuite Digital, we believe that creativity and technology go
+              hand in hand. Our passionate team of marketing professionals
+              combines imaginative thinking with the latest progressive
+              enhancements to develop targeted solutions to satisfy your digital
+              essentials. We strive to connect your brands with audiences around
+              the globe, enhancing your visibility and engagement. Whether you
+              are looking to boost your online presence, drive conversions or
+              build brand loyalty, our marketing firm is here to support you in
+              achieving lasting success
             </p>
-            <Link to="/About">
+            {/* <Link to="/About">
               <button className="bg-black  text-white px-6 py-3 rounded-full mt-4">
                 Learn More →
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

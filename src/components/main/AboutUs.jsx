@@ -6,7 +6,7 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div className="px-6 py-12 font-sans">
+      <div className="px-6 py-6 font-sans">
         <div className="lg:max-w-7xl max-w-lg mx-auto px-6 py- rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="max-h-80 relative">
@@ -18,19 +18,19 @@ const AboutUs = () => {
             </div>
 
             <div>
-              <h1 className="font-bold tracking-widest text-2xl lg:text-[27px] lg:text-xl justify-center font-sans flex items-center mb-4">
-                XSuite: The Digital Solutions Provider
+              <h1 className="font-bold tracking-widest text-3xl lg:text-[28px] lg:text-xl justify-center font-sans flex items-center mb-4">
+                XSuite Digital: Solutions Provider
               </h1>
-              <p className="text-black text-md  leading-loose">
-                We are a top-level digital marketing service provider
+              <p className="text-black text-md pl-10  leading-loose">
+                XSuite Digital is a top-level marketing service provider,
                 specializing in web development, search engine optimization,
-                pay-per-click campaigns, and social media management. Xsuite is
-                enthusiastic about optimizing your online presence with Google
-                My Business, Google Analytics, and Google Search Console.
-                Whether you require SEO or graphic designing for social media
-                platforms, we are available to help you in the marketplace for
-                your business advancements. Xsuite is a trustworthy company by
-                which you can work to fulfill your digital requirements.
+                pay-per-click campaigns, and social media management. With a
+                team of enthusiastic experts, we optimize your online presence
+                with Google My Business, Google Analytics, and Google Search
+                Console. Whether you require SEO or graphic designing for social
+                media platforms, we can help you in the marketplace for your
+                business advancements. XSuite Digital is a trustworthy company
+                by which you can work to fulfill your digital requirements.
               </p>
             </div>
           </div>

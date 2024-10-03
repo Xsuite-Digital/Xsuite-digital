@@ -28,9 +28,9 @@ const About = () => {
         </div>
       </div>
       <div className="about-description h-full w-screen bg-[#F5F4F7] ">
-        <div className="px-4 sm:px-8 md:px-12 py-12 flex flex-col items-center justify-center font-sf-pro">
-          <h1 className="text-3xl sm:text-4xl font-semibold font-sans text-center md:text-left">
-            Digital Services of XSuite Digital
+        <div className="px-4 sm:px-8 md:px-12 text-center py-12 flex flex-col items-center justify-center font-sf-pro">
+          <h1 className="text-2xl font-bold text-center  sm:text-3xl font-sans  md:text-left">
+            Connecting Ideas to Solutions: Explore Our Digital Services
           </h1>
           <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
             XSuite Digital is a multi-service marketing agency that transforms
@@ -65,21 +65,18 @@ const About = () => {
           <div className="grid  md:grid-cols-2 gap-12 ">
             <div className="text-left">
               <h2 className="text-gray-800  text-2xl font-bold mb-4">
-                Elevate Your Online Presence
+                Elevate Your Brand's Online Presence
               </h2>
-              <p className="mb-4 text-sm text-gray-500">
-                XSuite Digital is a top-level marketing service provider,
-                specializing in web development, search engine optimization,
-                pay-per-click campaigns, and social media management. With a
-                team of enthusiastic experts, we optimize your online presence
-                with Google My Business, Google Analytics, and Google Search
-                Console.
-              </p>
-              <p className="text-sm text-gray-500">
-                Whether you require SEO or graphic designing for social media
-                platforms, we can help you in the marketplace for your business
-                advancements. XSuite Digital is a trustworthy company by which
-                you can work to fulfill your digital requirements.
+              <p className="mb-4 text-lg text-gray-500">
+                Raise your digital impact to new heights with our partnership,
+                where imaginations meet with expertise. From optimizing websites
+                for search engines to creating engaging content and managing
+                your social media platforms, we provide effective solutions to
+                make your brand shine brighter in the competitive market. At
+                XSuite Digital, we aim to set unique standards for outstanding
+                work and recognition and drive sustainable growth for your
+                brand. Our experts have the ability and the authentic tools to
+                manage your digital demands.
               </p>
             </div>
             <div className="max-h-72">
@@ -103,18 +100,15 @@ const About = () => {
               <h2 className="text-gray-800 text-2xl font-bold mb-4">
                 Your Success, Our Commitment
               </h2>
-              <p className="mb-4 text-sm text-gray-500">
+              <p className="mb-4 text-lg text-gray-500">
                 We will fulfill all of your marketing needs to catch your
                 audience with our creative and productive ideas. We serve our
                 customers with the best artistic designs and unique content
-                creation.
-              </p>
-              <p className="text-sm text-gray-500">
-                XSuite Digital ensures that your ideas are always integrated
-                into our strategies, fostering an effective partnership. Rely on
-                XSuite Digital to be your dedicated partner in achieving
-                marketing excellence. It is the platform where your aspirations
-                align with our expertise for remarkable outcomes.
+                creation. XSuite Digital ensures that your ideas are always
+                integrated into our strategies, fostering an effective
+                partnership. Rely on XSuite Digital to be your dedicated partner
+                in achieving marketing excellence. It is the platform where your
+                aspirations align with our expertise for remarkable outcomes.
               </p>
             </div>
           </div>

@@ -49,7 +49,7 @@ const Technologies = () => {
                 alt={tech.title}
               />
               <div className="p-4">
-                <h4 className="text-gray-800 text-lg flex items-center justify-center !font-sans font-bold">
+                <h4 className="text-gray-800 text-lg flex items-center text-center justify-center font-sans font-bold">
                   {tech.title}
                 </h4>
               </div>
