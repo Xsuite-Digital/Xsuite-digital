@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -77,16 +76,7 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Services</h4>
               <ul className="space-y-4 mt-6 text-gray-300">
                 <Link to="/Services" className="hover:text-white">
-                  <li>Website Development</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Digital Marketing</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
                   <li>SEO</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Social Media Marketing</li>
                 </Link>
                 <Link to="/Services" className="hover:text-white">
                   <li>PPC Campaigns</li>
@@ -95,10 +85,19 @@ function Footer() {
                   <li>Google Analytics</li>
                 </Link>
                 <Link to="/Services" className="hover:text-white">
-                  <li>Google My Business Optimization</li>
+                  <li>Digital Marketing</li>
+                </Link>
+                <Link to="/Services" className="hover:text-white">
+                  <li>Website Development</li>
                 </Link>
                 <Link to="/Services" className="hover:text-white">
                   <li>Google Search Console</li>
+                </Link>
+                <Link to="/Services" className="hover:text-white">
+                  <li>Social Media Marketing</li>
+                </Link>
+                <Link to="/Services" className="hover:text-white">
+                  <li>Google My Business Optimization</li>
                 </Link>
               </ul>
             </div>
@@ -115,10 +114,10 @@ function Footer() {
                   >
                     <img
                       src="/facebook icons (1).png"
-                      className="   h-auto w-6 rounded-full p-1 space-x-2 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      className="   h-auto w-4 rounded-full p-1 space-x-2 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
                       alt=""
                     />
-                    <span className=" mt-2">Facebook</span>
+                    <span className=" mt-1">Facebook</span>
                   </Link>
                 </li>
                 <li className="flex items-center  justify-center space-x-3 hover:text-white">
@@ -129,7 +128,7 @@ function Footer() {
                   >
                     <img
                       src="/instaram-icon.png"
-                      className="   h-8 w-8 p-1   hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      className="   h-6 w-6 p-1   hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
                       alt=""
                     />{" "}
                     <span className="mx-1">Instagram</span>
@@ -143,10 +142,10 @@ function Footer() {
                   >
                     <img
                       src="/inn.png"
-                      className="   h-10 w-10   p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
+                      className="   h-8 w-7   p-1 hover:text-orange-500  text-white bg-transparent duration-300 ease-in-out hover:bg-transparent  "
                       alt=""
                     />
-                    <span className="mt-2">LinkedIn</span>
+                    <span className="mt-1">LinkedIn</span>
                   </Link>
                 </li>
               </ul>

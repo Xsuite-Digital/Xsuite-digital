@@ -26,17 +26,18 @@ const Location = () => {
 
   return (
     <div className="flex flex-col  md:flex-row items-center justify-between  bg-[#373737] text-white p-6 md:p-12">
-      <div className="w-screen md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 w">
+      <div className="w-screen  lg:flex flex-col items-center justify-center text-center py-24 md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 w">
         <h2 className="text-sm uppercase mb-2">GET STARTED WITH US</h2>
         <h1 className="text-2xl md:text-4xl font-bold mb-4">
           Start Conversation To <br />
           <span className="text-[#ffa500]">Skyrocket</span> Your Business
         </h1>
         <p className="text-white mb-6 text-sm md:text-base">
-          Schedule a free consultation with our experts. Uncover opportunities
-          and take the first step towards digital success.
+          Schedule a free consultation with our experts.
+          <br /> Uncover opportunities and take the first step <br /> towards
+          digital success.
         </p>
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+        <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
           <Link to="https://wa.me/+923316361916" target="_blank">
             <button className=" duration-300 ease-in-out bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
               Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />

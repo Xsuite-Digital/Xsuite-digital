@@ -1,6 +1,6 @@
 const HireUs = () => {
   return (
-    <div className="">
+    <div className="hidden lg:block">
       <h1 className=" text-black p-4 tracking-wider !font-sans font-semibold flex items-center justify-center text-3xl lg:text-3xl  ">
         Why Hire Us
       </h1>

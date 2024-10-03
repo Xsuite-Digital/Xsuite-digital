@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const ServicesModal = ({ service, onClose }) => {
   return (
@@ -38,14 +39,19 @@ const ServicesModal = ({ service, onClose }) => {
             <p className="text-gray-600 text-sm leading-relaxed">
               {service.description}
             </p>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              {service.description}
-            </p>
           </div>
         </div>
       </div>
     </motion.div>
   );
+};
+ServicesModal.propTypes = {
+  service: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default ServicesModal;

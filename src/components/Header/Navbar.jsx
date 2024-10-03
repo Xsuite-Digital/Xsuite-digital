@@ -10,13 +10,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const handleScroll = () => {
-    const pagePath = window.location.pathname;
-    if (pagePath === "/Contact" || pagePath === "/Services") {
-      setBgColor("bg-black");
-    } else if (window.scrollY > 50) {
-      setBgColor("bg-black");
+    if (window.scrollY > 50) {
+      setBgColor("bg-black"); // Set background to black after scrolling
     } else {
-      setBgColor("bg-transparent");
+      setBgColor("bg-transparent"); // Keep background transparent when scroll is less than 50px
     }
   };
 
@@ -120,7 +117,7 @@ const Navbar = () => {
 
           {/* Sidebar Toggle Button */}
           <button
-            className=" p-2 rounded-md duration-300 ease-in-out text-[#7E7E7E] hover:bg-gray-700"
+            className=" p-2 rounded-md duration-300 ease-in-out text-white hover:bg-gray-700"
             onClick={() => setSidebarOpen(!sidebarOpen)}
           >
             <Icon icon="mdi:menu" className="h-6 w-6" />
