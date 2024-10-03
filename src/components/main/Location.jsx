@@ -49,7 +49,7 @@ const Location = () => {
       <div className="w-full md:w-1/2 bg-white rounded-lg p-6 text-black">
         <h3 className="text-xl font-semibold mb-4 text-center">
           Get A Free Consultation With <br />
-          Marketing Our Expert
+          Our Marketing Experts
         </h3>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form className="space-y-4" onSubmit={handleSubmit}>
