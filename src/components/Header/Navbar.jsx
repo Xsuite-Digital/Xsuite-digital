@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Logo */}
 
           <Link to="/">
-            <img src="/logo.png" className="h-12" />
+            <img src="/logo-min.png" className="h-12" />
           </Link>
 
           {/* Tabs */}

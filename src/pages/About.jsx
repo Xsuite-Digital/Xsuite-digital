@@ -81,7 +81,7 @@ const About = () => {
             </div>
             <div className="max-h-72">
               <img
-                src="/digital-marketing 2 B&W.png"
+                src="/dg2.png"
                 alt="Placeholder Image"
                 className=" object-contain rounded-xl w-full h-full"
               />
@@ -91,8 +91,8 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="max-h-72 max-md:order-1">
               <img
-                src="/digital-marketing 3 B&W.png"
-                alt="Placeholder Image"
+                src="/dg3.png"
+                alt="dg3"
                 className="rounded-xl object-contain w-full h-full"
               />
             </div>

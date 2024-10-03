@@ -11,7 +11,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="max-h-80 relative">
               <img
-                src="/aboutus.jpg"
+                src="/aboutus-min.jpg"
                 alt="Image"
                 className="rounded-md shadow-[20px_-20px_0px_rgba(0,0,0,1),-20px_20px_0px_rgba(249,115,27)] object-cover  w-full h-full"
               />
