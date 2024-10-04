@@ -86,32 +86,47 @@ const Testimonial = () => {
               </svg>
               {/* rating */}
               <div className="rating mb-4">
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                  defaultChecked
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">1 star</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                    defaultChecked
+                  />
+                  <span className="sr-only">2 stars</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">3 stars</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">4 stars</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">5 stars</span>
+                </label>
               </div>
               <p className="leading-relaxed mb-6 text-sm sm:text-base">
                 I appreciate how transparent this marketing agency has been

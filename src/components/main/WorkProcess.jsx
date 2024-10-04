@@ -7,7 +7,7 @@ const WorkProcessStep = ({ icon: Icon, title, description }) => (
     <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mb-4 transition-transform duration-200 hover:scale-105">
       <Icon className="w-8 h-8 text-gray-600" aria-label={title} />
     </div>
-    <h3 className="text-lg font-semibold mb-2">{title}</h3>
+    <h2 className="text-lg font-semibold mb-2">{title}</h2>
     <p className="text-sm text-gray-600">{description}</p>
   </div>
 );

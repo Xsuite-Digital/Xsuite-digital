@@ -74,32 +74,40 @@ const FAQs = () => {
         </h2>
       </div>
       {faqs.map((faq, index) => (
-        <div key={index} role="accordion">
-          <button
-            type="button"
-            className="w-full text-base text-left font-semibold py-6 text-gray-800 flex items-center"
-            onClick={() => toggleAccordion(index)}
-          >
-            <span className="mr-4">{faq.question}</span>
+        <div key={index} className="accordion-item">
+          <h3>
+            <button
+              type="button"
+              className="w-full text-base text-left font-semibold py-6 text-gray-800 flex items-center"
+              aria-expanded={openIndex === index} // Indicate the expanded state
+              aria-controls={`accordion-content-${index}`} // Link the button to the content
+              onClick={() => toggleAccordion(index)}
+            >
+              <span className="mr-4">{faq.question}</span>
 
-            {openIndex === index ? (
-              <Icon
-                icon="ic:round-plus"
-                className={`fill-current ml-auto shrink-0 transform h-5 w-5 transition-transform duration-200 ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
-              />
-            ) : (
-              <Icon
-                icon="ic:round-minus"
-                className={`h-5 w-5 fill-current ml-auto shrink-0 transform transition-transform duration-200 ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
-              />
-            )}
-          </button>
+              {openIndex === index ? (
+                <Icon
+                  icon="ic:round-plus"
+                  className={`fill-current ml-auto shrink-0 transform h-5 w-5 transition-transform duration-200 ${
+                    openIndex === index ? "rotate-180" : ""
+                  }`}
+                />
+              ) : (
+                <Icon
+                  icon="ic:round-minus"
+                  className={`h-5 w-5 fill-current ml-auto shrink-0 transform transition-transform duration-200 ${
+                    openIndex === index ? "rotate-180" : ""
+                  }`}
+                />
+              )}
+            </button>
+          </h3>
+
           <motion.div
+            id={`accordion-content-${index}`} // Unique ID to link to the button
             className={`py-4 ${openIndex === index ? "block" : "hidden"}`}
+            role="region" // Declare the content region
+            aria-labelledby={`accordion-button-${index}`} // Label the region
           >
             <p className="text-sm text-gray-800">{faq.answer}</p>
           </motion.div>

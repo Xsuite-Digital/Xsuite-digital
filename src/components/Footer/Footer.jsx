@@ -74,31 +74,47 @@ function Footer() {
             {/* Services */}
             <div className="col-span-1 md:col-span-2 flex flex-col items-start">
               <h4 className="text-white font-semibold text-lg">Services</h4>
-              <ul className="space-y-4 mt-6 text-gray-300">
-                <Link to="/Services" className="hover:text-white">
-                  <li>SEO</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>PPC Campaigns</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Google Analytics</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Digital Marketing</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Website Development</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Google Search Console</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Social Media Marketing</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Google My Business Optimization</li>
-                </Link>
+              <ul className="space-y-1 mt-6 text-gray-300">
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    SEO
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    PPC Campaigns
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Google Analytics
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Digital Marketing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Website Development
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Google Search Console
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Social Media Marketing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Google My Business Optimization
+                  </Link>
+                </li>
               </ul>
             </div>
 
