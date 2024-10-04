@@ -117,7 +117,7 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <Link to={"/"}>
-              <img src={"/logo.webp"} width={100} height={100} alt="Logo" />
+              <img src={"/logo-min.webp"} width={100} height={100} alt="Logo" />
             </Link>
           </div>
 
