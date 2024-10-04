@@ -11,7 +11,7 @@ function Footer() {
             {/* Company Logo and Newsletter Subscription */}
             <div className="col-span-1 md:col-span-4 flex flex-col w-full">
               <Link to="/" className="inline-block">
-                <img src="/logo-min.png" alt="logo" className="w-48" />
+                <img src="/logo-min.webp" alt="logo" className="w-48" />
               </Link>
               <p className="text-gray-300 text-sm mt-4">
                 Discover XSuite, a global marketing agency that transforms your
@@ -74,31 +74,47 @@ function Footer() {
             {/* Services */}
             <div className="col-span-1 md:col-span-2 flex flex-col items-start">
               <h4 className="text-white font-semibold text-lg">Services</h4>
-              <ul className="space-y-4 mt-6 text-gray-300">
-                <Link to="/Services" className="hover:text-white">
-                  <li>SEO</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>PPC Campaigns</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Google Analytics</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Digital Marketing</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Website Development</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Google Search Console</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Social Media Marketing</li>
-                </Link>
-                <Link to="/Services" className="hover:text-white">
-                  <li>Google My Business Optimization</li>
-                </Link>
+              <ul className="space-y-1 mt-6 text-gray-300">
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    SEO
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    PPC Campaigns
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Google Analytics
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Digital Marketing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Website Development
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Google Search Console
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Social Media Marketing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Services" className="hover:text-white">
+                    Google My Business Optimization
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -113,7 +129,7 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/facebook icons-min.png"
+                      src="/facebook icons-min.webp"
                       className="   h-auto w-4 rounded-full p-1 space-x-2 hover"
                       alt=""
                     />
@@ -127,7 +143,7 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/instaram-icon.png"
+                      src="/instaram-icon.webp"
                       className="   h-6 w-6 p-1   "
                       alt=""
                     />{" "}
@@ -141,7 +157,7 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/inn-min.png"
+                      src="/inn-min.webp"
                       className="   h-8 w-7   p-1 "
                       alt=""
                     />

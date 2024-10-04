@@ -23,9 +23,9 @@ const HireUs = () => {
                 data-original="#000000"
               />
             </svg>
-            <h3 className="text-gray-800 text-3xl font-semibold mb-3">
+            <h2 className="text-gray-800 text-3xl font-semibold mb-3">
               Customization
-            </h3>
+            </h2>
             <p className="text-gray-600  leading-6 text-base">
               We create exceptional marketing plans that align with your unique
               brands, ensuring every campaign resonates with your target

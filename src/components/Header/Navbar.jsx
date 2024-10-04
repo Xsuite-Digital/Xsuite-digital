@@ -40,7 +40,11 @@ const Navbar = () => {
           {/* Logo */}
 
           <Link to="/">
-            <img src="/logo-min.png" className="h-12" />
+            <img
+              src="/logo-min.webp"
+              className="h-12"
+              alt="Xsuite Digital logo"
+            />
           </Link>
 
           {/* Tabs */}
@@ -52,11 +56,12 @@ const Navbar = () => {
                 onMouseEnter={() => setHomeHover(true)}
                 onMouseLeave={() => setHomeHover(false)}
               >
-                <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+                <Link
+                  to="/"
+                  className={`text-white hover:text-orange-500 transition duration-300 ease-in-out`}
                 >
-                  <Link to="/">Home</Link>
-                </button>
+                  Home
+                </Link>
               </li>
 
               {/* Services link */}
@@ -65,31 +70,32 @@ const Navbar = () => {
                 onMouseEnter={() => setServicesHover(true)}
                 onMouseLeave={() => setServicesHover(false)}
               >
-                <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+                <Link
+                  to="/Services"
+                  className={`text-white hover:text-orange-500 transition duration-300 ease-in-out`}
                 >
-                  <Link to="/Services">Services</Link>
-                </button>
+                  Services
+                </Link>
               </li>
 
               {/* About Us link */}
-              <li className="text-white hover:text-orange-500  transition duration-300 ease-in-out">
-                <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+              <li className="relative group">
+                <Link
+                  to="/About"
+                  className={`text-white hover:text-orange-500 transition duration-300 ease-in-out`}
                 >
-                  <Link to="/About ">About Us</Link>
-                </button>
+                  About Us
+                </Link>
               </li>
 
-              {/* Shop link */}
-
               {/* Contact link */}
-              <li className="text-white hover:text-orange-500  transition duration-300 ease-in-out">
-                <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+              <li className="relative group">
+                <Link
+                  to="/Contact"
+                  className={`text-white hover:text-orange-500 transition duration-300 ease-in-out`}
                 >
-                  <Link to="/Contact">Contact</Link>
-                </button>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -101,7 +107,7 @@ const Navbar = () => {
               target="_blank"
               className=" font-semibold font-sans text-white  space-x-2 tracking-widest border rounded-2xl px-3 py-2  hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out "
             >
-              <buton>Get Started -></buton>
+              <buton>Get Started </buton>
             </Link>
           </div>
         </motion.div>
@@ -111,7 +117,7 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <Link to={"/"}>
-              <img src={"/logo.png"} width={100} height={100} alt="Logo" />
+              <img src={"/logo.webp"} width={100} height={100} alt="Logo" />
             </Link>
           </div>
 
