@@ -24,21 +24,19 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <div className={`${bgColor} duration-500 ease-in-out`}>
-      {/* Navbar for desktop */}
-      <motion.div
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="hidden md:flex justify-between items-center p-4"
-      >
-        <Link to="/">
-          <img
-            src="/logo-min.webp"
-            className="h-12 w-12"
-            style={{ height: 50, width: 100 }}
-          />
-        </Link>
+    <div className={` ${bgColor} duration-500 ease-in-out`}>
+      <>
+        {/* Navbar for desktop */}
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="hidden md:flex justify-between items-center p-4 bg-transparent"
+        >
+
+          <Link to="/">
+            <img src="/logo-min.webp" className="h-12 w-12" style = {{height: 50 , width:100}} />
+          </Link>
 
         <div>
           <ul className="flex space-x-10">

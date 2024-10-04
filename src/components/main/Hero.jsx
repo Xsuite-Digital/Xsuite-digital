@@ -16,6 +16,7 @@ const Hero = () => {
     deleteSpeed: 60,
   });
 
+
   const imageUrl = "/Xsuite-Final.webp";
   useEffect(() => {
     const link = document.createElement("link");
