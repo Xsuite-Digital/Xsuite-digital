@@ -40,7 +40,7 @@ const Navbar = () => {
         >
 
           <Link to="/">
-            <img src="/logo-min.png" className="h-12 w-12" style = {{height: 50 , width:100}} />
+            <img src="/logo-min.webp" className="h-12 w-12" style = {{height: 50 , width:100}} />
           </Link>
 
           <div>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 onMouseLeave={() => setHomeHover(false)}
               >
                 <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+                  className={text-white hover:text-orange-500  transition duration-300 ease-in-out}
                 >
                   <Link to="/">Home</Link>
                 </button>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 onMouseLeave={() => setServicesHover(false)}
               >
                 <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+                  className={text-white hover:text-orange-500  transition duration-300 ease-in-out}
                 >
                   <Link to="/Services">Services</Link>
                 </button>
@@ -71,7 +71,7 @@ const Navbar = () => {
 
               <li className="text-white hover:text-orange-500  transition duration-300 ease-in-out">
                 <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+                  className={text-white hover:text-orange-500  transition duration-300 ease-in-out}
                 >
                   <Link to="/About ">About Us</Link>
                 </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
               <li className="text-white hover:text-orange-500  transition duration-300 ease-in-out">
                 <button
-                  className={`text-white hover:text-orange-500  transition duration-300 ease-in-out`}
+                  className={text-white hover:text-orange-500  transition duration-300 ease-in-out}
                 >
                   <Link to="/Contact">Contact</Link>
                 </button>

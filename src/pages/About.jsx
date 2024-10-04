@@ -33,28 +33,36 @@ const About = () => {
             Connecting Ideas to Solutions: Explore Our Digital Services
           </h1>
           <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
-            XSuite Digital is a multi-service marketing agency that transforms
-            your brand’s vision through creativity and innovation. We create
-            engaging marketing activities that connect with your audience and
-            drive measurable results. Our dedicated team blends creativity with
-            cutting-edge technology to design unique solutions tailored to your
-            target audience&apos;s needs. With a passion for excellence, we aim
-            to connect your brand with audiences worldwide.
+            XSuite Digital is a multi-service marketing agency that evolves your
+            brand’s outlook through creativity and innovation. We transform your
+            brand’s vision into fascinating marketing activities that engage
+            your audience and drive measurable results. Additionally, our
+            dedicated team blends creativity with cutting-edge technology to
+            design unique solutions that meet your target audience's
+            requirements. With a passion for excellence, we primarily aim to
+            connect your brand with audiences worldwide, utilizing our{" "}
+            <a
+              href="/Services"
+              style={{ textDecoration: "underline", color: "blue" }}
+            >
+              services
+            </a>
+            . Thus, XSuite Digital vigorously develops and maintains easily
+            accessible and easy-to-use sites.
           </p>
           <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
-            We specialize in developing and maintaining accessible and
-            user-friendly websites. Leveraging Google business tools, we enhance
-            your brand’s visibility in local searches, helping you engage
-            effectively with potential customers. Our comprehensive strategy is
-            designed to attract more visitors and enhance your online presence.
-          </p>
-          <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
-            Additionally, we assist in driving conversions by analyzing user
-            metrics, optimizing local search, and monitoring performance. From
-            web development and SEO to social media marketing and PPC campaigns,
-            we believe in the power of collaboration to fuel your growth.
-            Together, we will navigate your digital projects and achieve your
-            business objectives with originality and innovation.
+            With Google business tools, we ensure your brand stands out in the
+            local searches. As a result, this will enhance your brand’s
+            visibility and engagement with potential customers. To further
+            enhance our offerings, we create a comprehensive strategy to attract
+            more visitors. Moreover, we support you in driving conversions by
+            analyzing user metrics, improving local search, and monitoring
+            search performance. From web development and SEO to social media
+            marketing and PPC campaigns, we believe in the power of
+            coordination. It will enhance your growth, make your brand digitally
+            active, and drive fruitful results. Together, we will navigate the
+            digital projects and achieve your business objectives with
+            originality and advancements.
           </p>
         </div>
       </div>
@@ -69,14 +77,51 @@ const About = () => {
               </h2>
               <p className="mb-4 text-lg text-gray-500">
                 Raise your digital impact to new heights with our partnership,
-                where imaginations meet with expertise. From optimizing websites
-                for search engines to creating engaging content and managing
-                your social media platforms, we provide effective solutions to
-                make your brand shine brighter in the competitive market. At
-                XSuite Digital, we aim to set unique standards for outstanding
-                work and recognition and drive sustainable growth for your
-                brand. Our experts have the ability and the authentic tools to
-                manage your digital demands.
+                where imaginations meet with expertise. Specifically, from
+                optimizing websites for search engines to creating engaging
+                content and managing your social media platforms, we provide
+                effective solutions to make your brand shine brighter in the
+                competitive market. Moreover, at XSuite Digital, we aim to set
+                unique standards for outstanding work and recognition, thereby
+                driving sustainable growth for your brand. Our experts have the
+                ability and the authentic tools to manage your digital demands.
+                You can reach out to us for marketing via{" "}
+                <a
+                  href="https://wa.me/+923316361916"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "underline", color: "blue" }}
+                >
+                  Whatsapp
+                </a>
+                ,{" "}
+                <a
+                  href="https://www.facebook.com/profile.php?id=61566739650180 "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "underline", color: "blue" }}
+                >
+                  Facebook
+                </a>
+                ,{" "}
+                <a
+                  href="https://www.instagram.com/xsuite.digital/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "underline", color: "blue" }}
+                >
+                  Instagram
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://www.linkedin.com/company/xsuite-digital/about/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "underline", color: "blue" }}
+                >
+                  LinkedIn.
+                </a>{" "}
+                We look forward to helping you grow your brand.
               </p>
             </div>
             <div className="max-h-72">
@@ -104,11 +149,12 @@ const About = () => {
                 We will fulfill all of your marketing needs to catch your
                 audience with our creative and productive ideas. We serve our
                 customers with the best artistic designs and unique content
-                creation. XSuite Digital ensures that your ideas are always
-                integrated into our strategies, fostering an effective
-                partnership. Rely on XSuite Digital to be your dedicated partner
-                in achieving marketing excellence. It is the platform where your
-                aspirations align with our expertise for remarkable outcomes.
+                creation. XSuite Digital significantly ensures that your ideas
+                are always integrated into our strategies, fostering an
+                effective partnership. Therefore, rely on XSuite Digital to be
+                your dedicated partner in achieving marketing excellence. This
+                is the platform where your aspirations align with our expertise
+                for remarkable outcomes.
               </p>
             </div>
           </div>

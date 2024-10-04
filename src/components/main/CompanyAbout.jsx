@@ -92,15 +92,15 @@ const CompanyAbout = () => {
               Your Partner in Digital Excellence
             </h1>
             <p className="leading-relaxed text-lg text-gray-500">
-              At XSuite Digital, we believe that creativity and technology go
-              hand in hand. Our passionate team of marketing professionals
-              combines imaginative thinking with the latest progressive
-              enhancements to develop targeted solutions to satisfy your digital
-              essentials. We strive to connect your brands with audiences around
-              the globe, enhancing your visibility and engagement. Whether you
-              are looking to boost your online presence, drive conversions or
-              build brand loyalty, our marketing firm is here to support you in
-              achieving lasting success
+              At XSuite Digital, creativity and technology go hand in hand. In
+              addition, our passionate team of marketing professionals combines
+              imaginative thinking with the latest progressive enhancements to
+              develop targeted solutions to satisfy your digital essentials. We
+              strive to connect your brands with global audiences, enhancing
+              your market's identity prominence and interaction. Whether you are
+              looking to boost your online presence, drive conversion, or build
+              brand loyalty, our marketing firm is here to support you in
+              achieving lasting success.
             </p>
          
           </div>
