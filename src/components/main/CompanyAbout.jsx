@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 
 const FAQSection = () => {
   const [selected, setSelected] = useState(null);
@@ -102,11 +102,7 @@ const CompanyAbout = () => {
               build brand loyalty, our marketing firm is here to support you in
               achieving lasting success
             </p>
-            {/* <Link to="/About">
-              <button className="bg-black  text-white px-6 py-3 rounded-full mt-4">
-                Learn More →
-              </button>
-            </Link> */}
+         
           </div>
         </div>
       </div>

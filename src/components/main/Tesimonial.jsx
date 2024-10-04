@@ -126,6 +126,7 @@ const Testimonial = () => {
                   alt="testimonial"
                   src="/p2-min.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                  loading = "lazy"
                 />
                 <span className="flex-grow flex flex-col pl-4">
                   <span className="title-font font-medium text-gray-900">

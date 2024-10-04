@@ -37,7 +37,7 @@ const Header = () => {
 
         <div className="flex items-center space-x-2 ml-[1%]">
           <Link to="https://www.facebook.com/profile.php?id=61566739650180">
-          <img src="/fb11-min.png" class="h-auto w-4 p-1 text-white " alt="Facebook logo" width="50" height="50"/>
+          <img src="/fb11-min.png" className="h-auto w-4 p-1 text-white " alt="Facebook logo" width="50" height="50"/>
 
           </Link>
           <Link to="https://www.instagram.com/xsuite.digital/" target="_blank">
