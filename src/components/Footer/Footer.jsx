@@ -11,7 +11,7 @@ function Footer() {
             {/* Company Logo and Newsletter Subscription */}
             <div className="col-span-1 md:col-span-4 flex flex-col w-full">
               <Link to="/" className="inline-block">
-                <img src="/logo-min.png" alt="logo" className="w-48" />
+                <img src="/logo-min.webp" alt="logo" className="w-48" />
               </Link>
               <p className="text-gray-300 text-sm mt-4">
                 Discover XSuite, a global marketing agency that transforms your
@@ -113,7 +113,7 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/facebook icons-min.png"
+                      src="/facebook icons-min.webp"
                       className="   h-auto w-4 rounded-full p-1 space-x-2 hover"
                       alt=""
                     />
@@ -127,7 +127,7 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/instaram-icon.png"
+                      src="/instaram-icon.webp"
                       className="   h-6 w-6 p-1   "
                       alt=""
                     />{" "}
@@ -141,7 +141,7 @@ function Footer() {
                     className="flex"
                   >
                     <img
-                      src="/inn-min.png"
+                      src="/inn-min.webp"
                       className="   h-8 w-7   p-1 "
                       alt=""
                     />

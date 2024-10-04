@@ -36,13 +36,13 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="flex absolute  lg:top-56 top-32 text-[#7E7E7E]"
         >
-           <img 
-        src="/Xsuite-Final.png" 
-        className="h-16 w-72 lg:w-full lg:h-36" 
-        alt="XSuite Final Logo" 
-        width="288" 
-        height="144"
-      />
+          <img
+            src="/Xsuite-Final.webp"
+            className="h-16 w-72 lg:w-full lg:h-36"
+            alt="XSuite Final Logo"
+            width="288"
+            height="144"
+          />
         </motion.div>
 
         <motion.div

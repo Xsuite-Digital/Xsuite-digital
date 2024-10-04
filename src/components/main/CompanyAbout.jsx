@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const FAQSection = () => {
   const [selected, setSelected] = useState(null);

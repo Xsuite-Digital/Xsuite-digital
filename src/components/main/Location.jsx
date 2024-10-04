@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Location = () => {
@@ -12,8 +11,8 @@ const Location = () => {
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [loading] = useState(false);
+  const [error] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,7 +39,7 @@ const Location = () => {
         <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
           <Link to="https://wa.me/+923316361916" target="_blank">
             <button className=" duration-300 ease-in-out bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
-              Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
+              Let&apos;s Talk
             </button>
           </Link>
         </div>

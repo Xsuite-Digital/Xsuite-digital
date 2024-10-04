@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .roboto-serif {
   font-family: "Roboto Serif", serif;
@@ -9,8 +9,8 @@
 }
 
 body {
-  font-family: "Roboto", Serif; /* Your chosen font */
-  font-size: 16px; /* Base font size */
+  font-family: "Roboto", Serif;
+  font-size: 16px;
   line-height: 1.5;
 
   margin: 0;
@@ -21,15 +21,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "roboto", serif; /* For headings */
+  font-family: "roboto", serif;
 }
 
 p {
-  font-family: "Roboto", sans-serif; /* Ensure paragraphs use Roboto */
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-family: "Merriweather", serif; /* Change for headings */
+  font-family: "Merriweather", serif;
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 0.5em;
@@ -118,7 +118,7 @@ p {
 
 small {
   font-size: 0.875rem;
-}
+} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

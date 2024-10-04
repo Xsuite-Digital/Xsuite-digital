@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Logo */}
 
           <Link to="/">
-            <img src="/logo-min.png" className="h-12" />
+            <img src="/logo-min.webp" className="h-12" />
           </Link>
 
           {/* Tabs */}
@@ -101,7 +101,7 @@ const Navbar = () => {
               target="_blank"
               className=" font-semibold font-sans text-white  space-x-2 tracking-widest border rounded-2xl px-3 py-2  hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out "
             >
-              <buton>Get Started -></buton>
+              <buton>Get Started </buton>
             </Link>
           </div>
         </motion.div>
@@ -111,7 +111,7 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <Link to={"/"}>
-              <img src={"/logo.png"} width={100} height={100} alt="Logo" />
+              <img src={"/logo.webp"} width={100} height={100} alt="Logo" />
             </Link>
           </div>
 

@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 const Technologies = () => {
   const technology = [
-    { imgSrc: "/DG-min.png", title: "Digital Marketing" },
-    { imgSrc: "/ads-min.png", title: "Google Ads" },
-    { imgSrc: "/ppc3-min.png", title: "PPC Campaigns" },
-    { imgSrc: "/11-min.png", title: "Social Media Marketing" },
-    { imgSrc: "/web3-min.png", title: "Web Development" },
-    { imgSrc: "/GMBO-min.png", title: "Google My Business Optimization" },
+    { imgSrc: "/DG-min.webp", title: "Digital Marketing" },
+    { imgSrc: "/ads-min.webp", title: "Google Ads" },
+    { imgSrc: "/ppc3-min.webp", title: "PPC Campaigns" },
+    { imgSrc: "/11-min.webp", title: "Social Media Marketing" },
+    { imgSrc: "/web3-min.webp", title: "Web Development" },
+    { imgSrc: "/GMBO-min.webp", title: "Google My Business Optimization" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -6,7 +6,7 @@ const Team = () => {
   const profiles = [
     {
       imgSrc: "https://readymadeui.com/team-1.webp",
-      name: "Zaheer",
+      name: "John Doe",
       position: "Software Engineer",
       description:
         "Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.",
@@ -29,8 +29,8 @@ const Team = () => {
       },
     },
     {
-      imgSrc: "/Anas.jpg",
-      name: "Muhammad Anas",
+      imgSrc: "",
+      name: "john Doe",
       position: "Web Designer",
       description:
         "Eiusmod commodo aliquip laboris qui anim non voluptate consectetur.",
