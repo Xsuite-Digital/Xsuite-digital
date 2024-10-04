@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
-
+import {useEffect} from "react"
 const Hero = () => {
   const [typeEffect] = useTypewriter({
     words: [
@@ -15,17 +15,33 @@ const Hero = () => {
     typeSpeed: 100,
     deleteSpeed: 60,
   });
+
+
+  const imageUrl = "/Xsuite-Final.png";
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = imageUrl;
+
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, [imageUrl]);
   return (
     <div className="relative w-full lg:h-full h-3/4 ">
-      <video
-        src="video-min.mp4"
-        className="absolute inset-0 w-full h-full object-cover"
-        loop
-        autoPlay
-        muted
-      >
-        <source src="/video.mp4" type="video/mp4" />
-      </video>
+     <video
+  src="video-min.mp4"
+  className="absolute inset-0 w-full h-full object-cover"
+  loop
+  autoPlay
+  muted
+  preload="metadata"
+>
+  <source src="/video.mp4" type="video/mp4" />
+</video>
 
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
@@ -36,13 +52,13 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="flex absolute  lg:top-56 top-32 text-[#7E7E7E]"
         >
-          <img
-            src="/Xsuite-Final.webp"
-            className="h-16 w-72 lg:w-full lg:h-36"
-            alt="XSuite Final Logo"
-            width="288"
-            height="144"
-          />
+           <img 
+        src={imageUrl}
+        className="h-16 w-72 lg:w-full lg:h-36" 
+        alt="XSuite Final Logo" 
+        width="288" 
+        height="144"
+      />
         </motion.div>
 
         <motion.div
