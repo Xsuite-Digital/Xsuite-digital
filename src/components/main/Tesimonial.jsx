@@ -61,7 +61,7 @@ const Testimonial = () => {
               <div className="flex items-center text-sm sm:text-base">
                 <img
                   alt="testimonial"
-                  src="/p1.jpg"
+                  src="/p1.webp"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">
@@ -86,32 +86,47 @@ const Testimonial = () => {
               </svg>
               {/* rating */}
               <div className="rating mb-4">
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                  defaultChecked
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">1 star</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                    defaultChecked
+                  />
+                  <span className="sr-only">2 stars</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">3 stars</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">4 stars</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    className="mask mask-star"
+                  />
+                  <span className="sr-only">5 stars</span>
+                </label>
               </div>
               <p className="leading-relaxed mb-6 text-sm sm:text-base">
                 I appreciate how transparent this marketing agency has been
@@ -124,7 +139,7 @@ const Testimonial = () => {
               <div className="inline-flex items-center">
                 <img
                   alt="testimonial"
-                  src="/p2-min.jpg"
+                  src="/p2-min.webp"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                   loading = "lazy"
                 />
@@ -187,7 +202,7 @@ const Testimonial = () => {
               <div className="inline-flex items-center mb-4">
                 <img
                   alt="testimonial"
-                  src="/p3-min.jpg"
+                  src="/p3-min.webp"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">

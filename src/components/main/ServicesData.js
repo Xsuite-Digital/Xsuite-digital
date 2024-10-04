@@ -2,7 +2,7 @@ export const servicesData = [
   {
     id: 1,
     view: "Tap to view details",
-    imgSrc: "/webdev.png",
+    imgSrc: "/web3-min.webp",
     category: "CATEGORY",
     title: "Web Development",
     description: `"Web Development is a technique to transform your business online by designing an official website to get maximum audience. We have passionate web developers who know the programming languages like HTML, CSS, and JavaScript, to develop and design websites and web applications.
@@ -17,7 +17,7 @@ Informational Website
   },
   {
     id: 2,
-    imgSrc: "/digitalMark.png",
+    imgSrc: "/DG-min.webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
@@ -27,7 +27,7 @@ Informational Website
   },
   {
     id: 3,
-    imgSrc: "/digital (1).png",
+    imgSrc: "/digital (1).webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
@@ -37,7 +37,7 @@ Informational Website
   },
   {
     id: 4,
-    imgSrc: "/click.png",
+    imgSrc: "/click.webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
@@ -47,7 +47,7 @@ Informational Website
   },
   {
     id: 5,
-    imgSrc: "/analytics.png",
+    imgSrc: "/analytics.webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
@@ -57,7 +57,7 @@ Informational Website
   },
   {
     id: 6,
-    imgSrc: "/growth.png",
+    imgSrc: "/growth.webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
@@ -67,7 +67,7 @@ Informational Website
   },
   {
     id: 7,
-    imgSrc: "/search.png",
+    imgSrc: "/search.webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
@@ -77,7 +77,7 @@ Informational Website
   },
   {
     id: 8,
-    imgSrc: "/seo.png",
+    imgSrc: "/seo.webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
@@ -90,7 +90,7 @@ Local SEO
   },
   {
     id: 9,
-    imgSrc: "/seo.png",
+    imgSrc: "/seo.webp",
     view: "Tap to view details",
 
     category: "CATEGORY",
