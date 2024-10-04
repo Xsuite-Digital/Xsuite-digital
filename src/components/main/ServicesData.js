@@ -5,15 +5,14 @@ export const servicesData = [
     imgSrc: "/web3-min.webp",
     category: "CATEGORY",
     title: "Web Development",
-    description: `"Web Development is a technique to transform your business online by designing an official website to get maximum audience. We have passionate web developers who know the programming languages like HTML, CSS, and JavaScript, to develop and design websites and web applications.
+    description: `Website development is a technique that transforms your business online by designing an official website to get the maximum audience. Therefore, we have the best website builders who know the programming languages like HTML, CSS, and JavaScript, to develop and design websites and web applications.
 Blog and Personal Website
 Educational Website
 E-commerce Website
 Corporate Website
 Business Website
 Informational Website
-
-"`,
+`,
   },
   {
     id: 2,
@@ -22,8 +21,8 @@ Informational Website
 
     category: "CATEGORY",
     title: "Digital Marketing",
-    description:
-      "Digital marketing is the art of promoting your websites or products by using online methods like sharing on various social media apps. It will manage your website visibility in search engines through optimizing content.",
+    description: `"Digital marketing is the art of promoting your websites or products online, like sharing on various social media apps. Furthermore, It will manage your website visibility in search engines by optimizing content. Our proficient team dedicates themselves to strengthening your online visibility.
+"`,
   },
   {
     id: 3,
@@ -32,8 +31,8 @@ Informational Website
 
     category: "CATEGORY",
     title: "Graphic Designing",
-    description:
-      "Our graphic designers create a valuable craft that helps inspire, inform, and captivate consumers which will attract traffic to your official website. We will assist you in creating marketing materials, whether it is unique brand identity, web and digital designs, or printing designs.",
+    description: `"Our graphic designers create a valuable craft that helps inspire, inform, and captivate consumers, so that it will attract traffic to your official website. We will assist you in offering marketing services, whether it is logo design services, motion graphics, unique brand identity, web and digital designs, or printing designs.
+"`,
   },
   {
     id: 4,
@@ -43,7 +42,7 @@ Informational Website
     category: "CATEGORY",
     title: "PPC Campaigns",
     description:
-      "Maximize ROI with targeted, data-driven pay-per-click ads that deliver quick and measurable results.",
+      "Pay-per-click campaigns are digital advertising strategies where promoters pay a fee for a single click on their ads, designed to bring more visitors to their website. In particular, XSuite Digital excels in creating and controlling Google PPC (pay-per-click) campaigns that enhance targeted traffic and maximum return on investment (ROI) for our clients. We are experts in crafting designs and optimizing landing pages to enhance conversion rates and deliver measurable results.",
   },
   {
     id: 5,
@@ -53,7 +52,7 @@ Informational Website
     category: "CATEGORY",
     title: "Google Analytics",
     description:
-      "Leverage insights from Google Analytics to optimize marketing efforts and track key performance metrics.",
+      "Google Analytics is a powerful web analytic platform that evaluates site visitors and user interaction to empower businesses to make well-informed marketing verdicts. We use this gadget as a keystone of our digital marketing services to provide clients with in-depth insights into their website performance and user behavior. Moreover, we fascinate our clients by working enthusiastically which helps in fostering growth in an increasingly competitive landscape.",
   },
   {
     id: 6,
@@ -63,7 +62,7 @@ Informational Website
     category: "CATEGORY",
     title: "Online visibility optimization",
     description:
-      "Xsuite has the capability and authentic tools to manage all of your digital demands. By Google Analytics, Google My Business Optimization, and Google Search Console, we will improve your website performance and make it user-friendly and extremely searchable. We will create a comprehensive strategy to attract more visitors and drive conversions by analyzing user metrics, improving local search, and monitoring search performance",
+      "Google Search Console is a tool that enables website owners to see their site’s appearance in Google search engine results and make improvements. Furthermore, with a deeply passionate team, XSuite Digital conducts thorough website audits to recognize and handle any issue that can create obstacles to exceptional performance. This is basically to ensure the websites are fully optimized for search engines.",
   },
   {
     id: 7,
@@ -82,7 +81,7 @@ Informational Website
 
     category: "CATEGORY",
     title: "Search Engine Optimization",
-    description: `"The foremost objective of SEO services for businesses is to attain higher search engine rankings which helps you in getting a larger target audience. Our team of energetic professionals provides you with the best SEO services to help your website show up on the search engine result page and enhance your conversion rate
+    description: `"The foremost objective of SEO services for businesses is to secure higher positions in search engine results. Thus, it helps you get a larger target audience. Our team of energetic experts are the professional SEO services providers that position your keywords at the forefront. It will make your website higher among online social marketing. Additionally, XSuite Digital provides the best SEO services to enhance your conversion rate.
 ON-Page SEO
 OFF-Page SEO
 Local SEO
@@ -95,6 +94,6 @@ Local SEO
 
     category: "CATEGORY",
     title: "Social Media Marketing",
-    description: `XSuite has social media experts who are energetic in creating short, interesting content for digital platforms which helps you in getting organic traffic to your site. We will run effective advertisements such as Facebook and Google ads and pay-per-click campaigns to elevate your online presence and better search results.`,
+    description: `XSuite Digital has social media experts who are energetic in audience engagement, analytics and reporting, and influencer marketing on digital platforms. We also provide other social media marketing services such as content creation, Facebook and Google ads and pay-per-click campaigns. It helps you in getting organic traffic to your site. It will help you elevate your online presence and better search results.`,
   },
 ];

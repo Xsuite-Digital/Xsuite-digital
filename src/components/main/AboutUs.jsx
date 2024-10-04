@@ -29,8 +29,9 @@ const AboutUs = () => {
                 with Google My Business, Google Analytics, and Google Search
                 Console. Whether you require SEO or graphic designing for social
                 media platforms, we can help you in the marketplace for your
-                business advancements. XSuite Digital is a trustworthy company
-                by which you can work to fulfill your digital requirements.
+                business advancements. Furthermore, XSuite Digital is a
+                trustworthy company by which you can work to fulfill your
+                digital requirements.
               </p>
             </div>
           </div>

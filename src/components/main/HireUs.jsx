@@ -2,7 +2,7 @@ const HireUs = () => {
   return (
     <div className="hidden lg:block">
       <h1 className=" text-black p-4 tracking-wider !font-sans font-bold flex items-center justify-center text-3xl lg:text-3xl  ">
-        Why Hire Us
+        Reasons to Team up with XSuite Digital Marketing Agency
       </h1>
 
       <div className="max-w-7xl mx-auto font-[sans-serif] mt-6">
@@ -68,9 +68,9 @@ const HireUs = () => {
               Security
             </h3>
             <p className="text-gray-600  leading-6 text-base">
-              XSuite Digital prioritizes your safety by using top-notch tools
-              and methods throughout our projects. We proactively defend against
-              potential threats and safeguards your interest.
+              XSuite Digital prioritizes your safety, using top-notch tools and
+              methods throughout our projects. We proactively defend against
+              potential threats and safeguard your interests.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ const HireUs = () => {
             </h3>
             <p className="text-gray-600  leading-6 text-base">
               We focus on utilizing advanced analytics to optimize projects in
-              real time, ensuring data-driven decisions that enhance efficiency
+              real-time, ensuring data-driven decisions that enhance efficiency
               and produce tangible results.
             </p>
           </div>
