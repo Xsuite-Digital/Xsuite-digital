@@ -86,42 +86,47 @@ const Testimonial = () => {
               </svg>
               {/* rating */}
               <div className="rating mb-4">
-                <label>
+                <label htmlFor="rating-1">
                   <input
                     type="radio"
+                    id="rating-1"
                     name="rating-1"
                     className="mask mask-star"
                   />
                   <span className="sr-only">1 star</span>
                 </label>
-                <label>
+                <label htmlFor="rating-2">
                   <input
                     type="radio"
+                    id="rating-2"
                     name="rating-1"
                     className="mask mask-star"
                     defaultChecked
                   />
                   <span className="sr-only">2 stars</span>
                 </label>
-                <label>
+                <label htmlFor="rating-3">
                   <input
                     type="radio"
+                    id="rating-3"
                     name="rating-1"
                     className="mask mask-star"
                   />
                   <span className="sr-only">3 stars</span>
                 </label>
-                <label>
+                <label htmlFor="rating-4">
                   <input
                     type="radio"
+                    id="rating-4"
                     name="rating-1"
                     className="mask mask-star"
                   />
                   <span className="sr-only">4 stars</span>
                 </label>
-                <label>
+                <label htmlFor="rating-5">
                   <input
                     type="radio"
+                    id="rating-5"
                     name="rating-1"
                     className="mask mask-star"
                   />
@@ -141,7 +146,7 @@ const Testimonial = () => {
                   alt="testimonial"
                   src="/p2-min.webp"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                  loading = "lazy"
+                  loading="lazy"
                 />
                 <span className="flex-grow flex flex-col pl-4">
                   <span className="title-font font-medium text-gray-900">

@@ -24,8 +24,8 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <div className={` ${bgColor} duration-500 ease-in-out`}>
-      <>
+    <>
+      <div className={` ${bgColor} duration-500 ease-in-out`}>
         {/* Navbar for desktop */}
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -33,42 +33,49 @@ const Navbar = () => {
           transition={{ duration: 1 }}
           className="hidden md:flex justify-between items-center p-4 bg-transparent"
         >
-
           <Link to="/">
-            <img src="/logo-min.webp" className="h-12 w-12" style = {{height: 50 , width:100}} />
+            <img
+              src="/logo-min.webp"
+              className="h-auto w-full max-w-xs"
+              style={{ height: 50, width: 100 }}
+              alt="xsuite logo, go to home page"
+            />
           </Link>
 
-        <div>
-          <ul className="flex space-x-10">
-            <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
-              <Link to="/Services">Services</Link>
-            </li>
-            <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
-              <Link to="/About">About Us</Link>
-            </li>
-            <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
-              <Link to="/Contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
+          <div>
+            <ul className="flex space-x-10">
+              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+                <Link to="/Services">Services</Link>
+              </li>
+              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+                <Link to="/About">About Us</Link>
+              </li>
+              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+                <Link to="/Contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
 
-        <div className="flex space-x-2">
-          <Link
-            to="https://wa.me/+923316361916"
-            target="_blank"
-            className="font-semibold font-sans text-white space-x-2 tracking-widest border rounded-2xl px-3 py-2 hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out"
-          >
-            <button>Get Started</button> {/* Fixed typo */}
-          </Link>
-        </div>
-      </motion.div>
+          <div className="flex space-x-2">
+            <Link
+              to="https://wa.me/+923316361916"
+              target="_blank"
+              rel="noopener noreferrer" // For security reasons
+              className="font-semibold font-sans text-white tracking-widest border rounded-2xl px-3 py-2 hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out inline-flex items-center justify-center"
+              role="button" // Optional: adds button role for accessibility
+            >
+              Get Started
+            </Link>
+          </div>
+        </motion.div>
 
-      {/* Navbar for mobile */}
-      <Siderbar />
-    </div>
+        {/* Navbar for mobile */}
+        <Siderbar />
+      </div>
+    </>
   );
 };
 
