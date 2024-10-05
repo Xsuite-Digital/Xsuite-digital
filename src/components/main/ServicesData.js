@@ -60,9 +60,9 @@ Informational Website
     view: "Tap to view details",
 
     category: "CATEGORY",
-    title: "Online visibility optimization",
+    title: "Google Ads",
     description:
-      "Google Search Console is a tool that enables website owners to see their site’s appearance in Google search engine results and make improvements. Furthermore, with a deeply passionate team, XSuite Digital conducts thorough website audits to recognize and handle any issue that can create obstacles to exceptional performance. This is basically to ensure the websites are fully optimized for search engines.",
+      "Google Ads is an advertising platform provided by Google that allows businesses to display ads, product listings, and videos to users. It works on PPC campaigns where you pay only when someone clicks on your ad. Our team uses this Google advertising technique to get targeted traffic, increase sales, and generate leads. We ensure that your advertisements are seen by the right people and your payment is deducted only when potential customers click.",
   },
   {
     id: 7,
