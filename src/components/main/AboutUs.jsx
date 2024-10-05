@@ -6,9 +6,10 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div className="px-6 py-6 font-sans">
-        <div className="lg:max-w-7xl max-w-lg mx-auto px-6 py- rounded-lg">
+      <div className="px-6 -mt-[50%] lg:mt-1 font-sans">
+        <div className="lg:max-w-7xl max-w-lg mx-auto px-6  rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <h1 className="text-black flex items-center justify-center tracking-widest  lg:hidden text-4xl ">About us</h1>
             <div className="max-h-80 relative">
               <img
                 src="/aboutus-min.webp"
@@ -19,7 +20,7 @@ className="rounded-md shadow-[20px_-20px_0px_rgba(0,0,0,1),-20px_20px_0px_rgba(2
             </div>
 
             <div>
-              <h1 className="font-bold tracking-widest text-3xl lg:text-[28px] lg:text-xl justify-center font-sans flex items-center mb-4">
+              <h1 className="font-bold tracking-widest text-2xl lg:text-[28px] lg:text-xl justify-center font-sans flex items-center mb-4">
                 XSuite Digital: Solutions Provider
               </h1>
               <p className="text-black text-md pl-10  leading-loose">
