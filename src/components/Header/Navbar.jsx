@@ -68,6 +68,7 @@ const Navbar = () => {
 
       {/* Navbar for mobile */}
       <Siderbar />
+      </>
     </div>
   );
 };
