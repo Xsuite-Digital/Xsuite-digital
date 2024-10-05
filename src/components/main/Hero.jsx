@@ -77,7 +77,7 @@ const Hero = () => {
         </motion.div>
         <Link to='/Contact' >
           <motion.button
-           initial={{ opacity: 0, x: -80 }}
+           initial={{ opacity: 0, x: -80 }  }
            animate={{ x: 0, opacity: 1 }}
            transition={{ duration: 2 }}
            className="border px-2 py-3 rounded-xl mt-[20%] block lg:hidden  text-white">Get Started</motion.button>
