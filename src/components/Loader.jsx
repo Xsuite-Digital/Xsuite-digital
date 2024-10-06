@@ -1,5 +1,4 @@
-// Loader.jsx
-import "./Loader.css"; // Assuming the above CSS is in Loader.css
+import "./Loader.css"; 
 
 const Loader = () => {
   return (
