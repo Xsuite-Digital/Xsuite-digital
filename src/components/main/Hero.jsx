@@ -66,12 +66,12 @@ const Hero = () => {
           initial={{ opacity: 0, y: -40 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className=" flex items-center absolute lg:top-[60%] top-56 justify-center mt-4 space-x-4"
+          className=" flex items-center absolute lg:top-[60%] top-64 justify-center mt-4 space-x-4"
         >
-          <motion.h1 className="font-bold text-xl lg:text-4xl  text-white  ">
+          <motion.h1 className="font-bold text-lg lg:text-4xl  text-white  ">
             We offer
           </motion.h1>
-          <p className=" font-bold text-xl lg:text-4xl z-20 mb-[5%] lg:mb-1 text-orange-500">
+          <p className=" font-bold text-lg lg:text-4xl z-20  lg:mb-1 text-orange-500">
             {typeEffect}
           </p>
         </motion.div>
