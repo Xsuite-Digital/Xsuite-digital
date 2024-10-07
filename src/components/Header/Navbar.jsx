@@ -15,6 +15,15 @@ const Navbar = () => {
     }
   };
 
+  const ScrollToTop = () => {
+    if(location.pathname === "/" ) {
+      window.scrollTo({
+        top:0,
+        behavior: 'smooth',
+      })
+    }
+  }
+
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
@@ -33,14 +42,14 @@ const Navbar = () => {
           transition={{ duration: 1 }}
           className="hidden md:flex justify-between items-center p-4 bg-transparent"
         >
-          <Link to="/">
-            <img src="/logo-min.webp" className="h-16 w-16 mt-3" style = {{height: 50 , width:100}} />
+          <Link to="/"  onClick={ScrollToTop} >
+            <img src="/logo-min.webp"  className="h-16 w-16 mt-3" style = {{height: 50 , width:100}} />
           </Link>
 
           <div>
             <ul className="flex space-x-10">
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
-                <Link to="/">Home</Link>
+                <Link  onClick={ScrollToTop}  to="/">Home</Link>
               </li>
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
                 <Link to="/Services">Services</Link>

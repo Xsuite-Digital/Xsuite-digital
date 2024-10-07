@@ -38,7 +38,7 @@ const Location = () => {
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
           <Link to="https://wa.me/+923316361916" target="_blank">
-            <button className=" duration-300 ease-in-out bg-black hover:bg-[#373737] text-white px-6 py-2 rounded-full flex items-center justify-center">
+            <button className=" duration-300 ease-in-out bg-black hover:bg-orange-500  text-white px-6 py-2 rounded-full flex items-center justify-center">
               Let&apos;s Talk
             </button>
           </Link>
