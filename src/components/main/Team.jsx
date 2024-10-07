@@ -4,12 +4,54 @@ import { motion } from "framer-motion";
 
 const Team = () => {
   const profile = [
-    { imgSrc: "SirZaheer.webp", name: "Sir Zaheer", position: "CEO", fb: "blackfb.webp", insta: "blackinsta.webp", linkedin: "blacklinkedin.webp" },
-    { imgSrc: "Sajal.webp", name: "Sajal", position: "Graphics Designer", fb: "blackfb.webp", insta: "blackinsta.webp", linkedin: "blacklinkedin.webp" },
-    { imgSrc: "Anas.webp", name: "Muhammad Anas", position: "Team Lead | Frontend Developer", fb: "blackfb.webp", insta: "blackinsta.webp", linkedin: "blacklinkedin.webp" },
-    { imgSrc: "Rafaqat.webp", name: "Rafaqat Ali", position: "Graphic Designer", fb: "blackfb.webp", insta: "blackinsta.webp", linkedin: "blacklinkedin.webp" },
-    { fb: "blackfb.webp", insta: "blackinsta.webp", linkedin: "blacklinkedin.webp", imgSrc: "Sharoon.webp", name: "Sharoon", position: "Frontend Developer" },
-    { fb: "blackfb.webp", insta: "blackinsta.webp", linkedin: "blacklinkedin.webp", imgSrc: "Mashhood.webp", name: "Mashhood Abdul Rehman", position: "Full Stack Developer" },
+    {
+      imgSrc: "SirZaheer.webp",
+      name: "Sir Zaheer",
+      position: "CEO",
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+    },
+    {
+      imgSrc: "Sajal.webp",
+      name: "Sajal",
+      position: "Graphics Designer",
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+    },
+    {
+      imgSrc: "Anas.webp",
+      name: "Muhammad Anas",
+      position: "Team Lead | Frontend Developer",
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+    },
+    {
+      imgSrc: "Rafaqat.webp",
+      name: "Rafaqat Ali",
+      position: "Graphic Designer",
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+    },
+    {
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+      imgSrc: "Sharoon.webp",
+      name: "Sharoon",
+      position: "Frontend Developer",
+    },
+    {
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+      imgSrc: "Mashhood.webp",
+      name: "Mashhood Abdul Rehman",
+      position: "Full Stack Developer",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +61,9 @@ const Team = () => {
   useEffect(() => {
     const updateVisibleProfiles = () => {
       const isMobile = window.innerWidth < 1024;
-      setVisibleProfiles(profile.slice(currentIndex, currentIndex + (isMobile ? 1 : 3)));
+      setVisibleProfiles(
+        profile.slice(currentIndex, currentIndex + (isMobile ? 1 : 3))
+      );
     };
 
     updateVisibleProfiles();
@@ -32,13 +76,17 @@ const Team = () => {
 
   const nextProfiles = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + (window.innerWidth < 1024 ? 1 : 3) >= profile.length ? 0 : prevIndex + (window.innerWidth < 1024 ? 1 : 3)
+      prevIndex + (window.innerWidth < 1024 ? 1 : 3) >= profile.length
+        ? 0
+        : prevIndex + (window.innerWidth < 1024 ? 1 : 3)
     );
   };
 
   const prevProfiles = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - (window.innerWidth < 1024 ? 1 : 3) < 0 ? profile.length - (window.innerWidth < 1024 ? 1 : 3) : prevIndex - (window.innerWidth < 1024 ? 1 : 3)
+      prevIndex - (window.innerWidth < 1024 ? 1 : 3) < 0
+        ? profile.length - (window.innerWidth < 1024 ? 1 : 3)
+        : prevIndex - (window.innerWidth < 1024 ? 1 : 3)
     );
   };
 
@@ -73,7 +121,7 @@ const Team = () => {
                   <img src={member.fb} className="h-8 w-4" alt="Facebook" />
                 </Link>
                 <Link to="/Contact" target="_blank">
-                  <img src={member.insta} className="h-8 w-8" alt="Instagram" />
+                  <img src={member.insta} className="h-6 w-6" alt="Instagram" />
                 </Link>
                 <Link to="/Contact" target="_blank">
                   <img
