@@ -34,7 +34,7 @@ const Navbar = () => {
           className="hidden md:flex justify-between items-center p-4 bg-transparent"
         >
           <Link to="/">
-            <img src="/logo-min.webp" style={{ height: 50, width: 100 }} />
+            <img src="/logo-min.webp" className="h-16 w-16 mt-3" style = {{height: 50 , width:100}} />
           </Link>
 
           <div>

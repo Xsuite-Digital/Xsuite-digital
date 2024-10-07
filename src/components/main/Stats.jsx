@@ -1,7 +1,7 @@
 const Stats = () => {
   return (
     <div className="bg-gray-50  min-h-[350px] flex items-center justify-center font-sans">
-      <div className="bg-white shadow-[0_4px_24px_-8px_rgba(0,0,0,0.2)] grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-12 gap-32 rounded-3xl px-72 py-12">
+      <div className="bg-white shadow-[0_4px_24px_-8px_rgba(0,0,0,0.2)] grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-12 gap-32 rounded-3xl  p-10 mt-6">
         <div className="text-center">
           <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
             5.4<span className="text-blue-600">M+</span>
