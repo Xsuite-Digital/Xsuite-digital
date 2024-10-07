@@ -126,6 +126,7 @@ const About = () => {
             </div>
             <div className="max-h-72">
               <img
+              loading="lazy"
                 src="/dg2.webp"
                 alt="Placeholder Image"
                 className=" object-contain rounded-xl w-full h-full"
@@ -136,6 +137,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="max-h-72 max-md:order-1">
               <img
+              loading="lazy"
                 src="/dg3.webp"
                 alt="dg3"
                 className="rounded-xl object-contain w-full h-full"

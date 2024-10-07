@@ -109,6 +109,7 @@ const Team = () => {
               className="flex flex-col items-center justify-center rounded-md p-6 shadow-lg bg-white"
             >
               <img
+              loading="lazy"
                 src={member.imgSrc}
                 className="w-40 h-40 rounded-full object-cover border-2 border-gray-200 mb-4"
                 alt={member.name}

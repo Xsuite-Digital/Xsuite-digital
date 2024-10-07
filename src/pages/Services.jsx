@@ -61,6 +61,7 @@ const Services = () => {
                   >
                     <img
                       src={data.imgSrc}
+                      loading="lazy"
                       className="icon-container  text-black  h-10 w-10"
                     />
 
