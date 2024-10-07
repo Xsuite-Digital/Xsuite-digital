@@ -33,8 +33,13 @@ const Navbar = () => {
           transition={{ duration: 1 }}
           className="hidden md:flex justify-between items-center p-4 bg-transparent"
         >
-          <Link to="/">
-            <img src="/logo-min.webp" className="h-16 w-16 mt-3" style = {{height: 50 , width:100}} />
+          <Link to="/" aria-label="Go to homepage">
+            <img
+              src="/logo-min.webp"
+              className="h-16 w-16 mt-3"
+              style={{ height: 50, width: 100 }}
+              alt="Xsuite logo"
+            />
           </Link>
 
           <div>
@@ -58,9 +63,11 @@ const Navbar = () => {
             <Link
               to="https://wa.me/+923316361916"
               target="_blank"
-              className="font-semibold font-sans text-white space-x-2 tracking-widest border rounded-2xl px-3 py-2 hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out"
+              aria-label="Start WhatsApp chat"
+              className="font-semibold font-sans text-white tracking-widest border rounded-2xl px-5 py-3 hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out"
+              style={{ minHeight: 44, minWidth: 44 }} // Ensure touch target size
             >
-              <button>Get Started</button> {/* Fixed typo */}
+              Get Started
             </Link>
           </div>
         </motion.div>
