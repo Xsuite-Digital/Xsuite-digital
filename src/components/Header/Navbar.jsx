@@ -5,8 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState("transparent");
-  const location = useLocation();
-
+  
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setBgColor("bg-black");
@@ -14,6 +13,7 @@ const Navbar = () => {
       setBgColor("bg-transparent");
     }
   };
+  const location = useLocation();
 
   const ScrollToTop = () => {
     if(location.pathname === "/" ) {
