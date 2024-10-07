@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Icon } from "@iconify/react/dist/iconify.js";
+// import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 
 const Technologies = () => {
@@ -13,17 +12,7 @@ const Technologies = () => {
     { imgSrc: "/GMBO-min.webp", title: "Google My Business Optimization" },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextService = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % technology.length);
-  };
-
-  const prevService = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? technology.length - 1 : prevIndex - 1
-    );
-  };
 
   return (
     <div className="flex flex-col items-center">
@@ -37,7 +26,7 @@ const Technologies = () => {
       </motion.h1>
 
       <div className="max-w-5xl max-lg:max-w-xl mx-auto">
-        <div className="lg:grid hidden lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid  lg:grid-cols-3 gap-8 mt-12">
           {technology.map((tech, index) => (
             <div
               key={index}
@@ -57,46 +46,15 @@ const Technologies = () => {
           ))}
         </div>
 
-        {/* Mobile View */}
-        <div className="lg:hidden block">
-          <div className="flex items-center justify-between mb-4 relative">
-            <button
-              onClick={prevService}
-              className="p-2 rounded-lg flex items-center justify-center absolute left-0"
-            >
-              <Icon icon="ooui:next-rtl" className="w-12 h-12" />
-            </button>
-            <h4 className="text-gray-800 text-xl flex items-center justify-center !font-sans font-bold mx-16">
-              {technology[currentIndex].title}
-            </h4>
-            <button
-              onClick={nextService}
-              className="p-2 rounded-lg flex items-center justify-center absolute right-0"
-            >
-              <Icon icon="ooui:next-ltr" className="w-12 h-12" />
-            </button>
-          </div>
-
-          <div className="flex justify-center mb-4">
-            <motion.img
-              className="w-32 h-28 object-contain"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -100, opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              key={currentIndex}
-              src={technology[currentIndex].imgSrc}
-            />
-          </div>
-        </div>
-      </div>
+     
       <div className="flex justify-center mt-4">
         <Link to="/Services">
           <button className="bg-black py-2 px-4 rounded-xl flex items-center justify-center text-white ease-in-out duration-300 hover:scale-110 hover:bg-orange-500 hover:text-black">
             View More Services
           </button>
         </Link>
-      </div>
+      </div> 
+    </div>
     </div>
   );
 };
