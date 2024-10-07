@@ -42,9 +42,15 @@ const Navbar = () => {
           transition={{ duration: 1 }}
           className="hidden md:flex justify-between items-center p-4 bg-transparent"
         >
-          <Link to="/"  onClick={ScrollToTop} >
-            <img src="/logo-min.webp"  className="h-16 w-16 mt-3" style = {{height: 50 , width:100}} />
-          </Link>
+          <div style={{ width: "100px", height: "50px" }}>
+            <Link to="/" aria-label="Go to homepage">
+              <img
+                src="/logo-min.webp"
+                className="w-full h-auto "
+                alt="Xsuite logo image"
+              />
+            </Link>
+          </div>
 
           <div>
             <ul className="flex space-x-10">
