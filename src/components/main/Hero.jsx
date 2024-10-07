@@ -35,15 +35,16 @@ const Hero = () => {
     <div className="relative w-full lg:h-full h-3/4 ">
       <div className="absolute inset-0 w-full h-3/4 md:hidden block  bg-black  "> </div>
       <video
-        src="video-min3.mp4"
-        className="absolute inset-0 w-full h-full hidden lg:block  object-cover"
-        loop
-        autoPlay
-        muted
-        preload="metadata"
-      >
-        <source src="/video-min3.mp4" type="video/mp4" />
-      </video>
+  className="absolute inset-0 w-full h-full hidden lg:block object-cover"
+  loop
+  autoPlay
+  muted
+  preload="metadata"
+>
+  <source src="/video-min3.webm" type="video/webm" />
+  <source src="/video-min3.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 
       <div className="flex flex-col justify-center  items-center relative z-10 h-screen text-center">
