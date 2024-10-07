@@ -5,8 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState("transparent");
-  const location = useLocation();
-
+  
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setBgColor("bg-black");
@@ -14,6 +13,16 @@ const Navbar = () => {
       setBgColor("bg-transparent");
     }
   };
+  const location = useLocation();
+
+  const ScrollToTop = () => {
+    if(location.pathname === "/" ) {
+      window.scrollTo({
+        top:0,
+        behavior: 'smooth',
+      })
+    }
+  }
 
   useEffect(() => {
     handleScroll();
@@ -46,7 +55,7 @@ const Navbar = () => {
           <div>
             <ul className="flex space-x-10">
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
-                <Link to="/">Home</Link>
+                <Link  onClick={ScrollToTop}  to="/">Home</Link>
               </li>
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
                 <Link to="/Services">Services</Link>
@@ -64,11 +73,9 @@ const Navbar = () => {
             <Link
               to="https://wa.me/+923316361916"
               target="_blank"
-              aria-label="Start WhatsApp chat"
-              className="font-semibold font-sans text-white tracking-widest border rounded-2xl px-5 py-3 hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out"
-              style={{ minHeight: 44, minWidth: 44 }} // Ensure touch target size
+              className="font-semibold font-sans text-white space-x-2 tracking-widest border rounded-2xl px-3 py-2 hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out"
             >
-              Get Started
+              <button>Get Started</button> {/* Fixed typo */}
             </Link>
           </div>
         </motion.div>

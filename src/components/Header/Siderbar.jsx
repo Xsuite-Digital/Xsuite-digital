@@ -1,18 +1,29 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
 import {motion,  AnimatePresence } from 'framer-motion';
 import {useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Siderbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
   
+    const location = useLocation();
+
+    const ScrollToTop = () => {
+      if(location.pathname === "/" ) {
+        window.scrollTo({
+          top:0,
+          behavior: 'smooth',
+        })
+      }
+      setSidebarOpen(false)
+    }
     return (
 
     <div>
 <div className="md:hidden flex items-center justify-between p-4 bg-transparent">
           {/* Logo */}
           <div>
-            <Link to={"/"}>
+            <Link onClick={ScrollToTop} to={"/"}>
               <img src={"/logo-min.webp"} width={100} height={100} alt="Logo" />
             </Link>
           </div>
@@ -45,7 +56,7 @@ const Siderbar = () => {
                 {/* Home link */}
                 <li>
                   <Link
-                    onClick={() => setSidebarOpen(false)}
+                    onClick={ScrollToTop}
                     to="/"
                     className="block text-xl text-white hover:text-[#7E7E7E]"
                   >
@@ -56,7 +67,7 @@ const Siderbar = () => {
                 {/* Services link */}
                 <li>
                   <Link
-                    onClick={() => setSidebarOpen(false)}
+                    onClick={ScrollToTop}
                     to="/Services"
                     className="block text-xl  text-white hover:text-[#7E7E7E]"
                   >
@@ -68,7 +79,7 @@ const Siderbar = () => {
                 <li>
                   <Link
                     to="/About"
-                    onClick={() => setSidebarOpen(false)}
+                    onClick={ScrollToTop}
                     className="block text-xl text-white hover:text-[#7E7E7E]"
                   >
                     About Us
@@ -79,7 +90,7 @@ const Siderbar = () => {
                 <li>
                   <Link
                     to="/Contact"
-                    onClick={() => setSidebarOpen(false)}
+                    onClick={ScrollToTop}
                     className="block text-xl text-white hover:text-[#7E7E7E]"
                   >
                     Contact
