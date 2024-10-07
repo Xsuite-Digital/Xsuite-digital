@@ -12,6 +12,7 @@ const ServicesModal = ({ service, onClose }) => {
         <div className="w-full max-w-lg bg-white shadow-lg rounded-lg p-6 relative">
           <div className="flex items-center pb-3 border-b border-gray-300">
             <img
+            loading="lazy"
               src={service.imgSrc}
               className="text-gray-800 h-8 w-8 mr-2 font-extrabold "
             />

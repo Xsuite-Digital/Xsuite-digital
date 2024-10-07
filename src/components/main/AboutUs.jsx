@@ -14,6 +14,7 @@ const AboutUs = () => {
   <img
     src="/aboutus-min.webp"
     alt="Image"
+    loading="lazy"
     className="rounded-md shadow-[20px_-20px_0px_rgba(0,0,0,1),-20px_20px_0px_rgba(249,115,27)] object-cover w-[800px] h-[300px]" 
   />
 </div>
