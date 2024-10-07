@@ -1,3 +1,5 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
+
 const Testimonial = () => {
   const testimonials = [
     {
@@ -21,7 +23,6 @@ const Testimonial = () => {
       imgSrc: "/p2-min.webp",
       rating: 4,
     },
-  
   ];
 
   return (
@@ -35,20 +36,21 @@ const Testimonial = () => {
         </div>
         <div className="flex flex-wrap -m-4 rounded-md mb-5">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="w-full sm:w-[350px] h-[27rem] p-4 mx-auto shadow-md rounded-xl relative group hover:scale-105 duration-300">
+            <div
+              key={index}
+              className="w-full sm:w-[350px] h-[27rem] p-4 mx-auto shadow-md rounded-xl relative group hover:scale-105 duration-300"
+            >
               <div className="h-full bg-gray-100 p-8 rounded">
-                {/* SVG and Rating */}
-                <div className="rating mb-4">
+                {/* Star Rating */}
+                <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <label key={i}>
-                      <input
-                        type="radio"
-                        name={`rating-${index}`}
-                        className="mask mask-star"
-                        defaultChecked={i < testimonial.rating}
-                      />
-                      <span className="sr-only">{`${i + 1} star`}</span>
-                    </label>
+                    <span key={i}>
+                      {i < testimonial.rating ? (
+                        <span><Icon icon="ic:round-star" width="21" height="21"   /></span> 
+                      ) : (
+                        <span><Icon icon="mynaui:star" width="20" height="20"   /></span> 
+                      )}
+                    </span>
                   ))}
                 </div>
                 <p className="leading-relaxed mb-6 text-sm sm:text-base">{testimonial.text}</p>
@@ -73,4 +75,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial
+export default Testimonial;
