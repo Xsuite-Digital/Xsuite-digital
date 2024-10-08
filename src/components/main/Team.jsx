@@ -1,28 +1,29 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Team = () => {
   const profile = [
     {
-      imgSrc: "SirZaheer.webp",
+      imgSrc: "sir.webp",
       name: "Sir Zaheer",
       position: "CEO",
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+      fbLink: "https://www.facebook.com/Microthinksbyzaheer/",
+      instaLink: "https://www.instagram.com/microthinks/",
+      linkedinLink: "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAABvuYtABov1uB-q4PWigeWko8HiqfcL0tqs&keywords=zaheer%20masih&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=e0910a1b-8f61-4a28-a067-7cd8f172e278&sid=egR&spellCorrectionEnabled=true",
     },
     {
-      imgSrc: "Sajal.webp",
+      imgSrc: "SJL.webp",
       name: "Sajal",
       position: "Graphics Designer",
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
       fbLink: "https://www.facebook.com/sajal.mughal.106/",
-      instaLink: "https://www.instagram.com/sirzaheer",
-      linkedinLink: "https://www.linkedin.com/in/sirzaheer",
+      instaLink: "https://www.instagram.com/me_sajal_000/",
+      linkedinLink: "https://www.linkedin.com/in/amna-sajal-28a88925b/",
     },
     {
       imgSrc: "Anas.webp",
@@ -31,7 +32,9 @@ const Team = () => {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+      fbLink: "https://www.facebook.com/bmckhanz78?mibextid=LQQJ4d",
+      instaLink: "https://www.instagram.com/muhammad_anas26?igsh=MTR1OHNqZ3Y5Y3VsaA%3D%3D&utm_source=qr",
+      linkedinLink: "https://www.linkedin.com/in/muhammad-anas-bmc?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
       imgSrc: "Rafaqat.webp",
@@ -40,7 +43,9 @@ const Team = () => {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+      fbLink: "   https://www.facebook.com/Rafaqat.Graphics",
+      instaLink: "https://www.instagram.com/rafaqatali.graphics/",
+      linkedinLink: "https://www.linkedin.com/in/rafaqat-ali-a35628315/",
     },
     {
       fb: "blackfb.webp",
@@ -48,43 +53,49 @@ const Team = () => {
       linkedin: "blacklinkedin.webp",
       imgSrc: "Ali.jpg",
       name: "Ali Raza",
-      fbLink: "https://www.facebook.com/sajal.mughal.106/",
-
+      fbLink: "https://www.facebook.com/aly.dogar/",
+      instaLink: "https://www.instagram.com/alydogar?fbclid=IwY2xjawFyDQ5leHRuA2FlbQIxMAABHbbDeDB8M9_nIQuDqSUq7z1ktQQzVf4Sr0p4ESxVXmkJpUqYsvmiVN8CFQ_aem_KdCKrdtS6NNyC9aTOLCVRA",
+      linkedinLink: "https://www.linkedin.com/in/sardaar-aly/",
       position: "UI/UX Designer",
     },
     {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      imgSrc: "Mashhood.webp",
+      imgSrc: "/Mashhood.webp",
       name: "Mashhood Abdul Rehman",
       position: "Full Stack Developer",
-      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+      fbLink: "https://www.facebook.com/profile.php?id=100009166248846&mibextid=rS40aB7S9Ucbxw6v",
+      instaLink: "https://www.instagram.com/mashhood.ar?igsh=dncwbXE2eG9wM2N4",
+      linkedinLink: "https://www.linkedin.com/in/mashhood-rehman-48117b24b/",
     },
     {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      imgSrc: "Mashhood.webp",
+      imgSrc: "",
       name: "Aqsa Malik",
       position: "Front-End Developer",
       fbLink: "https://www.facebook.com/sajal.mughal.106/",
+      instaLink: "https://www.instagram.com/sirzaheer",
+      linkedinLink: "https://www.linkedin.com/in/sirzaheer",
     },
     {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      imgSrc: "Mashhood.webp",
-      name: "Shanoor",
+      imgSrc: "",
+      name: "Sharoon",
       position: "Front-End Developer",
       fbLink: "https://www.facebook.com/sajal.mughal.106/",
+      instaLink: "https://www.instagram.com/sirzaheer",
+      linkedinLink: "https://www.linkedin.com/in/sirzaheer",
     },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleProfiles, setVisibleProfiles] = useState([]);
 
-  // Update visible profiles based on the screen size
   useEffect(() => {
     const updateVisibleProfiles = () => {
       const isMobile = window.innerWidth < 1024;
@@ -145,7 +156,6 @@ const Team = () => {
               <p className="text-gray-600">{member.position}</p>
 
               <div className="flex space-x-6 items-center justify-center mt-4">
-                {/* <Link to={member.} target="_blank"> */}
                 <img
                   onClick={() => window.open(member.fbLink, "_blank")}
                   src={member.fb}
@@ -153,17 +163,16 @@ const Team = () => {
                   alt="Facebook"
                 />
 
-                {/* </Link> */}
-                <Link to={profile.instaLink} target="_blank">
-                  <img src={member.insta} className="h-6 w-6" alt="Instagram" />
-                </Link>
-                <Link to={profile.linkedinLink} target="_blank">
+                  <img 
+                  
+                   onClick={() => window.open(member.instaLink, "_blank")}
+                  src={member.insta} className="h-6 w-6" alt="Instagram" />
                   <img
+                   onClick={() => window.open(member.linkedinLink, "_blank")}
                     src={member.linkedin}
                     className="h-8 w-8"
                     alt="LinkedIn"
                   />
-                </Link>
               </div>
             </motion.div>
           ))}
