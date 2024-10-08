@@ -45,6 +45,7 @@ const Navbar = () => {
           <div style={{ width: "100px", height: "50px" }}>
             <Link to="/" aria-label="Go to homepage">
               <img
+                onClick={ScrollToTop}
                 src="/logo-min.webp"
                 className="w-full h-auto "
                 alt="Xsuite logo image"

@@ -11,6 +11,7 @@ const Team = () => {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
     },
     {
       imgSrc: "Sajal.webp",
@@ -19,6 +20,9 @@ const Team = () => {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+      instaLink: "https://www.instagram.com/sirzaheer",
+      linkedinLink: "https://www.linkedin.com/in/sirzaheer",
     },
     {
       imgSrc: "Anas.webp",
@@ -27,6 +31,7 @@ const Team = () => {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
     },
     {
       imgSrc: "Rafaqat.webp",
@@ -35,14 +40,17 @@ const Team = () => {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
     },
     {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      imgSrc: "Sharoon.webp",
-      name: "Sharoon",
-      position: "Frontend Developer",
+      imgSrc: "Ali.jpg",
+      name: "Ali Raza",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+
+      position: "UI/UX Designer",
     },
     {
       fb: "blackfb.webp",
@@ -51,6 +59,25 @@ const Team = () => {
       imgSrc: "Mashhood.webp",
       name: "Mashhood Abdul Rehman",
       position: "Full Stack Developer",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+    },
+    {
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+      imgSrc: "Mashhood.webp",
+      name: "Aqsa Malik",
+      position: "Front-End Developer",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
+    },
+    {
+      fb: "blackfb.webp",
+      insta: "blackinsta.webp",
+      linkedin: "blacklinkedin.webp",
+      imgSrc: "Mashhood.webp",
+      name: "Shanoor",
+      position: "Front-End Developer",
+      fbLink: "https://www.facebook.com/sajal.mughal.106/",
     },
   ];
 
@@ -62,7 +89,7 @@ const Team = () => {
     const updateVisibleProfiles = () => {
       const isMobile = window.innerWidth < 1024;
       setVisibleProfiles(
-        profile.slice(currentIndex, currentIndex + (isMobile ? 1 : 3))
+        profile.slice(currentIndex, currentIndex + (isMobile ? 1 : 4))
       );
     };
 
@@ -76,17 +103,17 @@ const Team = () => {
 
   const nextProfiles = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + (window.innerWidth < 1024 ? 1 : 3) >= profile.length
+      prevIndex + (window.innerWidth < 1024 ? 1 : 4) >= profile.length
         ? 0
-        : prevIndex + (window.innerWidth < 1024 ? 1 : 3)
+        : prevIndex + (window.innerWidth < 1024 ? 1 : 4)
     );
   };
 
   const prevProfiles = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - (window.innerWidth < 1024 ? 1 : 3) < 0
-        ? profile.length - (window.innerWidth < 1024 ? 1 : 3)
-        : prevIndex - (window.innerWidth < 1024 ? 1 : 3)
+      prevIndex - (window.innerWidth < 1024 ? 1 : 4) < 0
+        ? profile.length - (window.innerWidth < 1024 ? 1 : 4)
+        : prevIndex - (window.innerWidth < 1024 ? 1 : 4)
     );
   };
 
@@ -96,7 +123,7 @@ const Team = () => {
 
       <div className="relative  ">
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-4"
+          className="grid grid-cols-1 lg:grid-cols-4 gap-4"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
@@ -109,7 +136,7 @@ const Team = () => {
               className="flex flex-col items-center justify-center rounded-md p-6 shadow-lg bg-white"
             >
               <img
-              loading="lazy"
+                loading="lazy"
                 src={member.imgSrc}
                 className="w-40 h-40 rounded-full object-cover border-2 border-gray-200 mb-4"
                 alt={member.name}
@@ -118,13 +145,19 @@ const Team = () => {
               <p className="text-gray-600">{member.position}</p>
 
               <div className="flex space-x-6 items-center justify-center mt-4">
-                <Link to="/Contact" target="_blank">
-                  <img src={member.fb} className="h-8 w-4" alt="Facebook" />
-                </Link>
-                <Link to="/Contact" target="_blank">
+                {/* <Link to={member.} target="_blank"> */}
+                <img
+                  onClick={() => window.open(member.fbLink, "_blank")}
+                  src={member.fb}
+                  className="h-8 w-4"
+                  alt="Facebook"
+                />
+
+                {/* </Link> */}
+                <Link to={profile.instaLink} target="_blank">
                   <img src={member.insta} className="h-6 w-6" alt="Instagram" />
                 </Link>
-                <Link to="/Contact" target="_blank">
+                <Link to={profile.linkedinLink} target="_blank">
                   <img
                     src={member.linkedin}
                     className="h-8 w-8"

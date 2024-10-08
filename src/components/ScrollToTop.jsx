@@ -29,10 +29,13 @@ const ScrollToTop = () => {
         {visible && (
           <motion.button
             whileHover={{ scale: 1.2 }}
-            className="bg-blue-500 flex items-center justify-center w-12 h-12 rounded-full focus:outline-none text-white"
+            className="bg-orange-500 flex items-center justify-center w-12 h-12 rounded-full focus:outline-none text-white"
             onClick={scrolltotop}
           >
-            <Icon icon="tabler:arrow-merge" />
+            <Icon
+              icon="mdi:arrow-drop-up"
+              style={{ width: "20px", height: "20px" }}
+            />
           </motion.button>
         )}
       </div>
