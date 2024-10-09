@@ -4,7 +4,7 @@ const Stats = () => {
       <div className="bg-white shadow-[0_4px_24px_-8px_rgba(0,0,0,0.2)] grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-12 gap-32 rounded-3xl  p-10 mt-6">
         <div className="text-center">
           <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
-            5.4<span className="text-orange-500">M+</span>
+            100<span className="text-orange-500">+</span>
           </h3>
           <p className="text-gray-500 text-base font-semibold mt-3">
             Total Users
@@ -12,13 +12,13 @@ const Stats = () => {
         </div>
         <div className="text-center">
           <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
-            $80<span className="text-orange-500">K</span>
+            $5<span className="text-orange-500">K</span>
           </h3>
           <p className="text-gray-500 text-base font-semibold mt-3">Revenue</p>
         </div>
         <div className="text-center">
           <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
-            100<span className="text-orange-500">K</span>
+            100<span className="text-orange-500">+</span>
           </h3>
           <p className="text-gray-500 text-base font-semibold mt-3">
             Engagement

@@ -95,9 +95,9 @@ const Team = () => {
       imgSrc: "sharoon.webp",
       name: "Sharoon Amanat",
       position: "Front-End Developer",
-      fbLink: "https://www.facebook.com/sajal.mughal.106/",
-      instaLink: "https://www.instagram.com/sirzaheer",
-      linkedinLink: "https://www.linkedin.com/in/sirzaheer",
+      fbLink: "https://www.facebook.com/profile.php?id=100075231544964",
+      instaLink: "https://www.instagram.com/sharoon326/",
+      linkedinLink: "https://www.linkedin.com/feed/",
     },
   ];
 

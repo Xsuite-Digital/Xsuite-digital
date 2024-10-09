@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import emailjs from "emailjs-com";
+import emailjs from 'emailjs-com';  
 
 const Location = () => {
   const form = useRef();
@@ -23,27 +23,23 @@ const Location = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true
+    setLoading(true);  // Set loading to true
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          setLoading(false); // Reset loading after success
-          setError(""); // Clear any errors
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          setLoading(false); // Reset loading on failure
-          setError("Failed to send message, please try again."); // Display error message
-        }
-      );
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then(() => {
+        console.log('SUCCESS!');
+        setLoading(false);  // Reset loading after success
+        setError("");  // Clear any errors
+      }, (error) => {
+        console.log('FAILED...', error.text);
+        setLoading(false);  // Reset loading on failure
+        setError("Failed to send message, please try again.");  // Display error message
+      });
   };
 
   return (
