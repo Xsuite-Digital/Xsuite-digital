@@ -12,7 +12,8 @@ const Team = () => {
       linkedin: "blacklinkedin.webp",
       fbLink: "https://www.facebook.com/Microthinksbyzaheer/",
       instaLink: "https://www.instagram.com/microthinks/",
-      linkedinLink: "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAABvuYtABov1uB-q4PWigeWko8HiqfcL0tqs&keywords=zaheer%20masih&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=e0910a1b-8f61-4a28-a067-7cd8f172e278&sid=egR&spellCorrectionEnabled=true",
+      linkedinLink:
+        "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAABvuYtABov1uB-q4PWigeWko8HiqfcL0tqs&keywords=zaheer%20masih&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=e0910a1b-8f61-4a28-a067-7cd8f172e278&sid=egR&spellCorrectionEnabled=true",
     },
     {
       imgSrc: "SJL.webp",
@@ -33,8 +34,10 @@ const Team = () => {
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
       fbLink: "https://www.facebook.com/bmckhanz78?mibextid=LQQJ4d",
-      instaLink: "https://www.instagram.com/muhammad_anas26?igsh=MTR1OHNqZ3Y5Y3VsaA%3D%3D&utm_source=qr",
-      linkedinLink: "https://www.linkedin.com/in/muhammad-anas-bmc?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      instaLink:
+        "https://www.instagram.com/muhammad_anas26?igsh=MTR1OHNqZ3Y5Y3VsaA%3D%3D&utm_source=qr",
+      linkedinLink:
+        "https://www.linkedin.com/in/muhammad-anas-bmc?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
       imgSrc: "Rafaqat.webp",
@@ -54,7 +57,8 @@ const Team = () => {
       imgSrc: "Ali.jpg",
       name: "Ali Raza",
       fbLink: "https://www.facebook.com/aly.dogar/",
-      instaLink: "https://www.instagram.com/alydogar?fbclid=IwY2xjawFyDQ5leHRuA2FlbQIxMAABHbbDeDB8M9_nIQuDqSUq7z1ktQQzVf4Sr0p4ESxVXmkJpUqYsvmiVN8CFQ_aem_KdCKrdtS6NNyC9aTOLCVRA",
+      instaLink:
+        "https://www.instagram.com/alydogar?fbclid=IwY2xjawFyDQ5leHRuA2FlbQIxMAABHbbDeDB8M9_nIQuDqSUq7z1ktQQzVf4Sr0p4ESxVXmkJpUqYsvmiVN8CFQ_aem_KdCKrdtS6NNyC9aTOLCVRA",
       linkedinLink: "https://www.linkedin.com/in/sardaar-aly/",
       position: "UI/UX Designer",
     },
@@ -65,7 +69,8 @@ const Team = () => {
       imgSrc: "/Mashhood.webp",
       name: "Mashhood Abdul Rehman",
       position: "Full Stack Developer",
-      fbLink: "https://www.facebook.com/profile.php?id=100009166248846&mibextid=rS40aB7S9Ucbxw6v",
+      fbLink:
+        "https://www.facebook.com/profile.php?id=100009166248846&mibextid=rS40aB7S9Ucbxw6v",
       instaLink: "https://www.instagram.com/mashhood.ar?igsh=dncwbXE2eG9wM2N4",
       linkedinLink: "https://www.linkedin.com/in/mashhood-rehman-48117b24b/",
     },
@@ -73,18 +78,21 @@ const Team = () => {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      imgSrc: "",
+      imgSrc: "Aqsa.webp",
       name: "Aqsa Malik",
       position: "Front-End Developer",
-      fbLink: "https://www.facebook.com/sajal.mughal.106/",
-      instaLink: "https://www.instagram.com/sirzaheer",
-      linkedinLink: "https://www.linkedin.com/in/sirzaheer",
+      fbLink:
+        "https://www.facebook.com/profile.php?id=61553755620217&mibextid=ZbWKwL",
+      instaLink:
+        "https://www.instagram.com/iaqsamalic/profilecard/?igsh=MXZzOW0wMnppZmMwNQ==",
+      linkedinLink:
+        "https://www.linkedin.com/in/aqsa-malik-200709279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       fb: "blackfb.webp",
       insta: "blackinsta.webp",
       linkedin: "blacklinkedin.webp",
-      imgSrc: "",
+      imgSrc: "sharoon.webp",
       name: "Sharoon Amanat",
       position: "Front-End Developer",
       fbLink: "https://www.facebook.com/profile.php?id=100075231544964",
@@ -159,20 +167,22 @@ const Team = () => {
                 <img
                   onClick={() => window.open(member.fbLink, "_blank")}
                   src={member.fb}
-                  className="h-8 w-4"
+                  className="h-8 w-4 hover:cursor-pointer"
                   alt="Facebook"
                 />
 
-                  <img 
-                  
-                   onClick={() => window.open(member.instaLink, "_blank")}
-                  src={member.insta} className="h-6 w-6" alt="Instagram" />
-                  <img
-                   onClick={() => window.open(member.linkedinLink, "_blank")}
-                    src={member.linkedin}
-                    className="h-8 w-8"
-                    alt="LinkedIn"
-                  />
+                <img
+                  onClick={() => window.open(member.instaLink, "_blank")}
+                  src={member.insta}
+                  className="h-6 w-6 hover:cursor-pointer"
+                  alt="Instagram"
+                />
+                <img
+                  onClick={() => window.open(member.linkedinLink, "_blank")}
+                  src={member.linkedin}
+                  className="h-8 w-8 hover:cursor-pointer"
+                  alt="LinkedIn"
+                />
               </div>
             </motion.div>
           ))}
