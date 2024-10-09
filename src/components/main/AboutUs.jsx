@@ -6,7 +6,7 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div className="px-6 -mt-[50%] lg:mt-1 font-sans">
+      <div className="px-6 -mt-[10%] lg:mt-1 font-sans">
         <div className="lg:max-w-7xl max-w-lg mx-auto px-6  rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               <h1 className="text-black flex items-center justify-center tracking-widest  lg:hidden text-4xl ">About us</h1>
