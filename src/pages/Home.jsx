@@ -1,11 +1,11 @@
-import {lazy, Suspense} from 'react'
+import { lazy, Suspense } from "react";
 import AboutUs from "../components/main/AboutUs";
 import HireUs from "../components/main/HireUs";
 import Hero from "../components/main/Hero";
-const WorkProcess = lazy(()=> import("../components/main/WorkProcess")) ;
-const Tesimonial = lazy(()=> import("../components/main/Tesimonial")) ;
-const Location = lazy(()=> import("../components/main/Location")) ;
-const FAQs = lazy(()=> import("../components/main/FAQs")) ;
+const WorkProcess = lazy(() => import("../components/main/WorkProcess"));
+const Tesimonial = lazy(() => import("../components/main/Tesimonial"));
+const Location = lazy(() => import("../components/main/Location"));
+const FAQs = lazy(() => import("../components/main/FAQs"));
 import Technologies from "../components/main/Technologies";
 import { Helmet } from "react-helmet-async";
 const Home = () => {
@@ -25,11 +25,11 @@ const Home = () => {
       <AboutUs />
       <HireUs />
       <Technologies />
-      <Suspense fallback={<p>Loading...</p> }>
-      <WorkProcess />
-      <Tesimonial />
-      <Location />
-      <FAQs />
+      <Suspense fallback={<p>Loading...</p>}>
+        <WorkProcess />
+        <Tesimonial />
+        <Location />
+        <FAQs />
       </Suspense>
     </div>
   );
