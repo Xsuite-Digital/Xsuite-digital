@@ -1,25 +1,26 @@
-import  { StrictMode , lazy, Suspense } from "react"; 
+import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
+import App from "./App.jsx";
 // Lazy load components
-const App = lazy(() => import("./App.jsx"));
+
 const Header = lazy(() => import("./components/Header/Header.jsx"));
 const Footer = lazy(() => import("./components/Footer/Footer.jsx"));
 const Loader = lazy(() => import("./components/Loader.jsx")); // Assuming you have a Loader component
 const RootComponent = () => {
-  
-
   return (
     <>
-        <>
+      <>
         <Suspense fallback={<Loader />}>
-      <Header />
-      <App />
-      <Footer />
-    </Suspense>
-        </>
+          <Header />
+        </Suspense>
+        <App />
+        <Suspense>
+          <Footer />
+        </Suspense>
+      </>
     </>
   );
 };
@@ -34,11 +35,7 @@ createRoot(document.getElementById("root")).render(
   </StrictMode>
 );
 
-
-
-
-
-// import  { StrictMode, useState, useEffect, lazy, Suspense } from "react"; 
+// import  { StrictMode, useState, useEffect, lazy, Suspense } from "react";
 // import { createRoot } from "react-dom/client";
 // import { BrowserRouter } from "react-router-dom";
 // import { HelmetProvider } from "react-helmet-async";
@@ -54,16 +51,16 @@ createRoot(document.getElementById("root")).render(
 
 //   useEffect(() => {
 //     const timer = setTimeout(() => {
-//       setLoading(false); 
+//       setLoading(false);
 //     }, 450);
 
-//     return () => clearTimeout(timer); 
+//     return () => clearTimeout(timer);
 //   }, []);
 
 //   return (
 //     <>
 //       {loading && (
-         
+
 //         <Suspense fallback={<Loader />}>
 //           <Header />
 //           <App />
@@ -83,9 +80,6 @@ createRoot(document.getElementById("root")).render(
 //     </BrowserRouter>
 //   </StrictMode>
 // );
-
-
-
 
 // <Suspense fallback={<Loader />}>
 //           <Loader />

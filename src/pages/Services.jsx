@@ -34,7 +34,7 @@ const Services = () => {
         <title>Services | XSuite Digital</title>
       </Helmet>
       <section className=" bg-white">
-        <div className="bg-black text-white py-52 relative overflow-hidden">
+        <div className="bg-black text-white py-16 lg:py-52 relative overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="relative z-10">
               <h1 className="text-5xl text-center font-bold">Our Services</h1>
