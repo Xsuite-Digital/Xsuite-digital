@@ -20,6 +20,8 @@ const Hero = () => {
   });
 
   const imageUrl = "/Xsuite-Final.webp";
+  
+  // Preload image to reduce layout shift
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "preload";
@@ -34,7 +36,7 @@ const Hero = () => {
   }, [imageUrl]);
 
   return (
-    <div className="relative w-full lg:h-full  h-3/4">
+    <div className="relative w-full lg:h-full h-3/4">
       <ParticleComponent className="absolute inset-0 hidden lg:block w-full h-3/4 object-cover" />
 
       <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50">
@@ -51,8 +53,14 @@ const Hero = () => {
               alt="xsuite logo2"
               width="288"
               height="144"
+              style={{ width: '100%', height: 'auto' }}  // Ensuring no shift on larger screens
             />
           </motion.div>
+
+          {/* Reserving space for the longest word to avoid shift */}
+          <div className="invisible font-bold text-lg lg:text-4xl">
+            We offer Web Development
+          </div>
 
           {/* Typewriter Effect */}
           <motion.div
@@ -64,6 +72,7 @@ const Hero = () => {
             <motion.h1 className="font-bold text-lg lg:text-4xl text-white">
               We offer
             </motion.h1>
+
             <p className="font-bold text-lg lg:text-4xl z-20 text-orange-500">
               {typeEffect}
             </p>
@@ -75,7 +84,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -80 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 2 }}
-              className="border px-2 py-3 rounded-xl mt-8 lg:hidden text-white"
+              className="border px-4 py-3 rounded-xl mt-8 lg:hidden text-white"  // Adjusted padding to prevent size shifts
             >
               Get Started
             </motion.button>

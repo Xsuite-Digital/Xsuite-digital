@@ -1,8 +1,8 @@
 
 import { useEffect, useRef } from 'react';
 
-const PARTICLE_SIZE = 3;
-const PARTICLE_SPACING = 25;
+const PARTICLE_SIZE = 2;
+const PARTICLE_SPACING = 20;
 const WAVE_SPEED = 0.2;
 const MAX_DISTANCE = 150;
 
