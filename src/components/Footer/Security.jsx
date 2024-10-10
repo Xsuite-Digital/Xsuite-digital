@@ -6,7 +6,7 @@ const Security = () => {
   });
   return (
     <>
-      <div className="bg-black text-white py-52 relative overflow-hidden">
+      <div className="bg-black text-white py-16 lg:py-52 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="relative z-10">
             <h1 className="text-3xl text-center font-bold sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">

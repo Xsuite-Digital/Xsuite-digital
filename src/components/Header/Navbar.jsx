@@ -49,6 +49,8 @@ const Navbar = () => {
                 src="/logo-min.webp"
                 className="w-full h-auto "
                 alt="Xsuite logo image"
+                height="50"
+                width="100"
               />
             </Link>
           </div>

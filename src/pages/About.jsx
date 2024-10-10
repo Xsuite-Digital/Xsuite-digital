@@ -16,7 +16,7 @@ const About = () => {
         <title>About | XSuite Digital</title>
         <meta name="" content="" />
       </Helmet>
-      <div className="bg-black text-white py-52 relative overflow-hidden">
+      <div className="bg-black text-white py-16 lg:py-52  relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="relative z-10">
             <h1 className="text-5xl text-center font-bold">About Us</h1>
@@ -126,7 +126,7 @@ const About = () => {
             </div>
             <div className="max-h-72">
               <img
-              loading="lazy"
+                loading="lazy"
                 src="/dg2.webp"
                 alt="Placeholder Image"
                 className=" object-contain rounded-xl w-full h-full"
@@ -137,7 +137,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="max-h-72 max-md:order-1">
               <img
-              loading="lazy"
+                loading="lazy"
                 src="/dg3.webp"
                 alt="dg3"
                 className="rounded-xl object-contain w-full h-full"
