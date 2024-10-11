@@ -5,7 +5,7 @@ function Footer() {
     <div>
       <footer className="font-sans tracking-wide bg-black w-full">
         {/* Full-width container, fixed width for large screens */}
-        <div className="w-full max-w-screen-xl mx-auto py-12">
+        <div className="w-full max-w-screen-xl ml-14 py-12 ">
           {/* Grid for Four Columns */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 px-4 md:px-0">
             {/* Company Logo and Newsletter Subscription */}
