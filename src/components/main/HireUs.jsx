@@ -76,7 +76,7 @@ const HireUs = () => {
 
           <div className="text-start  px-8 py-4 lg:px-12 lg:py-6">
            
-            <img  className="w-16 h-16 mb-6 inline-block p-3 border border-orange-400 rounded-lg " src="/support.png" alt="support" height={30} width={30} />
+            <img  className="w-16 h-16 mb-6 inline-block p-3 border border-orange-400 rounded-lg " src="/support.webp" alt="support" height={30} width={30} />
             <h3 className="text-gray-800 text-3xl font-semibold mb-3">
               Support
             </h3>
