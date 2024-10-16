@@ -5,9 +5,9 @@ function Footer() {
     <div>
       <footer className="font-sans tracking-wide bg-black w-full">
         {/* Full-width container, fixed width for large screens */}
-        <div className="w-full max-w-screen-xl ml-14 py-12 ">
+        <div className="w-full max-w-screen-xl mx-auto py-6 px-4 md:py-12">
           {/* Grid for Four Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             {/* Company Logo and Newsletter Subscription */}
             <div className="col-span-1 md:col-span-4 flex flex-col w-full">
               <Link to="/" className="inline-block">
@@ -51,6 +51,7 @@ function Footer() {
                   <a
                     href="https://wa.me/923064312116"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-white"
                   >
                     +92 331 63 61 916
@@ -62,6 +63,7 @@ function Footer() {
                   <a
                     href="https://www.google.com/maps?q=Lawrence+Road,+Near+China+Chowk,+Punjab+Lahore+Pakistan"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-white"
                   >
                     Lawrence Road, Near China Chowk,
@@ -126,41 +128,40 @@ function Footer() {
                   <Link
                     to="https://www.facebook.com/profile.php?id=61566739650180"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex"
                   >
                     <img
                       src="/facebook icons-min.webp"
-                      className="   h-auto w-4 rounded-full p-1 space-x-2 hover"
+                      className="h-auto w-4 rounded-full p-1"
                       alt=""
                     />
-                    <span className=" mt-1">Facebook</span>
+                    <span className="mt-1">Facebook</span>
                   </Link>
                 </li>
-                <li className="flex items-center  justify-center space-x-3 hover:text-white">
+                <li className="flex items-center justify-center space-x-3 hover:text-white">
                   <Link
                     to="https://www.instagram.com/xsuite.digital/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex"
                   >
                     <img
                       src="/instaram-icon.webp"
-                      className="   h-6 w-6 p-1   "
+                      className="h-6 w-6 p-1"
                       alt=""
-                    />{" "}
+                    />
                     <span className="mx-1">Instagram</span>
                   </Link>
                 </li>
-                <li className="flex space-x-3 ">
+                <li className="flex space-x-3">
                   <Link
                     to="https://www.linkedin.com/company/xsuite-digital/about/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex"
                   >
-                    <img
-                      src="/inn-min.webp"
-                      className="   h-8 w-7   p-1 "
-                      alt=""
-                    />
+                    <img src="/inn-min.webp" className="h-8 w-7 p-1" alt="" />
                     <span className="mt-1">LinkedIn</span>
                   </Link>
                 </li>

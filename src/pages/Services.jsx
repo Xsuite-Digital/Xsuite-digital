@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import FAQs from "../components/main/FAQs";
 import Location from "../components/main/Location";
 import WorkProcess from "../components/main/WorkProcess";
+import ServicesMarqee from "../components/main/ServicesMarqee";
 
 const Services = () => {
   const [showAll, setShowAll] = useState(false);
@@ -34,7 +35,7 @@ const Services = () => {
         <title>Services | XSuite Digital</title>
       </Helmet>
       <section className=" bg-white">
-        <div className="bg-black text-white py-16 lg:py-52 relative overflow-hidden">
+        <div className="bg-black h-[60vh] text-white py-16 lg:py-52 relative overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="relative z-10">
               <h1 className="text-5xl text-center font-bold">Our Services</h1>
@@ -45,6 +46,7 @@ const Services = () => {
             <div className="absolute left-0 bottom-0 w-96 h-96 bg-white rounded-full translate-y-1/2 -translate-x-1/2"></div>
           </div>
         </div>
+        <ServicesMarqee />
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap justify-center items-center -m-4">
             <div className="grid grid-cols-1 gap-y-12 text-center lg:grid-cols-3 gap-4 items-center justify-center ">
