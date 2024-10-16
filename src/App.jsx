@@ -2,11 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import Services from "./pages/Services";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import TermsOfServices from "./components/Footer/TermsOfServices";
 import Security from "./components/Footer/Security";
 import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
+import ChatIcon from "./components/ChatIcon";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/Security" element={<Security />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
-      <ScrollToTop />
+      <ChatIcon/>
     </>
   );
 }
