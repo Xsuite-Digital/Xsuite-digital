@@ -7,6 +7,7 @@ import About from "./pages/About";
 import TermsOfServices from "./components/Footer/TermsOfServices";
 import Security from "./components/Footer/Security";
 import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
+import ChatIcon from "./components/ChatIcon";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
       <ScrollToTop />
+      <ChatIcon/>
     </>
   );
 }
