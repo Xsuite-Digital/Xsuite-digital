@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 const ChatIcon = () => {
   const [visible, setVisible] = useState(false);
@@ -21,7 +20,11 @@ const ChatIcon = () => {
       }`}
     >
       {visible && (
-        <Link to="https:/wa.me/+923316361916" target="_blank">
+        <a
+          href="https://wa.me/923316361916"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/whatsappicon.png"
             alt="whatsappicon"
@@ -29,7 +32,7 @@ const ChatIcon = () => {
             width={100}
             className="z-50 h-16 w-16"
           />
-        </Link>
+        </a>
       )}
     </div>
   );
