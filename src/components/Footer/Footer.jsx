@@ -1,8 +1,53 @@
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Footer() {
+  const form = useRef();
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true); // Set loading to true
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID_2,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          toast.success("Form Submitted Successfully!"); // Success toast
+          setLoading(false); // Reset loading after success
+          setError(""); // Clear any errors
+          e.target.reset(); // Reset form fields
+        },
+        (error) => {
+          toast.error("Failed to send message, please try again."); // Error toast
+          setLoading(false); // Reset loading on failure
+          setError("Failed to send message, please try again."); // Display error message
+        }
+      );
+  };
+
   return (
     <div>
+      {/* Toast notifications */}
+      <ToastContainer  />
+
       <footer className="font-sans tracking-wide bg-black w-full">
         {/* Full-width container, fixed width for large screens */}
         <div className="w-full max-w-screen-xl mx-auto py-6 px-4 md:py-12">
@@ -17,19 +62,30 @@ function Footer() {
                 Discover XSuite, a global marketing agency that transforms your
                 brand with creativity and innovation.
               </p>
+
               {/* Newsletter Subscription */}
               <div className="mt-6">
-                <form className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3">
+                <form
+                  ref={form}
+                  onSubmit={sendEmail}
+                  className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3"
+                >
                   <input
+                    onChange={handleChange}
+                    name="email"
                     type="email"
                     placeholder="Enter your email"
                     className="px-4 py-2 rounded-md text-black w-full sm:w-auto focus:outline-none"
+                    required
                   />
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-white text-black font-semibold rounded-md hover:bg-orange-600"
+                    disabled={loading} // Disable button when loading
+                    className={`px-4 py-2 ${
+                      loading ? "bg-gray-400" : "bg-white"
+                    } text-black font-semibold rounded-md hover:bg-orange-600`}
                   >
-                    Subscribe
+                    {loading ? "Sending..." : "Subscribe"}
                   </button>
                 </form>
               </div>
@@ -40,10 +96,7 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Get In Touch</h4>
               <ul className="space-y-2 mt-6 text-gray-300">
                 <li>
-                  <a
-                    href="mailto:info@xsuite.digital"
-                    className="hover:text-white"
-                  >
+                  <a href="mailto:info@xsuite.digital" className="hover:text-white">
                     info@xsuite.digital
                   </a>
                 </li>
@@ -155,6 +208,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="flex space-x-3">
+                <li className="flex space-x-3">
                   <Link
                     to="https://www.linkedin.com/company/xsuite-digital/about/"
                     target="_blank"
@@ -174,10 +228,7 @@ function Footer() {
           <div className="flex flex-wrap items-center mb-12 lg:mb-0 justify-center max-md:flex-col gap-4">
             <ul className="flex gap-4 lg:gap-6 text-gray-300">
               <li>
-                <Link
-                  to="/TermsOfServices"
-                  className="hover:text-white text-sm"
-                >
+                <Link to="/TermsOfServices" className="hover:text-white text-sm">
                   Terms of Service
                 </Link>
               </li>

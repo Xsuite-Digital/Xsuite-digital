@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from 'emailjs-com';  
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Location = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -32,17 +33,21 @@ const Location = () => {
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
       .then(() => {
-        console.log('SUCCESS!');
+        toast.success("Form Submitted Successfully!");
         setLoading(false);  // Reset loading after success
         setError("");  // Clear any errors
       }, (error) => {
-        console.log('FAILED...', error.text);
+        toast.error("Failed to send message, please try again.");
+        
         setLoading(false);  // Reset loading on failure
         setError("Failed to send message, please try again.");  // Display error message
       });
   };
 
   return (
+    <>
+      <ToastContainer />
+    
     <div className="flex flex-col  md:flex-row items-center justify-between bg-[#373737] text-white p-6 md:p-12">
       {/* Left Section */}
       <div className="w-screen lg:flex flex-col items-center justify-center text-center py-24 md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
@@ -142,6 +147,8 @@ const Location = () => {
         </form>
       </div>
     </div>
+    </>
+
   );
 };
 
