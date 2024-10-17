@@ -20,10 +20,10 @@ const AboutUs = () => {
 </div>
 
             <div>
-              <h1 className="font-bold tracking-widest text-2xl lg:text-[28px] lg:text-xl justify-center font-sans flex items-center mb-4">
+              <h1 className="font-bold tracking-widest text-2xl lg:text-[28px] lg:text-xl justify-center  flex items-center mb-4">
                 XSuite Digital: Solutions Provider
               </h1>
-              <p className="text-black text-md pl-10  leading-loose">
+              <p className="text-black text-md pl-10   leading-loose">
                 XSuite Digital is a top-level marketing service provider,
                 specializing in web development, search engine optimization,
                 pay-per-click campaigns, and social media management. With a
