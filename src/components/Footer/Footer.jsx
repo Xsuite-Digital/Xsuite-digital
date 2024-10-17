@@ -46,7 +46,7 @@ function Footer() {
   return (
     <div>
       {/* Toast notifications */}
-      <ToastContainer  />
+      <ToastContainer />
 
       <footer className="font-sans tracking-wide bg-black w-full">
         {/* Full-width container, fixed width for large screens */}
@@ -96,7 +96,10 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Get In Touch</h4>
               <ul className="space-y-2 mt-6 text-gray-300">
                 <li>
-                  <a href="mailto:info@xsuite.digital" className="hover:text-white">
+                  <a
+                    href="mailto:info@xsuite.digital"
+                    className="hover:text-white"
+                  >
                     info@xsuite.digital
                   </a>
                 </li>
@@ -207,7 +210,7 @@ function Footer() {
                     <span className="mx-1 hidden lg:block">Instagram</span>
                   </Link>
                 </li>
-                <li className="flex space-x-3">
+
                 <li className="flex space-x-3">
                   <Link
                     to="https://www.linkedin.com/company/xsuite-digital/about/"
@@ -228,7 +231,10 @@ function Footer() {
           <div className="flex flex-wrap items-center mb-12 lg:mb-0 justify-center max-md:flex-col gap-4">
             <ul className="flex gap-4 lg:gap-6 text-gray-300">
               <li>
-                <Link to="/TermsOfServices" className="hover:text-white text-sm">
+                <Link
+                  to="/TermsOfServices"
+                  className="hover:text-white text-sm"
+                >
                   Terms of Service
                 </Link>
               </li>
