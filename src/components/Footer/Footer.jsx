@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Footer() {
@@ -46,7 +46,7 @@ function Footer() {
   return (
     <div>
       {/* Toast notifications */}
-      <ToastContainer  />
+      
 
       <footer className="font-sans tracking-wide bg-black w-full">
         {/* Full-width container, fixed width for large screens */}

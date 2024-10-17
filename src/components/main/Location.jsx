@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from 'emailjs-com';  
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const Location = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -13,42 +14,36 @@ const Location = () => {
     phone: "",
     message: "",
   });
-
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleChange = ({ target: { name, value } }) => {
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true);  // Set loading to true
-
+    setLoading(true);
     emailjs.sendForm(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.current,
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
-      .then(() => {
-        toast.success("Form Submitted Successfully!");
-        setLoading(false);  // Reset loading after success
-        setError("");  // Clear any errors
-      }, (error) => {
-        toast.error("Failed to send message, please try again.");
-        
-        setLoading(false);  // Reset loading on failure
-        setError("Failed to send message, please try again.");  // Display error message
-      });
+    .then(() => {
+      toast.success("Form Submitted Successfully!");
+      setLoading(false);
+      setError("");
+    })
+    .catch(() => {
+      toast.error("Failed to send message, please try again.");
+      setLoading(false);
+      setError("Failed to send message, please try again.");
+    });
   };
 
   return (
-    <>
-      <ToastContainer />
-    
-    <div className="flex flex-col  md:flex-row items-center justify-between bg-[#373737] text-white p-6 md:p-12">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-[#373737] text-white p-6 md:p-12">
       {/* Left Section */}
       <div className="w-screen lg:flex flex-col items-center justify-center text-center py-24 md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
         <h2 className="text-sm uppercase mb-2">GET STARTED WITH US</h2>
@@ -61,13 +56,11 @@ const Location = () => {
           <br /> Uncover opportunities and take the first step <br /> towards
           digital success.
         </p>
-        <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-          <Link to="https://wa.me/+923316361916" target="_blank">
-            <button className="duration-300 ease-in-out bg-black hover:bg-orange-500 text-white px-6 py-2 rounded-full flex items-center justify-center">
-              Let&apos;s Talk
-            </button>
-          </Link>
-        </div>
+        <Link to="https://wa.me/+923316361916" target="_blank">
+          <button className="duration-300 ease-in-out bg-black hover:bg-orange-500 text-white px-6 py-2 rounded-full">
+            Let&apos;s Talk
+          </button>
+        </Link>
       </div>
 
       {/* Right Section (Form) */}
@@ -88,44 +81,32 @@ const Location = () => {
             required
           />
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First name"
-              value={formData.firstName}
-              onChange={handleChange}
-              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
-              required
-            />
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last name"
-              value={formData.lastName}
-              onChange={handleChange}
-              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
-              required
-            />
+            {["firstName", "lastName"].map((name) => (
+              <input
+                key={name}
+                type="text"
+                name={name}
+                placeholder={name.replace(/([A-Z])/g, " $1").trim()}
+                value={formData[name]}
+                onChange={handleChange}
+                className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
+                required
+              />
+            ))}
           </div>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
-              required
-            />
-            <input
-              type="phone"
-              name="phone"
-              placeholder="Phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
-              required
-            />
+            {["email", "phone"].map((name) => (
+              <input
+                key={name}
+                type={name === "email" ? "email" : "phone"}
+                name={name}
+                placeholder={name.charAt(0).toUpperCase() + name.slice(1)}
+                value={formData[name]}
+                onChange={handleChange}
+                className="w-full md:w-1/2 p-2 border border-gray-300 rounded"
+                required
+              />
+            ))}
           </div>
           <textarea
             name="message"
@@ -134,11 +115,9 @@ const Location = () => {
             onChange={handleChange}
             className="w-full p-2 border border-gray-300 rounded h-24"
             required
-          ></textarea>
+          />
           <button
-            className={`w-full ${
-              loading ? "bg-gray-400" : "bg-black hover:bg-[#373737]"
-            } text-white py-2 rounded`}
+            className={`w-full ${loading ? "bg-gray-400 text-white h-10" : "bg-black text-white h-10  hover:bg-[#373737]"} duration-300 ease-in-out rounded-xl`}
             type="submit"
             disabled={loading}
           >
@@ -147,8 +126,6 @@ const Location = () => {
         </form>
       </div>
     </div>
-    </>
-
   );
 };
 
