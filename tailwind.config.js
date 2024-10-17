@@ -10,6 +10,15 @@ export default {
       fontFamily: {
         "sf-pro": ['"SF Pro Display"', "sans-serif"],
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(100%)" }, // Start offscreen on the right
+          "100%": { transform: "translateX(-80%)" }, // End offscreen on the left
+        },
+      },
+      animation: {
+        scroll: "scroll 15s linear infinite", // Adjusted timing for a quicker scroll
+      },
     },
   },
   plugins: [],
