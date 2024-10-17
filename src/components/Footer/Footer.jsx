@@ -1,8 +1,53 @@
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Footer() {
+  const form = useRef();
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true); // Set loading to true
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID_2,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          toast.success("Form Submitted Successfully!"); // Success toast
+          setLoading(false); // Reset loading after success
+          setError(""); // Clear any errors
+          e.target.reset(); // Reset form fields
+        },
+        (error) => {
+          toast.error("Failed to send message, please try again."); // Error toast
+          setLoading(false); // Reset loading on failure
+          setError("Failed to send message, please try again."); // Display error message
+        }
+      );
+  };
+
   return (
     <div>
+      {/* Toast notifications */}
+      <ToastContainer  />
+
       <footer className="font-sans tracking-wide bg-black w-full">
         {/* Full-width container, fixed width for large screens */}
         <div className="w-full max-w-screen-xl mx-auto py-12">
@@ -17,19 +62,30 @@ function Footer() {
                 Discover XSuite, a global marketing agency that transforms your
                 brand with creativity and innovation.
               </p>
+
               {/* Newsletter Subscription */}
               <div className="mt-6">
-                <form className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3">
+                <form
+                  ref={form}
+                  onSubmit={sendEmail}
+                  className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3"
+                >
                   <input
+                    onChange={handleChange}
+                    name="email"
                     type="email"
                     placeholder="Enter your email"
                     className="px-4 py-2 rounded-md text-black w-full sm:w-auto focus:outline-none"
+                    required
                   />
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-white text-black font-semibold rounded-md hover:bg-orange-600"
+                    disabled={loading} // Disable button when loading
+                    className={`px-4 py-2 ${
+                      loading ? "bg-gray-400" : "bg-white"
+                    } text-black font-semibold rounded-md hover:bg-orange-600`}
                   >
-                    Subscribe
+                    {loading ? "Sending..." : "Subscribe"}
                   </button>
                 </form>
               </div>
@@ -40,19 +96,12 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Get In Touch</h4>
               <ul className="space-y-2 mt-6 text-gray-300">
                 <li>
-                  <a
-                    href="mailto:info@xsuite.digital"
-                    className="hover:text-white"
-                  >
+                  <a href="mailto:info@xsuite.digital" className="hover:text-white">
                     info@xsuite.digital
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://wa.me/923064312116"
-                    target="_blank"
-                    className="hover:text-white"
-                  >
+                  <a href="https://wa.me/923064312116" target="_blank" className="hover:text-white">
                     +92 331 63 61 916
                   </a>
                 </li>
@@ -130,37 +179,25 @@ function Footer() {
                   >
                     <img
                       src="/facebook icons-min.webp"
-                      className="   h-auto w-4 rounded-full p-1 space-x-2 hover"
+                      className="h-auto w-4 rounded-full p-1 space-x-2"
                       alt=""
                     />
-                    <span className=" mt-1">Facebook</span>
+                    <span className="mt-1">Facebook</span>
                   </Link>
                 </li>
-                <li className="flex items-center  justify-center space-x-3 hover:text-white">
-                  <Link
-                    to="https://www.instagram.com/xsuite.digital/"
-                    target="_blank"
-                    className="flex"
-                  >
-                    <img
-                      src="/instaram-icon.webp"
-                      className="   h-6 w-6 p-1   "
-                      alt=""
-                    />{" "}
+                <li className="flex items-center justify-center space-x-3 hover:text-white">
+                  <Link to="https://www.instagram.com/xsuite.digital/" target="_blank" className="flex">
+                    <img src="/instaram-icon.webp" className="h-6 w-6 p-1" alt="" />
                     <span className="mx-1">Instagram</span>
                   </Link>
                 </li>
-                <li className="flex space-x-3 ">
+                <li className="flex space-x-3">
                   <Link
                     to="https://www.linkedin.com/company/xsuite-digital/about/"
                     target="_blank"
                     className="flex"
                   >
-                    <img
-                      src="/inn-min.webp"
-                      className="   h-8 w-7   p-1 "
-                      alt=""
-                    />
+                    <img src="/inn-min.webp" className="h-8 w-7 p-1" alt="" />
                     <span className="mt-1">LinkedIn</span>
                   </Link>
                 </li>
@@ -173,10 +210,7 @@ function Footer() {
           <div className="flex flex-wrap items-center justify-center max-md:flex-col gap-4">
             <ul className="md:flex md:space-x-6 max-md:space-y-2 text-gray-300">
               <li>
-                <Link
-                  to="/TermsOfServices"
-                  className="hover:text-white text-sm"
-                >
+                <Link to="/TermsOfServices" className="hover:text-white text-sm">
                   Terms of Service
                 </Link>
               </li>
