@@ -1,5 +1,4 @@
-
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 const PARTICLE_SIZE = 2;
 const PARTICLE_SPACING = 20;
@@ -14,7 +13,7 @@ export default function ParticleComponent() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas?.getContext('2d');
+    const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
 
     const resizeCanvas = () => {
@@ -35,7 +34,10 @@ export default function ParticleComponent() {
             speed: Math.random() * 2 + 1,
             angle: Math.random() * Math.PI * 2, // Random rotation angle for particles
             opacity: Math.random() * 0.2 + 0.5, // Random opacity
-            color: Math.random() < 0.2 ? 'rgba(249, 115, 22, 1)' : 'rgba(255, 255, 255, 1)', // 20% chance for orange particles
+            color:
+              Math.random() < 0.2
+                ? "rgba(249, 115, 22, 1)"
+                : "rgba(255, 255, 255, 1)", // 20% chance for orange particles
             pulseSize: Math.random() * 1.2 + 1, // Random pulse size factor
           });
         }
@@ -43,7 +45,7 @@ export default function ParticleComponent() {
     };
 
     const animate = () => {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';  // Slight fading to smooth transitions
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // Slight fading to smooth transitions
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       const { x: mouseX, y: mouseY } = mouseRef.current;
@@ -57,25 +59,31 @@ export default function ParticleComponent() {
         if (distance < MAX_DISTANCE) {
           const angle = Math.atan2(dy, dx);
           const force = (1 - distance / MAX_DISTANCE) * 40;
-          particle.x += Math.cos(angle) * force;  // Particle moves outward in X direction
-          particle.y += Math.sin(angle) * force;  // Particle moves outward in Y direction
-          particle.opacity = 1;  // Full opacity on interaction
-          particle.color = 'rgba(249, 115, 22, 1)';  // Orange color for proximity effect
+          particle.x += Math.cos(angle) * force; // Particle moves outward in X direction
+          particle.y += Math.sin(angle) * force; // Particle moves outward in Y direction
+          particle.opacity = 1; // Full opacity on interaction
+          particle.color = "rgba(249, 115, 22, 1)"; // Orange color for proximity effect
         } else {
           // Faint orange color when far from mouse
           if (Math.random() < 0.01) {
-            particle.color = 'rgba(249, 115, 22, 0.3)';
+            particle.color = "rgba(249, 115, 22, 0.3)";
           }
 
           // Fade out effect when far from mouse
           particle.opacity = Math.max(0.1, particle.opacity - 0.01);
           // Smooth return to the base position with some random jitter
-          particle.x += (particle.baseX - particle.x) * WAVE_SPEED + Math.random() * 0.2 - 0.1;
-          particle.y += (particle.baseY - particle.y) * WAVE_SPEED + Math.random() * 0.2 - 0.1;
+          particle.x +=
+            (particle.baseX - particle.x) * WAVE_SPEED +
+            Math.random() * 0.2 -
+            0.1;
+          particle.y +=
+            (particle.baseY - particle.y) * WAVE_SPEED +
+            Math.random() * 0.2 -
+            0.1;
         }
 
         // Pulse effect
-        const pulse = Math.sin(particle.speed * Math.PI * 2) * 0.5 + 1;  // Pulsing effect
+        const pulse = Math.sin(particle.speed * Math.PI * 2) * 0.5 + 1; // Pulsing effect
         const pulseFactor = particle.pulseSize * pulse;
 
         // Rotate particle
@@ -88,12 +96,17 @@ export default function ParticleComponent() {
         ctx.fillStyle = particle.color; // Color changes based on distance
         ctx.globalAlpha = particle.opacity; // Apply opacity
         // ctx.fillRect(
-        //   -pulseFactor / 2, 
-        //   -pulseFactor / 2, 
-        //   pulseFactor, 
+        //   -pulseFactor / 2,
+        //   -pulseFactor / 2,
+        //   pulseFactor,
         //   pulseFactor
         // );
-        ctx.fillRect(-PARTICLE_SIZE / 2, -PARTICLE_SIZE / 2, PARTICLE_SIZE, PARTICLE_SIZE);
+        ctx.fillRect(
+          -PARTICLE_SIZE / 2,
+          -PARTICLE_SIZE / 2,
+          PARTICLE_SIZE,
+          PARTICLE_SIZE
+        );
         ctx.restore();
       });
 
@@ -104,15 +117,15 @@ export default function ParticleComponent() {
       mouseRef.current = { x: event.clientX, y: event.clientY };
     };
 
-    window.addEventListener('resize', resizeCanvas);
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener("resize", resizeCanvas);
+    window.addEventListener("mousemove", handleMouseMove);
 
     resizeCanvas();
     animate();
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("resize", resizeCanvas);
+      window.removeEventListener("mousemove", handleMouseMove);
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
@@ -120,7 +133,7 @@ export default function ParticleComponent() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-black overflow-hidden">
+    <div className="relative lg:w-full lg:h-screen h-[60vh] bg-black overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0" />
     </div>
   );

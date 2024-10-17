@@ -46,25 +46,34 @@ const Testimonial = () => {
                   {[...Array(5)].map((_, i) => (
                     <span key={i}>
                       {i < testimonial.rating ? (
-                        <span><Icon icon="ic:round-star" width="21" height="21"   /></span> 
+                        <span>
+                          <Icon icon="ic:round-star" width="21" height="21" />
+                        </span>
                       ) : (
-                        <span><Icon icon="mynaui:star" width="20" height="20"   /></span> 
+                        <span>
+                          <Icon icon="mynaui:star" width="20" height="20" />
+                        </span>
                       )}
                     </span>
                   ))}
                 </div>
-                <p className="leading-relaxed mb-6 text-sm sm:text-base">{testimonial.text}</p>
+                <p className="leading-relaxed mb-6 text-sm sm:text-base">
+                  {testimonial.text}
+                </p>
                 <div className="inline-flex items-center">
-                <img
-  alt="testimonial"
-  src={testimonial.imgSrc}
-  className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-  loading="lazy"
-/>
-                  
+                  <img
+                    alt="testimonial"
+                    src={testimonial.imgSrc}
+                    className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                    loading="lazy"
+                  />
                   <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font font-medium text-gray-900">{testimonial.name}</span>
-                    <span className="text-gray-600 text-sm">{testimonial.role}</span>
+                    <span className="title-font font-medium text-gray-900">
+                      {testimonial.name}
+                    </span>
+                    <span className="text-gray-600 text-sm">
+                      {testimonial.role}
+                    </span>
                   </span>
                 </div>
               </div>
