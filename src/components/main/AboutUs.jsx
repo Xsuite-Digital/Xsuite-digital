@@ -6,18 +6,20 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div className="px-6 -mt-[10%] lg:mt-1 font-sans">
+      <div className="px-6 lg:mt-1 font-sans">
         <div className="lg:max-w-7xl max-w-lg mx-auto px-6  rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              <h1 className="text-black flex items-center justify-center tracking-widest  lg:hidden text-4xl ">About us</h1>
-              <div className="relative">
-  <img
-    src="/aboutus-min.webp"
-    alt="Image"
-    loading="lazy"
-    className="rounded-md shadow-[20px_-20px_0px_rgba(0,0,0,1),-20px_20px_0px_rgba(249,115,27)] object-cover w-[800px] h-[300px]" 
-  />
-</div>
+            <h1 className="text-black flex items-center justify-center tracking-widest  lg:hidden text-4xl ">
+              About us
+            </h1>
+            <div className="relative">
+              <img
+                src="/aboutus-min.webp"
+                alt="Image"
+                loading="lazy"
+                className="rounded-md shadow-[20px_-20px_0px_rgba(0,0,0,1),-20px_20px_0px_rgba(249,115,27)] object-cover w-[800px] h-[300px]"
+              />
+            </div>
 
             <div>
               <h1 className="font-bold tracking-widest text-2xl lg:text-[28px] lg:text-xl justify-center font-sans flex items-center mb-4">

@@ -12,7 +12,7 @@ const Hero = () => {
       "PPC Campaigns",
       "Social Media Marketing",
       "Web Development",
-      "Google My Business Optimization",
+      // "Google My Business Optimization",
     ],
     loop: {},
     typeSpeed: 100,
@@ -20,7 +20,7 @@ const Hero = () => {
   });
 
   const imageUrl = "/Xsuite-Final.webp";
-  
+
   // Preload image to reduce layout shift
   useEffect(() => {
     const link = document.createElement("link");
@@ -39,7 +39,7 @@ const Hero = () => {
     <div className="relative w-full lg:h-full h-3/4">
       <ParticleComponent className="absolute inset-0 hidden lg:block w-full h-3/4 object-cover" />
 
-      <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50">
+      <div className="absolute inset-0 w-full lg:h-full bg-black bg-opacity-50">
         <div className="flex flex-col justify-center items-center h-full text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: -40 }}
@@ -53,7 +53,7 @@ const Hero = () => {
               alt="xsuite logo2"
               width="288"
               height="144"
-              style={{ width: '100%', height: 'auto' }}  // Ensuring no shift on larger screens
+              style={{ width: "100%", height: "auto" }} // Ensuring no shift on larger screens
             />
           </motion.div>
 
@@ -84,7 +84,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -80 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 2 }}
-              className="border px-4 py-3 rounded-xl mt-8 lg:hidden text-white"  // Adjusted padding to prevent size shifts
+              className="border px-4 py-3 rounded-xl mt-8 lg:hidden text-white" // Adjusted padding to prevent size shifts
             >
               Get Started
             </motion.button>
