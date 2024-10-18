@@ -12,7 +12,6 @@ const Hero = () => {
       "PPC Campaigns",
       "Social Media Marketing",
       "Web Development",
-      // "Google My Business Optimization",
     ],
     loop: {},
     typeSpeed: 100,

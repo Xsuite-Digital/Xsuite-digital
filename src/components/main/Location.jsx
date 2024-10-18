@@ -32,6 +32,14 @@ const Location = () => {
     )
     .then(() => {
       toast.success("Form Submitted Successfully!");
+      setFormData({
+        companyName: "",
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+      })
       setLoading(false);
       setError("");
     })

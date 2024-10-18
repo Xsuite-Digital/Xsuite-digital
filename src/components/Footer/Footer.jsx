@@ -32,6 +32,7 @@ function Footer() {
         () => {
           toast.success("Form Submitted Successfully!"); // Success toast
           setLoading(false); // Reset loading after success
+          setFormData({email:""})
           setError(""); // Clear any errors
           e.target.reset(); // Reset form fields
         },

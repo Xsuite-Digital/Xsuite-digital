@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 const Team = () => {
   const profile = [
     {
+      imgSrc: "Sir Ali.webp",
+      name: "Ali Aziz",
+      position: "CEO",
+},
+    {
       imgSrc: "sir.webp",
       name: "Sir Zaheer",
       position: "Google Ads PPC Strategist",
@@ -57,7 +62,7 @@ const Team = () => {
     const updateVisibleProfiles = () => {
       const isMobile = window.innerWidth < 1024;
       setVisibleProfiles(
-        profile.slice(currentIndex, currentIndex + (isMobile ? 1 : 4))
+        profile.slice(currentIndex, currentIndex + (isMobile ? 1 : 3))
       );
     };
 
@@ -71,17 +76,17 @@ const Team = () => {
 
   const nextProfiles = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + (window.innerWidth < 1024 ? 1 : 4) >= profile.length
+      prevIndex + (window.innerWidth < 1024 ? 1 : 3) >= profile.length
         ? 0
-        : prevIndex + (window.innerWidth < 1024 ? 1 : 4)
+        : prevIndex + (window.innerWidth < 1024 ? 1 : 3)
     );
   };
 
   const prevProfiles = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - (window.innerWidth < 1024 ? 1 : 4) < 0
-        ? profile.length - (window.innerWidth < 1024 ? 1 : 4)
-        : prevIndex - (window.innerWidth < 1024 ? 1 : 4)
+      prevIndex - (window.innerWidth < 1024 ? 1 : 3) < 0
+        ? profile.length - (window.innerWidth < 1024 ? 1 : 3)
+        : prevIndex - (window.innerWidth < 1024 ? 1 : 3)
     );
   };
 
@@ -91,7 +96,7 @@ const Team = () => {
 
       <div className="relative  ">
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-4 gap-4"
+          className="grid grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:grid-rows-1 gap-4"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
