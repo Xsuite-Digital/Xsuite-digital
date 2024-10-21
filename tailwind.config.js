@@ -17,7 +17,7 @@ export default {
         },
       },
       animation: {
-        scroll: "scroll 15s linear infinite", // Adjusted timing for a quicker scroll
+        scroll: "scroll 30s linear infinite", // Adjusted timing for a quicker scroll
       },
     },
   },

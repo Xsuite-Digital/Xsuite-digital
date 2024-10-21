@@ -6,31 +6,10 @@ const ServicesMarqee = () => {
           <div className="flex animate-scroll">
             {/* First Set of Items */}
             <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Digital Marketing
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Web Development
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Graphic Designing
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              PPC Campaigns
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Google Analytics
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Google Ads
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Google Search Console
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Search Engine Optimization
-            </span>
-            <span className="text-white text-2xl mx-8 transition-all duration-300 hover:text-orange-500">
-              Social Media Marketing
+              Get an amazing discount of up to 50% on our top-notch Digital
+              Marketing, Google Ads, PPC Campaigns, Social Media Marketing, Web
+              Development, and Google My Business Optimization services – boost
+              your business for less!
             </span>
           </div>
         </div>
