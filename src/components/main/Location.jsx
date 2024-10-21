@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import emailjs from 'emailjs-com';  
+import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -24,30 +24,37 @@ const Location = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.sendForm(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      form.current,
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    )
-    .then(() => {
-      toast.success("Form Submitted Successfully!");
-      setFormData({
-        companyName: "",
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        toast.success("Form Submitted Successfully!");
+
+        // Trigger Google Ads conversion event
+        window.gtag("event", "conversion", {
+          send_to: "AW-708625819/wd3-CLiDqqMCEJuL89EC",
+        });
+
+        setFormData({
+          companyName: "",
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setLoading(false);
+        setError("");
       })
-      setLoading(false);
-      setError("");
-    })
-    .catch(() => {
-      toast.error("Failed to send message, please try again.");
-      setLoading(false);
-      setError("Failed to send message, please try again.");
-    });
+      .catch(() => {
+        toast.error("Failed to send message, please try again.");
+        setLoading(false);
+        setError("Failed to send message, please try again.");
+      });
   };
 
   return (
@@ -125,7 +132,11 @@ const Location = () => {
             required
           />
           <button
-            className={`w-full ${loading ? "bg-gray-400 text-white h-10" : "bg-black text-white h-10  hover:bg-[#373737]"} duration-300 ease-in-out rounded-xl`}
+            className={`w-full ${
+              loading
+                ? "bg-gray-400 text-white h-10"
+                : "bg-black text-white h-10  hover:bg-[#373737]"
+            } duration-300 ease-in-out rounded-xl`}
             type="submit"
             disabled={loading}
           >
