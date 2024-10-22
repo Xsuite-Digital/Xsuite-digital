@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import Services from "./pages/Services";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -7,6 +6,7 @@ import TermsOfServices from "./components/Footer/TermsOfServices";
 import Security from "./components/Footer/Security";
 import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import ChatIcon from "./components/ChatIcon";
+import Services from "./pages/Services";
 
 function App() {
   return (

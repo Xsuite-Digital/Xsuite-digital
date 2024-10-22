@@ -1,39 +1,59 @@
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { servicesData } from "../components/main/ServicesData";
-import ServicesModal from "./ServicesModal";
-import { Helmet } from "react-helmet-async";
-import FAQs from "../components/main/FAQs";
-import Location from "../components/main/Location";
-import WorkProcess from "../components/main/WorkProcess";
-
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight, Settings, Shield, HeadphonesIcon, LineChart, Globe, MessageCircle } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 const Services = () => {
-  const [showAll, setShowAll] = useState(false);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const displayedServices = showAll ? servicesData : servicesData.slice(0, 3);
+  const services = [
+    {
+      icon: <Settings className="w-6 h-6" />,
+      title: "Customization",
+      description: "We create exceptional marketing plans that align with your unique brands, ensuring every campaign resonates with your target audience."
+    },
+    {
+      icon: <Shield className="w-6 h-6" />,
+      title: "Security",
+      description: "XSuite Digital prioritizes your safety, using top-notch tools and methods throughout our projects. We proactively defend against potential threats and safeguard your interests."
+    },
+    {
+      icon: <HeadphonesIcon className="w-6 h-6" />,
+      title: "Support",
+      description: "Our friendly team is always available to help you by providing guidance and answers to your queries. Your success is our utmost priority and we are here to help you achieve it."
+    },
+    {
+      icon: <LineChart className="w-6 h-6" />,
+      title: "Performance",
+      description: "We focus on utilizing advanced analytics to optimize projects in real-time, ensuring data-driven decisions that enhance efficiency and produce tangible results."
+    },
+    {
+      icon: <Globe className="w-6 h-6" />,
+      title: "Global Reach",
+      description: "XSuite Digital helps your brand's connectivity across the globe. Our strategic approach ensures your message resonates with diverse audiences, unlocking new growth opportunities."
+    },
+    {
+      icon: <MessageCircle className="w-6 h-6" />,
+      title: "Communication",
+      description: "Direct and transparent communication is the heart of our agency-client relationships. We provide updates and feedback frequently to keep you informed and engaged."
+    }
+  ];
 
-  const [selectedService, setSelectedService] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openModal = (service) => {
-    setSelectedService(service);
-    setIsOpen(true);
+  const nextSlide = () => {
+    setCurrentSlide((prev) => 
+      prev + 3 >= services.length ? 0 : prev + 3
+    );
   };
 
-  const closeModal = () => {
-    setSelectedService(null);
-    setIsOpen(false);
+  const prevSlide = () => {
+    setCurrentSlide((prev) => 
+      prev - 3 < 0 ? Math.max(0, services.length - 3) : prev - 3
+    );
   };
 
   return (
-    <>
-      <Helmet>
+  <>
+  <Helmet>
         <title>Services | XSuite Digital</title>
       </Helmet>
-      <section className=" bg-white">
         <div className="bg-black  text-white py-16 lg:py-52 relative overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="relative z-10">
@@ -45,59 +65,69 @@ const Services = () => {
             <div className="absolute left-0 bottom-0 w-96 h-96 bg-white rounded-full translate-y-1/2 -translate-x-1/2"></div>
           </div>
         </div>
+    <div className="max-w-6xl mx-auto px-4 py-12  ">
 
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap justify-center items-center -m-4">
-            <div className="grid grid-cols-1 gap-y-12 text-center lg:grid-cols-3 gap-4 items-center justify-center ">
-              <AnimatePresence>
-                {displayedServices.map((data, index) => (
-                  <motion.div
-                    onClick={() => openModal(data)}
-                    key={index}
-                    className="  ease-in-out cursor-pointer duration-500 flex flex-col items-center justify-center space-y-2  border border-orange-500 rounded-xl h-80"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <img
-                      src={data.imgSrc}
-                      loading="lazy"
-                      className="icon-container  text-black  h-10 w-10"
-                    />
-
-                    <p className="text-xl font-bold text-black tracking-wide">
-                      {data.title}
-                    </p>
-                    <p className="w-80 ">{data.view}</p>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="flex items-center justify-center bg-black  hover:scale-105 duration-500 ease-in-out py-2 px-3 mt-24 text-white text-sm tracking-wide rounded-2xl"
-            >
-              {showAll ? "Show less" : "View More"}
-            </button>
-          </div>
+      <div className="relative">
+        {/* Navigation Buttons */}
+        <div className="absolute top-1/2 -left-12 transform -translate-y-1/2">
+          <button 
+            onClick={prevSlide}
+            className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-50  transition-colors text-[#f9731b]"
+          >
+            <ChevronLeft size={24} />
+          </button>
         </div>
 
-        {isOpen && (
-          <ServicesModal
-            openModal={openModal}
-            service={selectedService}
-            onClose={closeModal}
-          />
-        )}
-      </section>
-      <WorkProcess />
-      <FAQs />
-      <Location />
-    </>
+        {/* Cards Container */}
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          {services.slice(currentSlide, currentSlide + 3).map((service, index) => (
+            <div 
+              key={index}
+              className="bg-white p-6 hover:border-[#f9731b] border-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg group "
+            >
+              {/* Icon Container */}
+              <div className="w-12 h-12 rounded border-[#f9731b] flex items-center justify-center mb-4 text-[#f9731b] group-hover:bg-[#f9731b] group-hover:text-white transition-colors">
+                {service.icon}
+              </div>
+
+              {/* Content */}
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Right Navigation Button */}
+        <div className="absolute top-1/2 -right-12 transform -translate-y-1/2">
+          <button 
+            onClick={nextSlide}
+            className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors text-[#f9731b]"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
+
+        {/* Pagination Dots */}
+        <div className="flex justify-center mt-8 gap-2">
+          {Array.from({ length: Math.ceil(services.length / 3) }).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index * 3)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                Math.floor(currentSlide / 3) === index 
+                  ? 'bg-amber-500 w-6' 
+                  : 'bg-gray-300'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  </>
   );
 };
 
