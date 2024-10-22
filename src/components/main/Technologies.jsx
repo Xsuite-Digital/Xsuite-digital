@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ServicesMarqee from "./ServicesMarqee";
+import Pacakages from "./Pacakages";
 
 const Technologies = () => {
   const technology = [
@@ -55,6 +56,7 @@ const Technologies = () => {
           </div>
         </div>
       </div>
+      <Pacakages />
     </>
   );
 };
