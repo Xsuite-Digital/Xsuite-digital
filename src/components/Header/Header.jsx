@@ -27,7 +27,7 @@ const Header = () => {
               className="h-5 w-5 text-white "
             />
 
-            <Link to="mailto: info@xsuite.digital " className="text-white ">
+            <Link to="mailto:info@xsuite.digital " className="text-white ">
               info@xsuite.digital
             </Link>
           </div>
@@ -36,7 +36,7 @@ const Header = () => {
         {/* child-2 */}
 
         <div className="flex items-center space-x-2 ml-[1%]">
-          <Link to="https://www.facebook.com/profile.php?id=61566739650180">
+          <Link to="https://www.facebook.com/profile.php?id=61566739650180" target='_blank'>
             <img
               src="/fb11-min.webp"
               className="h-auto w-4 p-1 text-white"
