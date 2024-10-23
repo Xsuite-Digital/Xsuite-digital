@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'; // Import PropTypes
 import { Monitor, MessageCircle, Globe, BarChart2, Code, Building2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ExpertiseCard = ({ title, Icon }) => {
   return (
@@ -37,9 +38,11 @@ const ExpertiseSection = () => {
         ))}
       </div>
       <div className="text-center mt-8">
+      <Link to='/Services'>
         <button className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition-colors duration-300">
           View More Services
         </button>
+      </Link>
       </div>
     </div>
   );

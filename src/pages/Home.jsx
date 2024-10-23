@@ -6,7 +6,6 @@ const WorkProcess = lazy(() => import("../components/main/WorkProcess"));
 const Tesimonial = lazy(() => import("../components/main/Tesimonial"));
 const Location = lazy(() => import("../components/main/Location"));
 const FAQs = lazy(() => import("../components/main/FAQs"));
-import Technologies from "../components/main/Technologies";
 import { Helmet } from "react-helmet-async";
 import ExpertiseSection from "../components/main/ExpertiseSection";
 const Home = () => {
@@ -25,7 +24,6 @@ const Home = () => {
       <Hero />
       <AboutUs />
       <HireUs />
-      {/* <Technologies /> */}
       <ExpertiseSection/>
       <Suspense fallback={<p>Loading...</p>}>
         <WorkProcess />
