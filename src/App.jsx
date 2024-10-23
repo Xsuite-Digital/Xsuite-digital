@@ -7,6 +7,7 @@ import Security from "./components/Footer/Security";
 import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import ChatIcon from "./components/ChatIcon";
 import Services from "./pages/Services";
+import ExpertiseSection from "./components/main/ExpertiseSection";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/TermsOfServices" element={<TermsOfServices />} />
         <Route path="/Security" element={<Security />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        {/* <Route path="/ExpertiseSection" element={<ExpertiseSection />} /> */}
       </Routes>
       <ChatIcon/>
     </>
