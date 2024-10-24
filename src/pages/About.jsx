@@ -38,7 +38,11 @@ const About = () => {
             brand’s vision into fascinating marketing activities that engage
             your audience and drive measurable results. Additionally, our
             dedicated team blends creativity with cutting-edge technology to
+<<<<<<< HEAD
             design unique solutions that meet your target audience's
+=======
+            design unique solutions that meet your target audience&apos;s
+>>>>>>> bfc73ff99b1eb1fa9c0668807858bd06a7da927b
             requirements. With a passion for excellence, we primarily aim to
             connect your brand with audiences worldwide, utilizing our{" "}
             <a
@@ -73,7 +77,11 @@ const About = () => {
           <div className="grid  md:grid-cols-2 gap-12 ">
             <div className="text-left">
               <h2 className="text-gray-800  text-2xl font-bold mb-4">
+<<<<<<< HEAD
                 Elevate Your Brand's Online Presence
+=======
+                Elevate Your Brand&apos;s Online Presence
+>>>>>>> bfc73ff99b1eb1fa9c0668807858bd06a7da927b
               </h2>
               <p className="mb-4 text-lg text-gray-500">
                 Raise your digital impact to new heights with our partnership,
