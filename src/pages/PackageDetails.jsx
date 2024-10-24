@@ -87,7 +87,7 @@ const PackageDetails = () => {
 
       <div className="w-full h-[30vh]">
         <div className="flex justify-center">
-          <p className="w-[50vw] font-semibold text-xl leading-snug mt-4">
+          <p className="lg:w-[50vw] w-[80vw] font-semibold text-xl leading-snug mt-4">
             At Xsuite Digital, we offer a range of carefully curated packages
             designed to meet your unique needs and preferences. Whether
             you&apos;re looking for comprehensive solutions or targeted
@@ -98,7 +98,7 @@ const PackageDetails = () => {
       </div>
 
       {/* Timeframe selection */}
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mb-8 mt-24 lg:mt-10">
         <label htmlFor="timeframe" className="mr-3 text-lg font-semibold">
           Select Timeframe:
         </label>
@@ -138,11 +138,11 @@ const PackageDetails = () => {
             <p className="text-3xl font-bold text-orange-500 mb-4">
               ${pkg.prices[timeframe]}
             </p>
-            <p className="text-sm text-gray-500 bottom-0">Billed {timeframe}</p>
+            <p className="text-sm text-gray-500 ">Billed {timeframe}</p>
             <div className="mt-6">
               <Link
                 to="/Contact"
-                className="mt-6 hover:bg-orange-500 hover:text-black text-white py-2 px-4 rounded bg-[#373737] transition ease-in duration-200"
+                className=" hover:bg-orange-500 hover:text-black text-white py-2 px-4 rounded bg-[#373737] transition ease-in duration-200"
               >
                 Get Started
               </Link>
