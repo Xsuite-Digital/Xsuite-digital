@@ -7,10 +7,7 @@ import Security from "./components/Footer/Security";
 import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import ChatIcon from "./components/ChatIcon";
 import Services from "./pages/Services";
-<<<<<<< HEAD
-import ExpertiseSection from "./components/main/ExpertiseSection";
-=======
->>>>>>> bfc73ff99b1eb1fa9c0668807858bd06a7da927b
+import PackageDetails from "./pages/PackageDetails";
 
 function App() {
   return (
@@ -23,14 +20,9 @@ function App() {
         <Route path="/TermsOfServices" element={<TermsOfServices />} />
         <Route path="/Security" element={<Security />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-<<<<<<< HEAD
-        {/* <Route path="/ExpertiseSection" element={<ExpertiseSection />} /> */}
-      </Routes>
-      <ChatIcon/>
-=======
+        <Route path="PackageDetails" element={<PackageDetails />} />
       </Routes>
       <ChatIcon />
->>>>>>> bfc73ff99b1eb1fa9c0668807858bd06a7da927b
     </>
   );
 }

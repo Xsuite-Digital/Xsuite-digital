@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'; // Import PropTypes
 import { Monitor, MessageCircle, Globe, BarChart2, Code, Building2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import Pacakages from "../main/Pacakages"
 const ExpertiseCard = ({ title, Icon }) => {
   return (
     <div className="flex flex-col items-center p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:border-orange-500 hover:border-2 bg-white cursor-pointer group">
@@ -30,6 +30,7 @@ const ExpertiseSection = () => {
   ];
 
   return (
+    <>
     <div className="max-w-6xl mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-12">Our Expertise</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,6 +46,8 @@ const ExpertiseSection = () => {
       </Link>
       </div>
     </div>
+      <Pacakages/>
+        </>
   );
 };
 
