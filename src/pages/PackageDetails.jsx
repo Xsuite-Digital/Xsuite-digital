@@ -142,7 +142,7 @@ const PackageDetails = () => {
             <div className="mt-6">
               <Link
                 to="/Contact"
-                className="mt-6 hover:bg-orange-500 text-white py-2 px-4 rounded bg-[#373737] transition ease-in duration-200"
+                className="mt-6 hover:bg-orange-500 hover:text-black text-white py-2 px-4 rounded bg-[#373737] transition ease-in duration-200"
               >
                 Get Started
               </Link>
