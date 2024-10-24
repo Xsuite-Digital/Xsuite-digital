@@ -9,7 +9,6 @@ import {
   Globe,
   MessageCircle,
 } from "lucide-react";
-import Pacakages from "./Pacakages";
 
 const HireUs = () => {
   // Declare hooks and variables here
@@ -135,7 +134,6 @@ const HireUs = () => {
           </div>
         </div>
       </div>
-      <Pacakages />
     </div>
   );
 };
