@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const Pacakages = () => {
+const Packages = () => {
   return (
     <div>
-      <div className="w-full h-[50vh] bg-[#373737]  pt-10">
-        <div className=" flex justify-center ">
-          <span className="w-[70vw] text-white">
+      <div className="mt-2">
+        <div className="bg-[#373737]  h-auto p-8 flex items-center justify-center">
+          <span className="text-white max-w-screen-lg px-4">
             Neque fusce volutpat mattis elit eros augue sociosqu dignissim
             elementum curae; sapien fames dictum hendrerit viverra. Duis,
             pretium tortor senectus habitasse arcu eget sem tortor tellus.
@@ -22,9 +22,9 @@ const Pacakages = () => {
         <div className="flex justify-center mt-4">
           <Link
             to="/PackageDetails"
-            className=" text-white  px-4 py-2 rounded-xl bg-black hover:scale-110 transition ease-in-out 300 hover:bg-orange-500 hover:text-black"
+            className="text-white px-4 py-2 rounded-xl bg-black hover:scale-110 transition ease-in-out duration-300 hover:bg-orange-500 hover:text-black"
           >
-            Show Packages Deatils
+            Show Packages Details
           </Link>
         </div>
       </div>
@@ -32,4 +32,4 @@ const Pacakages = () => {
   );
 };
 
-export default Pacakages;
+export default Packages;
