@@ -5,18 +5,20 @@ const Packages = () => {
     <div>
       <div className="mt-2">
         <div className="bg-[#373737]  h-auto p-8 flex items-center justify-center">
-          <span className="text-white max-w-screen-lg px-4">
-            Neque fusce volutpat mattis elit eros augue sociosqu dignissim
-            elementum curae; sapien fames dictum hendrerit viverra. Duis,
-            pretium tortor senectus habitasse arcu eget sem tortor tellus.
-            Varius, est donec vivamus parturient. Aptent lobortis vivamus
-            pretium nascetur malesuada mauris laoreet elit tempus blandit tortor
-            metus ligula dictumst elementum conubia habitasse turpis posuere in
-            aliquam, montes Cras inceptos curae; Sem ante imperdiet enim
-            malesuada eros odio semper leo id. Nullam condimentum gravida justo,
-            lorem. Volutpat sollicitudin nisl. Fermentum nunc quam non porttitor
-            id ac sed elit mauris. Ac turpis ad. Risus, metus accumsan viverra
-            varius risus molestie vehicula auctor aptent eleifend torquent.
+          <span className="text-white max-w-screen-lg px-4 lg:leading-snug">
+            XSuite Digital provides extensive services designed to boost your
+            brand’s visibility. Our service providing company emphasizes on
+            creating a strong digital business identity and delivering
+            measurable conversions. We are dedicated to supporting your brand's
+            success in today’s competitive digital environment. Our creative
+            agency offers flexible packages that fit your business objectives,
+            whether you are starting out or aiming to dominate in your online
+            industry.
+            <br />
+            <strong>
+              Press the button below to explore our customized packages and lift
+              your brand to the next level today!
+            </strong>
           </span>
         </div>
         <div className="flex justify-center mt-4">

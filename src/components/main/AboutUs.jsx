@@ -23,18 +23,19 @@ const AboutUs = () => {
 
             <div>
               <h1 className="font-bold tracking-widest text-2xl lg:text-[28px] lg:text-xl justify-center  flex items-center mb-4">
-                XSuite Digital: Solutions Provider
+                XSuite Digital: Best Solutions Provider
               </h1>
               <p className="text-black text-md pl-10   leading-loose">
                 XSuite Digital is a top-level marketing service provider,
                 specializing in web development, search engine optimization,
                 pay-per-click campaigns, and social media management. With a
-                team of enthusiastic experts, we optimize your online presence
-                with Google My Business, Google Analytics, and Google Search
-                Console. Whether you require SEO or graphic designing for social
-                media platforms, we can help you in the marketplace for your
-                business advancements. Furthermore, XSuite Digital is a
-                trustworthy company by which you can work to fulfill your
+                team of enthusiastic experts, our digital marketing agency
+                optimizes your online presence with Google My Business, Google
+                Analytics, and Google Search Console. Whether you require SEO or
+                graphic designing for social media platforms, our creative
+                agency can help you in the marketplace for your business
+                advancements. Furthermore, XSuite Digital is a trustworthy
+                service-providing company by which you can work to fulfill your
                 digital requirements.
               </p>
             </div>
