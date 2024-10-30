@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { FaAngleDown,FaAngleUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -70,19 +70,9 @@ const FAQs = () => {
               <span className="mr-4">{faq.question}</span>
 
               {openIndex === index ? (
-                <Icon
-                  icon="ic:round-plus"
-                  className={`fill-current ml-auto shrink-0 transform h-5 w-5 transition-transform duration-200 ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
-                />
+                <FaAngleUp/>
               ) : (
-                <Icon
-                  icon="ic:round-minus"
-                  className={`h-5 w-5 fill-current ml-auto shrink-0 transform transition-transform duration-200 ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
-                />
+                <FaAngleDown />
               )}
             </button>
           </h3>

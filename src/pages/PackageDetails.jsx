@@ -123,10 +123,11 @@ const PackageDetails = () => {
         {packagesData.map((pkg, index) => (
           <motion.div
             key={index}
-            className="bg-white shadow-xl  rounded-lg p-6 flex flex-col items-center justify-between"
+            className="bg-white shadow-xl  rounded-xl p-6 flex flex-col items-center justify-between relative  "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: index * 0.2 }}
+            whileHover={{ scale: 1.05, boxShadow: '0px 10px 20px rgba(0,0,0,0.15)' }}
           >
             <div>
               <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
@@ -142,6 +143,7 @@ const PackageDetails = () => {
                 </ul>
               )}
             </div>
+            <div className="divider"></div>
 
             <motion.div
               className="mt-auto"
@@ -155,7 +157,7 @@ const PackageDetails = () => {
               </p>
               <p className="text-sm text-gray-500">Billed {timeframe}</p>
 
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center">
                 <Link
                   to="/Contact"
                   className="hover:bg-orange-500 hover:text-black text-white py-2 px-4 rounded bg-[#373737] transition ease-in duration-200"
@@ -163,10 +165,12 @@ const PackageDetails = () => {
                   Get Started
                 </Link>
               </div>
+              
             </motion.div>
           </motion.div>
         ))}
       </motion.div>
+      
       <FAQs />
     </div>
   );
