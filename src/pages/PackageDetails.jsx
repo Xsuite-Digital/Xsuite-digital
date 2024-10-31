@@ -85,7 +85,7 @@ const PackageDetails = () => {
         </div>
       </div>
 
-      <div className="w-full h-[30vh]">
+      <div className="w-full h-[30vh] ">
         <div className="flex justify-center">
           <p className="w-[50vw] font-semibold text-xl leading-snug mt-4">
             At Xsuite Digital, we offer a range of carefully curated packages
