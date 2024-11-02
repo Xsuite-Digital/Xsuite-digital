@@ -35,9 +35,9 @@ const PackageDetails = () => {
       },
       features: [
         "Up to 5 Pages of Mobile-Friendly Website",
-        "Comprehensive ON Page & OFF Page SEO",
+        "Comprehensive oN Page & OFF Page SEO",
         "Manage 2 Social Media Platforms with Engaging Posts",
-        "Targeted Google Ads Setup",
+        "Targeted Google Ads setup",
         "Advanced Analytics & Strategy Sessions",
         "Design Upgrades with Creative Freedom",
       ],
