@@ -1,4 +1,4 @@
-import { FaAngleDown,FaAngleUp } from "react-icons/fa";
+import { Icon } from '@iconify/react';
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -70,10 +70,11 @@ const FAQs = () => {
               <span className="mr-4">{faq.question}</span>
 
               {openIndex === index ? (
-                <FaAngleUp/>
-              ) : (
-                <FaAngleDown />
-              )}
+  <Icon icon="mdi:chevron-up" />
+) : (
+  <Icon icon="mdi:chevron-down" />
+)}
+
             </button>
           </h3>
 
