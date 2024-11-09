@@ -21,7 +21,10 @@ const Home = () => {
 "
         />
       </Helmet>
+      <div className="w-full h-screen bg-[url('/bgimg.webp')] bg-cover bg-center">
+
       <Hero />
+      </div>
       <AboutUs />
       <HireUs />
       <ExpertiseSection/>

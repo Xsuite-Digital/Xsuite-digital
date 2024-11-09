@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import Siderbar from "./Siderbar"; // Removed duplicate import
+import Siderbar from "./Siderbar";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Icon } from "@iconify/react/dist/iconify.js"; // Assuming you have installed @mdi/react
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState("transparent");
@@ -13,6 +14,7 @@ const Navbar = () => {
       setBgColor("bg-transparent");
     }
   };
+
   const location = useLocation();
 
   const ScrollToTop = () => {
@@ -33,7 +35,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <div className={` ${bgColor} duration-500 ease-in-out`}>
+    <div className={` ${bgColor} duration-500 fixed top-0 z-50 w-full ease-in-out`}>
       <>
         {/* Navbar for desktop */}
         <motion.div
@@ -74,20 +76,25 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex space-x-2">
-            <Link
-              to="/Contact"
-              className="font-semibold font-sans text-white space-x-2 tracking-widest border rounded-2xl px-3 py-2 hover:border-orange-500 hover:text-orange-500 duration-300 ease-in-out"
-              aria-label="Get Started on WhatsApp"
-            >
-              Get Started
-            </Link>
+          {/* Contact number for desktop */}
+          <div className="flex items-center  space-x-2 hover:text-orange-500 duration-300 ease-in-out text-white ">
+            <Icon icon="mdi-light:phone" className="h-5 w-5" />
+            <Link to="tel:03316361916">03316361916</Link>
           </div>
         </motion.div>
 
         {/* Navbar for mobile */}
-        <Siderbar />
+        <div className="md:hidden flex justify-between items-center p-4">
+          
+          {/* Contact number for mobile, aligned next to the sidebar */}
+          <div className="lg:flex items-center space-x-1 hidden  hover:text-orange-500 duration-300 ease-in-out text-white">
+            <Icon icon="mdi-light:phone" className="h-5 w-5" />
+            <Link to="tel:03316361916">03316361916</Link>
+          </div>
+        </div>
       </>
+      <Siderbar />
+
     </div>
   );
 };

@@ -55,7 +55,7 @@ const Header = () => {
               className="h-5 w-5 "
             />
             <span className="">
-              Lawrence Road, Near China Chowk, Punjab Lahore Pakistan
+              Lawrence Road, Lahore 
             </span>
           </div>
 

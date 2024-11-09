@@ -5,18 +5,19 @@ import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import App from "./App.jsx";
 import { ToastContainer } from "react-toastify";
+import Navbar from "./components/Header/Navbar.jsx";
 // Lazy load components
 
-const Header = lazy(() => import("./components/Header/Header.jsx"));
 const Footer = lazy(() => import("./components/Footer/Footer.jsx"));
 const Loader = lazy(() => import("./components/Loader.jsx")); // Assuming you have a Loader component
 const RootComponent = () => {
   return (
     <>
       <>
+          <Navbar/>
         <Suspense fallback={<Loader />}>
         <ToastContainer/>
-          <Header />
+          {/* <Header /> */}
         </Suspense>
         <App />
         <Suspense>
