@@ -3,20 +3,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const Siderbar = () => {
+const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
   const location = useLocation();
 
+  // Define menu items
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/Services" },
+    { name: "About Us", path: "/About" },
+    { name: "Contact", path: "/Contact" },
+  ];
+
+  // Scroll to top function
   const ScrollToTop = () => {
     if (location.pathname === "/") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
     setSidebarOpen(false);
   };
+
   return (
     <div>
       <div className="md:hidden flex items-center justify-between p-4 bg-transparent">
@@ -29,7 +35,7 @@ const Siderbar = () => {
 
         {/* Sidebar Toggle Button */}
         <button
-          className="p-2 rounded-md duration-300 ease-in-out text-white hover:bg-gray-700"
+          className="mr-12 rounded-md duration-300 ease-in-out text-white hover:bg-gray-700"
           onClick={() => setSidebarOpen(!sidebarOpen)}
           aria-label={sidebarOpen ? "Close sidebar" : "Open sidebar"}
         >
@@ -40,11 +46,11 @@ const Siderbar = () => {
       <AnimatePresence>
         {sidebarOpen && (
           <motion.div
-            initial={{ x: "-100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "-100%" }}
-            transition={{ duration: 0.3 }}
-            className="fixed top-32 z-20 left-2 w-3/4 h-2/4 flex items-center justify-center  bg-gray-700 text-white p-4 shadow-lg"
+            initial={{ x: "100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: "100%", opacity: 0 }}
+            transition={{ type: "tween", ease: "easeOut", duration: 0.5 }}
+            className="fixed top-0 right-0 w-full h-full bg-black bg-opacity-80 text-white z-30 md:hidden flex flex-col items-center justify-center"
           >
             <button
               className="text-white absolute top-4 right-4 text-2xl"
@@ -52,50 +58,18 @@ const Siderbar = () => {
             >
               <Icon icon="mdi:close" />
             </button>
-            <ul className="space-y-4">
-              {/* Home link */}
-              <li>
-                <Link
-                  onClick={ScrollToTop}
-                  to="/"
-                  className="block text-xl text-white hover:text-[#7E7E7E]"
-                >
-                  Home
-                </Link>
-              </li>
-
-              {/* Services link */}
-              <li>
-                <Link
-                  onClick={ScrollToTop}
-                  to="/Services"
-                  className="block text-xl  text-white hover:text-[#7E7E7E]"
-                >
-                  Services
-                </Link>
-              </li>
-
-              {/* About Us link */}
-              <li>
-                <Link
-                  to="/About"
-                  onClick={ScrollToTop}
-                  className="block text-xl text-white hover:text-[#7E7E7E]"
-                >
-                  About Us
-                </Link>
-              </li>
-
-              {/* Contact link */}
-              <li>
-                <Link
-                  to="/Contact"
-                  onClick={ScrollToTop}
-                  className="block text-xl text-white hover:text-[#7E7E7E]"
-                >
-                  Contact
-                </Link>
-              </li>
+            <ul className="space-y-4 text-center">
+              {menuItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    onClick={ScrollToTop}
+                    to={item.path}
+                    className="block text-xl text-white hover:text-[#7E7E7E]"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}
@@ -104,4 +78,4 @@ const Siderbar = () => {
   );
 };
 
-export default Siderbar;
+export default Sidebar;
