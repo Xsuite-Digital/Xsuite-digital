@@ -8,9 +8,8 @@ import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import ChatIcon from "./components/ChatIcon";
 import Services from "./pages/Services";
 import PackageDetails from "./pages/PackageDetails";
-import { servicesData } from "./components/main/ServicesData";
 import ServicesPage from "./components/main/ServicesPage";
-
+import {servicesData} from "./components/main/Helpers/Data"
 function App() {
   return (
     <>
@@ -27,7 +26,7 @@ function App() {
           <Route
             key={idx}
             path={`/services/${service.path}`}
-            element={<ServicesPage title={service.name} description={service.description} />}
+            element={<ServicesPage title={service.name} imgSrc={service.imgSrc} description={service.description} />}
           />
         ))}
       </Routes>
