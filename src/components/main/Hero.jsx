@@ -34,7 +34,7 @@ const Hero = () => {
   }, [imageUrl]);
 
   return (
-    <div className="relative w-full  h-screen lg:h-[100vh] overflow-hidden">
+    <div className="relative w-full  h-[60vh]  lg:h-[100vh] overflow-hidden">
       {/* Overlay animation component */}
       <AnimatedComponent className="absolute w-full h-3/4" />
 
@@ -76,7 +76,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="w-full max-w-[300px] sm:max-w-[700px] md:max-w-[400px] lg:max-w-[850px] mb-6"
+          className="w-full max-w-[300px] sm:max-w-[700px] mr-8 lg:mr-0 md:max-w-[400px] lg:max-w-[850px] mb-6"
         />
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -84,13 +84,16 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="mb-6"
         >
-          <h1 className="text-white text-4xl sm:text-5xl mt-5 lg:text-6xl lg:leading-normal ml-3 font-extrabold">
-            Crafting Digital <br />
+          <div className=" lg:h-32 h-16">
+
+          <h1 className="text-white text-2xl lg:text-6xl mr-8 lg:mr-0 flex flex-col sm:text-5xl mt-5  lg:leading-normal font-anton font-extrabold">
+            Crafting Digital 
             Brilliance in{" "}
-            <span className="text-orange-500 text-2xl sm:text-3xl lg:text-5xl font-anton">
+            <span className="text-orange-500 text-center text-2xl sm:text-3xl lg:text-5xl font-anton">
               {typeEffect}
             </span>
           </h1>
+          </div>
         </motion.div>
 
         {/* Get Started Button */}
