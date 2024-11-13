@@ -22,9 +22,9 @@ const Packages = () => {
           </span>
         </div>
         <div className="flex justify-center mt-4">
-          <Link
+        <Link
             to="/PackageDetails"
-            className="text-white px-4 py-2 rounded-xl bg-black hover:scale-110 transition ease-in-out duration-300 hover:bg-orange-500 hover:text-black"
+            className="text-black px-4 py-2 rounded-full bg-transparent border-2 border-orange-500 hover:scale-110 transition ease-in-out duration-300 hover:bg-orange-500 hover:text-white"
           >
             Show Packages Details
           </Link>

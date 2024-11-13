@@ -1,36 +1,55 @@
+import React, { useEffect, useRef, useState } from 'react';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
+
 const Stats = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
+  const stats = [
+    { number: 100, suffix: '+', label: 'Satisfied Global Clients' },
+    { number: 10, suffix: 'K+', label: ' Projects Successfully Delivered' },
+    { number: 20, suffix: '+', label: ' Dedicated Team Members' },
+    { number: 5, suffix: '+', label: 'Years of Industry Experience' },
+  ];
+
   return (
-    <div className="bg-gray-50  min-h-[350px] flex items-center justify-center font-sans py-4">
-      <div className="bg-white shadow-[0_4px_24px_-8px_rgba(0,0,0,0.2)] grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-12 gap-32 rounded-3xl  p-10 mt-6">
-        <div className="text-center">
-          <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
-            100<span className="text-orange-500">+</span>
-          </h3>
-          <p className="text-gray-500 text-base font-semibold mt-3">
-            Total Users
-          </p>
-        </div>
-        <div className="text-center">
-          <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
-            $5<span className="text-orange-500">K</span>
-          </h3>
-          <p className="text-gray-500 text-base font-semibold mt-3">Revenue</p>
-        </div>
-        <div className="text-center">
-          <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
-            100<span className="text-orange-500">+</span>
-          </h3>
-          <p className="text-gray-500 text-base font-semibold mt-3">
-            Engagement
-          </p>
-        </div>
-        <div className="text-center">
-          <h3 className="text-gray-800 text-4xl font-sans font-extrabold">
-            99.9<span className="text-orange-500">%</span>
-          </h3>
-          <p className="text-gray-500 text-base font-semibold mt-3">
-            Server Uptime
-          </p>
+    <div className="flex justify-center items-center min-h-screen  text-white px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl w-full py-16 px-8 bg-black rounded-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="space-y-4">
+            <h2 className="text-4xl font-bold">
+              Our <span className="text-orange-500">Success</span> Story
+            </h2>
+            <p className="text-white max-w-lg">
+            The journey of digital marketing is like the spread of powerful ideas. Just as ideas inspire and transform, our approach to marketing amplifies your message to reach wider audiences with lasting impact.
+            </p>
+          </div>
+
+          <div ref={ref}>
+            <div className="grid grid-cols-2 gap-8 text-center">
+              {stats.map((stat, index) => (
+                <div key={index} className="space-y-2">
+                  <div className="text-4xl sm:text-5xl font-bold">
+                    {inView ? (
+                      <CountUp
+                        end={stat.number}
+                        duration={2.5}
+                        separator=","
+                        suffix={stat.suffix}
+                        className="text-orange-500"
+                      />
+                    ) : (
+                      <span className="text-orange-500">0{stat.suffix}</span>
+                    )}
+                  </div>
+                  <p className="text-sm sm:text-base text-white">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -38,3 +57,4 @@ const Stats = () => {
 };
 
 export default Stats;
+

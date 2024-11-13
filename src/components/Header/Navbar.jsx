@@ -84,7 +84,7 @@ const Navbar = () => {
         </motion.div>
 
         {/* Navbar for mobile */}
-        <div className="md:hidden flex justify-between items-center p-4">
+        <div className="md:hidden flex justify-center ml-[-16px] mb-[-10px]">
           
           {/* Contact number for mobile, aligned next to the sidebar */}
           <div className="lg:flex items-center space-x-1 hidden  hover:text-orange-500 duration-300 ease-in-out text-white">

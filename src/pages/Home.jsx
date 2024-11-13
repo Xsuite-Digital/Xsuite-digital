@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 import ExpertiseSection from "../components/main/ExpertiseSection";
 const Home = () => {
   return (
-    <div className="bg-white space-y-10">
+    <div className="bg-white ">
       <Helmet>
         <title>
           XSuite Marketing Agency | Digital Solutions for Global Brands
@@ -21,7 +21,7 @@ const Home = () => {
 "
         />
       </Helmet>
-      <div className="w-full h-screen bg-[url('/bgimg.webp')] bg-cover bg-center">
+      <div className=" w-full h-[60vh] lg:h-screen bg-[url('/bgimg.webp')] bg-cover bg-center">
 
       <Hero />
       </div>
