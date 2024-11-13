@@ -8,7 +8,8 @@ import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import ChatIcon from "./components/ChatIcon";
 import Services from "./pages/Services";
 import PackageDetails from "./pages/PackageDetails";
-
+import ServicesPage from "./components/main/ServicesPage";
+import {servicesData} from "./components/main/Helpers/Data"
 function App() {
   return (
     <>
@@ -21,6 +22,13 @@ function App() {
         <Route path="/Security" element={<Security />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="PackageDetails" element={<PackageDetails />} />
+        {servicesData.map((service, idx) => (
+          <Route
+            key={idx}
+            path={`/services/${service.path}`}
+            element={<ServicesPage title={service.name} imgSrc={service.imgSrc} description={service.description} />}
+          />
+        ))}
       </Routes>
       <ChatIcon />
     </>
