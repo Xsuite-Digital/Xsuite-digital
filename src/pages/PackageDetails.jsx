@@ -85,7 +85,7 @@ const PackageDetails = () => {
         </div>
       </div>
 
-      <div className="w-full h-[30vh] ">
+      <div className="w-full h-auto ">
         <div className="flex justify-center">
           <p className="text-center font-semibold lg:text-xl text-md leading-snug mt-4">
             At Xsuite Digital, we offer a range of carefully curated packages
@@ -98,7 +98,7 @@ const PackageDetails = () => {
       </div>
 
       {/* Timeframe selection */}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-4">
         <label htmlFor="timeframe" className="mr-3 text-lg font-semibold">
           Select Timeframe:
         </label>
