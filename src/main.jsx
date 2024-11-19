@@ -14,9 +14,9 @@ const RootComponent = () => {
   return (
     <>
       <>
-          <Navbar/>
+        <Navbar />
         <Suspense fallback={<Loader />}>
-        <ToastContainer/>
+          <ToastContainer />
           {/* <Header /> */}
         </Suspense>
         <App />
@@ -37,4 +37,3 @@ createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </StrictMode>
 );
-

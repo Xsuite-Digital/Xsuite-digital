@@ -13,9 +13,9 @@ const PackageDetails = () => {
       name: "Basic Package",
       description: "Kickstart Your Digital Journey",
       prices: {
-        quarterly: 50,
-        semiAnnual: 120,
-        annual: 400,
+        monthly: 240,
+        quarterly: 600,
+        semiannual: 1200,
       },
       features: [
         "1-Page Website",
@@ -29,9 +29,9 @@ const PackageDetails = () => {
       name: "Standard Package",
       description: "Elevate Your Brand to New Heights",
       prices: {
-        quarterly: 100,
-        semiAnnual: 260,
-        annual: 850,
+        monthly: 400,
+        quarterly: 1200,
+        semiannual: 2200,
       },
       features: [
         "Up to 5 Pages of Mobile-Friendly Website",
@@ -46,9 +46,9 @@ const PackageDetails = () => {
       name: "Premium Package",
       description: "Dominate the Digital Space",
       prices: {
-        quarterly: 200,
-        semiAnnual: 520,
-        annual: 1800,
+        monthly: 600,
+        quarterly: 1600,
+        semiannual: 3200,
       },
       features: [
         "Custom-Built, Fully Optimized Website with Advanced Features",
@@ -61,7 +61,7 @@ const PackageDetails = () => {
     },
   ];
 
-  const [timeframe, setTimeframe] = useState("quarterly");
+  const [timeframe, setTimeframe] = useState("monthly");
 
   // Handle timeframe change
   const handleTimeframeChange = (event) => {
@@ -108,9 +108,9 @@ const PackageDetails = () => {
           onChange={handleTimeframeChange}
           className="p-2 border border-gray-300 rounded focus:outline-none"
         >
+          <option value="monthly">Monthly</option>
           <option value="quarterly">Quarterly</option>
-          <option value="semiAnnual">Semi-Annual</option>
-          <option value="annual">Annual</option>
+          <option value="semiannual">Semi-Annual</option>
         </select>
       </div>
 
@@ -123,11 +123,14 @@ const PackageDetails = () => {
         {packagesData.map((pkg, index) => (
           <motion.div
             key={index}
-            className="bg-white shadow-xl  rounded-xl p-6 flex flex-col items-center justify-between relative  "
+            className="bg-white shadow-xl rounded-xl p-6 flex flex-col items-center justify-between relative"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: index * 0.2 }}
-            whileHover={{ scale: 1.05, boxShadow: '0px 10px 20px rgba(0,0,0,0.15)' }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 10px 20px rgba(0,0,0,0.15)",
+            }}
           >
             <div>
               <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
@@ -165,12 +168,11 @@ const PackageDetails = () => {
                   Get Started
                 </Link>
               </div>
-              
             </motion.div>
           </motion.div>
         ))}
       </motion.div>
-      
+
       <FAQs />
     </div>
   );
