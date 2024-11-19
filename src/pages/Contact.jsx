@@ -27,8 +27,8 @@ const Contact = () => {
           <meta name="" content="" />
         </Helmet>
 
-        <Location />
-        <FAQs />
+        {<Location />}
+        {/* <FAQs /> */}
       </div>
     </>
   );

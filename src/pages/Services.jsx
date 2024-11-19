@@ -77,7 +77,7 @@ const Services = () => {
       </section>
       <WorkProcess />
       <FAQs />
-      <Location />
+      {/* <Location /> */}
     </>
   );
 };

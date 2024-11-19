@@ -34,13 +34,13 @@ export const servicesData = [
     name: "SEO",
     path: "seo",
     description: "Improve your website’s ranking on search engines with our expert SEO service.",
-    imgSrc: "/seo.webp", // Replace with the correct image path
+    imgSrc: "/SEO2.webp", // Replace with the correct image path
   },
   {
     name: "Google Analytics",
     path: "google-analytics",
     description: "Get deep insights into your audience and traffic with Google Analytics.",
-    imgSrc: "/analytics.webp", // Replace with the correct image path
+    imgSrc: "/GA.webp", // Replace with the correct image path
   },
   {
     name: "Digital Marketing",
@@ -58,13 +58,13 @@ export const servicesData = [
     name: "Google Search Console",
     path: "google-search-console",
     description: "Utilize Google Search Console for improved search engine visibility.",
-    imgSrc: "/support.webp", // Replace with the correct image path
+    imgSrc: "/sc1.png", // Replace with the correct image path
   },
   {
     name: "Social Media Marketing",
     path: "social-media-marketing",
     description: "Engage your audience across social platforms with our marketing solutions.",
-    imgSrc: "/support.webp", // Replace with the correct image path
+    imgSrc: "/DG-min.webp", // Replace with the correct image path
   },
   {
     name: "Google My Business Optimization",

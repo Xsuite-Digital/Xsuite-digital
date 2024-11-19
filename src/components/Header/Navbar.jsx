@@ -73,6 +73,9 @@ const Navbar = () => {
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
                 <Link to="/Contact">Contact</Link>
               </li>
+              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+                <Link to="/PackageDetails">Packages</Link>
+              </li>
             </ul>
           </div>
 
