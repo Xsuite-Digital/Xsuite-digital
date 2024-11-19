@@ -1,14 +1,21 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import AboutUs from "../components/main/AboutUs";
 import HireUs from "../components/main/HireUs";
 import Hero from "../components/main/Hero";
-const WorkProcess = lazy(() => import("../components/main/WorkProcess"));
+import Stats from "../components/main/Stats";
+
+import Pacakages from "../components/main/Pacakages";
+import ContactLink from "../components/ContactLink";
+// const WorkProcess = lazy(() => import("../components/main/WorkProcess"));
 const Tesimonial = lazy(() => import("../components/main/Tesimonial"));
-const Location = lazy(() => import("../components/main/Location"));
+// const Location = lazy(() => import("../components/main/Location"));
 const FAQs = lazy(() => import("../components/main/FAQs"));
 import { Helmet } from "react-helmet-async";
-import ExpertiseSection from "../components/main/ExpertiseSection";
+// import ExpertiseSection from "../components/main/ExpertiseSection";
 const Home = () => {
+  useEffect(()=> {
+    window.scrollTo(0,0)
+  })
   return (
     <div className="bg-white ">
       <Helmet>
@@ -21,17 +28,21 @@ const Home = () => {
 "
         />
       </Helmet>
-      <div className=" w-full h-[60vh] lg:h-screen bg-[url('/bgimg.webp')] bg-cover bg-center">
+      <div className=" w-full h-[60vh]   bg-fixed lg:h-screen bg-[url('/bgimg.webp')] bg-cover bg-center">
 
       <Hero />
       </div>
       <AboutUs />
-      <HireUs />
-      <ExpertiseSection/>
+     <HireUs />
+     <Stats />
+
+      {/* <ExpertiseSection/> */}
       <Suspense fallback={<p>Loading...</p>}>
-        <WorkProcess />
+        {/* <WorkProcess /> */}
         <Tesimonial />
-        <Location />
+        {/* <Location /> */}
+        {/* <Pacakages /> */}
+        < ContactLink/>
         <FAQs />
       </Suspense>
     </div>

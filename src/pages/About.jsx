@@ -1,22 +1,35 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 import FAQs from "../components/main/FAQs";
 import Location from "../components/main/Location";
 import CompanyAbout from "../components/main/CompanyAbout";
 import Stats from "../components/main/Stats";
 import Team from "../components/main/Team";
-import { useEffect } from "react";
+
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+  };
 
   return (
     <div>
       <Helmet>
         <title>About | XSuite Digital</title>
-        <meta name="" content="" />
+        <meta
+          name="description"
+          content="Learn more about XSuite Digital's vision, mission, and services."
+        />
       </Helmet>
-      <div className="bg-black text-white py-16 lg:py-52  relative overflow-hidden">
+
+      {/* Hero Section */}
+      <div className="bg-black text-white py-16 lg:py-52 relative overflow-hidden ">
         <div className="container mx-auto px-4">
           <div className="relative z-10">
             <h1 className="text-5xl text-center font-bold">About Us</h1>
@@ -27,155 +40,134 @@ const About = () => {
           <div className="absolute left-0 bottom-0 w-96 h-96 bg-white rounded-full translate-y-1/2 -translate-x-1/2"></div>
         </div>
       </div>
-      <div className="about-description h-full w-screen bg-[#F5F4F7] ">
-        <div className="px-4 sm:px-8 md:px-12 text-center py-12 flex flex-col items-center justify-center font-sf-pro">
-          <h1 className="text-2xl font-bold text-center  sm:text-3xl font-sans  md:text-left">
-            Connecting Ideas to Solutions: Explore Our Digital Services
-          </h1>
-          <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
-            XSuite Digital is a multi-service marketing agency that evolves your
-            brand’s outlook through creativity and innovation. We transform your
-            brand’s vision into fascinating marketing activities that engage
-            your audience and drive measurable results. Additionally, our
-            dedicated team blends creativity with cutting-edge technology to
 
-            design unique solutions that meet your target audience's
+      {/* Vision and Mission Section */}
+      <div className=" bg-black px-5 py-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column */}
+          <motion.div
+            className="relative"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+              loading="lazy"
+                src="vision.jpg"
+                alt="Innovation"
+                height={200}
+                width={200}
+                className="w-full h-auto object-cover"
+              />
+              {/* Floating Cards */}
+              <motion.div
+                className="absolute -right-8 -bottom-8 bg-orange-500 rounded-xl p-4 shadow-lg w-48"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                <div className="flex items-center gap-2">
+                  <div className="h-3 w-3 rounded-full bg-orange-500" />
+                  <span className="text-sm font-medium text-black">Innovation First</span>
+                </div>
+              </motion.div>
+              <motion.div
+                className="absolute -left-8 -top-8 bg-orange-500 rounded-xl p-4 shadow-lg w-48"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+              >
+                <div className="flex items-center gap-2">
+                  <div className="h-3 w-3 rounded-full bg-orange-500" />
+                  <span className="text-sm font-medium text-black">Future Ready</span>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
 
-            design unique solutions that meet your target audience&apos;s
+          {/* Right Column */}
+          <div className="space-y-12">
+            <motion.div className="space-y-6" {...fadeInUp}>
+              <div className="inline-block">
+                <motion.span
+                  className="inline-block text-sm font-semibold text-orange-500 tracking-wider uppercase"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                >
+                  Our Vision
+                </motion.span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                Illuminating Pathways to{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-500">
+                  Progress
+                </span>
+              </h2>
+              <p className="text-lg text-white leading-relaxed">
+                Through visionary innovation and purposeful solutions, we're shaping the future of digital transformation.
+              </p>
+            </motion.div>
 
-            requirements. With a passion for excellence, we primarily aim to
-            connect your brand with audiences worldwide, utilizing our{" "}
-            <a
-              href="/Services"
-              style={{ textDecoration: "underline", color: "blue" }}
-            >
-              services
-            </a>
-            . Thus, XSuite Digital vigorously develops and maintains easily
-            accessible and easy-to-use sites.
-          </p>
-          <p className="text-base sm:text-lg w-full sm:w-2/3 leading-snug mt-4 mx-auto md:mx-0">
-            With Google business tools, we ensure your brand stands out in the
-            local searches. As a result, this will enhance your brand’s
-            visibility and engagement with potential customers. To further
-            enhance our offerings, we create a comprehensive strategy to attract
-            more visitors. Moreover, we support you in driving conversions by
-            analyzing user metrics, improving local search, and monitoring
-            search performance. From web development and SEO to social media
-            marketing and PPC campaigns, we believe in the power of
-            coordination. It will enhance your growth, make your brand digitally
-            active, and drive fruitful results. Together, we will navigate the
-            digital projects and achieve your business objectives with
-            originality and advancements.
-          </p>
+            <motion.div className="space-y-6" {...fadeInUp} transition={{ delay: 0.2 }}>
+              <div className="inline-block">
+                <motion.span
+                  className="inline-block text-sm font-semibold text-orange-400 tracking-wider uppercase"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.4 }}
+                >
+                  Our Mission
+                </motion.span>
+              </div>
+              <div className="space-y-4">
+                {[
+                  "Reshaping industry standards through dynamic strategies",
+                  "Crafting unparalleled brand experiences",
+                  "Leveraging extensive experience for optimal solutions",
+                ].map((text, index) => (
+                  <motion.div
+                    key={index}
+                    className="p-4 rounded-lg bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-colors"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <div className="flex items-center gap-3">
+                      <svg
+                        className="text-orange-400"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M9 18l6-6-6-6" />
+                      </svg>
+                      <p className="text-white">{text}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
+      {/* Other Sections */}
       <CompanyAbout />
-      <div className="font-sans bg-white p-4">
-        <div className="md:max-w-5xl max-w-xl  mx-auto ">
-          <div className="grid  md:grid-cols-2 gap-12 ">
-            <div className="text-left">
-              <h2 className="text-gray-800  text-2xl font-bold mb-4">
-
-                Elevate Your Brand's Online Presence
-
-                Elevate Your Brand&apos;s Online Presence
-
-              </h2>
-              <p className="mb-4 text-lg text-gray-500">
-                Raise your digital impact to new heights with our partnership,
-                where imaginations meet with expertise. Specifically, from
-                optimizing websites for search engines to creating engaging
-                content and managing your social media platforms, we provide
-                effective solutions to make your brand shine brighter in the
-                competitive market. Moreover, at XSuite Digital, we aim to set
-                unique standards for outstanding work and recognition, thereby
-                driving sustainable growth for your brand. Our experts have the
-                ability and the authentic tools to manage your digital demands.
-                You can reach out to us for marketing via{" "}
-                <a
-                  href="https://wa.me/+923316361916"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "underline", color: "blue" }}
-                >
-                  Whatsapp
-                </a>
-                ,{" "}
-                <a
-                  href="https://www.facebook.com/profile.php?id=61566739650180 "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "underline", color: "blue" }}
-                >
-                  Facebook
-                </a>
-                ,{" "}
-                <a
-                  href="https://www.instagram.com/xsuite.digital/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "underline", color: "blue" }}
-                >
-                  Instagram
-                </a>{" "}
-                and{" "}
-                <a
-                  href="https://www.linkedin.com/company/xsuite-digital/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "underline", color: "blue" }}
-                >
-                  LinkedIn.
-                </a>{" "}
-                We look forward to helping you grow your brand.
-              </p>
-            </div>
-            <div className="max-h-72">
-              <img
-                loading="lazy"
-                src="/dg2.webp"
-                alt="Placeholder Image"
-                className=" object-contain rounded-xl w-full h-full"
-              />
-            </div>
-          </div>
-          <hr className="border-gray-300 my-12" />
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="max-h-72 max-md:order-1">
-              <img
-                loading="lazy"
-                src="/dg3.webp"
-                alt="dg3"
-                className="rounded-xl object-contain w-full h-full"
-              />
-            </div>
-            <div className="text-left">
-              <h2 className="text-gray-800 text-2xl font-bold mb-4">
-                Your Success, Our Commitment
-              </h2>
-              <p className="mb-4 text-lg text-gray-500">
-                We will fulfill all of your marketing needs to catch your
-                audience with our creative and productive ideas. We serve our
-                customers with the best artistic designs and unique content
-                creation. XSuite Digital significantly ensures that your ideas
-                are always integrated into our strategies, fostering an
-                effective partnership. Therefore, rely on XSuite Digital to be
-                your dedicated partner in achieving marketing excellence. This
-                is the platform where your aspirations align with our expertise
-                for remarkable outcomes.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="bg-white p-4">
+        {/* Additional Content */}
       </div>
       <Team />
       <Stats />
       <FAQs />
-      <Location />
+      {/* <Location /> */}
     </div>
   );
 };
 
 export default About;
+

@@ -13,6 +13,7 @@ const Sidebar = () => {
     { name: "Services", path: "/Services" },
     { name: "About Us", path: "/About" },
     { name: "Contact", path: "/Contact" },
+    { name: "Packages", path: "/PackageDetails" },
   ];
 
   // Scroll to top function

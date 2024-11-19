@@ -35,11 +35,10 @@ const Hero = () => {
 
   return (
     <div className="relative w-full  h-[60vh]  lg:h-[100vh] overflow-hidden">
-      {/* Overlay animation component */}
       <AnimatedComponent className="absolute w-full h-3/4" />
 
       {/* Social Media Icons */}
-      <div className="absolute  right-6 top-1/2 transform -translate-y-1/2 flex flex-col  my-5 space-y-10 z-10 lg:block hidden">
+      <div className="absolute  right-6 top-1/2 transform -translate-y-1/2 hidden flex-col  my-5 space-y-10 z-10 lg:flex ">
       <Link to="https://www.facebook.com/profile.php?id=61566739650180" target='_blank'>
             <img
               src="/fb11-min.webp"
@@ -69,7 +68,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Section Content */}
-      <div className="absolute inset-0 w-full h-full z-10 flex flex-col justify-center items-center text-left pl-8 lg:pl-16">
+      <div className="absolute inset-0  w-full h-auto z-10 flex flex-col justify-center items-center ">
         <motion.img
           src={imageUrl}
           alt="Hero Image"
@@ -82,18 +81,24 @@ const Hero = () => {
           initial={{ opacity: 0, y: -40 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="mb-6"
+          className=" "
         >
-          <div className=" lg:h-32 h-16">
+         <div className="flex flex-col space-y-4 items-center  justify-center ">
+  <h1 className="text-white text-center text-xl sm:text-xl lg:text-5xl xl:text-6xl leading-snug lg:leading-normal font-anton font-extrabold mr-7">
+    Crafting Digital 
+    Brilliance in{" "}
+  </h1>
 
-          <h1 className="text-white text-2xl lg:text-6xl mr-8 lg:mr-0 flex flex-col sm:text-5xl mt-5  lg:leading-normal font-anton font-extrabold">
-            Crafting Digital 
-            Brilliance in{" "}
-            <span className="text-orange-500 text-center text-2xl sm:text-3xl lg:text-5xl font-anton">
-              {typeEffect}
-            </span>
-          </h1>
-          </div>
+    <span
+    className="text-orange-500 block text-2xl sm:text-3xl font-bold lg:text-4xl xl:text-5xl"
+    style={{
+      display: "inline-block",
+      minHeight: "1em", // Ensure consistent height for the text
+    }}
+  >
+    {typeEffect}
+  </span>
+</div>
         </motion.div>
 
         {/* Get Started Button */}
@@ -101,11 +106,11 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="mt-4"
+          className="mt-6"
         >
           <Link
             to="/Contact"
-            className="px-8 py-3 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-300 ease-in-out"
+            className="px-8 py-3 rounded-full border-2  border-orange-500 text-orange-500 mr-5 hover:bg-orange-500 hover:text-white transition-colors duration-300 ease-in-out"
             aria-label="Get Started on WhatsApp"
           >
             Get Started
