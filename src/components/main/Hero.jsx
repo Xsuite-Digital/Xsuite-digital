@@ -39,32 +39,31 @@ const Hero = () => {
 
       {/* Social Media Icons */}
       <div className="absolute  right-6 top-1/2 transform -translate-y-1/2 hidden flex-col  my-5 space-y-10 z-10 lg:flex ">
-      <Link to="https://www.facebook.com/profile.php?id=61566739650180" target='_blank'>
+      <a href="https://www.facebook.com/profile.php?id=61566739650180" target='_blank'>
             <img
               src="/fb11-min.webp"
-              className="h-auto w-4 p-1 text-white"
+              className="h-auto w-4 p-1 hover:text-orange-500 text-white"
               alt="Visit our Facebook profile"
               width="50"
               height="50"
             />
-          </Link>
-          <Link to="https://www.instagram.com/xsuite.digital/" target="_blank">
+          </a>
+          <a href="https://www.instagram.com/xsuite.digital/" target="_blank">
             <img
               src="/instaram-icon.webp"
-              className="h-6 w-6 p-1 hover:text-orange-500 text-white bg-transparent duration-300 ease-in-out hover:bg-transparent"
+              className="h-6 w-6 p-1 hover:text-orange-500 text-white"
               alt="Visit our Instagram profile"
             />
-          </Link>
-          <Link
-            to="https://www.linkedin.com/company/xsuite-digital/about/"
+          </a>
+          <a href="https://www.linkedin.com/company/xsuite-digital/about/"
             target="_blank"
           >
             <img
               src="/inn-min.webp"
-              className="h-8 w-7 p-1 hover:text-orange-500 text-white bg-transparent duration-300 ease-in-out hover:bg-transparent"
+              className="h-8 w-7 p-1 hover:text-orange-500 text-white "
               alt="Visit our LinkedIn page"
             />
-          </Link>
+          </a>
       </div>
 
       {/* Hero Section Content */}

@@ -79,10 +79,10 @@ const PackageDetails = () => {
             </h1>
           </div>
         </div>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute right-0 top-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2"></div>
-          <div className="absolute left-0 bottom-0 w-96 h-96 bg-white rounded-full translate-y-1/2 -translate-x-1/2"></div>
-        </div>
+        <div className="relative inset-0 ">
+              <div className="absolute w-96 h-96 -top-0 -left-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute w-96 h-96 -bottom-0 -right-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            </div>
       </div>
 
       <div className="w-full h-auto ">
@@ -133,11 +133,11 @@ const PackageDetails = () => {
             }}
           >
             <div>
-              <h2 className="text-2xl font-semibold mb-4">{pkg.name}</h2>
-              <p className="mb-4">{pkg.description}</p>
+              <h2 className="text-2xl text-orange-500 text-center font-bold mb-4">{pkg.name}</h2>
+              <p className="mb-4 text-center">{pkg.description}</p>
 
               {pkg.features && (
-                <ul className="text-left list-disc list-outside mt-4 mb-4">
+                <ul className="text-left ml-3 list-disc list-outside mt-4  mb-4">
                   {pkg.features.map((feature, idx) => (
                     <li key={idx} className="text-gray-700 mb-2">
                       {feature}

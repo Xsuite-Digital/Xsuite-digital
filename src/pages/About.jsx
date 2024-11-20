@@ -35,11 +35,10 @@ const About = () => {
             <h1 className="text-5xl text-center font-bold">About Us</h1>
           </div>
         </div>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute right-0 top-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2"></div>
-          <div className="absolute left-0 bottom-0 w-96 h-96 bg-white rounded-full translate-y-1/2 -translate-x-1/2"></div>
-        </div>
-      </div>
+        <div className="relative inset-0 ">
+              <div className="absolute w-96 h-96 -top-0 -left-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute w-96 h-96 -bottom-0 -right-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            </div>
 
       {/* Vision and Mission Section */}
       <div className=" bg-black px-5 py-16">
@@ -166,6 +165,8 @@ const About = () => {
       <FAQs />
       {/* <Location /> */}
     </div>
+    </div>
+
   );
 };
 
