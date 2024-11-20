@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import { Helmet } from "react-helmet-async";
 import FAQs from "../components/main/FAQs";
-import Location from "../components/main/Location";
 import WorkProcess from "../components/main/WorkProcess";
 import { servicesData } from "../components/main/Helpers/Data";
 

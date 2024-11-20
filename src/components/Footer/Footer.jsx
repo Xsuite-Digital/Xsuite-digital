@@ -131,42 +131,63 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Services</h4>
               <ul className="space-y-1 mt-6 text-gray-300">
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link to="/Services/seo" className="hover:text-white">
                     SEO
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link
+                    to="/Services/ppc-campaign"
+                    className="hover:text-white"
+                  >
                     PPC Campaigns
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link
+                    to="/Services/google-analytics"
+                    className="hover:text-white"
+                  >
                     Google Analytics
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link
+                    to="/Services/digital-marketing"
+                    className="hover:text-white"
+                  >
                     Digital Marketing
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link
+                    to="/Services/website-development"
+                    className="hover:text-white"
+                  >
                     Website Development
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link
+                    to="/Services/google-search-console"
+                    className="hover:text-white"
+                  >
                     Google Search Console
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link
+                    to="/Services/social-media-marketing"
+                    className="hover:text-white"
+                  >
                     Social Media Marketing
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Services" className="hover:text-white">
+                  <Link
+                    to="/Services/google-my-business-optimization"
+                    className="hover:text-white"
+                  >
                     Google My Business Optimization
                   </Link>
                 </li>
