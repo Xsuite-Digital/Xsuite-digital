@@ -62,16 +62,16 @@ export default function ContactLink() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            discuss
+             team up and
           </motion.span>{" "}
-          make something{" "}
+          create something {" "}
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
             className="relative"
           >
-            cool
+            amazing
             <motion.div
               className="absolute -right-6 top-0 w-0 h-0"
               style={{
