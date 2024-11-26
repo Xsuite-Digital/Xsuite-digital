@@ -76,7 +76,7 @@ export default function AboutUs() {
             <motion.h1 className="text-4xl md:text-5xl font-bold leading-tight" variants={itemVariants}>
               The Best
               <br />
-              Service Provider
+             <span className="text-orange-500"> Service </span>Provider
             </motion.h1>
 
             <motion.p className="text-gray-400 text-lg" variants={itemVariants}>
