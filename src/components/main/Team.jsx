@@ -1,148 +1,5 @@
-// import { useState, useEffect } from "react";
-// import { motion } from "framer-motion";
-
-// const Team = () => {
-//   const profile = [
-//     {
-//       imgSrc: "Sir Ali.webp",
-//       name: "Ali Aziz",
-//       position: "CEO",
-// },
-//     {
-//       imgSrc: "sir.webp",
-//       name: "Sir Zaheer",
-//       position: "Google Ads PPC Strategist",
-// },
-//     {
-//       imgSrc: "SJL.webp",
-//       name: "Sajal",
-//       position: "Graphics Designer",
-//     },
-//     {
-//       imgSrc: "Anas.webp",
-//       name: "Muhammad Anas",
-//       position: "Team Lead | Frontend Developer",
-//     },
-//     {
-//       imgSrc: "Rafaqat.webp",
-//       name: "Rafaqat Ali",
-//       position: "Graphic Designer",
-//     },
-//     {
-    
-//       imgSrc: "Ali.jpg",
-//       name: "Ali Raza",
-    
-//       position: "UI/UX Designer",
-//     },
-//     {
-    
-//       imgSrc: "/Mashhood.webp",
-//       name: "Mashhood Abdul Rehman",
-//       position: "Full Stack Developer",
-//         },
-//     {
-    
-//       imgSrc: "Aqsa.webp",
-//       name: "Aqsa Malik",
-//       position: "Front-End Developer",
-//         },
-//     {
-    
-//       imgSrc: "sharoon.webp",
-//       name: "Sharoon Amanat",
-//       position: "Front-End Developer",
-//     },
-//   ];
-
-//   const [currentIndex, setCurrentIndex] = useState(0);
-//   const [visibleProfiles, setVisibleProfiles] = useState([]);
-
-//   useEffect(() => {
-//     const updateVisibleProfiles = () => {
-//       const isMobile = window.innerWidth < 1024;
-//       setVisibleProfiles(
-//         profile.slice(currentIndex, currentIndex + (isMobile ? 1 : 3))
-//       );
-//     };
-
-//     updateVisibleProfiles();
-//     window.addEventListener("resize", updateVisibleProfiles);
-
-//     return () => {
-//       window.removeEventListener("resize", updateVisibleProfiles);
-//     };
-//   }, [currentIndex]);
-
-//   const nextProfiles = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex + (window.innerWidth < 1024 ? 1 : 3) >= profile.length
-//         ? 0
-//         : prevIndex + (window.innerWidth < 1024 ? 1 : 3)
-//     );
-//   };
-
-//   const prevProfiles = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex - (window.innerWidth < 1024 ? 1 : 3) < 0
-//         ? profile.length - (window.innerWidth < 1024 ? 1 : 3)
-//         : prevIndex - (window.innerWidth < 1024 ? 1 : 3)
-//     );
-//   };
-
-//   return (
-//     <div className="flex flex-col items-center bg-gray-200 py-8">
-//       <h1 className="font-bold text-2xl mb-6">Our Team</h1>
-
-//       <div className="relative  ">
-//         <motion.div
-//           className="grid grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:grid-rows-1 gap-4"
-//           initial={{ opacity: 0, x: 100 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           exit={{ opacity: 0, x: -100 }}
-//           transition={{ duration: 0.5 }}
-//           key={currentIndex}
-//         >
-//           {visibleProfiles.map((member, index) => (
-//             <motion.div
-//               key={index}
-//               className="flex flex-col items-center justify-center rounded-md p-6 shadow-lg bg-white"
-//             >
-//               <img
-//                 loading="lazy"
-//                 src={member.imgSrc}
-//                 className="w-40 h-40 rounded-full object-cover border-2 border-gray-200 mb-4"
-//                 alt={member.name}
-//               />
-//               <h2 className="text-gray-800 text-lg font-bold">{member.name}</h2>
-//               <p className="text-gray-600">{member.position}</p>
-
-             
-//             </motion.div>
-//           ))}
-//         </motion.div>
-
-//         <button
-//           onClick={prevProfiles}
-//           className="absolute left-[-3rem] top-1/2 transform -translate-y-1/2 px-3 py-2 bg-gray-300 rounded-full transition z-10"
-//         >
-//           &#8592;
-//         </button>
-//         <button
-//           onClick={nextProfiles}
-//           className="absolute right-[-3rem] top-1/2 transform -translate-y-1/2 px-3 py-2 bg-gray-300 rounded-full transition z-10"
-//         >
-//           &#8594;
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Team;
-
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Team = () => {
   const profile = [
@@ -158,53 +15,108 @@ const Team = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [cardsToShow, setCardsToShow] = useState(3);
 
-  // Set up auto-slide interval
+  // Adjust cards to show based on screen size
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      setCardsToShow(window.innerWidth < 1024 ? 1 : 3);
+    };
+
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
+
+  // Auto-slide interval
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % profile.length);
     }, 3000); // Adjust time for slide speed
 
     return () => clearInterval(interval); // Clear interval on unmount
-  }, []);
+  }, [profile.length]);
 
-  // Calculate visible profiles
-  const visibleProfiles = window.innerWidth < 1024
-    ? profile.slice(currentIndex, currentIndex + 1)
-    : profile.slice(currentIndex, currentIndex + 3);
+  // Calculate visible profiles with wrapping logic
+  const visibleProfiles = [];
+  for (let i = 0; i < cardsToShow; i++) {
+    visibleProfiles.push(profile[(currentIndex + i) % profile.length]);
+  }
 
   return (
-    <div className="flex flex-col items-center bg-gray-200 py-8">
-      <h1 className="font-bold text-2xl mb-6">Our Team</h1>
-
-      <div className="relative">
+    <div className="h-full bg-gradient-to-br from-black via-black  to-orange-300  p-8 relative">
+      <div className="max-w-7xl mx-auto relative">
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-4"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
-          {visibleProfiles.map((member, index) => (
-            <motion.div
-              key={index}
-              className="flex flex-col items-center justify-center rounded-md p-6 shadow-lg bg-white"
-            >
-              <img
-                loading="lazy"
-                src={member.imgSrc}
-                className="w-40 h-40 rounded-full object-cover border-2 border-orange-400 shadow-lg mb-4"
-                alt={member.name}
-              />
-              <h2 className="text-gray-800 text-lg font-bold">{member.name}</h2>
-              <p className="text-gray-600">{member.position}</p>
-            </motion.div>
-          ))}
+          
+          <h1 className="text-4xl md:text-5xl font-bold text-white">
+            MEET OUR <span className="text-orange-500">TEAM</span>
+          </h1>
         </motion.div>
+
+        <div className="relative">
+        <AnimatePresence initial={false}>
+          <motion.div
+            className="flex justify-center gap-6"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+          >
+            {visibleProfiles.map((member, index) => (
+              <motion.div
+                key={index}
+                className="flex-shrink-0 w-full sm:w-[90%] md:w-[60%] lg:w-[25%]  bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-6 flex flex-col items-center"
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                }}
+              >
+                <div className="relative w-32 h-32 mb-4">
+                  <motion.div
+                    className="rounded-full w-32 h-32 overflow-hidden border-4 border-orange-500"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <img
+                      src={member.imgSrc}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </motion.div>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-orange-500 text-sm">{member.position}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Team;
+
+
+
+
+
+
+
+
+
+
+
+
 

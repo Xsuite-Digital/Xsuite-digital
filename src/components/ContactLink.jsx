@@ -100,7 +100,7 @@ export default function ContactLink() {
         >
           <motion.a
             href="#"
-            className="inline-flex items-center text-white hover:text-orange-400 transition-colors group"
+            className="inline-flex items-center text-white hover:text-orange-500 transition-colors group"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             whileHover={{ x: 5 }}
