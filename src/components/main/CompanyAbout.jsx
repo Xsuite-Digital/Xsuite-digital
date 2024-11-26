@@ -3,6 +3,42 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 
+
+const CompanyAbout = () => {
+  return (
+    <div>
+      {" "}
+      <div className="bg-black text-white py-12">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+          {/* FAQs Section */}
+          
+
+          {/* About Section */}
+          <div className="flex flex-col w-full md:w-1/2 p-4 space-y-6">
+           
+            <h1 className="text-4xl md:text-5xl font-bold text-white">
+            Your Partner in <span className="text-orange-500">Digital </span>{""}
+            Exellence
+          </h1>
+            <p className="leading-relaxed text-lg text-white">
+              At XSuite Digital, creativity and technology go hand in hand. In
+              addition, our passionate team of marketing professionals combines
+              imaginative thinking with the latest progressive enhancements to
+              develop targeted solutions to satisfy your digital essentials. We
+              strive to connect your brands with global audiences, enhancing
+              your market's identity prominence and interaction. Whether you are
+              looking to boost your online presence, drive conversion, or build
+              brand loyalty, our marketing firm is here to support you in
+              achieving lasting success.
+            </p>
+         
+          </div>
+          <FAQSection />
+        </div>
+      </div>
+    </div>
+  );
+};
 const FAQSection = () => {
   const [selected, setSelected] = useState(null);
 
@@ -29,15 +65,16 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full md:w-1/2 p-4 space-y-4 mt-24">
+    <div className="flex flex-col bg-black w-full h-auto md:w-1/2 p-4 space-y-4 mt-24">
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="bg-black text-white p-4 rounded-lg cursor-pointer "
+          className="bg-gray-800 text-white p-4 rounded-lg cursor-pointer "
           onClick={() => toggleFAQ(index)}
         >
           <div className="flex justify-between items-center">
             <h4 className="font-bold">{faq.question}</h4>
+            
             <span>
               {selected === index ? (
                 <Icon
@@ -74,40 +111,6 @@ const FAQSection = () => {
   );
 };
 
-const CompanyAbout = () => {
-  return (
-    <div>
-      {" "}
-      <div className="bg-white text-black py-12">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-          {/* FAQs Section */}
-          <FAQSection />
 
-          {/* About Section */}
-          <div className="flex flex-col w-full md:w-1/2 p-4 space-y-6">
-            <button className="bg-gray-200 text-black px-4 py-2 rounded-full w-max">
-              Who We Are
-            </button>
-            <h1 className="text-2xl font-bold font-sans text-gray-800">
-              Your Partner in Digital Excellence
-            </h1>
-            <p className="leading-relaxed text-lg text-gray-500">
-              At XSuite Digital, creativity and technology go hand in hand. In
-              addition, our passionate team of marketing professionals combines
-              imaginative thinking with the latest progressive enhancements to
-              develop targeted solutions to satisfy your digital essentials. We
-              strive to connect your brands with global audiences, enhancing
-              your market's identity prominence and interaction. Whether you are
-              looking to boost your online presence, drive conversion, or build
-              brand loyalty, our marketing firm is here to support you in
-              achieving lasting success.
-            </p>
-         
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export default CompanyAbout;

@@ -157,11 +157,8 @@ const About = () => {
 
       {/* Other Sections */}
       <CompanyAbout />
-      <div className="bg-white p-4">
-        {/* Additional Content */}
-      </div>
       <Team />
-      <Stats />
+      {/* <Stats /> */}
       <FAQs />
       {/* <Location /> */}
     </div>

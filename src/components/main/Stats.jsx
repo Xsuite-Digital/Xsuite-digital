@@ -17,7 +17,7 @@ const Stats = () => {
 
   return (
     <div className="flex justify-center bg-black items-center min-h-screen  text-white px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl w-full py-16 px-8 bg-black rounded-lg">
+      <div className="max-w-4xl w-full py-16 px-8 bg-black border border-gray-800 rounded-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <h2 className="text-4xl font-bold">

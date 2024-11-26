@@ -48,9 +48,7 @@ const FAQs = () => {
   return (
     <div className="w-auto mx-auto px-4 py-12 bg-gradient-to-b from-black to-gray-900 min-h-screen">
       <h2 className="text-4xl font-bold text-center mb-16 text-white relative">
-        <span className="relative inline-block after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-24 after:h-1 after:bg-orange-500">
-          Frequently Asked Questions
-        </span>
+      Frequently <span className="text-orange-500">Asked</span> Questions
       </h2>
 
       <div className="space-y-6 max-w-4xl mx-auto">
@@ -68,7 +66,7 @@ const FAQs = () => {
               aria-expanded={openIndex === index}
               aria-controls={`accordion-content-${index}`}
             >
-              <div className="flex justify-between items-center group">
+              <div className="flex justify-between items-center group " >
                 <span className="text-lg font-semibold text-white group-hover:text-orange-500 transition-colors duration-300">
                   {faq.question}
                 </span>
