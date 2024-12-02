@@ -1,27 +1,10 @@
 import { motion } from "framer-motion";
-                    
-                      
-                      
-                      
-  import { useTypewriter } from "react-simple-typewriter";
+import { TypeAnimation } from "react-type-animation";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AnimatedComponent from "./AnimatedComponent";
 
 const Hero = () => {
-  const [typeEffect] = useTypewriter({
-    words: [
-      "Digital Marketing",
-      "Google Ads",
-      "PPC Campaigns",
-      "Social Media Marketing",
-      "Web Development",
-    ],
-    loop: {},
-    typeSpeed: 100,
-    deleteSpeed: 60,
-  });
-
   const imageUrl = "/Xsuite-Final.webp";
 
   useEffect(() => {
@@ -99,20 +82,34 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className=" "
         >
-          <div className="flex flex-col space-y-4 items-center  justify-center ">
-            <h1 className="text-white text-center text-xl sm:text-xl lg:text-5xl xl:text-6xl leading-snug lg:leading-normal font-anton font-extrabold mr-7">
-              Crafting Digital Brilliance in{" "}
-            </h1>
+          <div className="flex flex-col  items-center  justify-center ">
+            <h1 className="text-orange-500  text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:leading-normal font-extrabold text-center sm:text-left">
+              <span className="text-white    ">
+                Crafting Digital Brilliance in{" "}
+              </span>
+              <br />
 
-            <span
-              className="text-orange-500 block text-2xl sm:text-3xl font-bold lg:text-4xl xl:text-5xl"
-              style={{
-                display: "inline-block",
-                minHeight: "1em", // Ensure consistent height for the text
-              }}
-            >
-              {typeEffect}
-            </span>
+              <TypeAnimation
+                sequence={[
+                  "Digital Marketing",
+                  1000,
+                  "Google Ads",
+                  1000,
+                  "PPC Campaigns",
+                  1000,
+                  "Social Media Marketing",
+                  1000,
+                  "Web Development",
+                  1000,
+                  "Graphic Design",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="  "
+              />
+            </h1>
           </div>
         </motion.div>
 
