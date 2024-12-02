@@ -25,6 +25,7 @@
     "react-router-dom": "^6.26.2",
     "react-simple-typewriter": "^5.0.1",
     "react-toastify": "^10.0.6",
+    "react-type-animation": "^3.2.0",
     "xsuite-digital": "file:"
   },
   "devDependencies": {

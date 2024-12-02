@@ -16,18 +16,18 @@ const Contact = () => {
           </div>
         </div>
         <div className="relative inset-0 ">
-              <div className="absolute w-96 h-96 -top-0 -left-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
-              <div className="absolute w-96 h-96 -bottom-0 -right-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            </div>
+          <div className="absolute w-96 h-96 -top-0 -left-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute w-96 h-96 -bottom-0 -right-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
       </div>
 
-      <div className="  bg-black  max-lg:max-w-2xl mx-auto   ">
+      <div className="bg-black w-full mx-auto">
         <Helmet>
           <title>Contact | XSuite Digital</title>
           <meta name="" content="" />
         </Helmet>
 
-        <Location  />
+        <Location />
         {/* <FAQs /> */}
       </div>
     </>
