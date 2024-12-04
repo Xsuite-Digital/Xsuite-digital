@@ -53,7 +53,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
               loading="lazy"
-                src="vision.jpg"
+                src="vision.webp"
                 alt="Innovation"
                 height={200}
                 width={200}

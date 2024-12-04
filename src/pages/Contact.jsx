@@ -26,9 +26,8 @@ const Contact = () => {
           <title>Contact | XSuite Digital</title>
           <meta name="" content="" />
         </Helmet>
+<Location />
 
-        <Location  />
-        {/* <FAQs /> */}
       </div>
     </>
   );

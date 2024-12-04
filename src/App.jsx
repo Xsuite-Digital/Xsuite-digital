@@ -1,5 +1,7 @@
 
 
+
+
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -9,41 +11,20 @@ import Security from "./components/Footer/Security";
 import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import ChatIcon from "./components/ChatIcon";
 import Services from "./pages/Services";
-import PackageDetails from "./pages/PackageDetails";
-import ServicesPage from "./components/main/ServicesPage";
-import { servicesData } from "./components/main/Helpers/Data";
+import ServiceDetails from "./components/main/SubServices/ServicesDetails";
 
 function App() {
   return (
     <>
       <Routes>
-        {/* Static Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="/Services/:id" element={<ServiceDetails />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
         <Route path="/TermsOfServices" element={<TermsOfServices />} />
         <Route path="/Security" element={<Security />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-        <Route path="/PackageDetails" element={<PackageDetails />} />
-
-        {/* Dynamic Routes for servicesData */}
-        {servicesData.map((service, idx) => (
-          <Route
-            key={idx}
-            path={`/services/${service.path}`}
-            element={
-              <ServicesPage
-                title={service.name}
-                image={service.images }
-                description={service.description}
-                
-              />
-            }
-          />
-        ))}
-
-      
       </Routes>
       <ChatIcon />
     </>
