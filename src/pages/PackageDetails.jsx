@@ -1,9 +1,5 @@
-
-
 import { useEffect, useState } from "react";
-                    
-                      
-  import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const PackageDetails = () => {
@@ -97,14 +93,16 @@ const PackageDetails = () => {
 
       {/* Timeframe Selection */}
       <div className="flex justify-center items-center mt-12 mb-8">
-      <label htmlFor="timeframe" className="mr-3 text-lg text-white font-semibold">
+        <label
+          htmlFor="timeframe"
+          className="mr-3 text-lg text-white font-semibold"
+        >
           Select Timeframe:
-            </label>
+        </label>
         <motion.div
           className="bg-taransparent border-2 border-orange-500 rounded-lg shadow-lg p-2 inline-flex items-center space-x-2"
           whileHover={{ scale: 1.02 }}
         >
-          
           <select
             value={timeframe}
             onChange={handleTimeframeChange}
@@ -129,7 +127,7 @@ const PackageDetails = () => {
             <motion.div
               key={index}
               className={`relative bg-gray-900  rounded-2xl p-8 ${
-                pkg.featured ? 'ring-2 ring-orange-500' : ''
+                pkg.featured ? "ring-2 ring-orange-500" : ""
               }`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -147,7 +145,9 @@ const PackageDetails = () => {
               )}
 
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {pkg.name}
+                </h3>
                 <p className="text-white">{pkg.description}</p>
                 <div className="mt-6">
                   <span className="text-4xl font-bold text-orange-500">
@@ -164,20 +164,29 @@ const PackageDetails = () => {
                     className="flex items-start space-x-3 text-white"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: hoveredCard === index ? idx * 0.1 : 0 }}
+                    transition={{
+                      delay: hoveredCard === index ? idx * 0.1 : 0,
+                    }}
                   >
-                    <svg className="h-6 w-6 text-orange-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <svg
+                      className="h-6 w-6 text-orange-500 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     <span>{feature}</span>
                   </motion.li>
                 ))}
               </ul>
 
-              <motion.div
-                className="mt-auto"
-                whileHover={{ scale: 1.05 }}
-              >
+              <motion.div className="mt-auto" whileHover={{ scale: 1.05 }}>
                 <Link
                   to="/Contact"
                   className="block w-full text-center bg-black hover:bg-orange-500 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
