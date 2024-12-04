@@ -1,7 +1,3 @@
-
-
-
-
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -12,6 +8,7 @@ import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
 import ChatIcon from "./components/ChatIcon";
 import Services from "./pages/Services";
 import ServiceDetails from "./components/main/SubServices/ServicesDetails";
+import PackageDetails from "./pages/PackageDetails";
 
 function App() {
   return (
@@ -25,6 +22,7 @@ function App() {
         <Route path="/TermsOfServices" element={<TermsOfServices />} />
         <Route path="/Security" element={<Security />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/PackageDetails" element={<PackageDetails />} />
       </Routes>
       <ChatIcon />
     </>
