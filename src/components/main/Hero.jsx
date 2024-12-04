@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import AnimatedComponent from "./AnimatedComponent";
 
 const Hero = () => {
-  
-
   const imageUrl = "/Xsuite-Final.webp";
 
   useEffect(() => {
@@ -85,37 +83,33 @@ const Hero = () => {
           className=" "
         >
           <div className="flex flex-col  items-center  justify-center ">
-           
-          <h1 className="text-orange-500  text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:leading-normal font-extrabold text-center sm:text-left">
-  <span className="text-white    ">
-    Crafting Digital Brilliance&apos;in{" "}
-  </span>
-  <br />
-  
+            <h1 className="text-orange-500  text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:leading-normal font-extrabold text-center sm:text-left">
+              <span className="text-white    ">
+                Crafting Digital Brilliance&apos;in{" "}
+              </span>
+              <br />
 
-  <TypeAnimation
-    sequence={[
-      "Digital Marketing",
-      1000,
-      "Google Ads",
-      1000,
-      "PPC Campaigns",
-      1000,
-      "Social Media Marketing",
-      1000,
-      "Web Development",
-      1000,
-      "Graphic Design",
-      1000,
-    ]}
-    wrapper="span"
-    speed={50}
-    repeat={Infinity}
-    className="  "
-    />
-   
-</h1>
-
+              <TypeAnimation
+                sequence={[
+                  "Digital Marketing",
+                  1000,
+                  "Google Ads",
+                  1000,
+                  "PPC Campaigns",
+                  1000,
+                  "Social Media Marketing",
+                  1000,
+                  "Web Development",
+                  1000,
+                  "Graphic Design",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="  "
+              />
+            </h1>
           </div>
         </motion.div>
 
