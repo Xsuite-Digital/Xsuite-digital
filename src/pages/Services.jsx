@@ -1,91 +1,121 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import FAQs from "../components/main/FAQs";
+import { Link } from "react-router-dom"; // Import Link for routing
 import WorkProcess from "../components/main/WorkProcess";
-import { servicesData } from "../components/main/Helpers/Data";
+import FAQs from "../components/main/FAQs";
+import { FaCode, FaMobileAlt, FaLaptop, FaCloud,FaBullhorn, FaHashtag,FaChartLine, FaShieldAlt, FaRobot, FaPaintBrush, FaSearch } from "react-icons/fa"; // Add more icon imports
+import SocialMedia from "../components/main/SubServices/SocialMedia";
+import PPC from "../components/main/SubServices/PPC";
+import Web from "../components/main/SubServices/Web";
+import SEO from "../components/main/SubServices/SEO";
+import DigitalMarketing from "../components/main/SubServices/DigitalMarketing";
+import Graphic from "../components/main/SubServices/Graphic";
+import GoogleAd from "../components/main/SubServices/GoogleAd";
+import GSConsole from "../components/main/SubServices/GSConsole";
+import GoogleAnalytics from "../components/main/SubServices/GoogleAnalytics";
+
+export const services = [
+  { id: "01", title: "Web Development", description: "Build a responsive and optimized website with our developmentservices",  icon: <FaCode /> , item: <Web/>,path:"Web" },
+  { id: "02", title: "Google Analytics", path:"Analytics", description: "Get deep insights into your audience and traffic with Google Analytics", icon: <FaMobileAlt />,item:<GoogleAnalytics/> ,path:"GoogleAnalytics", },
+  { id: "03", title: "Digital Marketing", description: "Maximize your brand's reach with our digital marketing strategies.", icon:<FaBullhorn />,item:<DigitalMarketing/> ,path:"DigitalMarketing", },
+  { id: "04", title: "SEO (Search Engine Optimization)", description: "Improve your website’s ranking on search engines with our expert SEO service.", icon: <FaSearch /> ,item:<SEO/> ,path:"SEO",},
+  { id: "05", title: "Social Media Marketing", description: "Engage your audience across social platforms with our marketing solutions.", icon: <FaHashtag />,item:<SocialMedia/> ,path:"SocialMedia",},
+  { id: "06", title: "PPC Campaign", description: "Our PPC Campaign service helps you drive targeted traffic to your website.", icon: <FaChartLine /> , item:<PPC/> ,path:"PPC", },
+  { id: "07", title: "Google Search Console", description: "Utilize Google Search Console for improved search engine visibility.", icon: <FaShieldAlt />,item:<GSConsole/> ,path:"GSConsole", },
+  { id: "08", title: "Google Ads", description: "Enhance your local presence with Google My Business Optimization.", icon: <FaRobot /> ,item:<GoogleAd/> ,path:"GoogleAd",},
+  { id: "09", title: "Graphic Designing", description: "Enhance your brand's design with our expert graphic designing service.", icon: <FaPaintBrush /> ,item:<Graphic/> ,path:"Graphic",},
+];
 
 const Services = () => {
   const [showAll, setShowAll] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const displayedServices = showAll ? servicesData : servicesData.slice(0, 3);
+  const displayedServices = showAll ? services : services.slice(0, 6);
 
   return (
     <>
       <Helmet>
         <title>Services | XSuite Digital</title>
       </Helmet>
-      <section className="bg-gray-900">
-        {/* Hero Section */}
-        <div className="bg-black text-white py-16 lg:py-52 relative overflow-hidden">
-          <div className="container mx-auto px-4">
-            <h1 className="text-5xl text-center font-bold">Our Services</h1>
-          </div>
-          <div className="relative inset-0">
-            <div className="absolute w-96 h-96 -top-0 -left-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute w-96 h-96 -bottom-0 -right-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          </div>
+      <div className="bg-black text-white py-16 lg:py-52 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <h1 className="text-5xl text-center font-bold">Our Services</h1>
         </div>
-
-        {/* Services Cards */}
-        <div className="container w-auto px-5 py-14 mx-auto">
+        <div className="relative inset-0">
+          <div className="absolute w-96 h-96 -top-0 -left-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute w-96 h-96 -bottom-0 -right-0 bg-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+      </div>
+      <section className="bg-black py-8">
+        <div className="container mx-auto  max-w-6xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <AnimatePresence>
-              {displayedServices.map((data, index) => (
-                <Link to={`/services/${data.path}`} key={index}>
-                  <motion.div
-                    className="relative group overflow-hidden flex flex-col items-center justify-center space-y-4 border border-orange-500 rounded-xl h-80 shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-500 bg-gradient-to-tl from-gray-50 to-white"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {/* Icon */}
-                    <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white group-hover:rotate-180 transition-transform duration-500">
-                      <img
-                        src={data.imgSrc}
-                        loading="lazy"
-                        alt={data.name}
-                        className="w-15 h-15 text-white"
-                      />
-                    </div>
+            {displayedServices.length > 0 ? (
+              displayedServices.map((service, index) => (
+                <>
+       <Link
+  key={service.id}
+  to={`/Services/${service.path}`} // Use 'path' to generate dynamic route
+  className={`group relative overflow-hidden rounded-lg backdrop-blur-sm bg-white/10 border border-white/20 transform transition-transform duration-300 ${
+    hoveredIndex === index ? "scale-105" : "scale-100"
+  }`}
+  onMouseEnter={() => setHoveredIndex(index)}
+  onMouseLeave={() => setHoveredIndex(null)}
+  role="button"
+  aria-label={`Service: ${service.title}`}
+>
+  <div className="p-6 flex justify-between items-center">
+    <div className="flex flex-col">
+      <h3 className="mb-2 text-xl font-semibold text-white">{service.title}</h3>
+      <p className="text-sm text-white/80">{service.description}</p>
+    </div>
+    <div className="text-3xl absolute top-1 right-4 flex items-center cursor-pointer text-orange-500">
+      {service.icon}
+    </div>
+  </div>
+  <div className="absolute bottom-2 right-6 flex items-center text-orange-500 cursor-pointer hover:underline">
+    <span>View Details</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="w-4 h-4 ml-2"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </div>
+</Link>
 
-                    {/* Title */}
-                    <p className="text-lg font-semibold text-gray-800 group-hover:text-orange-600 transition-colors duration-300">
-                      {data.name}
-                    </p>
 
-                    {/* Description */}
-                    <p className="text-sm text-gray-600 px-4 group-hover:text-gray-700 transition-colors duration-300 text-center">
-                      {data.view}
-                    </p>
+</>
 
-                    {/* Background Orb Animation */}
-                    <div className="absolute -z-10 inset-0 bg-gradient-to-br from-orange-200/30 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg"></div>
-                  </motion.div>
-                </Link>
-              ))}
-            </AnimatePresence>
+
+))
+) : (<>
+  <p className="text-white text-center">No services available at the moment.</p>
+</>
+            )}
           </div>
-
-          {/* View More Button */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-12">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="px-8 py-3 mt-12 rounded-full border-2  border-orange-500 text-orange-500 mr-5 hover:bg-orange-500 hover:text-white transition-colors duration-300 ease-in-out"
+              className="px-8 py-3 rounded-full border-2 border-orange-500 text-white hover:bg-orange-500 hover:text-black transition-colors duration-300 ease-in-out"
+              aria-label={showAll ? "Show Less Services" : "View More Services"}
             >
-              {showAll ? "Show less" : "View More"}
+              {showAll ? "Show Less" : "View More"}
             </button>
           </div>
         </div>
       </section>
-
-      {/* Additional Sections */}
       <WorkProcess />
       <FAQs />
     </>
@@ -93,3 +123,6 @@ const Services = () => {
 };
 
 export default Services;
+
+
+

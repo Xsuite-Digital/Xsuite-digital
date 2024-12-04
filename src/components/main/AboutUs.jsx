@@ -137,7 +137,7 @@ export default function AboutUs() {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="/xdigital.jpg"
+                src="/xdigital.webp"
                 alt="Team working together"
                 width={400}
                 height={300}

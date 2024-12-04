@@ -20,12 +20,11 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="bg-black w-full mx-auto">
+      <div className="  bg-black  max-lg:max-w-2xl mx-auto   ">
         <Helmet>
           <title>Contact | XSuite Digital</title>
           <meta name="" content="" />
         </Helmet>
-
         <Location />
       </div>
     </>
