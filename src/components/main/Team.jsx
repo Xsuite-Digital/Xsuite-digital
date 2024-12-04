@@ -8,7 +8,7 @@ const Team = () => {
     { imgSrc: "SJL.webp", name: "Sajal", position: "Graphics Designer" },
     { imgSrc: "Anas.webp", name: "Muhammad Anas", position: "Team Lead | Frontend Developer" },
     { imgSrc: "Rafaqat.webp", name: "Rafaqat Ali", position: "Graphic Designer" },
-    { imgSrc: "Ali.jpg", name: "Ali Raza", position: "UI/UX Designer" },
+    { imgSrc: "Ali.webp", name: "Ali Raza", position: "UI/UX Designer" },
     { imgSrc: "/Mashhood.webp", name: "Mashhood Abdul Rehman", position: "Full Stack Developer" },
     { imgSrc: "Aqsa.webp", name: "Aqsa Malik", position: "Front-End Developer" },
     { imgSrc: "sharoon.webp", name: "Sharoon Amanat", position: "Front-End Developer" },
