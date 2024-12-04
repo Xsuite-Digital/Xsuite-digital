@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import FAQs from "../components/main/FAQs";
 import Location from "../components/main/Location";
 
 const Contact = () => {
@@ -28,7 +27,6 @@ const Contact = () => {
         </Helmet>
 
         <Location />
-        {/* <FAQs /> */}
       </div>
     </>
   );
