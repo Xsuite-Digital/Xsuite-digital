@@ -1,16 +1,9 @@
-import {
-  FaCode,
-  FaMobileAlt,
-  FaLaptop,
-  FaCloud,
-  FaBullhorn,
-  FaHashtag,
-  FaChartLine,
-  FaShieldAlt,
-  FaRobot,
-  FaPaintBrush,
-  FaSearch,
-} from "react-icons/fa";
+import { FaCode, FaBullhorn, FaSearch, FaHashtag, FaChartLine, FaPaintBrush } from "react-icons/fa";
+import { MdAnalytics, } from "react-icons/md";
+import { SiGoogleads } from "react-icons/si";
+import { BiSearchAlt } from "react-icons/bi";
+
+
 import Web from "../SubServices/Web";
 import GoogleAnalytics from "../SubServices/GoogleAnalytics";
 import DigitalMarketing from "../SubServices/DigitalMarketing";
@@ -48,13 +41,12 @@ export const navbarTabs = [
 
 
 
-
 export const servicesInfo = [
   {
     id: "01",
     title: "Web Development",
     description:
-      "Build a responsive and optimized website with our developmentservices",
+      "Build a responsive and optimized website with our development services",
     icon: <FaCode />,
     item: <Web />,
     path: "Web",
@@ -62,10 +54,9 @@ export const servicesInfo = [
   {
     id: "02",
     title: "Google Analytics",
-    path: "Analytics",
     description:
       "Get deep insights into your audience and traffic with Google Analytics",
-    icon: <FaMobileAlt />,
+    icon: <MdAnalytics />, // Updated to a relevant analytics icon
     item: <GoogleAnalytics />,
     path: "GoogleAnalytics",
   },
@@ -110,7 +101,7 @@ export const servicesInfo = [
     title: "Google Search Console",
     description:
       "Utilize Google Search Console for improved search engine visibility.",
-    icon: <FaShieldAlt />,
+    icon: <BiSearchAlt />, // Updated to a relevant search-related icon
     item: <GSConsole />,
     path: "GSConsole",
   },
@@ -119,7 +110,7 @@ export const servicesInfo = [
     title: "Google Ads",
     description:
       "Enhance your local presence with Google My Business Optimization.",
-    icon: <FaRobot />,
+    icon: <SiGoogleads />, // Updated to a Google Ads-specific icon
     item: <GoogleAd />,
     path: "GoogleAd",
   },
@@ -133,4 +124,3 @@ export const servicesInfo = [
     path: "Graphic",
   },
 ];
-

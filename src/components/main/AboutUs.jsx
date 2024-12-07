@@ -99,7 +99,7 @@ export default function AboutUs() {
             </motion.div>
 
             <motion.ul className="space-y-3" variants={containerVariants}>
-              {["PPC Campaigns", "Google Ads", "Web Development", "Digital Services"].map((service, index) => (
+              {["Web Development", "Google Ads","PPC Campaigns" , "Graphic Designs","Digital Marketing"].map((service, index) => (
                 <motion.li key={index} className="flex items-center gap-2" variants={itemVariants}>
                   <motion.span
                     className="text-orange-500"

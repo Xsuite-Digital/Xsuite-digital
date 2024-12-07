@@ -1,96 +1,12 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom"; // Import Link for routing
+import { Link } from "react-router-dom"; 
 import WorkProcess from "../components/main/WorkProcess";
 import FAQs from "../components/main/FAQs";
 import { servicesInfo } from "../components/main/Helpers/Data";
- // Add more icon imports
 
 
-// export const services = [
-//   {
-//     id: "01",
-//     title: "Web Development",
-//     description:
-//       "Build a responsive and optimized website with our developmentservices",
-//     icon: <FaCode />,
-//     item: <Web />,
-//     path: "Web",
-//   },
-//   {
-//     id: "02",
-//     title: "Google Analytics",
-//     path: "Analytics",
-//     description:
-//       "Get deep insights into your audience and traffic with Google Analytics",
-//     icon: <FaMobileAlt />,
-//     item: <GoogleAnalytics />,
-//     path: "GoogleAnalytics",
-//   },
-//   {
-//     id: "03",
-//     title: "Digital Marketing",
-//     description:
-//       "Maximize your brand's reach with our digital marketing strategies.",
-//     icon: <FaBullhorn />,
-//     item: <DigitalMarketing />,
-//     path: "DigitalMarketing",
-//   },
-//   {
-//     id: "04",
-//     title: "SEO (Search Engine Optimization)",
-//     description:
-//       "Improve your website’s ranking on search engines with our expert SEO service.",
-//     icon: <FaSearch />,
-//     item: <SEO />,
-//     path: "SEO",
-//   },
-//   {
-//     id: "05",
-//     title: "Social Media Marketing",
-//     description:
-//       "Engage your audience across social platforms with our marketing solutions.",
-//     icon: <FaHashtag />,
-//     item: <SocialMedia />,
-//     path: "SocialMedia",
-//   },
-//   {
-//     id: "06",
-//     title: "PPC Campaign",
-//     description:
-//       "Our PPC Campaign service helps you drive targeted traffic to your website.",
-//     icon: <FaChartLine />,
-//     item: <PPC />,
-//     path: "PPC",
-//   },
-//   {
-//     id: "07",
-//     title: "Google Search Console",
-//     description:
-//       "Utilize Google Search Console for improved search engine visibility.",
-//     icon: <FaShieldAlt />,
-//     item: <GSConsole />,
-//     path: "GSConsole",
-//   },
-//   {
-//     id: "08",
-//     title: "Google Ads",
-//     description:
-//       "Enhance your local presence with Google My Business Optimization.",
-//     icon: <FaRobot />,
-//     item: <GoogleAd />,
-//     path: "GoogleAd",
-//   },
-//   {
-//     id: "09",
-//     title: "Graphic Designing",
-//     description:
-//       "Enhance your brand's design with our expert graphic designing service.",
-//     icon: <FaPaintBrush />,
-//     item: <Graphic />,
-//     path: "Graphic",
-//   },
-// ];
+
 
 const Services = () => {
   const [showAll, setShowAll] = useState(false);
