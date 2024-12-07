@@ -6,8 +6,6 @@ import FAQs from "../components/main/FAQs";
 import {
   FaCode,
   FaMobileAlt,
-  FaLaptop,
-  FaCloud,
   FaBullhorn,
   FaHashtag,
   FaChartLine,
@@ -44,7 +42,7 @@ export const services = [
       "Get deep insights into your audience and traffic with Google Analytics",
     icon: <FaMobileAlt />,
     item: <GoogleAnalytics />,
-    path: "GoogleAnalytics",
+    // path: "GoogleAnalytics",
   },
   {
     id: "03",
