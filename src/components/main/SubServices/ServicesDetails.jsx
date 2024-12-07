@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import { services } from "../../../pages/Services"; // Import the services array
+import { servicesInfo } from "../Helpers/Data";
 
 const ServiceDetails = () => {
   const { id } = useParams();
-  const service = services.find((service) => service.path === id);
+  const service = servicesInfo.find((service) => service.path === id);
 
   if (!service) {
     return <p className="text-center text-white">Service not found</p>;
