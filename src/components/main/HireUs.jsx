@@ -18,11 +18,12 @@ const HireUs = () => {
         "XSuite Digital prioritizes your safety, using top-notch tools and methods throughout our projects.",
     },
     {
-      icon: "mdi:headphones",
-      title: "Support",
+      icon: "mdi:headset",
+      title: "Customer Support",
       description:
         "Our friendly team is always available to help you by providing guidance and answers to your queries.",
     },
+    
     {
       icon: "mdi:chart-line",
       title: "Performance",
