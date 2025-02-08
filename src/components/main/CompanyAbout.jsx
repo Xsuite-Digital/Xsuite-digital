@@ -21,13 +21,13 @@ const CompanyAbout = () => {
             Exellence
           </h1>
             <p className="leading-relaxed text-lg text-white">
-              At XSuite Digital, creativity and technology go hand in hand. In
+              At Xsuite Digital, creativity and technology go hand in hand. In
               addition, our passionate team of marketing professionals combines
               imaginative thinking with the latest progressive enhancements to
               develop targeted solutions to satisfy your digital essentials. We
               strive to connect your brands with global audiences, enhancing
               your market's identity prominence and interaction. Whether you are
-              looking to boost your online presence, drive conversion, or build
+              looking to boost your digital presence, drive conversion, or build
               brand loyalty, our marketing firm is here to support you in
               achieving lasting success.
             </p>

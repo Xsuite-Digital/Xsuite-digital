@@ -69,9 +69,7 @@ export default function AboutUs() {
           animate="visible"
         >
           <header className="space-y-8">
-            <motion.h2 className="inline-block text-orange-500 font-medium" variants={itemVariants}>
-              Our Services
-            </motion.h2>
+          
 
             <motion.h1 className="text-4xl md:text-5xl font-bold leading-tight" variants={itemVariants}>
               The Best
@@ -80,8 +78,9 @@ export default function AboutUs() {
             </motion.h1>
 
             <motion.p className="text-gray-400 text-lg" variants={itemVariants}>
-              We are a team of over 100 skilled software engineers with a decade of experience, committed to delivering exceptional products and solutions.
+            Xsuite Digital is a top-level marketing service provider, specializing in web development, search engine optimization, pay-per-click campaigns, and social media management. With a team of enthusiastic experts, our digital marketing agency optimizes your online presence with Google My Business, Google Analytics, and Google Search Console. Whether you require SEO or graphic designing for social media platforms, our creative marketing agency can help you in the marketplace for your business advancements. Furthermore, Xsuite Digital is a trustworthy service-providing agency by which you can work to fulfill your digital requirements.
             </motion.p>
+            
 
             <motion.div className="flex border-l-2 border-orange-500 p-2 items-center gap-4" variants={itemVariants}>
               <motion.span
@@ -97,9 +96,12 @@ export default function AboutUs() {
                 <span className="font-bold text-xl text-white">Experience</span>
               </div>
             </motion.div>
+            <motion.h2 className="inline-block text-orange-500 font-medium" variants={itemVariants}>
+              Our Services
+            </motion.h2>
 
             <motion.ul className="space-y-3" variants={containerVariants}>
-              {["Web Development", "Google Ads","PPC Campaigns" , "Graphic Designs","Digital Marketing"].map((service, index) => (
+              {["Web Development", "Google Ads","PPC Campaigns" , "Graphic Designing","Digital Marketing"].map((service, index) => (
                 <motion.li key={index} className="flex items-center gap-2" variants={itemVariants}>
                   <motion.span
                     className="text-orange-500"

@@ -9,12 +9,14 @@ import ChatIcon from "./components/ChatIcon";
 import Services from "./pages/Services";
 import ServiceDetails from "./components/main/SubServices/ServicesDetails";
 import PackageDetails from "./pages/PackageDetails";
+import Portfolio from "./pages/Portfolio";
+import AnimatedComponent from "./components/main/AnimatedComponent";
 
 
 function App() {
   return (
     <>
-  
+   <AnimatedComponent className="absolute w-full h-3/4 hidden lg:block" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Services" element={<Services />} />
@@ -25,6 +27,7 @@ function App() {
         <Route path="/Security" element={<Security />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/PackageDetails" element={<PackageDetails />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
       </Routes>
       <ChatIcon />
     </>

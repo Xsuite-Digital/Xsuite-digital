@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link to="/" aria-label="Go to homepage">
               <img
                 onClick={ScrollToTop}
-                src="/logo-min.webp"
+                src="/Xsuitelogo.webp"
                 className="w-full h-auto "
                 alt="Xsuite logo image"
                 height="50"
@@ -71,11 +71,15 @@ const Navbar = () => {
                 <Link to="/About">About Us</Link>
               </li>
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
-                <Link to="/Contact">Contact</Link>
-              </li>
-              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
                 <Link to="/PackageDetails">Packages</Link>
               </li>
+              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+                <Link to="/Portfolio">Portfolio</Link>
+              </li>
+              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+                <Link to="/Contact">Contact</Link>
+              </li>
+              
             </ul>
           </div>
 

@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title>About | XSuite Digital</title>
+        <title>About | Xsuite Digital</title>
         <meta
           name="description"
           content="Learn more about XSuite Digital's vision, mission, and services."
@@ -33,6 +33,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="relative z-10">
             <h1 className="text-5xl text-center font-bold">About Us</h1>
+            <p className=" mt-5 text-lg text-center p-7">Xsuite Digital is a multi-service marketing agency that evolves your brand’s outlook through creativity and innovation. We transform your brand’s vision into fascinating marketing activities that engage your audience and drive measurable results. Additionally, our dedicated team blends creativity with cutting-edge technology to design unique solutions that meet your target audience's requirements.  With a passion for excellence, we primarily aim to connect your brand with audiences worldwide, utilizing our services. Thus, Xsuite Digital vigorously develops and maintains easily accessible and easy-to-use sites.</p>
+            <p className="  text-lg text-center pl-7 pr-7">
+With Google business tools, we ensure your brand stands out in the local searches. As a result, this will enhance your brand’s visibility and engagement with potential customers. To further enhance our offerings, we create a comprehensive strategy to attract more visitors. Moreover, we support you in driving conversions by analyzing user metrics, improving local search, and monitoring search performance. From web development and SEO to social media marketing and PPC campaigns, we believe in the power of coordination. It will enhance your growth, make your brand digitally active, and drive fruitful results. Together, we will navigate the digital projects and achieve your business objectives with originality and advancements.
+</p>
           </div>
         </div>
         <div className="relative inset-0 ">

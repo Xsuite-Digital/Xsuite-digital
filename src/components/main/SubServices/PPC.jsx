@@ -120,16 +120,7 @@ const PPC = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Pay-per-click campaigns are digital advertising strategies where promoters pay a fee for a single click on their ads, designed to bring more visitors to their website. In particular, XSuite Digital excels in creating and controlling Google PPC (pay-per-click) campaigns that enhance targeted traffic and maximum return on investment (ROI) for our clients. We are experts in crafting designs and optimizing landing pages to enhance conversion rates and deliver measurable results. With a passion for excellence, we primarily aim to connect your brand with audiences worldwide, utilizing our services. 
         </p>
       </div>
 

@@ -121,16 +121,7 @@ const DigitalMarketing = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Digital marketing is the art of promoting your websites or products online, like sharing on various social media apps.  It will enhance your growth, make your brand digitally active, and drive fruitful results. Xsuite Digital is a digital marketing agency excelling in web development, search engine optimization, pay-per-click campaigns, and social media management. With a team of enthusiastic marketing experts, our digital marketing services boost your digital activities with Google My Business, Google Analytics, and Google Search Console. This service will definitely help strengthen your brand’s online presence.
         </p>
       </div>
 

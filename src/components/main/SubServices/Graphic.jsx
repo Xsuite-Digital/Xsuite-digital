@@ -119,16 +119,7 @@ const Graphic = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Graphic Designing is the phenomenon of creating visual art to deliver concepts. This service combines various elements like typography, color, imagery, and layout to make different aesthetic designs. Our graphic designers create a valuable craft that helps inspire, inform, and captivate consumers so that it will attract traffic to your official website. We will assist you in offering marketing services, whether it is logo design services, motion graphics, unique brand identity, web and digital designs, or printing designs. Xsuite Digital fulfills all of your marketing needs to catch your audience with our innovative and productive ideas.
         </p>
       </div>
 
