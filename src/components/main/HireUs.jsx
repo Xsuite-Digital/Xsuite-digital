@@ -9,38 +9,33 @@ const HireUs = () => {
       icon: "mdi:settings",
       title: "Customization",
       description:
-        "We create exceptional marketing plans that align with your unique brands, ensuring every campaign resonates with your target audience.",
-    },
+      "We create exceptional digital marketing plans that align with your unique brands, ensuring every campaign resonates with your target audience. "   },
     {
       icon: "mdi:shield-check",
       title: "Security",
-      description:
-        "XSuite Digital prioritizes your safety, using top-notch tools and methods throughout our projects.",
+      description:"Xsuite Digital prioritizes your safety, using top-notch tools and methods throughout our projects. We proactively defend against potential threats and safeguard your interests.",
     },
     {
       icon: "mdi:headset",
       title: "Customer Support",
-      description:
-        "Our friendly team is always available to help you by providing guidance and answers to your queries.",
+      description: "Our friendly team is always available to help you by providing guidance and answers to your queries. Your success is our utmost priority and we are here to help you achieve it.",
     },
     
     {
       icon: "mdi:chart-line",
       title: "Performance",
-      description:
-        "We focus on utilizing advanced analytics to optimize projects in real-time, ensuring data-driven decisions.",
+      description:"We focus on utilizing advanced analytics to optimize projects in real-time, ensuring data-driven decisions that enhance efficiency and produce tangible results.",
     },
     {
       icon: "mdi:globe",
       title: "Global Reach",
       description:
-        "XSuite Digital helps your brand's connectivity across the globe, unlocking new growth opportunities.",
+      "Xsuite Digital helps your brand’s connectivity across the globe. Our strategic approach ensures your message resonates with diverse audiences, unlocking new growth opportunities."
     },
     {
       icon: "mdi:message-text",
       title: "Communication",
-      description:
-        "Direct and transparent communication is the heart of our agency-client relationships.",
+      description:"This digital marketing agency beleives in direct and transparent communication, which is the heart of agency-client relationships. We provide updates and feedback frequently to keep you informed and engaged.",
     },
   ];
 

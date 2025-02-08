@@ -118,16 +118,7 @@ const SocialMedia = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Social Media Marketing is the process of using social media platforms to promote a brand, product, or service, engage with followers, and generate business growth. XSuite Digital has social media experts who are energetic in audience engagement, analytics and reporting, and influencer marketing across digital platforms. We apply various strategies of content creation, social media management, and paid advertising services. These marketing services support you in getting organic traffic to your site and enhancing your brand awareness, reach, and online marketing. It will help you elevate your online presence and better search results.
         </p>
       </div>
 

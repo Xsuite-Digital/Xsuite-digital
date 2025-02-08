@@ -18,7 +18,7 @@ export default function Component() {
   }, [])
 
   return (
-    <div className="fixed inset-0 pointer-events-none  z-50 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none sm-block z-50 overflow-hidden">
       <motion.div
         className="w-4 h-4 rounded-full bg-orange-500 fixed pointer-events-none"
         animate={{

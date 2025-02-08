@@ -53,7 +53,7 @@ function Footer() {
             {/* Company Logo and Newsletter Subscription */}
             <div className="flex flex-col items-center w-full sm:w-1/2 lg:w-1/4">
               <Link to="/" className="inline-block">
-                <img src="/logo-min.webp" alt="logo" className="w-48" />
+                <img src="/Xsuitelogo.webp" alt="logo" className="w-48" />
               </Link>
               <p className="text-gray-300 text-sm mt-4 text-center">
                 Discover XSuite, a global marketing agency that transforms your
@@ -120,7 +120,7 @@ function Footer() {
                     className="hover:text-white"
                   >
                     <strong className="text-orange-500"> Location:</strong>{" "}
-                    Lawrence Road Lahore Pakistan
+                    Lawrence Road Lahore, Pakistan
                   </a>
                 </li>
               </ul>
@@ -133,6 +133,14 @@ function Footer() {
                 <li>
                   <Link to="/Services/seo" className="hover:text-white">
                     SEO
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/Services/google-my-business-optimization"
+                    className="hover:text-white"
+                  >
+                    Google Ads
                   </Link>
                 </li>
                 <li>
@@ -161,6 +169,14 @@ function Footer() {
                 </li>
                 <li>
                   <Link
+                    to="/Services/google-my-business-optimization"
+                    className="hover:text-white"
+                  >
+                    Graphic Designing
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/Services/website-development"
                     className="hover:text-white"
                   >
@@ -183,14 +199,7 @@ function Footer() {
                     Social Media Marketing
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/Services/google-my-business-optimization"
-                    className="hover:text-white"
-                  >
-                    Google My Business Optimization
-                  </Link>
-                </li>
+               
               </ul>
             </div>
 
@@ -206,7 +215,7 @@ function Footer() {
                   >
                     <Icon
                       icon="ic:baseline-facebook"
-                      className="h-6 w-6 text-white hover:text-orange-500 duration-300 ease-in-out"
+                      className="h-6 w-6 text-orange-500  duration-300 ease-in-out"
                     />
                     <span>Facebook</span>
                   </Link>
@@ -219,7 +228,7 @@ function Footer() {
                   >
                     <Icon
                       icon="mdi:instagram"
-                      className="h-6 w-6 text-white hover:text-orange-500 duration-300 ease-in-out"
+                      className="h-6 w-6 text-orange-500 duration-300 ease-in-out"
                     />
                     <span>Instagram</span>
                   </Link>
@@ -232,7 +241,7 @@ function Footer() {
                   >
                     <Icon
                       icon="mdi:linkedin"
-                      className="h-6 w-6 text-white hover:text-orange-500 duration-300 ease-in-out"
+                      className="h-6 w-6 text-orange-500  duration-300 ease-in-out"
                     />
                     <span>LinkedIn</span>
                   </Link>

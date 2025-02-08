@@ -119,16 +119,7 @@ const GoogleAnalytics = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Google Analytics is a powerful web analytic platform that evaluates site visitors and user interaction to empower businesses to make well-informed marketing verdicts. We use this gadget as a keystone of our digital marketing services to provide clients with in-depth insights into their website performance and user behavior. Moreover, Xsuite Digital supports you in driving conversions by analyzing user metrics, improving local search, and monitoring search performance. By using this tool, we fascinate our clients by working enthusiastically which helps in fostering growth in an increasingly competitive landscape. 
         </p>
       </div>
 

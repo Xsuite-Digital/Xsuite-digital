@@ -118,16 +118,7 @@ const GoogleAd = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Google Ads is an advertising platform provided by Google that allows businesses to display ads, product listings, and videos to users. It works on PPC campaigns where you pay only when someone clicks on your ad. Our team uses this Google advertising technique to get targeted traffic, increase sales, and generate leads. We ensure that your advertisements are seen by the right people and your payment is deducted only when potential customers click. By continually optimizing campaigns, we assist you attain the best possible outcomes and maximize your advertising budgets. It will support your brand in staying ahead of the competition.
         </p>
       </div>
 

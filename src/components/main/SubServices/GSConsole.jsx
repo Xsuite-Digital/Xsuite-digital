@@ -120,16 +120,7 @@ const GSConsole = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Google Search Console is a tool that enables website owners to see their site’s appearance in Google’s search engine results and make necessary improvements. With Google Search Console, we ensure your brand stands out in the local searches. As a result, this will enhance your brand’s visibility and engagement with potential customers. Furthermore, with a deeply passionate team, XSuite Digital conducts thorough website audits to recognize and handle any issue that can create obstacles to exceptional performance. This is basically to ensure the websites are fully optimized for search engines.
         </p>
       </div>
 

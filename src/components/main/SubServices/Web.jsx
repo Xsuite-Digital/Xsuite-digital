@@ -118,16 +118,7 @@ const Web = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-          Xsuite Digital offers cutting-edge Digital Marketing Services designed
-          to enhance your online presence and amplify your brand&apos;s digital
-          footprint. We specialize in creating and managing data-driven
-          marketing campaigns that drive engagement, boost conversions, and
-          foster meaningful connections with your target audience. Our expertise
-          includes SEO, SMM, and PPC advertising, ensuring your business thrives
-          in the competitive digital landscape. With a focus on measurable
-          results and innovative strategies, Xsuite Digital helps your brand
-          achieve sustainable growth and stand out in today&apos;s dynamic
-          online market.
+        Website development is a technique that transforms your business online by designing an official website to get the maximum audience. We have the best website builders who know the programming languages like HTML, CSS, and JavaScript, to develop and design websites and web applications. Also, XSuite Digital vigorously develops and maintains easily accessible and easy-to-use sites through WordPress. Together, we will navigate the digital projects and achieve your business objectives with originality and advancements. Our team ensures that every website is optimized for speed, performance, and seamless user experience across all devices.
         </p>
       </div>
 
