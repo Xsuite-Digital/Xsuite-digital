@@ -71,14 +71,14 @@ export default function AboutUs() {
           <header className="space-y-8">
           
 
-            <motion.h1 className="text-4xl md:text-5xl font-bold leading-tight" variants={itemVariants}>
-              The Best
+            <motion.h1 className="text-4xl  font-bold leading-tight" variants={itemVariants}>
+              Xsuite Digital Marketing Agency
               <br />
-             <span className="text-orange-500"> Service </span>Provider
             </motion.h1>
+              <p className="text-orange-500">Unlocking Success with Creative Marketing Strategies</p>
 
             <motion.p className="text-gray-400 text-lg" variants={itemVariants}>
-            Xsuite Digital is a top-level marketing service provider, specializing in web development, search engine optimization, pay-per-click campaigns, and social media management. With a team of enthusiastic experts, our digital marketing agency optimizes your online presence with Google My Business, Google Analytics, and Google Search Console. Whether you require SEO or graphic designing for social media platforms, our creative marketing agency can help you in the marketplace for your business advancements. Furthermore, Xsuite Digital is a trustworthy service-providing agency by which you can work to fulfill your digital requirements.
+            Xsuite Digital is a top-level marketing service provider, specializing in web development, search engine optimization, pay-per-click campaigns, and social media management. With a team of enthusiastic digital marketing experts, our creative agency optimizes your online presence with Google My Business, Google Analytics, and Google Search Console. Whether you require SEO or graphic designing for social media platforms, our digital marketing services can help you in the marketplace for your business advancements. Furthermore, Xsuite Digital is a trustworthy service-providing agency, helping you fulfill your digital requirements with the expertise of digital strategists.
             </motion.p>
             
 

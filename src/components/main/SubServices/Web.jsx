@@ -118,7 +118,7 @@ const Web = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-        Website development is a technique that transforms your business online by designing an official website to get the maximum audience. We have the best website builders who know the programming languages like HTML, CSS, and JavaScript, to develop and design websites and web applications. Also, XSuite Digital vigorously develops and maintains easily accessible and easy-to-use sites through WordPress. Together, we will navigate the digital projects and achieve your business objectives with originality and advancements. Our team ensures that every website is optimized for speed, performance, and seamless user experience across all devices.
+        Website development is a technique that transforms your business online by designing an official website to get the maximum audience. We have the best website builders who know the programming languages like HTML, CSS, and JavaScript, to develop and design websites and web applications. Also, Xsuite Digital offers exceptional web design services, creating accessible and user-friendly WordPress websites tailored to meet your business needs. As the best website creators, we bring innovative solutions that enhance your brand's digital presence.
         </p>
       </div>
 

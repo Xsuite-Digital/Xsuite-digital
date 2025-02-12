@@ -131,13 +131,13 @@ function Footer() {
               <h4 className="text-white font-semibold text-lg">Services</h4>
               <ul className="space-y-1 mt-6 text-gray-300">
                 <li>
-                  <Link to="/Services/seo" className="hover:text-white">
+                  <Link to="/Services/SEO" className="hover:text-white">
                     SEO
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/Services/google-my-business-optimization"
+                    to="/Services/GoogleAd"
                     className="hover:text-white"
                   >
                     Google Ads
@@ -145,7 +145,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Services/ppc-campaign"
+                    to="/Services/PPC"
                     className="hover:text-white"
                   >
                     PPC Campaigns
@@ -153,7 +153,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Services/google-analytics"
+                    to="/Services/GoogleAnalytics"
                     className="hover:text-white"
                   >
                     Google Analytics
@@ -161,7 +161,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Services/digital-marketing"
+                    to="/Services/DigitalMarketing"
                     className="hover:text-white"
                   >
                     Digital Marketing
@@ -169,7 +169,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Services/google-my-business-optimization"
+                    to="/Services/Graphic"
                     className="hover:text-white"
                   >
                     Graphic Designing
@@ -177,7 +177,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Services/website-development"
+                    to="/Services/Web"
                     className="hover:text-white"
                   >
                     Website Development
@@ -185,7 +185,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Services/google-search-console"
+                    to="/Services/GSConsole"
                     className="hover:text-white"
                   >
                     Google Search Console
@@ -193,7 +193,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Services/social-media-marketing"
+                    to="/Services/SocialMedia"
                     className="hover:text-white"
                   >
                     Social Media Marketing
