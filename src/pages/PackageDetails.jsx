@@ -12,9 +12,9 @@ const PackageDetails = () => {
       name: "Basic Package",
       description: "Kickstart Your Digital Journey",
       prices: {
-        monthly: 240,
-        quarterly: 600,
-        semiannual: 1200,
+        monthly: "30,000",
+        quarterly: "90,000",
+        semiannual: "180,000",
       },
       features: [
         "1-Page Website",
@@ -28,9 +28,9 @@ const PackageDetails = () => {
       name: "Standard Package",
       description: "Elevate Your Brand to New Heights",
       prices: {
-        monthly: 400,
-        quarterly: 1200,
-        semiannual: 2200,
+        monthly:  "55,000",
+        quarterly: "165,000",
+        semiannual: "330,000",
       },
       features: [
         "Up to 5 Pages of Mobile-Friendly Website",
@@ -46,9 +46,9 @@ const PackageDetails = () => {
       name: "Premium Package",
       description: "Dominate the Digital Space",
       prices: {
-        monthly: 600,
-        quarterly: 1600,
-        semiannual: 3200,
+        monthly:"80,000",
+        quarterly: "240,000",
+        semiannual: "480,000",
       },
       features: [
         "Custom-Built, Fully Optimized Website with Advanced Features",
@@ -150,8 +150,8 @@ const PackageDetails = () => {
                 </h3>
                 <p className="text-white">{pkg.description}</p>
                 <div className="mt-6">
-                  <span className="text-4xl font-bold text-orange-500">
-                    ${pkg.prices[timeframe]}
+                  <span className="text-3xl  font-bold text-orange-500">
+                    PKR {pkg.prices[timeframe]} 
                   </span>
                   <span className="text-white">/{timeframe}</span>
                 </div>
