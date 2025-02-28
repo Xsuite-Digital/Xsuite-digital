@@ -3,6 +3,7 @@ import AboutUs from "../components/main/AboutUs";
 import HireUs from "../components/main/HireUs";
 import Hero from "../components/main/Hero";
 import Stats from "../components/main/Stats";
+import Discount from "../components/main/DiscountPage";
 
 
 import ContactLink from "../components/ContactLink";
@@ -31,6 +32,7 @@ const Home = () => {
       <div className=" w-full h-[60vh]   bg-fixed lg:h-screen bg-[url('/bgimg.webp')] bg-cover bg-center">
 
       <Hero />
+      <Discount/>
       </div>
       <AboutUs />
      <HireUs />
