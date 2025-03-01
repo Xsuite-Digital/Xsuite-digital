@@ -76,7 +76,7 @@ const Discount = () => {
           {/* Pulsing CTA button */}
           <div className={`transition-all duration-500 ${isAnimated ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`} style={{ transitionDelay: '500ms' }}>
             <Link
-              to="/contact"
+              to="/PackageDetails"
               className="inline-block w-full bg-white text-black font-bold py-4 px-6 rounded-lg text-center hover:bg-gray-100 transition duration-200 transform hover:scale-105 shadow-lg relative overflow-hidden group"
             >
               <span className="relative z-10">Claim Your Discount Now</span>
