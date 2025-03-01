@@ -21,7 +21,7 @@ const Home = () => {
     <div className="bg-white ">
       <Helmet>
         <title>
-          Xsuite Digital Marketing Agency | Innovative Solutions for Global Brands
+          Xsuite Digital Marketing Agency |  Creative Solutions for Brands
         </title>
         <meta
           name="description"

@@ -22,7 +22,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Services | XSuite Digital</title>
+        <title>Services | Xsuite Digital</title>
       </Helmet>
       <div className="bg-black text-white py-16 lg:py-52 relative overflow-hidden">
         <div className="container mx-auto px-4">

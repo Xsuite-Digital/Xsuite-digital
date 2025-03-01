@@ -120,7 +120,7 @@ const PPC = () => {
           Services <span className="text-orange-500">Overview</span> <br />
         </h1>
         <p className="text-gray-300 pl-20 pr-20 text-sm sm:text-base leading-relaxed">
-        Pay-per-click campaigns are digital advertising strategies where promoters pay a fee for a single click on their ads, designed to bring more visitors to their website. In particular, XSuite Digital excels in creating and controlling Google PPC (pay-per-click) campaigns that enhance targeted traffic and maximum return on investment (ROI) for our clients. We are experts in crafting designs and optimizing landing pages to enhance conversion rates and deliver measurable results. With a passion for excellence, we primarily aim to connect your brand with audiences worldwide, utilizing our services. 
+        Pay-per-click campaigns are digital advertising strategies where promoters pay a fee for a single click on their ads, designed to bring more visitors to their website. In particular, Xsuite Digital excels in creating and controlling Google PPC (pay-per-click) campaigns that enhance targeted traffic and maximum return on investment (ROI) for our clients. As PPC experts, we are experts in crafting designs and optimizing landing pages to enhance conversion rates and deliver measurable results. Our mission is to ensure your business achieves greater visibilty and drives continuous growth through effective online advertising. 
         </p>
       </div>
 

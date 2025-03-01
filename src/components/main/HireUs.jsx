@@ -9,7 +9,7 @@ const HireUs = () => {
       icon: "mdi:settings",
       title: "Customization",
       description:
-      "We create exceptional digital marketing plans that align with your unique brands, ensuring every campaign resonates with your target audience. "   },
+      "We create exceptional digital marketing strategies that align with your unique brands, ensuring every campaign resonates with your target audience. "   },
     {
       icon: "mdi:shield-check",
       title: "Security",
