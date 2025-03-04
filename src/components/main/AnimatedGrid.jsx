@@ -1,153 +1,72 @@
-import { motion } from "framer-motion";
+"use client";
 
-const cards = [
-  {
-    id: 1,
-    // title: "Nature Inspired",
-    image: "/Architect.webp",
-    category: "Design",
-    style: "tall",
-    // link: "https://example.com/nature-inspired"
-  },
-  {
-    id: 2,
-    // title: "Hotel Digital Marketing",
-    image: "/terz.webp",
-    category: "Social Media Marketing",
-    style: "wide",
-    // link: "https://example.com/digital-interface"
-  },
-  // {
-  //   id: 3,
-  //   title: "Data Visualization",
-  //   image: "/PizzaPan.webp",
-  //   category: "Analytics",
-  //   style: "normal",
-  //   // link: "https://example.com/data-visualization"
-  // },
-  {
-    id: 4,
-    // title: "Product Photography",
-    image: "/Agency.webp",
-    category: "Marketing",
-    style: "normal",
-    // link: "https://example.com/product-photography"
-  }
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+
+// import { Inter } from "next/font/google";
+
+// const inter = Inter({ subsets: ["latin"] });
+
+const projects = [
+  { id: 1, title: "Mobile App Development", category: "Mobile", imageUrl: "/P11.webp" },
+  { id: 2, title: "Branding & Marketing", category: "Social Media Marketing", imageUrl: "/P18.webp" },
+  { id: 3, title: "Branding & UXUI design", category: "Graphic Designing", imageUrl: "/P17.webp" },
+  { id: 4, title: "E-commerce Platform", category: "Full Stack", imageUrl: "/P14.gif" },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15
-    }
-  }
-};
+export default function Home() {
+  const [hoveredItem, setHoveredItem] = useState(null);
 
-const cardVariants = {
-  hidden: {
-    opacity: 0,
-    y: 30
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.25, 0.1, 0.25, 1]
-    }
-  }
-};
-
-const getCardClassName = (style) => {
-  const baseClass =
-    "relative group overflow-hidden rounded-2xl transition-transform duration-700";
-  switch (style) {
-    case "tall":
-      return `${baseClass} col-span-1 row-span-2 h-[600px]`;
-    case "wide":
-      return `${baseClass} col-span-2 h-[350px] w-[800px] mb-8`;
-    default:
-      return `${baseClass} col-span-1 h-[250px] w-[400px] mt-10`;
-  }
-};
-
-export default function AnimatedGrid() {
   return (
-    <div className="min-h-screen bg-black p-8">
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto auto-rows-[300px]"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-      >
-        {cards.map((card) => (
+    <div className={`min-h-screen bg-black text-white p-8 md:p-16 `}>
+      {/* Header Section */}
+      <motion.div className="mb-16 md:mb-24" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+        <div className="flex items-center mb-4">
+          <motion.div className="h-1 bg-orange-500 mr-4" initial={{ width: 0 }} animate={{ width: 48 }} transition={{ duration: 0.8, delay: 0.2 }}></motion.div>
+          <motion.span className="text-sm font-semibold tracking-widest text-orange-500" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }}>OUR PORTFOLIO</motion.span>
+        </div>
+        <motion.h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }}>
+          Transforming ideas into
+          <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">digital excellence</span>
+        </motion.h1>
+        <motion.p className="text-xl text-gray-400 max-w-2xl" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }}>
+          We craft innovative solutions that drive business growth and enhance user experiences.
+        </motion.p>
+      </motion.div>
+
+      {/* Project Grid */}
+      <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.5 }}>
+        {projects.map((project, index) => (
           <motion.div
-            key={card.id}
-            className={getCardClassName(card.style)}
-            variants={cardVariants}
+            key={project.id}
+            className="relative overflow-hidden rounded-2xl cursor-pointer group"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 * index }}
             whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            onMouseEnter={() => setHoveredItem(project.id)}
+            onMouseLeave={() => setHoveredItem(null)}
           >
-            <div className="relative bg-gradient-to-br from-violet-600/20 to-fuchsia-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-
-            <img
-              src={card.image}
-              alt={card.title}
-              className=" absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
-            {/* Glowing border effect */}
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/20 rounded-2xl transition-all duration-700" />
-
-            {/* Content overlay with glassmorphism */}
-            <div className="absolute inset-0 flex flex-col justify-end p-8 translate-y-10 group-hover:translate-y-0 transition-transform duration-700">
-              <div className="relative z-10 bg-black/30 backdrop-blur-lg rounded-xl p-6 transform-gpu translate-y-full group-hover:translate-y-0 transition-transform duration-700">
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 0.4, delay: 0.2 }}
-                >
-                  <span className="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-medium rounded-full mb-3">
-                    {card.category}
-                  </span>
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    {card.title}
-                  </h3>
-                  <a
-                    href={card.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group/btn relative inline-flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-lg transition-colors duration-300"
-                  >
-                    <motion.span
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="inline-flex items-center"
-                    >
-                      Explore Project
-                      <svg
-                        className="w-4 h-4 transform transition-transform duration-300 group-hover/btn:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </motion.span>
-                  </a>
-                </motion.div>
-              </div>
+            {/* Project Image */}
+            <div className="relative h-80 md:h-86 bg-gray-800">
+              <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+              {/* Overlay gradient */}
+              <motion.div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 group-hover:opacity-80" initial={{ opacity: 0.6 }} animate={{ opacity: hoveredItem === project.id ? 0.8 : 0.6 }} transition={{ duration: 0.3 }}></motion.div>
+            </div>
+            {/* Project Info */}
+            <div className="absolute inset-0 flex flex-col justify-end p-8">
+              <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.1 }}>
+                <span className="text-sm font-semibold text-orange-500 mb-2 block">{project.category}</span>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-300 transition-colors">{project.title}</h3>
+               
+              </motion.div>
             </div>
           </motion.div>
         ))}
       </motion.div>
+     
     </div>
   );
 }

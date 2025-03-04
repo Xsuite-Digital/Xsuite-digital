@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import AnimatedGrid from "../components/main/AnimatedGrid";
+import TrustedPartners from "../components/main/TrustedPartners";
 
 
 export default function Portfolio() {
@@ -23,7 +24,7 @@ export default function Portfolio() {
       {/* Main content */}
       <div className="relative z-10 container mx-auto px-4">
         <motion.h1 
-          className="text-white text-center text-7xl font-bold pt-20"
+          className="text-white text-center  mt-8 text-7xl font-bold pt-20"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -71,6 +72,7 @@ export default function Portfolio() {
       </div>
     </div>
         <AnimatedGrid/>
+        <TrustedPartners/>
     </>
   )
 }
