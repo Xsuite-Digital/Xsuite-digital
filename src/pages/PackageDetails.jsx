@@ -108,7 +108,7 @@ const PackageDetails = () => {
           {packagesData.map((pkg, index) => (
             <motion.div
               key={index}
-              className={`bg-gray-900 rounded-2xl p-8 ${pkg.featured ? "ring-2 ring-orange-500" : ""}`}
+              className={bg-gray-900 rounded-2xl p-8 ${pkg.featured ? "ring-2 ring-orange-500" : ""}}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
