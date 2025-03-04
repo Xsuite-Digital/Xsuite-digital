@@ -104,11 +104,11 @@ const PackageDetails = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {packagesData.map((pkg, index) => (
             <motion.div
               key={index}
-              className={bg-gray-900 rounded-2xl p-8 ${pkg.featured ? "ring-2 ring-orange-500" : ""}}
+              className={`bg-gray-900 rounded-2xl p-8 ${pkg.featured ? "ring-2 ring-orange-500" : ""}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
@@ -142,7 +142,7 @@ const PackageDetails = () => {
               </motion.div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
