@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import WorkProcess from "../components/main/WorkProcess";
 import FAQs from "../components/main/FAQs";
 import { servicesInfo } from "../components/main/Helpers/Data";
-import Portfolio from "./Portfolio";
+
 
 
 
@@ -102,7 +102,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <Portfolio/>
+      
       <WorkProcess />
       <FAQs />
     </>
