@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Discount from "../components/main/DiscountPage";
 
 const PackageDetails = () => {
   useEffect(() => {
@@ -12,12 +13,12 @@ const PackageDetails = () => {
       name: "Basic Package",
       description: "Kickstart Your Digital Journey",
       prices: {
-        monthly: "30,000",
-        quarterly: "90,000",
-        semiannual: "180,000",
+        monthly: "33,000",
+        quarterly: "93,000",
+        semiannual: "18,3000",
       },
       features: [
-        "1-Page Website",
+        "1-2 Page Website",
         "Basic SEO & Google Analytics Setup",
         "Ignite Your Social Presence with 1 Platform",
         "Clean Logo & Essential Graphic Design",
@@ -28,9 +29,9 @@ const PackageDetails = () => {
       name: "Standard Package",
       description: "Elevate Your Brand to New Heights",
       prices: {
-        monthly:  "55,000",
-        quarterly: "165,000",
-        semiannual: "330,000",
+        monthly: "58,000",
+        quarterly: "16,8000",
+        semiannual: "33,3000",
       },
       features: [
         "Up to 5 Pages of Mobile-Friendly Website",
@@ -46,9 +47,9 @@ const PackageDetails = () => {
       name: "Premium Package",
       description: "Dominate the Digital Space",
       prices: {
-        monthly:"80,000",
-        quarterly: "240,000",
-        semiannual: "480,000",
+        monthly: "83,000",
+        quarterly: "24,3000",
+        semiannual: "48,3000",
       },
       features: [
         "Custom-Built, Fully Optimized Website with Advanced Features",
@@ -70,6 +71,8 @@ const PackageDetails = () => {
 
   return (
     <div className="min-h-screen bg-black">
+            <Discount/>
+
       {/* Header Section */}
       <div className="bg-black text-white py-20 lg:py-32 relative overflow-hidden">
         <motion.div
@@ -85,10 +88,6 @@ const PackageDetails = () => {
             Choose the perfect plan to elevate your digital presence
           </p>
         </motion.div>
-        <div className="absolute inset-0">
-          <div className="absolute w-96 h-96 -top-20 -left-20 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute w-96 h-96 -bottom-20 -right-20 bg-orange-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        </div>
       </div>
 
       {/* Timeframe Selection */}
@@ -116,7 +115,7 @@ const PackageDetails = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="container  mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
           initial={{ opacity: 0 }}
@@ -126,9 +125,7 @@ const PackageDetails = () => {
           {packagesData.map((pkg, index) => (
             <motion.div
               key={index}
-              className={`relative bg-gray-900  rounded-2xl p-8 ${
-                pkg.featured ? "ring-2 ring-orange-500" : ""
-              }`}
+              className={`relative bg-gray-900 rounded-2xl p-8 ${pkg.featured ? "ring-2 ring-orange-500" : ""}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
@@ -136,61 +133,30 @@ const PackageDetails = () => {
               onHoverStart={() => setHoveredCard(index)}
               onHoverEnd={() => setHoveredCard(null)}
             >
-              {pkg.featured && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-                    Most Popular
-                  </span>
-                </div>
-              )}
-
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {pkg.name}
-                </h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
                 <p className="text-white">{pkg.description}</p>
                 <div className="mt-6">
-                  <span className="text-3xl  font-bold text-orange-500">
-                    PKR {pkg.prices[timeframe]} 
+                  <span className="text-xl text-gray-500 line-through">
+                    PKR {pkg.prices[timeframe]}
+                  </span>
+                  <br />
+                  <span className="text-3xl font-bold text-orange-500">
+                  PKR {Math.round(Number(pkg.prices[timeframe].replace(/,/g, "")) * 0.7).toLocaleString()}
+
                   </span>
                   <span className="text-white">/{timeframe}</span>
                 </div>
               </div>
-
               <ul className="space-y-4 mb-8">
                 {pkg.features.map((feature, idx) => (
-                  <motion.li
-                    key={idx}
-                    className="flex items-start space-x-3 text-white"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{
-                      delay: hoveredCard === index ? idx * 0.1 : 0,
-                    }}
-                  >
-                    <svg
-                      className="h-6 w-6 text-orange-500 flex-shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
+                  <motion.li key={idx} className="flex items-start space-x-3 text-white">
                     <span>{feature}</span>
                   </motion.li>
                 ))}
               </ul>
-
               <motion.div className="mt-auto" whileHover={{ scale: 1.05 }}>
-                <Link
-                  to="/Contact"
-                  className="block w-full text-center bg-black hover:bg-orange-500 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
-                >
+                <Link to="/Contact" className="block w-full text-center bg-black hover:bg-orange-500 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200">
                   Get Started
                 </Link>
               </motion.div>

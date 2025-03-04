@@ -124,3 +124,28 @@ export const servicesInfo = [
     path: "Graphic",
   },
 ];
+
+
+
+const blogData = [
+  {
+    id: 1,
+    title: "Understanding React Hooks",
+    description: "A quick guide to React Hooks and how to use them efficiently.",
+    images: ["/wd1.webp", "/images/react-hooks-2.jpg"]
+  },
+  {
+    id: 2,
+    title: "JavaScript ES6 Features",
+    description: "Learn about the top ES6 features that will enhance your JavaScript skills.",
+    images: ["/images/es6-1.jpg", "/images/es6-2.jpg"]
+  },
+  {
+    id: 3,
+    title: "Mastering Tailwind CSS",
+    description: "How to create stunning UI with Tailwind CSS.",
+    images: ["/images/tailwind-1.jpg", "/images/tailwind-2.jpg"]
+  }
+];
+
+export default blogData;
