@@ -4,8 +4,7 @@ import HireUs from "../components/main/HireUs";
 import Hero from "../components/main/Hero";
 import Stats from "../components/main/Stats";
 import Discount from "../components/main/DiscountPage";
-
-
+import PackajsCall from "../components/main/PackajsCall";
 import ContactLink from "../components/ContactLink";
 
 const Tesimonial = lazy(() => import("../components/main/Tesimonial"));
@@ -35,7 +34,9 @@ const Home = () => {
       <Discount/>
       </div>
       <AboutUs />
+      <PackajsCall/>
      <HireUs />
+    
      <Stats />
 
       
