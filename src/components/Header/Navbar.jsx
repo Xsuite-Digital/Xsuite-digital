@@ -70,9 +70,9 @@ const Navbar = () => {
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
                 <Link to="/About">About Us</Link>
               </li>
-              <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
+              {/* <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
                 <Link to="/Blogs"> Blogs</Link>
-              </li>
+              </li> */}
               <li className="text-white hover:text-orange-500 transition duration-300 ease-in-out">
                 <Link to="/PackageDetails">Packages</Link>
               </li>

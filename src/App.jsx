@@ -11,11 +11,13 @@ import ServiceDetails from "./components/main/SubServices/ServicesDetails";
 import PackageDetails from "./pages/PackageDetails";
 import Portfolio from "./pages/Portfolio";
 import AnimatedComponent from "./components/main/AnimatedComponent";
-import Blogs from "./pages/Blogs";
-import BlogsDetail from "./pages/BlogsDetail";
+// import Blogs from "./pages/Blogs";
+// import BlogsDetail from "./pages/BlogsDetail";
+import usePageTracking from "./utils/analytics";
 
 
 function App() {
+  usePageTracking();
   return (
     <>
    <AnimatedComponent className="absolute w-full h-3/4 hidden lg:block" />
@@ -30,8 +32,8 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/PackageDetails" element={<PackageDetails />} />
         <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Blogs" element={<Blogs />} />
-        <Route path="/Blogs/:id" element={<BlogsDetail />} />
+        {/* <Route path="/Blogs" element={<Blogs />} />
+        <Route path="/Blogs/:id" element={<BlogsDetail />} /> */}
       </Routes>
       <ChatIcon />
     </>
