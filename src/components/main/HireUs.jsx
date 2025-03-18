@@ -6,38 +6,49 @@ const HireUs = () => {
 
   const services = [
     {
-      icon: "mdi:settings",
-      title: "Customization",
+      icon: "mdi:bullhorn",
+      title: "Digital Marketing",
       description:
-      "We create exceptional digital marketing strategies that align with your unique brands, ensuring every campaign resonates with your target audience. "   },
-    {
-      icon: "mdi:shield-check",
-      title: "Security",
-      description:"Xsuite Digital prioritizes your safety, using top-notch tools and methods throughout our projects. We proactively defend against potential threats and safeguard your interests.",
+        "Enhance your online presence with our comprehensive digital marketing strategies, driving brand awareness and customer engagement.",
     },
     {
-      icon: "mdi:headset",
-      title: "Customer Support",
-      description: "Our friendly team is always available to help you by providing guidance and answers to your queries. Your success is our utmost priority and we are here to help you achieve it.",
-    },
-    
-    {
-      icon: "mdi:chart-line",
-      title: "Performance",
-      description:"We focus on utilizing advanced analytics to optimize projects in real-time, ensuring data-driven decisions that enhance efficiency and produce tangible results.",
-    },
-    {
-      icon: "mdi:globe",
-      title: "Global Reach",
+      icon: "mdi:share-variant",
+      title: "Social Media Marketing",
       description:
-      "Xsuite Digital helps your brand’s connectivity across the globe. Our strategic approach ensures your message resonates with diverse audiences, unlocking new growth opportunities."
+        "Boost your brand's visibility and connect with your audience through targeted social media campaigns across platforms like Facebook, Instagram, and Twitter.",
     },
     {
-      icon: "mdi:message-text",
-      title: "Communication",
-      description:"This digital marketing agency beleives in direct and transparent communication, which is the heart of agency-client relationships. We provide updates and feedback frequently to keep you informed and engaged.",
+      icon: "mdi:web",
+      title: "Web Development",
+      description:
+        "Create responsive, user-friendly websites that provide an optimal user experience, ensuring higher engagement and conversion rates.",
+    },
+    {
+      icon: "mdi:google",
+      title: "Google Ads",
+      description:
+        "Increase your reach and drive targeted traffic to your website with expertly managed Google Ads campaigns, maximizing ROI.",
+    },
+    {
+      icon: "mdi:palette",
+      title: "Graphic Designing",
+      description:
+        "Captivate your audience with visually appealing designs that effectively communicate your brand message and enhance recognition.",
+    },
+    {
+      icon: "mdi:cash-multiple",
+      title: "PPC Campaigns",
+      description:
+        "Achieve immediate visibility and drive qualified leads through strategic pay-per-click advertising, optimizing your ad spend for maximum results.",
+    },
+    {
+      icon: "mdi:magnify",
+      title: "SEO",
+      description:
+        "Improve your website's search engine rankings with our expert SEO services, increasing organic traffic and boosting online visibility.",
     },
   ];
+  
 
   const changeSlide = (direction) => {
     setCurrentSlide((prev) => {

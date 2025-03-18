@@ -12,6 +12,7 @@ const Sidebar = () => {
     { name: "Home", path: "/" },
     { name: "Services", path: "/Services" },
     { name: "About Us", path: "/About" },
+  { name: "Portfolio", path: "/Portfolio" },
     { name: "Contact", path: "/Contact" },
     { name: "Packages", path: "/PackageDetails" },
   ];

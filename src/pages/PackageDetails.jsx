@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Discount from "../components/main/DiscountPage";
 
 const PackageDetails = () => {
   useEffect(() => {
@@ -10,28 +9,29 @@ const PackageDetails = () => {
 
   const packagesData = [
     {
-      name: "Basic Package",
+      name: "Elevated Package",
       description: "Kickstart Your Digital Journey",
       prices: {
-        monthly: "33,000",
-        quarterly: "93,000",
-        semiannual: "183,000",
+        monthly: "25,000",
+        quarterly: "70,000",
+        semiannual: "120,000",
       },
       features: [
-        "1-2 Page Website",
-        "Basic SEO & Google Analytics Setup",
+        "Single Page Website",
+        "Essential SEO & Google Analytics Setup",
         "Ignite Your Social Presence with 1 Platform",
         "Clean Logo & Essential Graphic Design",
         "On-Demand Support",
+        "We will provide 5-6 high-quality social posts too(per-month)",
       ],
     },
     {
       name: "Standard Package",
       description: "Elevate Your Brand to New Heights",
       prices: {
-        monthly: "58,000",
-        quarterly: "168,000",
-        semiannual: "333,000",
+        monthly: "40,000",
+        quarterly: "100,000",
+        semiannual: "130,000",
       },
       features: [
         "Up to 5 Pages of Mobile-Friendly Website",
@@ -40,6 +40,7 @@ const PackageDetails = () => {
         "Targeted Google Ads setup",
         "Advanced Analytics & Strategy Sessions",
         "Design Upgrades with Creative Freedom",
+        "We will provide 6-10 high-quality social posts too(per-month)",
       ],
       featured: true,
     },
@@ -47,9 +48,9 @@ const PackageDetails = () => {
       name: "Premium Package",
       description: "Dominate the Digital Space",
       prices: {
-        monthly: "83,000",
-        quarterly: "243,000",
-        semiannual: "483,000",
+        monthly: "60,000",
+        quarterly: "110,000",
+        semiannual: "150,000",
       },
       features: [
         "Custom-Built, Fully Optimized Website with Advanced Features",
@@ -58,6 +59,8 @@ const PackageDetails = () => {
         "Full Google Ads Management with Strategic Retargeting",
         "Complete Brand Makeover",
         "24/7 Support with Your Dedicated Account Manager",
+        "We will provide 10-15 high-quality social posts too(per-month)",
+        
       ],
     },
   ];
@@ -69,7 +72,6 @@ const PackageDetails = () => {
 
   return (
     <div className="min-h-screen bg-black">
-      <Discount />
       <div className="bg-black text-white py-20 lg:py-32">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -118,12 +120,8 @@ const PackageDetails = () => {
                 <h3 className="text-2xl font-bold text-white mb-2">{pkg.name}</h3>
                 <p className="text-gray-300">{pkg.description}</p>
                 <div className="mt-6">
-                  <span className="text-xl text-gray-500 line-through">
-                    PKR {pkg.prices[timeframe]}
-                  </span>
-                  <br />
                   <span className="text-3xl font-bold text-orange-500">
-                    PKR {Math.round(Number(pkg.prices[timeframe].replace(/,/g, "")) * 0.7).toLocaleString()}
+                    PKR {pkg.prices[timeframe]}
                   </span>
                   <span className="text-white">/{timeframe}</span>
                 </div>

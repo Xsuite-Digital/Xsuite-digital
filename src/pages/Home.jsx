@@ -3,7 +3,6 @@ import AboutUs from "../components/main/AboutUs";
 import HireUs from "../components/main/HireUs";
 import Hero from "../components/main/Hero";
 import Stats from "../components/main/Stats";
-import Discount from "../components/main/DiscountPage";
 import PackajsCall from "../components/main/PackajsCall";
 import ContactLink from "../components/ContactLink";
 
@@ -11,6 +10,7 @@ const Tesimonial = lazy(() => import("../components/main/Tesimonial"));
 
 const FAQs = lazy(() => import("../components/main/FAQs"));
 import { Helmet } from "react-helmet-async";
+import PackageDetails from "./PackageDetails";
 
 const Home = () => {
   useEffect(()=> {
@@ -31,8 +31,8 @@ const Home = () => {
       <div className=" w-full h-[60vh]   bg-fixed lg:h-screen bg-[url('/bgimg.webp')] bg-cover bg-center">
 
       <Hero />
-      <Discount/>
       </div>
+      <PackageDetails />
       <AboutUs />
       <PackajsCall/>
      <HireUs />

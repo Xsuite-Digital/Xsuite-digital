@@ -88,7 +88,7 @@ export default function AboutUs() {
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                10
+                +10
               </motion.span>
               <div className="text-gray-400">
                 Year
